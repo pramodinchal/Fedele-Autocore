@@ -1,24 +1,24 @@
 // Mobile Menu Toggle
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     const mobileMenuToggle = document.getElementById('mobileMenuToggle');
     const nav = document.querySelector('.nav');
-    
-    mobileMenuToggle.addEventListener('click', function() {
+
+    mobileMenuToggle.addEventListener('click', function () {
         nav.classList.toggle('active');
     });
-    
+
     // Smooth scrolling for navigation links
     const navLinks = document.querySelectorAll('.nav-link');
     navLinks.forEach(link => {
-        link.addEventListener('click', function(e) {
+        link.addEventListener('click', function (e) {
             e.preventDefault();
             const targetId = this.getAttribute('href');
             const targetSection = document.querySelector(targetId);
-            
+
             if (targetSection) {
                 const headerHeight = document.querySelector('.header').offsetHeight;
                 const targetPosition = targetSection.offsetTop - headerHeight;
-                
+
                 window.scrollTo({
                     top: targetPosition,
                     behavior: 'smooth'
@@ -26,74 +26,74 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     });
-    
+
     // City button interactions
     const cityButtons = document.querySelectorAll('.city-button');
     cityButtons.forEach(button => {
-        button.addEventListener('click', function() {
+        button.addEventListener('click', function () {
             const city = this.getAttribute('data-city');
-            
+
             // Remove active class from all buttons
             cityButtons.forEach(btn => btn.classList.remove('active'));
-            
+
             // Add active class to clicked button
             this.classList.add('active');
-            
+
             // You can add more functionality here, like showing city-specific content
             console.log(`Selected city: ${city}`);
         });
-        
+
         // Add hover effect
-        button.addEventListener('mouseenter', function() {
+        button.addEventListener('mouseenter', function () {
             this.style.transform = 'translateY(-2px) scale(1.05)';
         });
-        
-        button.addEventListener('mouseleave', function() {
+
+        button.addEventListener('mouseleave', function () {
             if (!this.classList.contains('active')) {
                 this.style.transform = 'translateY(0) scale(1)';
             }
         });
     });
-    
+
     // Service card interactions
     const serviceCards = document.querySelectorAll('.service-card');
     serviceCards.forEach(card => {
-        card.addEventListener('click', function() {
+        card.addEventListener('click', function () {
             const service = this.getAttribute('data-service');
-            
+
             // Add click animation
             this.style.transform = 'scale(0.95)';
             setTimeout(() => {
                 this.style.transform = 'translateY(-8px) scale(1)';
             }, 150);
-            
+
             // You can add more functionality here, like opening a modal with service details
             console.log(`Selected service: ${service}`);
         });
     });
-    
+
     // CTA Button interactions
     const ctaButtons = document.querySelectorAll('.cta-button, .btn-primary');
     ctaButtons.forEach(button => {
-        button.addEventListener('click', function() {
+        button.addEventListener('click', function () {
             // Add click animation
             this.style.transform = 'scale(0.95)';
             setTimeout(() => {
                 this.style.transform = 'translateY(-2px) scale(1)';
             }, 150);
-            
+
             // You can add more functionality here, like opening a quote form
             console.log('Get Quote clicked');
         });
     });
-    
+
     // Header scroll effect
     let lastScrollTop = 0;
     const header = document.querySelector('.header');
-    
-    window.addEventListener('scroll', function() {
+
+    window.addEventListener('scroll', function () {
         const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-        
+
         if (scrollTop > lastScrollTop && scrollTop > 100) {
             // Scrolling down
             header.style.transform = 'translateY(-100%)';
@@ -101,17 +101,17 @@ document.addEventListener('DOMContentLoaded', function() {
             // Scrolling up
             header.style.transform = 'translateY(0)';
         }
-        
+
         lastScrollTop = scrollTop;
     });
-    
+
     // Intersection Observer for animations
     const observerOptions = {
         threshold: 0.1,
         rootMargin: '0px 0px -50px 0px'
     };
-    
-    const observer = new IntersectionObserver(function(entries) {
+
+    const observer = new IntersectionObserver(function (entries) {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 entry.target.style.opacity = '1';
@@ -119,7 +119,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     }, observerOptions);
-    
+
     // Observe service cards and city buttons for scroll animations
     const animatedElements = document.querySelectorAll('.service-card, .city-button');
     animatedElements.forEach(el => {
@@ -128,32 +128,32 @@ document.addEventListener('DOMContentLoaded', function() {
         el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
         observer.observe(el);
     });
-    
+
     // Parallax effect for hero geometric shapes
-    window.addEventListener('scroll', function() {
+    window.addEventListener('scroll', function () {
         const scrolled = window.pageYOffset;
         const shapes = document.querySelectorAll('.geometric-shape');
-        
+
         shapes.forEach((shape, index) => {
             const speed = 0.5 + (index * 0.1);
             shape.style.transform = `translateY(${scrolled * speed}px)`;
         });
     });
-    
+
     // Form validation (if you add a contact form later)
     function validateEmail(email) {
         const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         return re.test(email);
     }
-    
+
     // Utility function for smooth animations
     function animateElement(element, animation) {
         element.style.animation = animation;
-        element.addEventListener('animationend', function() {
+        element.addEventListener('animationend', function () {
             element.style.animation = '';
         }, { once: true });
     }
-    
+
     // Performance optimization: Debounce scroll events
     function debounce(func, wait) {
         let timeout;
@@ -166,37 +166,37 @@ document.addEventListener('DOMContentLoaded', function() {
             timeout = setTimeout(later, wait);
         };
     }
-    
+
     // Apply debounce to scroll events
-    const debouncedScrollHandler = debounce(function() {
+    const debouncedScrollHandler = debounce(function () {
         // Your scroll handling code here
     }, 10);
-    
+
     window.addEventListener('scroll', debouncedScrollHandler);
 });
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     const faqItems = document.querySelectorAll('.faq-item');
-    
+
     faqItems.forEach(item => {
         const question = item.querySelector('.faq-question');
         const answer = item.querySelector('.faq-answer');
         const icon = item.querySelector('.faq-icon i');
-        
+
         question.addEventListener('click', () => {
             // Toggle the active class on the answer
             const isOpen = answer.classList.contains('max-h-0');
-            
+
             // Close all other FAQs
             document.querySelectorAll('.faq-answer').forEach(ans => {
                 ans.classList.add('max-h-0');
                 ans.classList.remove('max-h-96', 'pb-5');
             });
-            
+
             document.querySelectorAll('.faq-icon i').forEach(ic => {
                 ic.classList.replace('fa-minus', 'fa-plus');
             });
-            
+
             // Open this FAQ if it was closed
             if (isOpen) {
                 answer.classList.remove('max-h-0');

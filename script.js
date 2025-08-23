@@ -207,6 +207,36 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
+ function toggleFaq(button) {
+    const faqItem = button.parentElement;
+    const content = faqItem.querySelector(".faq-content");
+    const icon = button.querySelector("span");
+
+    content.classList.toggle("hidden");
+
+    if (!content.classList.contains("hidden")) {
+      icon.textContent = "−"; // open
+    } else {
+      icon.textContent = "+"; // closed
+    }
+  }
+
+
+
+const buttons = document.querySelectorAll(".toggle-btn");
+
+  buttons.forEach(btn => {
+    btn.addEventListener("click", () => {
+      // remove active styles from all
+      buttons.forEach(b => b.classList.remove("bg-white", "text-blue-900"));
+      buttons.forEach(b => b.classList.add("bg-transparent", "text-white"));
+
+      // add active styles to clicked button
+      btn.classList.remove("bg-transparent", "text-white");
+      btn.classList.add("bg-white", "text-blue-900");
+    });
+  });
+  
 // Add CSS for active city button
 const style = document.createElement('style');
 style.textContent = `

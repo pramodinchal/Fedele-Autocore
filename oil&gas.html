@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Oil & Gas CNC Components</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-50">
+    <header class="fixed top-0 left-0 w-full bg-white shadow-md z-50">
+        <div class="max-w-7xl mx-auto flex items-center justify-between h-20 px-6">
+            <!-- Logo -->
+            <div class="flex items-center">
+                <img src="/Assets/logo.png" alt="Fedele Autocore Logo" class="h-12" />
+            </div>
+
+            <!-- Nav Links -->
+            <nav class="hidden md:flex space-x-6 relative">
+
+                <!-- Home -->
+                <a href="index.html" class="font-bold text-gray-700 hover:text-orange-600">Home</a>
+
+                <!-- CNC Services -->
+                <div class="relative dropdown group">
+                    <a href="#" class="nav-link font-bold text-gray-700 hover:text-orange-600">CNC Services</a>
+                    <div
+                        class="menu absolute left-0 top-full hidden group-hover:block transition ease-out duration-150 z-50">
+                        <div class="bg-white shadow-lg rounded-lg overflow-hidden min-w-56">
+                            <ul class="py-2">
+                                <li><a href="#"
+                                        class="block px-4 py-2 text-gray-700 hover:text-orange-600 hover:bg-orange-100">CNC
+                                        Milling</a></li>
+                                <li><a href="#"
+                                        class="block px-4 py-2 text-gray-700 hover:text-orange-600 hover:bg-orange-100">CNC
+                                        Turning</a></li>
+                                <li><a href="#"
+                                        class="block px-4 py-2 text-gray-700 hover:text-orange-600 hover:bg-orange-100">5-Axis
+                                        Machining</a></li>
+                                <li><a href="#"
+                                        class="block px-4 py-2 text-gray-700 hover:text-orange-600 hover:bg-orange-100">Precision
+                                        Machining</a></li>
+                                <li><a href="#"
+                                        class="block px-4 py-2 text-gray-700 hover:text-orange-600 hover:bg-orange-100">CNC
+                                        Prototyping</a></li>
+                                <li><a href="#"
+                                        class="block px-4 py-2 text-gray-700 hover:text-orange-600 hover:bg-orange-100">Custom
+                                        Machining</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Industries -->
+                <div class="relative dropdown group">
+                    <a href="defence.html" class="nav-link font-bold text-gray-700 hover:text-orange-600">Industries</a>
+                    <div
+                        class="menu absolute left-0 top-full hidden group-hover:block transition ease-out duration-150 z-50">
+                        <div class="bg-white shadow-lg rounded-lg overflow-hidden min-w-64">
+                            <ul class="py-2">
+                                <li><a href="defence.html"
+                                        class="block px-4 py-2 text-gray-700 hover:text-orange-600 hover:bg-orange-100">Defence
+                                        Industry</a></li>
+                                <li><a href="oil&gas.html"
+                                        class="block px-4 py-2 text-gray-700 hover:text-orange-600 hover:bg-orange-100">Oil
+                                        & Gas Industry</a></li>
+                                <li><a href="#"
+                                        class="block px-4 py-2 text-gray-700 hover:text-orange-600 hover:bg-orange-100">Automotive
+                                        Industry</a></li>
+                                <li><a href="#"
+                                        class="block px-4 py-2 text-gray-700 hover:text-orange-600 hover:bg-orange-100">Construction
+                                        Industry</a></li>
+                                <li><a href="#"
+                                        class="block px-4 py-2 text-gray-700 hover:text-orange-600 hover:bg-orange-100">Energy
+                                        Solutions</a></li>
+                                <li><a href="#"
+                                        class="block px-4 py-2 text-gray-700 hover:text-orange-600 hover:bg-orange-100">Hydraulic
+                                        Power</a></li>
+                                <li><a href="#"
+                                        class="block px-4 py-2 text-gray-700 hover:text-orange-600 hover:bg-orange-100">Agricultural
+                                        / Tractor</a></li>
+                                <li><a href="#"
+                                        class="block px-4 py-2 text-gray-700 hover:text-orange-600 hover:bg-orange-100">Aerospace
+                                        Industry</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Locations -->
+                <div class="relative dropdown group">
+                    <a href="#locations" class="nav-link font-bold text-gray-700 hover:text-orange-600">Locations</a>
+                    <div
+                        class="menu absolute left-0 top-full hidden group-hover:block transition ease-out duration-150 z-50">
+                        <div class="bg-white shadow-lg rounded-lg overflow-hidden min-w-48">
+                            <ul class="py-2">
+                                <li><a href="#"
+                                        class="block px-4 py-2 text-gray-700 hover:text-orange-600 hover:bg-orange-100">Melbourne</a>
+                                </li>
+                                <li><a href="#"
+                                        class="block px-4 py-2 text-gray-700 hover:text-orange-600 hover:bg-orange-100">Sydney</a>
+                                </li>
+                                <li><a href="#"
+                                        class="block px-4 py-2 text-gray-700 hover:text-orange-600 hover:bg-orange-100">Perth</a>
+                                </li>
+                                <li><a href="#"
+                                        class="block px-4 py-2 text-gray-700 hover:text-orange-600 hover:bg-orange-100">Adelaide</a>
+                                </li>
+                                <li><a href="#"
+                                        class="block px-4 py-2 text-gray-700 hover:text-orange-600 hover:bg-orange-100">Brisbane</a>
+                                </li>
+                                <li><a href="#"
+                                        class="block px-4 py-2 text-gray-700 hover:text-orange-600 hover:bg-orange-100">Darwin</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Company -->
+                <div class="relative dropdown group">
+                    <a href="#company" class="nav-link font-bold text-gray-700 hover:text-orange-600">Company</a>
+                    <div
+                        class="menu absolute left-0 top-full hidden group-hover:block transition ease-out duration-150 z-50">
+                        <div class="bg-white shadow-lg rounded-lg overflow-hidden min-w-52">
+                            <ul class="py-2">
+                                <li><a href="#"
+                                        class="block px-4 py-2 text-gray-700 hover:text-orange-600 hover:bg-orange-100">About
+                                        Us</a></li>
+                                <li><a href="#"
+                                        class="block px-4 py-2 text-gray-700 hover:text-orange-600 hover:bg-orange-100">Blog</a>
+                                </li>
+                                <li><a href="#"
+                                        class="block px-4 py-2 text-gray-700 hover:text-orange-600 hover:bg-orange-100">Capabilities</a>
+                                </li>
+                                <li><a href="#"
+                                        class="block px-4 py-2 text-gray-700 hover:text-orange-600 hover:bg-orange-100">Quality
+                                        Standards</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Components -->
+                <div class="relative dropdown group">
+                    <a href="#components" class="nav-link font-bold text-gray-700 hover:text-orange-600">Components</a>
+                    <div
+                        class="menu absolute left-0 top-full hidden group-hover:block transition ease-out duration-150 z-50">
+                        <div class="bg-white shadow-lg rounded-lg overflow-hidden min-w-60">
+                            <ul class="py-2">
+                                <li><a href="#"
+                                        class="block px-4 py-2 text-gray-700 hover:text-orange-600 hover:bg-orange-100">Drilling
+                                        Components</a></li>
+                                <li><a href="#"
+                                        class="block px-4 py-2 text-gray-700 hover:text-orange-600 hover:bg-orange-100">Engine
+                                        Components</a></li>
+                                <li><a href="#"
+                                        class="block px-4 py-2 text-gray-700 hover:text-orange-600 hover:bg-orange-100">Hydraulic
+                                        Components</a></li>
+                                <li><a href="#"
+                                        class="block px-4 py-2 text-gray-700 hover:text-orange-600 hover:bg-orange-100">Turbine
+                                        Components</a></li>
+                                <li><a href="#"
+                                        class="block px-4 py-2 text-gray-700 hover:text-orange-600 hover:bg-orange-100">Tractor
+                                        Components</a></li>
+                                <li><a href="#"
+                                        class="block px-4 py-2 text-gray-700 hover:text-orange-600 hover:bg-orange-100">Military
+                                        Components</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact -->
+                <a href="#contact" class="font-bold text-gray-700 hover:text-orange-600">Contact</a>
+            </nav>
+
+
+            <!-- Buttons -->
+            <div class="flex items-center space-x-4">
+                <button
+                    class="hidden md:inline-block bg-orange-600 text-white px-4 py-2 rounded-lg shadow hover:bg-blue-900 transition">
+                    Get Quote
+                </button>
+                <button class="md:hidden text-gray-700 text-2xl focus:outline-none">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative min-h-screen flex items-center">
+        <!-- Background Image -->
+        <div class="absolute inset-0 z-0">
+            <img src="Assets/oil-gas.jpg" alt="Oil & Gas CNC Components"
+                class="w-full h-full object-cover brightness-140" />
+
+            <!-- Gradient Overlay -->
+            <div class="absolute inset-0 bg-gradient-to-r from-black via-black/70 to-transparent"></div>
+        </div>
+
+        <!-- Content -->
+        <div class="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-white text-left max-w-xl py-24 md:py-48">
+                <h1 class="text-4xl md:text-6xl font-bold mb-6 text-white">
+                    <span class="text-orange-500">Oil & Gas</span> CNC Components
+                </h1>
+                <p class="text-lg md:text-xl text-gray-200">
+                    Precision CNC Manufacturing for the Global Oil & Gas Industry
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+    <!--Materials & Precision Tolerances-->
+
+    <section class="bg-white py-16">
+        <div class="max-w-6xl mx-auto px-6 lg:px-8 text-center">
+            <!-- Heading -->
+            <h2 class="text-3xl font-extrabold text-blue-900 mb-4">
+                Materials & Precision Tolerances
+            </h2>
+            <p class="text-gray-600 max-w-2xl mx-auto mb-12">
+                Advanced materials and ultra-precise tolerances for demanding oil and gas CNC machining applications
+            </p>
+
+            <!-- Cards -->
+            <div class="grid md:grid-cols-2 gap-8">
+
+                <!-- Premium Materials -->
+                <div class="bg-white shadow-2xl rounded-xl p-6 text-left">
+                    <h3 class="text-xl font-semibold text-blue-900 mb-4">Premium Materials</h3>
+                    <ul class="space-y-2 text-gray-700">
+                        <li><span class="font-semibold text-blue-900">Stainless Steel:</span> 304, 316L grades for
+                            superior corrosion resistance</li>
+                        <li><span class="font-semibold text-blue-900">Carbon Steel:</span> A36, A572 for high-strength
+                            structural applications</li>
+                        <li><span class="font-semibold text-blue-900">Aluminum Alloys:</span> 6061, 7075 for lightweight
+                            yet durable components</li>
+                        <li><span class="font-semibold text-blue-900">Inconel Alloys:</span> 625, 718 for extreme
+                            temperature resistance</li>
+                        <li><span class="font-semibold text-blue-900">Hastelloy:</span> C-276 for harsh chemical
+                            environments</li>
+                        <li><span class="font-semibold text-blue-900">Duplex Stainless:</span> 2205, 2507 for enhanced
+                            strength</li>
+                        <li><span class="font-semibold text-blue-900">Titanium Alloys:</span> Grade 2, Grade 5 for
+                            specialized applications</li>
+                    </ul>
+                </div>
+
+                <!-- Precision Tolerances -->
+                <div class="bg-white shadow-2xl rounded-xl p-6 text-left">
+                    <h3 class="text-xl font-semibold text-blue-900 mb-4">Precision Tolerances</h3>
+                    <div class="bg-blue-900 text-white rounded-lg p-6 text-center mb-4">
+                        <p class="text-3xl font-bold">±0.001"</p>
+                        <p class="text-sm">(±0.025mm)</p>
+                        <p class="mt-2 text-sm">Ultra-precision machining for critical oil and gas CNC components</p>
+                    </div>
+                    <p class="text-gray-700"><span class="font-semibold text-blue-900">Standard Range:</span> ±0.001" to
+                        ±0.005" depending on component complexity, material properties, and geometric requirements.</p>
+                    <p class="text-gray-700 mt-2"><span class="font-semibold text-blue-900">Surface Finish:</span> Ra 32
+                        to Ra 125 microinches achievable across all materials.</p>
+                    <p class="text-gray-700 mt-2"><span class="font-semibold text-blue-900">Quality Assurance:</span>
+                        CMM inspection, material traceability, and comprehensive documentation for every component.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!--   Oil & Gas CNC Components-->
+    <section class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12">
+            <h2 class="text-3xl font-bold text-blue-900 text-center mb-4">
+                Oil & Gas CNC Components
+            </h2>
+            <p class="text-gray-600 text-center max-w-3xl mx-auto mb-12">
+                Precision machined components engineered for the oil and gas industries,
+                built for durability, safety, and reliability under demanding conditions.
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <!-- Drilling Components -->
+                <div
+                    class="bg-white rounded-lg border border-gray-200 overflow-hidden hover:shadow-xl transition-shadow">
+                    <img src="Assets/drilling-component.jpeg" alt="Drilling Components"
+                        class="w-full h-48 object-cover">
+                    <div class="p-6 border-l-4 border-blue-500">
+                        <h3 class="text-xl font-bold text-blue-900 mb-4">Drilling Components</h3>
+                        <p class="text-gray-600">
+                            High-precision machined components designed for drilling operations,
+                            ensuring reliable performance in extreme downhole conditions.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Offshore Platform Parts -->
+                <div
+                    class="bg-white rounded-lg border border-gray-200 overflow-hidden hover:shadow-xl transition-shadow">
+                    <img src="Assets/off-shore.jpg" alt="Offshore Platform Parts" class="w-full h-48 object-cover">
+                    <div class="p-6 border-l-4 border-blue-500">
+                        <h3 class="text-xl font-bold text-blue-900 mb-4">Offshore Platform Parts</h3>
+                        <p class="text-gray-600">
+                            Marine-grade components built to withstand corrosive offshore environments
+                            and deliver reliable platform operations.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Subsea Equipment Components -->
+                <div
+                    class="bg-white rounded-lg border border-gray-200 overflow-hidden hover:shadow-xl transition-shadow">
+                    <img src="Assets/subsea.jpg" alt="Subsea Equipment Components" class="w-full h-48 object-cover">
+                    <div class="p-6 border-l-4 border-blue-500">
+                        <h3 class="text-xl font-bold text-blue-900 mb-4">Subsea Equipment Components</h3>
+                        <p class="text-gray-600">
+                            Precision-engineered subsea components meeting stringent standards
+                            for extreme underwater pressure conditions.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Pipeline Components -->
+                <div
+                    class="bg-white rounded-lg border border-gray-200 overflow-hidden hover:shadow-xl transition-shadow">
+                    <img src="Assets/pipeline.jpg" alt="Pipeline Components" class="w-full h-48 object-cover">
+                    <div class="p-6 border-l-4 border-blue-500">
+                        <h3 class="text-xl font-bold text-blue-900 mb-4">Pipeline Components</h3>
+                        <p class="text-gray-600">
+                            Critical infrastructure components machined to exact specifications,
+                            ensuring leak-free operation and structural integrity.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Wellhead Components -->
+                <div
+                    class="bg-white rounded-lg border border-gray-200 overflow-hidden hover:shadow-xl transition-shadow">
+                    <img src="Assets/wellhead.webp" alt="Wellhead Components" class="w-full h-48 object-cover">
+                    <div class="p-6 border-l-4 border-blue-500">
+                        <h3 class="text-xl font-bold text-blue-900 mb-4">Wellhead Components</h3>
+                        <p class="text-gray-600">
+                            Precision wellhead parts that provide reliable sealing and control
+                            for demanding well operations.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Pressure Vessel Parts -->
+                <div
+                    class="bg-white rounded-lg border border-gray-200 overflow-hidden hover:shadow-xl transition-shadow">
+                    <img src="Assets/pressure-vessel.jpg" alt="Pressure Vessel Parts" class="w-full h-48 object-cover">
+                    <div class="p-6 border-l-4 border-blue-500">
+                        <h3 class="text-xl font-bold text-blue-900 mb-4">Pressure Vessel Parts</h3>
+                        <p class="text-gray-600">
+                            High-strength vessel components engineered to withstand
+                            extreme stresses and ensure operational safety.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Valve Bodies -->
+                <div
+                    class="bg-white rounded-lg border border-gray-200 overflow-hidden hover:shadow-xl transition-shadow">
+                    <img src="Assets/valve-body.webp" alt="Valve Bodies" class="w-full h-48 object-cover">
+                    <div class="p-6 border-l-4 border-blue-500">
+                        <h3 class="text-xl font-bold text-blue-900 mb-4">Valve Bodies</h3>
+                        <p class="text-gray-600">
+                            Precision-machined valve bodies designed for flow control,
+                            ensuring durability in oil and gas operations.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Pump Housing -->
+                <div
+                    class="bg-white rounded-lg border border-gray-200 overflow-hidden hover:shadow-xl transition-shadow">
+                    <img src="Assets/pump-housing.jpg" alt="Pump Housing" class="w-full h-48 object-cover">
+                    <div class="p-6 border-l-4 border-blue-500">
+                        <h3 class="text-xl font-bold text-blue-900 mb-4">Pump Housing</h3>
+                        <p class="text-gray-600">
+                            Robust pump housings engineered for continuous operation
+                            in harsh oilfield environments.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Compressor Components -->
+                <div
+                    class="bg-white rounded-lg border border-gray-200 overflow-hidden hover:shadow-xl transition-shadow">
+                    <img src="Assets/compressor.jpg" alt="Compressor Components" class="w-full h-48 object-cover">
+                    <div class="p-6 border-l-4 border-blue-500">
+                        <h3 class="text-xl font-bold text-blue-900 mb-4">Compressor Components</h3>
+                        <p class="text-gray-600">
+                            High-precision compressor components ensuring efficiency,
+                            reliability, and long service life.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- LNG Facility Parts -->
+                <div
+                    class="bg-white rounded-lg border border-gray-200 overflow-hidden hover:shadow-xl transition-shadow">
+                    <img src="Assets/LNG.avif" alt="LNG Facility Parts" class="w-full h-48 object-cover">
+                    <div class="p-6 border-l-4 border-blue-500">
+                        <h3 class="text-xl font-bold text-blue-900 mb-4">LNG Facility Parts</h3>
+                        <p class="text-gray-600">
+                            Specialized components designed to withstand cryogenic conditions
+                            and high-pressure environments.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Fracking Equipment Parts -->
+                <div
+                    class="bg-white rounded-lg border border-gray-200 overflow-hidden hover:shadow-xl transition-shadow">
+                    <img src="Assets/Fracking.jpg" alt="Fracking Equipment Parts" class="w-full h-48 object-cover">
+                    <div class="p-6 border-l-4 border-blue-500">
+                        <h3 class="text-xl font-bold text-blue-900 mb-4">Fracking Equipment Parts</h3>
+                        <p class="text-gray-600">
+                            Heavy-duty components built for hydraulic fracturing,
+                            tolerating high pressures and harsh conditions.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Blowout Preventer Components -->
+                <div
+                    class="bg-white rounded-lg border border-gray-200 overflow-hidden hover:shadow-xl transition-shadow">
+                    <img src="Assets/BOP.jpeg" alt="Blowout Preventer Components" class="w-full h-48 object-cover">
+                    <div class="p-6 border-l-4 border-blue-500">
+                        <h3 class="text-xl font-bold text-blue-900 mb-4">Blowout Preventer Components</h3>
+                        <p class="text-gray-600">
+                            Safety-critical parts for blowout preventer systems,
+                            ensuring well control, emergency response, and reliability.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!--About Fedele Autocare-->
+    <section class="bg-gray-50 py-16">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+
+            <!-- LEFT CONTENT -->
+            <div>
+                <h2 class="text-3xl font-bold text-blue-900 mb-4">About Fedele Autocore</h2>
+                <p class="text-gray-600 mb-8">
+                    Leading specialist in oil and gas CNC machining and precision manufacturing.
+                </p>
+
+                <h3 class="text-xl font-semibold text-blue-900 mb-3">Leading Oil and Gas CNC Machining Specialist</h3>
+                <p class="text-gray-700 mb-6">
+                    Fedele Autocore stands at the forefront of oil and gas CNC machining.
+                    Our advanced CNC machining capabilities deliver precision machined
+                    components for the oil and gas industries that exceed the most demanding
+                    specifications, achieving tolerances as tight as ±0.001" (±0.025mm).
+                </p>
+
+                <p class="text-gray-700 mb-6">
+                    With decades of expertise in oil and gas CNC components, we work with
+                    premium materials including 316L stainless steel, carbon steel, aluminum
+                    alloys, Inconel, Hastelloy, and other specialized alloys designed for
+                    extreme conditions. Every precision machined component undergoes rigorous
+                    quality control to ensure it meets industry standards and exceeds
+                    customer expectations.
+                </p>
+
+                <h3 class="text-xl font-semibold text-blue-900 mb-3">Why Choose Our Oil and Gas CNC Machining?</h3>
+                <p class="text-gray-700">
+                    State-of-the-art CNC machining technology achieving ±0.001" tolerances,
+                    experienced engineering team specializing in oil and gas applications,
+                    premium materials from 316L stainless steel to Inconel alloys,
+                    ISO-certified quality processes, fast turnaround times, and comprehensive
+                    testing ensure your precision machined components meet exact specifications
+                    every time.
+                </p>
+            </div>
+
+            <!-- RIGHT STATS CARD -->
+            <div class="bg-white shadow-xl rounded-xl p-8 space-y-6">
+                <div class="flex items-center space-x-3">
+                    <span class="text-blue-900 font-bold text-2xl">±0.001"</span>
+                    <p class="text-gray-600">Precision Tolerance Capability</p>
+                </div>
+                <div class="flex items-center space-x-3">
+                    <span class="text-blue-900 font-bold text-2xl">20+</span>
+                    <p class="text-gray-600">Years of CNC Machining Excellence</p>
+                </div>
+                <div class="flex items-center space-x-3">
+                    <span class="text-blue-900 font-bold text-2xl">12</span>
+                    <p class="text-gray-600">Specialized Component Categories</p>
+                </div>
+                <div class="flex items-center space-x-3">
+                    <span class="text-blue-900 font-bold text-2xl">100%</span>
+                    <p class="text-gray-600">Quality Assured Components</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-16 px-4 bg-white">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-blue-900 mb-8"> FREQUENTLY ASKED QUESTIONS </h2>
+                <p class="text-xl text-gray-600">Common questions about our oil and gas CNC machining services and
+                    precision components</p>
+            </div>
+            <div class="space-y-4"> <!-- FAQ Item -->
+                <div class="faq-item rounded-lg border border-blue-900 overflow-hidden"> <button type="button"
+                        class="faq-question w-full text-left p-6 flex justify-between items-center text-blue-900 font-medium bg-gray-100 hover:bg-gray-200 transition-colors">
+                        What materials and tolerances do you achieve with your oil and gas CNC machining? <span
+                            class="faq-icon text-2xl transition-transform duration-300">+</span> </button>
+                    <div class="faq-answer max-h-0 overflow-hidden transition-all duration-300 bg-white px-6">
+                        <p class="text-gray-800 pb-5"> All precision machined components come with comprehensive quality
+                            documentation including material certificates, dimensional inspection reports, surface
+                            finish verification, and full traceability documentation. </p>
+                    </div>
+                </div> <!-- FAQ Item 2 -->
+                <div class="faq-item rounded-lg border border-blue-900 overflow-hidden"> <button
+                        class="faq-question w-full text-left p-6 flex justify-between items-center text-blue-900 font-medium bg-gray-100 hover:bg-gray-200 transition-colors">
+                        What is your typical lead time for oil and gas CNC components? <span
+                            class="faq-icon text-2xl transition-transform duration-300">+</span> </button>
+                    <div class="faq-answer max-h-0 overflow-hidden transition-all duration-300 bg-white px-6">
+                        <p class="text-gray-800 pb-5"> Lead times vary based on complexity and quantity, but typically
+                            range from 2-6 weeks for standard precision machined components. We offer expedited services
+                            for urgent requirements and maintain inventory for commonly requested oil and gas CNC
+                            components. </p>
+                    </div>
+                </div> <!-- FAQ Item 3 -->
+                <div class="faq-item rounded-lg border border-blue-900 overflow-hidden"> <button
+                        class="faq-question w-full text-left p-6 flex justify-between items-center text-blue-900 font-medium bg-gray-100 hover:bg-gray-200 transition-colors">
+                        Can you handle both prototype and production quantities for oil and gas applications? <span
+                            class="faq-icon text-2xl transition-transform duration-300">+</span> </button>
+                    <div class="faq-answer max-h-0 overflow-hidden transition-all duration-300 bg-white px-6">
+                        <p class="text-gray-800 pb-5"> Absolutely. We accommodate everything from single prototype
+                            components to large production runs, with flexible CNC machining processes to meet your
+                            specific volume requirements for oil and gas applications. </p>
+                    </div>
+                </div> <!-- FAQ Item 4 -->
+                <div class="faq-item rounded-lg border border-blue-900 overflow-hidden"> <button
+                        class="faq-question w-full text-left p-6 flex justify-between items-center text-blue-900 font-medium bg-gray-100 hover:bg-gray-200 transition-colors">
+                        What industries do your precision machined components serve? <span
+                            class="faq-icon text-2xl transition-transform duration-300">+</span> </button>
+                    <div class="faq-answer max-h-0 overflow-hidden transition-all duration-300 bg-white px-6">
+                        <p class="text-gray-800 pb-5"> Our precision machined components primarily serve the oil and gas
+                            industries, including upstream drilling, midstream pipeline operations, downstream refining,
+                            offshore platforms, subsea operations, and LNG facilities. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--------Testimonials--------->
+
+    <section class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <h2 class="text-4xl font-bold text-blue-900 mb-4">Client Testimonials</h2>
+            <p class="text-gray-600 mb-12">
+                What our partners say about our oil and gas CNC machining and precision components
+            </p>
+
+            <div class="grid gap-8 md:grid-cols-3 sm:grid-cols-1 lg:grid-cols-3">
+
+                <!-- Testimonial 1 -->
+                <div class="bg-white rounded-xl shadow-2xl p-6 text-left flex flex-col items-start">
+                    <div class="flex items-center mb-4">
+                        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Sarah Mitchell"
+                            class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h3 class="font-semibold text-blue-900">Sarah Mitchell</h3>
+                            <p class="text-sm text-gray-500">Engineering Manager - Energy Corp</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 italic">
+                        "Fedele Autocore has been our go-to supplier for critical wellhead components for over three
+                        years. Their precision and reliability have never disappointed us, even under the tightest
+                        deadlines."
+                    </p>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="bg-white rounded-xl shadow-2xl p-6 text-left flex flex-col items-start">
+                    <div class="flex items-center mb-4">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="David Chen"
+                            class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h3 class="font-semibold text-blue-900">David Chen</h3>
+                            <p class="text-sm text-gray-500">Operations Director - Offshore Solutions Ltd</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 italic">
+                        "The quality of their pressure vessel components is outstanding. Every part meets our exact
+                        specifications, and their attention to detail gives us complete confidence in our operations."
+                    </p>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="bg-white rounded-xl shadow-2xl p-6 text-left flex flex-col items-start">
+                    <div class="flex items-center mb-4">
+                        <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Mark Thompson"
+                            class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h3 class="font-semibold text-blue-900">Mark Thompson</h3>
+                            <p class="text-sm text-gray-500">Project Manager - Deepwater Drilling Services</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 italic">
+                        "When we needed custom drilling components on short notice, Fedele Autocore delivered
+                        exceptional quality ahead of schedule. Their expertise in oil and gas applications is evident in
+                        every component."
+                    </p>
+                </div>
+
+                <!-- Testimonial 4 -->
+                <div class="bg-white rounded-xl shadow-2xl p-6 text-left flex flex-col items-start">
+                    <div class="flex items-center mb-4">
+                        <img src="https://randomuser.me/api/portraits/women/55.jpg" alt="Jennifer Walsh"
+                            class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h3 class="font-semibold text-blue-900">Jennifer Walsh</h3>
+                            <p class="text-sm text-gray-500">Procurement Lead - LNG Solutions</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 italic">
+                        "Working with Fedele Autocore has streamlined our supply chain significantly. Their consistent
+                        quality and reliable delivery have made them an invaluable partner for our LNG facility
+                        operations."
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!--Contact Information-->
+    <section class="py-10 px-4 bg-green-900 text-white">
+        <h3 class="text-xl md:text-xl  text-center text-gray-200 pb-8">Ready to discuss your oil and gas CNC machining
+            requirements?</h3>
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between gap-12">
+            <!-- Contact Information -->
+            <div class="md:w-1/2 space-y-6">
+                <h2 class="text-3xl font-bold text-white">Contact Information</h2>
+                <div class="flex items-start gap-3">
+                    <div class="w-2 h-2 bg-blue-500 rounded-full mt-2"></div>
+                    <div>
+                        <h3 class="font-bold text-white">Phone:</h3>
+                        <p>+1 (555) 123-4567</p>
+                    </div>
+                </div>
+                <div class="flex items-start gap-3">
+                    <div class="w-2 h-2 bg-blue-500 rounded-full mt-2"></div>
+                    <div>
+                        <h3 class="font-bold text-white">Email:</h3>
+                        <p>info@fedeleautocore.com</p>
+                    </div>
+                </div>
+                <div class="flex items-start gap-3">
+                    <div class="w-2 h-2 bg-blue-500 rounded-full mt-2"></div>
+                    <div>
+                        <h3 class="font-bold text-white">Business Hours:</h3>
+                        <p>Monday - Friday: 8:00 AM - 6:00 PM</p>
+                    </div>
+                </div>
+                <div class="flex items-start gap-3">
+                    <div class="w-2 h-2 bg-blue-500 rounded-full mt-2"></div>
+                    <div>
+                        <h3 class="font-bold text-white">Specialization:</h3>
+                        <p>Oil and Gas CNC Components</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Request a Quote Form -->
+            <div class="md:w-1/2 bg-green-800 p-6 rounded-lg shadow-lg">
+                <h2 class="text-2xl font-semibold mb-6">Request a Quote</h2>
+                <form id="quoteForm" class="space-y-4">
+                    <input type="text" placeholder="Full Name *" name="fullName" required
+                        class="w-full p-2 rounded border border-gray-400 text-black">
+                    <input type="text" placeholder="Company *" name="company" required
+                        class="w-full p-2 rounded border border-gray-400 text-black">
+                    <input type="email" placeholder="Email Address *" name="email" required
+                        class="w-full p-2 rounded border border-gray-400 text-black">
+                    <select name="componentType" required class="w-full p-2 rounded border border-gray-400 text-black">
+                        <option value="">Select component type...</option>
+                        <option>Valve</option>
+                        <option>Flange</option>
+                        <option>Pump</option>
+                        <option>Other</option>
+                    </select>
+                    <textarea name="projectDetails"
+                        placeholder="Please describe your component requirements, quantities, tolerances and timelines..."
+                        rows="4" class="w-full p-2 rounded border border-gray-400 text-black"></textarea>
+                    <button type="submit"
+                        class="w-full bg-blue-900 text-white py-2 rounded hover:bg-blue-700 transition">
+                        Send Quote Request
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-gray-300 py-8 px-4 sm:px-6 lg:px-8">
+        <!-- Bottom Section -->
+        <div class="max-w-7xl mx-auto mt-3 pt-8 border-t border-gray-700">
+            <div class="flex flex-col md:flex-row justify-center items-center">
+                <p class="text-center text-gray-400">
+                    <span class="block text-base md:text-lg mb-2">
+                        © 2025 Fedele Autocore. Precision CNC Components for <span class="text-orange-500"> Oil &
+                            Gas</span> Industry. All rights reserved.
+                    </span>
+                    <span class="block text-sm md:text-base">
+                        Excellence in precision manufacturing and oil and gas CNC machining.
+                    </span>
+                </p>
+
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

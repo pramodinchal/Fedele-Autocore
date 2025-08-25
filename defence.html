@@ -19,87 +19,164 @@
 
             <!-- Nav Links -->
             <nav class="hidden md:flex space-x-6 relative">
+
                 <!-- Home -->
                 <a href="index.html" class="font-bold text-gray-700 hover:text-orange-600">Home</a>
 
-                <!-- CNC Services Dropdown -->
-                <div class="relative group">
-                    <a href="services.html" class="font-bold text-gray-700 hover:text-orange-600">CNC Services</a>
-                    <div class="absolute left-0 mt-2 hidden group-hover:block bg-white shadow-lg rounded-lg">
-                        <ul class="py-2 w-56">
-                            <li><a href="#" class="block px-4 py-2  text-gray-700 hover:bg-orange-100">CNC Milling</a></li>
-                            <li><a href="#" class="block px-4 py-2  text-gray-700 hover:bg-orange-100">CNC Turning</a></li>
-                            <li><a href="#" class="block px-4 py-2  text-gray-700 hover:bg-orange-100">5-Axis Machining</a></li>
-                            <li><a href="#" class="block px-4 py-2  text-gray-700 hover:bg-orange-100">Precision Machining</a></li>
-                            <li><a href="#" class="block px-4 py-2  text-gray-700 hover:bg-orange-100">CNC Prototyping</a></li>
-                            <li><a href="#" class="block px-4 py-2  text-gray-700 hover:bg-orange-100">Custom Machining</a></li>
-                        </ul>
+                <!-- CNC Services -->
+                <div class="relative dropdown group">
+                    <a href="#" class="nav-link font-bold text-gray-700 hover:text-orange-600">CNC Services</a>
+                    <div
+                        class="menu absolute left-0 top-full hidden group-hover:block transition ease-out duration-150 z-50">
+                        <div class="bg-white shadow-lg rounded-lg overflow-hidden min-w-56">
+                            <ul class="py-2">
+                                <li><a href="#"
+                                        class="block px-4 py-2 text-gray-700 hover:text-orange-600 hover:bg-orange-100">CNC
+                                        Milling</a></li>
+                                <li><a href="#"
+                                        class="block px-4 py-2 text-gray-700 hover:text-orange-600 hover:bg-orange-100">CNC
+                                        Turning</a></li>
+                                <li><a href="#"
+                                        class="block px-4 py-2 text-gray-700 hover:text-orange-600 hover:bg-orange-100">5-Axis
+                                        Machining</a></li>
+                                <li><a href="#"
+                                        class="block px-4 py-2 text-gray-700 hover:text-orange-600 hover:bg-orange-100">Precision
+                                        Machining</a></li>
+                                <li><a href="#"
+                                        class="block px-4 py-2 text-gray-700 hover:text-orange-600 hover:bg-orange-100">CNC
+                                        Prototyping</a></li>
+                                <li><a href="#"
+                                        class="block px-4 py-2 text-gray-700 hover:text-orange-600 hover:bg-orange-100">Custom
+                                        Machining</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
 
-                <!-- Industries Dropdown -->
-                <div class="relative group">
-                    <a href="#industries" class="font-bold text-gray-700 hover:text-orange-600">Industries</a>
-                    <div class="absolute left-0 mt-2 hidden group-hover:block bg-white shadow-lg rounded-lg">
-                        <ul class="py-2 w-64">
-                            <li><a href="#" class="block px-4 py-2 text-gray-700  hover:bg-orange-100">Defence Industry</a></li>
-                            <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-orange-100">Oil & Gas Industry</a></li>
-                            <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-orange-100">Automotive Industry</a></li>
-                            <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-orange-100">Construction Industry</a></li>
-                            <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-orange-100">Energy Solutions</a></li>
-                            <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-orange-100">Hydraulic Power</a></li>
-                            <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-orange-100">Agricultural / Tractor</a></li>
-                            <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-orange-100">Aerospace Industry</a></li>
-                        </ul>
+                <!-- Industries -->
+                <div class="relative dropdown group">
+                    <a href="defence.html" class="nav-link font-bold text-gray-700 hover:text-orange-600">Industries</a>
+                    <div
+                        class="menu absolute left-0 top-full hidden group-hover:block transition ease-out duration-150 z-50">
+                        <div class="bg-white shadow-lg rounded-lg overflow-hidden min-w-64">
+                            <ul class="py-2">
+                                <li><a href="defence.html"
+                                        class="block px-4 py-2 text-gray-700 hover:text-orange-600 hover:bg-orange-100">Defence
+                                        Industry</a></li>
+                                <li><a href="oil&gas.html"
+                                        class="block px-4 py-2 text-gray-700 hover:text-orange-600 hover:bg-orange-100">Oil
+                                        & Gas Industry</a></li>
+                                <li><a href="#"
+                                        class="block px-4 py-2 text-gray-700 hover:text-orange-600 hover:bg-orange-100">Automotive
+                                        Industry</a></li>
+                                <li><a href="#"
+                                        class="block px-4 py-2 text-gray-700 hover:text-orange-600 hover:bg-orange-100">Construction
+                                        Industry</a></li>
+                                <li><a href="#"
+                                        class="block px-4 py-2 text-gray-700 hover:text-orange-600 hover:bg-orange-100">Energy
+                                        Solutions</a></li>
+                                <li><a href="#"
+                                        class="block px-4 py-2 text-gray-700 hover:text-orange-600 hover:bg-orange-100">Hydraulic
+                                        Power</a></li>
+                                <li><a href="#"
+                                        class="block px-4 py-2 text-gray-700 hover:text-orange-600 hover:bg-orange-100">Agricultural
+                                        / Tractor</a></li>
+                                <li><a href="#"
+                                        class="block px-4 py-2 text-gray-700 hover:text-orange-600 hover:bg-orange-100">Aerospace
+                                        Industry</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
 
-                <!-- Locations Dropdown -->
-                <div class="relative group">
-                    <a href="#locations" class="font-bold text-gray-700 hover:text-orange-600">Locations</a>
-                    <div class="absolute left-0 mt-2 hidden group-hover:block bg-white shadow-lg rounded-lg">
-                        <ul class="py-2 w-48">
-                            <li><a href="#" class="block px-4 py-2 text-gray-700  hover:bg-orange-100">Melbourne</a></li>
-                            <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-orange-100">Sydney</a></li>
-                            <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-orange-100">Perth</a></li>
-                            <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-orange-100">Adelaide</a></li>
-                            <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-orange-100">Brisbane</a></li>
-                            <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-orange-100">Darwin</a></li>
-                        </ul>
+                <!-- Locations -->
+                <div class="relative dropdown group">
+                    <a href="#locations" class="nav-link font-bold text-gray-700 hover:text-orange-600">Locations</a>
+                    <div
+                        class="menu absolute left-0 top-full hidden group-hover:block transition ease-out duration-150 z-50">
+                        <div class="bg-white shadow-lg rounded-lg overflow-hidden min-w-48">
+                            <ul class="py-2">
+                                <li><a href="#"
+                                        class="block px-4 py-2 text-gray-700 hover:text-orange-600 hover:bg-orange-100">Melbourne</a>
+                                </li>
+                                <li><a href="#"
+                                        class="block px-4 py-2 text-gray-700 hover:text-orange-600 hover:bg-orange-100">Sydney</a>
+                                </li>
+                                <li><a href="#"
+                                        class="block px-4 py-2 text-gray-700 hover:text-orange-600 hover:bg-orange-100">Perth</a>
+                                </li>
+                                <li><a href="#"
+                                        class="block px-4 py-2 text-gray-700 hover:text-orange-600 hover:bg-orange-100">Adelaide</a>
+                                </li>
+                                <li><a href="#"
+                                        class="block px-4 py-2 text-gray-700 hover:text-orange-600 hover:bg-orange-100">Brisbane</a>
+                                </li>
+                                <li><a href="#"
+                                        class="block px-4 py-2 text-gray-700 hover:text-orange-600 hover:bg-orange-100">Darwin</a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
 
-                <!-- Company Dropdown -->
-                <div class="relative group">
-                    <a href="#company" class="font-bold text-gray-700 hover:text-orange-600">Company</a>
-                    <div class="absolute left-0 mt-2 hidden group-hover:block bg-white shadow-lg rounded-lg">
-                        <ul class="py-2 w-52">
-                            <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-orange-100">About Us</a></li>
-                            <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-orange-100">Blog</a></li>
-                            <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-orange-100">Capabilities</a></li>
-                            <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-orange-100">Quality Standards</a></li>
-                        </ul>
+                <!-- Company -->
+                <div class="relative dropdown group">
+                    <a href="#company" class="nav-link font-bold text-gray-700 hover:text-orange-600">Company</a>
+                    <div
+                        class="menu absolute left-0 top-full hidden group-hover:block transition ease-out duration-150 z-50">
+                        <div class="bg-white shadow-lg rounded-lg overflow-hidden min-w-52">
+                            <ul class="py-2">
+                                <li><a href="#"
+                                        class="block px-4 py-2 text-gray-700 hover:text-orange-600 hover:bg-orange-100">About
+                                        Us</a></li>
+                                <li><a href="#"
+                                        class="block px-4 py-2 text-gray-700 hover:text-orange-600 hover:bg-orange-100">Blog</a>
+                                </li>
+                                <li><a href="#"
+                                        class="block px-4 py-2 text-gray-700 hover:text-orange-600 hover:bg-orange-100">Capabilities</a>
+                                </li>
+                                <li><a href="#"
+                                        class="block px-4 py-2 text-gray-700 hover:text-orange-600 hover:bg-orange-100">Quality
+                                        Standards</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
 
-                <!-- Components Dropdown -->
-                <div class="relative group">
-                    <a href="#components" class="font-bold text-gray-700 hover:text-orange-600">Components</a>
-                    <div class="absolute left-0 mt-2 hidden group-hover:block bg-white shadow-lg rounded-lg">
-                        <ul class="py-2 w-60">
-                            <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-orange-100">Drilling Components</a></li>
-                            <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-orange-100">Engine Components</a></li>
-                            <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-orange-100">Hydraulic Components</a></li>
-                            <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-orange-100">Turbine Components</a></li>
-                            <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-orange-100">Tractor Components</a></li>
-                            <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-orange-100">Military Components</a></li>
-                        </ul>
+                <!-- Components -->
+                <div class="relative dropdown group">
+                    <a href="#components" class="nav-link font-bold text-gray-700 hover:text-orange-600">Components</a>
+                    <div
+                        class="menu absolute left-0 top-full hidden group-hover:block transition ease-out duration-150 z-50">
+                        <div class="bg-white shadow-lg rounded-lg overflow-hidden min-w-60">
+                            <ul class="py-2">
+                                <li><a href="#"
+                                        class="block px-4 py-2 text-gray-700 hover:text-orange-600 hover:bg-orange-100">Drilling
+                                        Components</a></li>
+                                <li><a href="#"
+                                        class="block px-4 py-2 text-gray-700 hover:text-orange-600 hover:bg-orange-100">Engine
+                                        Components</a></li>
+                                <li><a href="#"
+                                        class="block px-4 py-2 text-gray-700 hover:text-orange-600 hover:bg-orange-100">Hydraulic
+                                        Components</a></li>
+                                <li><a href="#"
+                                        class="block px-4 py-2 text-gray-700 hover:text-orange-600 hover:bg-orange-100">Turbine
+                                        Components</a></li>
+                                <li><a href="#"
+                                        class="block px-4 py-2 text-gray-700 hover:text-orange-600 hover:bg-orange-100">Tractor
+                                        Components</a></li>
+                                <li><a href="#"
+                                        class="block px-4 py-2 text-gray-700 hover:text-orange-600 hover:bg-orange-100">Military
+                                        Components</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
 
                 <!-- Contact -->
-                <a href="#contact" class="font-bold text-gray-700 hover:text-blue-600">Contact</a>
+                <a href="#contact" class="font-bold text-gray-700 hover:text-orange-600">Contact</a>
             </nav>
+
 
             <!-- Buttons -->
             <div class="flex items-center space-x-4">
@@ -739,7 +816,8 @@
                                 class="fas fa-industry text-blue-900 text-xs mr-2"></i>Defence</a>
                     </li>
                     <li>
-                        <a href="#" class="text-sm hover:text-white transition-colors duration-300 flex items-center"><i
+                        <a href="oil&gas.html"
+                            class="text-sm hover:text-white transition-colors duration-300 flex items-center"><i
                                 class="fas fa-gas-pump text-blue-900 text-xs mr-2"></i>Oil &
                             Gas</a>
                     </li>
@@ -803,7 +881,7 @@
         <div class="max-w-7xl mx-auto mt-10 pt-8 border-t border-gray-700">
             <div class="flex flex-col md:flex-row justify-center items-center">
                 <p class="text-sm text-gray-400 mb-4 md:mb-0">
-                    &copy; 2024 Fedele Autocore. All rights reserved. 
+                    &copy; 2024 Fedele Autocore. All rights reserved.
                 </p>
                 <div class="flex flex-wrap justify-center gap-6">
                     <a href="#" class="text-sm text-blue-600 hover:text-white transition-colors duration-300"> Privacy

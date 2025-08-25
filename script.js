@@ -176,34 +176,87 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 // <---------------------------Common logic for all FAQs------------------------------------------------>
 document.addEventListener("DOMContentLoaded", () => {
-    const faqItems = document.querySelectorAll(".faq-item");
+  const faqQuestions = document.querySelectorAll(".faq-question");
 
-    faqItems.forEach(item => {
-      const question = item.querySelector(".faq-question");
-      const answer = item.querySelector(".faq-answer");
-      const icon = item.querySelector(".faq-icon");
+  faqQuestions.forEach((button) => {
+    button.addEventListener("click", () => {
+      const faqItem = button.parentElement;
+      const faqAnswer = faqItem.querySelector(".faq-answer");
+      const faqIcon = button.querySelector(".faq-icon");
 
-      question.addEventListener("click", () => {
-        const isOpen = !answer.classList.contains("max-h-0");
-
-        // Close all other FAQs
-        faqItems.forEach(i => {
-          i.querySelector(".faq-answer").classList.add("max-h-0");
-          i.querySelector(".faq-answer").classList.remove("max-h-96", "pb-5");
-          i.querySelector(".faq-icon").textContent = "+";
-          i.classList.remove("bg-gray-200");
-        });
-
-        // Toggle this one
-        if (!isOpen) {
-          answer.classList.remove("max-h-0");
-          answer.classList.add("max-h-96", "pb-5");
-          icon.textContent = "−";
-          item.classList.add("bg-gray-200");
+      // Close all other FAQs
+      document.querySelectorAll(".faq-item").forEach((item) => {
+        if (item !== faqItem) {
+          const answer = item.querySelector(".faq-answer");
+          const icon = item.querySelector(".faq-icon");
+          answer.style.maxHeight = null;
+          icon.textContent = "+";
         }
       });
+
+      // Toggle the clicked FAQ
+      if (faqAnswer.style.maxHeight && faqAnswer.style.maxHeight !== "0px") {
+        faqAnswer.style.maxHeight = null;
+        faqIcon.textContent = "+";
+      } else {
+        faqAnswer.style.maxHeight = faqAnswer.scrollHeight + "px";
+        faqIcon.textContent = "−";
+      }
     });
   });
+
+  // Optional: Smooth transition fix for resizing
+  window.addEventListener("resize", () => {
+    document.querySelectorAll(".faq-item .faq-answer").forEach((answer) => {
+      if (answer.style.maxHeight && answer.style.maxHeight !== "0px") {
+        answer.style.maxHeight = answer.scrollHeight + "px";
+      }
+    });
+  });
+});
+
+
+// <-------------------------nav hover logic --------------------------------->
+const dropdowns = document.querySelectorAll(".dropdown");
+
+  dropdowns.forEach(drop => {
+    const link = drop.querySelector(".nav-link");
+    const menu = drop.querySelector(".menu");
+
+    link.addEventListener("mouseenter", () => {
+      // close all dropdowns
+      dropdowns.forEach(d => d.querySelector(".menu").classList.add("hidden"));
+      // open this one
+      menu.classList.remove("hidden");
+    });
+
+    drop.addEventListener("mouseleave", () => {
+      menu.classList.add("hidden");
+    });
+  });
+
+//Contact Information
+document.getElementById('quoteForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    const formData = new FormData(e.target);
+    const data = [{
+        "Full Name": formData.get('fullName'),
+        "Company": formData.get('company'),
+        "Email": formData.get('email'),
+        "Component Type": formData.get('componentType'),
+        "Project Details": formData.get('projectDetails')
+    }];
+
+    const worksheet = XLSX.utils.json_to_sheet(data);
+    const workbook = XLSX.utils.book_new();
+    XLSX.utils.book_append_sheet(workbook, worksheet, "Quotes");
+
+    XLSX.writeFile(workbook, "QuoteRequests.xlsx");
+
+    alert("Your request has been saved!");
+    e.target.reset();
+});
 
 // Add CSS for active city button
 const style = document.createElement('style');

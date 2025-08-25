@@ -174,69 +174,37 @@ document.addEventListener('DOMContentLoaded', function () {
 
     window.addEventListener('scroll', debouncedScrollHandler);
 });
-
-document.addEventListener('DOMContentLoaded', function () {
-    const faqItems = document.querySelectorAll('.faq-item');
+// <---------------------------Common logic for all FAQs------------------------------------------------>
+document.addEventListener("DOMContentLoaded", () => {
+    const faqItems = document.querySelectorAll(".faq-item");
 
     faqItems.forEach(item => {
-        const question = item.querySelector('.faq-question');
-        const answer = item.querySelector('.faq-answer');
-        const icon = item.querySelector('.faq-icon i');
+      const question = item.querySelector(".faq-question");
+      const answer = item.querySelector(".faq-answer");
+      const icon = item.querySelector(".faq-icon");
 
-        question.addEventListener('click', () => {
-            // Toggle the active class on the answer
-            const isOpen = answer.classList.contains('max-h-0');
+      question.addEventListener("click", () => {
+        const isOpen = !answer.classList.contains("max-h-0");
 
-            // Close all other FAQs
-            document.querySelectorAll('.faq-answer').forEach(ans => {
-                ans.classList.add('max-h-0');
-                ans.classList.remove('max-h-96', 'pb-5');
-            });
-
-            document.querySelectorAll('.faq-icon i').forEach(ic => {
-                ic.classList.replace('fa-minus', 'fa-plus');
-            });
-
-            // Open this FAQ if it was closed
-            if (isOpen) {
-                answer.classList.remove('max-h-0');
-                answer.classList.add('max-h-96', 'pb-5');
-                icon.classList.replace('fa-plus', 'fa-minus');
-            }
+        // Close all other FAQs
+        faqItems.forEach(i => {
+          i.querySelector(".faq-answer").classList.add("max-h-0");
+          i.querySelector(".faq-answer").classList.remove("max-h-96", "pb-5");
+          i.querySelector(".faq-icon").textContent = "+";
+          i.classList.remove("bg-gray-200");
         });
-    });
-});
 
- function toggleFaq(button) {
-    const faqItem = button.parentElement;
-    const content = faqItem.querySelector(".faq-content");
-    const icon = button.querySelector("span");
-
-    content.classList.toggle("hidden");
-
-    if (!content.classList.contains("hidden")) {
-      icon.textContent = "−"; // open
-    } else {
-      icon.textContent = "+"; // closed
-    }
-  }
-
-
-
-const buttons = document.querySelectorAll(".toggle-btn");
-
-  buttons.forEach(btn => {
-    btn.addEventListener("click", () => {
-      // remove active styles from all
-      buttons.forEach(b => b.classList.remove("bg-white", "text-blue-900"));
-      buttons.forEach(b => b.classList.add("bg-transparent", "text-white"));
-
-      // add active styles to clicked button
-      btn.classList.remove("bg-transparent", "text-white");
-      btn.classList.add("bg-white", "text-blue-900");
+        // Toggle this one
+        if (!isOpen) {
+          answer.classList.remove("max-h-0");
+          answer.classList.add("max-h-96", "pb-5");
+          icon.textContent = "−";
+          item.classList.add("bg-gray-200");
+        }
+      });
     });
   });
-  
+
 // Add CSS for active city button
 const style = document.createElement('style');
 style.textContent = `

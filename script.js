@@ -1,3 +1,36 @@
+// mobile toggle
+  const menuToggle = document.getElementById("menu-toggle");
+  const mobileMenu = document.getElementById("mobile-menu");
+  const overlay = document.getElementById("overlay");
+
+  menuToggle.addEventListener("click", () => {
+    mobileMenu.classList.toggle("hidden");
+    mobileMenu.classList.toggle("translate-x-0");
+    mobileMenu.classList.toggle("translate-x-full");
+    overlay.classList.toggle("hidden");
+  });
+
+  overlay.addEventListener("click", () => {
+    closeMobileMenu();
+  });
+
+  function closeMobileMenu() {
+    mobileMenu.classList.add("hidden", "translate-x-full");
+    mobileMenu.classList.remove("translate-x-0");
+    overlay.classList.add("hidden");
+  }
+
+  // ✅ Allow only one dropdown open at a time
+  function toggleDropdown(id) {
+    const dropdowns = document.querySelectorAll("#mobile-menu ul ul");
+    dropdowns.forEach(dropdown => {
+      if (dropdown.id !== id) {
+        dropdown.classList.add("hidden"); // close others
+      }
+    });
+
+    document.getElementById(id).classList.toggle("hidden"); // toggle current
+  }
 // Mobile Menu Toggle
 document.addEventListener('DOMContentLoaded', function () {
     const mobileMenuToggle = document.getElementById('mobileMenuToggle');

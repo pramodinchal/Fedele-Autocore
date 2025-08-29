@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Fedele Autocore</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-white font-sans">
+    <!-- Header -->
+    <header class="fixed top-0 left-0 w-full bg-white shadow-md z-50">
+        <div class="max-w-7xl mx-auto flex items-center justify-between h-20 px-6">
+
+            <!-- Logo -->
+            <div class="flex items-center">
+                <img src="./Assets/fedele-logo-png.png" alt="Fedele Autocore Logo" class="h-12" />
+            </div>
+
+            <!-- Nav Links (Desktop) -->
+            <nav class="hidden md:flex space-x-6 relative">
+                <a href="index.html" class="font-bold text-gray-700 hover:text-orange-600">Home</a>
+
+                <!-- CNC Services -->
+                <div class="relative group">
+                    <a href="#" class="font-bold text-gray-700 hover:text-orange-600">CNC Services</a>
+                    <div class="absolute left-0 top-full hidden group-hover:block z-50">
+                        <div class="bg-white shadow-lg rounded-lg min-w-56">
+                            <ul class="py-2">
+                                <li><a href="#" class="block px-4 py-2 hover:bg-orange-100 hover:text-orange-600">CNC
+                                        Milling</a></li>
+                                <li><a href="#" class="block px-4 py-2 hover:bg-orange-100 hover:text-orange-600">CNC
+                                        Turning</a></li>
+                                <li><a href="#" class="block px-4 py-2 hover:bg-orange-100 hover:text-orange-600">5-Axis
+                                        Machining</a></li>
+                                <li><a href="#"
+                                        class="block px-4 py-2 hover:bg-orange-100 hover:text-orange-600">Precision
+                                        Machining</a></li>
+                                <li><a href="#" class="block px-4 py-2 hover:bg-orange-100 hover:text-orange-600">CNC
+                                        Prototyping</a></li>
+                                <li><a href="custom-machining.html"
+                                        class="block px-4 py-2 hover:bg-orange-100 hover:text-orange-600">Custom
+                                        Machining</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Industries -->
+                <div class="relative group">
+                    <a href="#" class="font-bold text-gray-700 hover:text-orange-600">Industries</a>
+                    <div class="absolute left-0 top-full hidden group-hover:block z-50">
+                        <div class="bg-white shadow-lg rounded-lg min-w-64">
+                            <ul class="py-2">
+                                <li><a href="defence.html"
+                                        class="block px-4 py-2 hover:bg-orange-100 hover:text-orange-600">Defence
+                                        Industry</a></li>
+                                <li><a href="oil&gas.html"
+                                        class="block px-4 py-2 hover:bg-orange-100 hover:text-orange-600">Oil & Gas
+                                        Industry</a></li>
+                                <li><a href="automotive.html"
+                                        class="block px-4 py-2 hover:bg-orange-100 hover:text-orange-600">Automotive
+                                        Industry</a></li>
+                                <li><a href="#"
+                                        class="block px-4 py-2 hover:bg-orange-100 hover:text-orange-600">Construction
+                                        Industry</a></li>
+                                <li><a href="#" class="block px-4 py-2 hover:bg-orange-100 hover:text-orange-600">Energy
+                                        Solutions</a></li>
+                                <li><a href="#"
+                                        class="block px-4 py-2 hover:bg-orange-100 hover:text-orange-600">Hydraulic
+                                        Power</a></li>
+                                <li><a href="#"
+                                        class="block px-4 py-2 hover:bg-orange-100 hover:text-orange-600">Agricultural /
+                                        Tractor</a></li>
+                                <li><a href="#"
+                                        class="block px-4 py-2 hover:bg-orange-100 hover:text-orange-600">Aerospace
+                                        Industry</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Other Links -->
+                <!-- Locations -->
+                <div class="relative dropdown group">
+                    <a href="#locations" class="nav-link font-bold text-gray-700 hover:text-orange-600">Locations</a>
+                    <div
+                        class="menu absolute left-0 top-full hidden group-hover:block transition ease-out duration-150 z-50">
+                        <div class="bg-white shadow-lg rounded-lg overflow-hidden min-w-48">
+                            <ul class="py-2">
+                                <li><a href="#"
+                                        class="block px-4 py-2 text-gray-700 hover:text-orange-600 hover:bg-orange-100">Melbourne</a>
+                                </li>
+                                <li><a href="#"
+                                        class="block px-4 py-2 text-gray-700 hover:text-orange-600 hover:bg-orange-100">Sydney</a>
+                                </li>
+                                <li><a href="#"
+                                        class="block px-4 py-2 text-gray-700 hover:text-orange-600 hover:bg-orange-100">Perth</a>
+                                </li>
+                                <li><a href="#"
+                                        class="block px-4 py-2 text-gray-700 hover:text-orange-600 hover:bg-orange-100">Adelaide</a>
+                                </li>
+                                <li><a href="#"
+                                        class="block px-4 py-2 text-gray-700 hover:text-orange-600 hover:bg-orange-100">Brisbane</a>
+                                </li>
+                                <li><a href="#"
+                                        class="block px-4 py-2 text-gray-700 hover:text-orange-600 hover:bg-orange-100">Darwin</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- Company -->
+                <div class="relative dropdown group">
+                    <a href="#company" class="nav-link font-bold text-gray-700 hover:text-orange-600">Company</a>
+                    <div
+                        class="menu absolute left-0 top-full hidden group-hover:block transition ease-out duration-150 z-50">
+                        <div class="bg-white shadow-lg rounded-lg overflow-hidden min-w-52">
+                            <ul class="py-2">
+                                <li><a href="#"
+                                        class="block px-4 py-2 text-gray-700 hover:text-orange-600 hover:bg-orange-100">About
+                                        Us</a></li>
+                                <li><a href="#"
+                                        class="block px-4 py-2 text-gray-700 hover:text-orange-600 hover:bg-orange-100">Blog</a>
+                                </li>
+                                <li><a href="#"
+                                        class="block px-4 py-2 text-gray-700 hover:text-orange-600 hover:bg-orange-100">Capabilities</a>
+                                </li>
+                                <li><a href="#"
+                                        class="block px-4 py-2 text-gray-700 hover:text-orange-600 hover:bg-orange-100">Quality
+                                        Standards</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Components -->
+                <div class="relative dropdown group">
+                    <a href="#components" class="nav-link font-bold text-gray-700 hover:text-orange-600">Components</a>
+                    <div
+                        class="menu absolute left-0 top-full hidden group-hover:block transition ease-out duration-150 z-50">
+                        <div class="bg-white shadow-lg rounded-lg overflow-hidden min-w-60">
+                            <ul class="py-2">
+                                <li><a href="#"
+                                        class="block px-4 py-2 text-gray-700 hover:text-orange-600 hover:bg-orange-100">Drilling
+                                        Components</a></li>
+                                <li><a href="#"
+                                        class="block px-4 py-2 text-gray-700 hover:text-orange-600 hover:bg-orange-100">Engine
+                                        Components</a></li>
+                                <li><a href="#"
+                                        class="block px-4 py-2 text-gray-700 hover:text-orange-600 hover:bg-orange-100">Hydraulic
+                                        Components</a></li>
+                                <li><a href="#"
+                                        class="block px-4 py-2 text-gray-700 hover:text-orange-600 hover:bg-orange-100">Turbine
+                                        Components</a></li>
+                                <li><a href="#"
+                                        class="block px-4 py-2 text-gray-700 hover:text-orange-600 hover:bg-orange-100">Tractor
+                                        Components</a></li>
+                                <li><a href="#"
+                                        class="block px-4 py-2 text-gray-700 hover:text-orange-600 hover:bg-orange-100">Military
+                                        Components</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="contact.html" class="font-bold text-gray-700 hover:text-orange-600">Contact</a>
+            </nav>
+
+            <!-- Buttons -->
+            <div class="flex items-center space-x-4">
+                <button
+                    class="hidden md:inline-block bg-orange-600 text-white px-4 py-2 rounded-lg shadow hover:bg-blue-900 transition">
+                    Get Quote
+                </button>
+                <!-- Mobile Menu Button -->
+                <button id="menu-toggle" class="md:hidden text-gray-700 text-3xl focus:outline-none">
+                    ☰
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Nav (Right Sidebar) -->
+        <nav id="mobile-menu" class="hidden fixed top-0 right-0 h-full w-[50%] md:w-[20%] bg-white shadow-lg z-50 
+              transform translate-x-full transition-transform duration-300">
+            <ul class="flex flex-col space-y-4 p-6 overflow-y-auto">
+                <li><a href="index.html" class="font-bold text-gray-700 hover:text-orange-600">Home</a></li>
+
+                <!-- CNC Services -->
+                <li>
+                    <button
+                        class="w-full text-left font-bold text-gray-700 hover:text-orange-600 flex justify-between items-center"
+                        onclick="toggleDropdown('servicesDropdown')">
+                        CNC Services <span>+</span>
+                    </button>
+                    <ul id="servicesDropdown" class="hidden pl-4 space-y-2">
+                        <li><a href="#">CNC Milling</a></li>
+                        <li><a href="#">CNC Turning</a></li>
+                        <li><a href="#">5-Axis Machining</a></li>
+                        <li><a href="#">Precision Machining</a></li>
+                        <li><a href="#">CNC Prototyping</a></li>
+                        <li><a href="custom-machining.html">Custom Machining</a></li>
+                    </ul>
+                </li>
+
+                <!-- Industries -->
+                <li>
+                    <button
+                        class="w-full text-left font-bold text-gray-700 hover:text-orange-600 flex justify-between items-center"
+                        onclick="toggleDropdown('industriesDropdown')">
+                        Industries <span>+</span>
+                    </button>
+                    <ul id="industriesDropdown" class="hidden pl-4 space-y-2">
+                        <li><a href="defence.html">Defence Industry</a></li>
+                        <li><a href="oil&gas.html">Oil & Gas Industry</a></li>
+                        <li><a href="automotive.html">Automotive Industry</a></li>
+                        <li><a href="#">Construction Industry</a></li>
+                        <li><a href="#">Energy Solutions</a></li>
+                        <li><a href="#">Hydraulic Power</a></li>
+                        <li><a href="#">Agricultural / Tractor</a></li>
+                        <li><a href="#">Aerospace Industry</a></li>
+                    </ul>
+                </li>
+
+                <!-- Company -->
+                <li>
+                    <button
+                        class="w-full text-left font-bold text-gray-700 hover:text-orange-600 flex justify-between items-center"
+                        onclick="toggleDropdown('companyDropdown')">
+                        Company <span>+</span>
+                    </button>
+                    <ul id="companyDropdown" class="hidden pl-4 space-y-2">
+                        <li><a href="about-us.html">About Us</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Capabilities</a></li>
+                        <li><a href="#">Quality Standards</a></li>
+                    </ul>
+                </li>
+
+                <!-- Components -->
+                <li>
+                    <button
+                        class="w-full text-left font-bold text-gray-700 hover:text-orange-600 flex justify-between items-center"
+                        onclick="toggleDropdown('componentsDropdown')">
+                        Components <span>+</span>
+                    </button>
+                    <ul id="componentsDropdown" class="hidden pl-4 space-y-2">
+                        <li><a href="#">Drilling Components</a></li>
+                        <li><a href="#">Engine Components</a></li>
+                        <li><a href="#">Hydraulic Components</a></li>
+                        <li><a href="#">Turbine Components</a></li>
+                        <li><a href="#">Tractor Components</a></li>
+                        <li><a href="#">Military Components</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="#locations" class="font-bold text-gray-700 hover:text-orange-600">Locations</a></li>
+                <li><a href="contact.html" class="font-bold text-gray-700 hover:text-orange-600">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- Dark Overlay -->
+        <div id="overlay" class="hidden fixed inset-0 bg-black/50 z-40"></div>
+    </header>
+
+
+    <!-- Hero Section -->
+    <section id="home" class="relative min-h-screen flex items-center justify-center bg-cover bg-center bg-no-repeat"
+        style="background-image: url('Assets/contact-us.jpg');">
+
+        <!-- Dark Overlay -->
+        <div class="absolute inset-0 bg-gradient-to-r from-blue-900/80 via-blue-900/60 to-blue-900/40"></div>
+
+        <!-- Content -->
+        <div class="relative z-10 max-w-4xl mx-auto px-6 text-center">
+            <h1 class="text-orange-500 text-4xl md:text-6xl font-extrabold mb-4 drop-shadow-lg">
+                Contact Us
+            </h1>
+            <p class="text-white font-semibold md:text-xl leading-relaxed drop-shadow-lg">
+                We are committed to delivering <span class="text-orange-400">innovative solutions</span>
+                with <span class="text-blue-200">excellence</span> and passion.
+            </p>
+        </div>
+    </section>
+
+    <!-- Contact Information + Form Section -->
+    <section class="py-10 px-4 bg-white text-white">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between gap-12">
+            <!-- Contact Information -->
+            <div class="md:w-1/2 space-y-6">
+                <h2 class="text-3xl font-bold text-blue-900">Contact Information</h2>
+                <div class="flex items-start gap-3">
+                    <div class="w-2 h-2 bg-blue-500 rounded-full mt-2"></div>
+                    <div class="text-blue-900">
+                        <h3 class="font-bold text-blue-900">Phone:</h3>
+                        <p>+1 (555) 123-4567</p>
+                    </div>
+                </div>
+                <div class="flex items-start gap-3">
+                    <div class="w-2 h-2 bg-blue-500 rounded-full mt-2"></div>
+                    <div class="text-blue-900">
+                        <h3 class="font-bold text-blue-900">Email:</h3>
+                        <p>info@fedeleautocore.com</p>
+                    </div>
+                </div>
+                <div class="flex items-start gap-3">
+                    <div class="w-2 h-2 bg-blue-500 rounded-full mt-2"></div>
+                    <div class="text-blue-900">
+                        <h3 class="font-bold text-blue-900">Business Hours:</h3>
+                        <p>Monday - Friday: 8:00 AM - 6:00 PM</p>
+                    </div>
+                </div>
+                <div class="flex items-start gap-3">
+                    <div class="w-2 h-2 bg-blue-500 rounded-full mt-2"></div>
+                    <div class="text-blue-900">
+                        <h3 class="font-bold text-blue-900">Specialization:</h3>
+                        <p>Oil and Gas CNC Components</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Request a Quote Form -->
+            <div class="md:w-1/2 bg-gray-500 p-6 rounded-lg shadow-lg">
+                <h2 class="text-2xl font-semibold mb-6 text-gray-800">Request a Quote</h2>
+                <form id="quoteForm" class="space-y-4">
+                    <input type="text" placeholder="Full Name *" name="fullName" required
+                        class="w-full p-2 rounded border border-gray-400 text-black">
+                    <input type="text" placeholder="Company *" name="company" required
+                        class="w-full p-2 rounded border border-gray-400 text-black">
+                    <input type="email" placeholder="Email Address *" name="email" required
+                        class="w-full p-2 rounded border border-gray-400 text-black">
+                    <select name="componentType" required class="w-full p-2 rounded border border-gray-400 text-black">
+                        <option value="">Select component type...</option>
+                        <option>Valve</option>
+                        <option>Flange</option>
+                        <option>Pump</option>
+                        <option>Other</option>
+                    </select>
+                    <textarea name="projectDetails"
+                        placeholder="Please describe your component requirements, quantities, tolerances and timelines..."
+                        rows="4" class="w-full p-2 rounded border border-gray-400 text-black"></textarea>
+                    <button type="submit"
+                        class="w-full bg-blue-900 text-white py-2 rounded hover:bg-blue-700 transition">
+                        Send Quote Request
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-gray-300 py-12 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-5 gap-8">
+            <!-- Column 1 -->
+            <div>
+                <h3 class="text-orange-600 font-bold text-lg mb-4">Fedele Autocore</h3>
+                <p class="text-sm mb-4">
+                    Australia's leading CNC machining specialists serving major industries
+                    across Melbourne, Sydney, Perth, Adelaide, Brisbane and Darwin.
+                </p>
+                <div class="space-y-2">
+                    <p class="text-sm flex items-start">
+                        <span class="font-semibold mr-2">Phone:</span> 1300 CNC TECH
+                    </p>
+                    <p class="text-sm flex items-start">
+                        <span class="font-semibold mr-2">Email:</span>
+                        info@fedeleautocore.com.au
+                    </p>
+                    <p class="text-sm flex items-start">
+                        <span class="font-semibold mr-2">ABN:</span> 12 345 678 901
+                    </p>
+                </div>
+            </div>
+
+            <!-- Column 2 -->
+            <div>
+                <h3 class="text-orange-600 font-bold text-lg mb-4">CNC Services</h3>
+                <ul class="space-y-3">
+                    <li>
+                        <a href="#"
+                            class="text-sm hover:text-white transition-colors duration-300 flex items-center">CNC
+                            Machining</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="text-sm hover:text-white transition-colors duration-300 flex items-center">CNC
+                            Turning</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="text-sm hover:text-white transition-colors duration-300 flex items-center">CNC
+                            Milling</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="text-sm hover:text-white transition-colors duration-300 flex items-center">5-Axis
+                            Machining</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="text-sm hover:text-white transition-colors duration-300 flex items-center">Precision
+                            Machining</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="text-sm hover:text-white transition-colors duration-300 flex items-center">CNC
+                            Prototyping</a>
+                    </li>
+                    <li>
+                        <a href="custom-machining.html"
+                            class="text-sm hover:text-white transition-colors duration-300 flex items-center">Custom
+                            Machining</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Column 3 -->
+            <div>
+                <h3 class="text-orange-600 font-bold text-lg mb-4">Australian Locations</h3>
+                <ul class="space-y-3">
+                    <li>
+                        <a href="#"
+                            class="text-sm hover:text-white transition-colors duration-300 flex items-center">Melbourne
+                            CNC</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="text-sm hover:text-white transition-colors duration-300 flex items-center">Sydney
+                            CNC</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="text-sm hover:text-white transition-colors duration-300 flex items-center">Perth
+                            CNC</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="text-sm hover:text-white transition-colors duration-300 flex items-center">Adelaide
+                            CNC</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="text-sm hover:text-white transition-colors duration-300 flex items-center">Brisbane
+                            CNC</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="text-sm hover:text-white transition-colors duration-300 flex items-center">Darwin
+                            CNC</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Column 4 -->
+            <div>
+                <h3 class="text-orange-600 font-bold text-lg mb-4">Industries Served</h3>
+                <ul class="space-y-3">
+                    <li>
+                        <a href="#"
+                            class="text-sm hover:text-white transition-colors duration-300 flex items-center">Defence</a>
+                    </li>
+                    <li>
+                        <a href="oil&gas.html"
+                            class="text-sm hover:text-white transition-colors duration-300 flex items-center">Oil &
+                            Gas</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="text-sm hover:text-white transition-colors duration-300 flex items-center">Aerospace</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="text-sm hover:text-white transition-colors duration-300 flex items-center">Automotive</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="text-sm hover:text-white transition-colors duration-300 flex items-center">Manufacturing</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="text-sm hover:text-white transition-colors duration-300 flex items-center">Medical</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Column 5 -->
+            <div>
+                <h3 class="text-orange-600 font-bold text-lg mb-4">Company</h3>
+                <ul class="space-y-3">
+                    <li>
+                        <a href="about-us.html"
+                            class="text-sm hover:text-white transition-colors duration-300 flex items-center">About
+                            Us</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="text-sm hover:text-white transition-colors duration-300 flex items-center">Industry
+                            Blog</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="text-sm hover:text-white transition-colors duration-300 flex items-center">Capabilities</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="text-sm hover:text-white transition-colors duration-300 flex items-center">Quality
+                            Standards</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="text-sm hover:text-white transition-colors duration-300 flex items-center">Emerging
+                            Services</a>
+                    </li>
+                    <li>
+                        <a href="contact.html"
+                            class="text-sm hover:text-white transition-colors duration-300 flex items-center">Contact
+                            Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Bottom Section -->
+        <div class="max-w-7xl mx-auto mt-10 pt-8 border-t border-gray-700">
+            <div class="flex flex-col md:flex-row justify-center items-center">
+                <p class="text-sm text-gray-400 mb-4 md:mb-0">
+                    &copy; 2024 Fedele Autocore. All rights reserved.
+                </p>
+                <div class="flex flex-wrap justify-center gap-6">
+                    <a href="#" class="text-sm text-blue-600 hover:text-white transition-colors duration-300"> Privacy
+                        Policy</a>
+                    <a href="#" class="text-sm text-blue-600 hover:text-white transition-colors duration-300">Terms of
+                        Service</a>
+                    <a href="#"
+                        class="text-sm text-blue-600 hover:text-white transition-colors duration-300">Sitemap</a>
+                    <a href="#"
+                        class="text-sm text-blue-600 hover:text-white transition-colors duration-300">Careers</a>
+                    <a href="#" class="text-sm text-blue-600 hover:text-white transition-colors duration-300">Supplier
+                        Portal</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

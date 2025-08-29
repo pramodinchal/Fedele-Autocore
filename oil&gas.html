@@ -9,43 +9,38 @@
 </head>
 
 <body class="bg-gray-50">
+    <!-- Header -->
     <header class="fixed top-0 left-0 w-full bg-white shadow-md z-50">
         <div class="max-w-7xl mx-auto flex items-center justify-between h-20 px-6">
+
             <!-- Logo -->
             <div class="flex items-center">
-                <img src="/Assets/fedele-logo-png.png" alt="Fedele Autocore Logo" class="h-12" />
+                <img src="./Assets/fedele-logo-png.png" alt="Fedele Autocore Logo" class="h-12" />
             </div>
 
-            <!-- Nav Links -->
+            <!-- Nav Links (Desktop) -->
             <nav class="hidden md:flex space-x-6 relative">
-
-                <!-- Home -->
                 <a href="index.html" class="font-bold text-gray-700 hover:text-orange-600">Home</a>
 
                 <!-- CNC Services -->
-                <div class="relative dropdown group">
-                    <a href="#" class="nav-link font-bold text-gray-700 hover:text-orange-600">CNC Services</a>
-                    <div
-                        class="menu absolute left-0 top-full hidden group-hover:block transition ease-out duration-150 z-50">
-                        <div class="bg-white shadow-lg rounded-lg overflow-hidden min-w-56">
+                <div class="relative group">
+                    <a href="#" class="font-bold text-gray-700 hover:text-orange-600">CNC Services</a>
+                    <div class="absolute left-0 top-full hidden group-hover:block z-50">
+                        <div class="bg-white shadow-lg rounded-lg min-w-56">
                             <ul class="py-2">
-                                <li><a href="#"
-                                        class="block px-4 py-2 text-gray-700 hover:text-orange-600 hover:bg-orange-100">CNC
+                                <li><a href="#" class="block px-4 py-2 hover:bg-orange-100 hover:text-orange-600">CNC
                                         Milling</a></li>
-                                <li><a href="#"
-                                        class="block px-4 py-2 text-gray-700 hover:text-orange-600 hover:bg-orange-100">CNC
+                                <li><a href="#" class="block px-4 py-2 hover:bg-orange-100 hover:text-orange-600">CNC
                                         Turning</a></li>
-                                <li><a href="#"
-                                        class="block px-4 py-2 text-gray-700 hover:text-orange-600 hover:bg-orange-100">5-Axis
+                                <li><a href="#" class="block px-4 py-2 hover:bg-orange-100 hover:text-orange-600">5-Axis
                                         Machining</a></li>
                                 <li><a href="#"
-                                        class="block px-4 py-2 text-gray-700 hover:text-orange-600 hover:bg-orange-100">Precision
+                                        class="block px-4 py-2 hover:bg-orange-100 hover:text-orange-600">Precision
                                         Machining</a></li>
-                                <li><a href="#"
-                                        class="block px-4 py-2 text-gray-700 hover:text-orange-600 hover:bg-orange-100">CNC
+                                <li><a href="#" class="block px-4 py-2 hover:bg-orange-100 hover:text-orange-600">CNC
                                         Prototyping</a></li>
                                 <li><a href="custom-machining.html"
-                                        class="block px-4 py-2 text-gray-700 hover:text-orange-600 hover:bg-orange-100">Custom
+                                        class="block px-4 py-2 hover:bg-orange-100 hover:text-orange-600">Custom
                                         Machining</a></li>
                             </ul>
                         </div>
@@ -53,41 +48,40 @@
                 </div>
 
                 <!-- Industries -->
-                <div class="relative dropdown group">
-                    <a href="defence.html" class="nav-link font-bold text-gray-700 hover:text-orange-600">Industries</a>
-                    <div
-                        class="menu absolute left-0 top-full hidden group-hover:block transition ease-out duration-150 z-50">
-                        <div class="bg-white shadow-lg rounded-lg overflow-hidden min-w-64">
+                <div class="relative group">
+                    <a href="#" class="font-bold text-gray-700 hover:text-orange-600">Industries</a>
+                    <div class="absolute left-0 top-full hidden group-hover:block z-50">
+                        <div class="bg-white shadow-lg rounded-lg min-w-64">
                             <ul class="py-2">
                                 <li><a href="defence.html"
-                                        class="block px-4 py-2 text-gray-700 hover:text-orange-600 hover:bg-orange-100">Defence
+                                        class="block px-4 py-2 hover:bg-orange-100 hover:text-orange-600">Defence
                                         Industry</a></li>
                                 <li><a href="oil&gas.html"
-                                        class="block px-4 py-2 text-gray-700 hover:text-orange-600 hover:bg-orange-100">Oil
-                                        & Gas Industry</a></li>
-                                <li><a href="#"
-                                        class="block px-4 py-2 text-gray-700 hover:text-orange-600 hover:bg-orange-100">Automotive
+                                        class="block px-4 py-2 hover:bg-orange-100 hover:text-orange-600">Oil & Gas
+                                        Industry</a></li>
+                                <li><a href="automotive.html"
+                                        class="block px-4 py-2 hover:bg-orange-100 hover:text-orange-600">Automotive
                                         Industry</a></li>
                                 <li><a href="#"
-                                        class="block px-4 py-2 text-gray-700 hover:text-orange-600 hover:bg-orange-100">Construction
+                                        class="block px-4 py-2 hover:bg-orange-100 hover:text-orange-600">Construction
                                         Industry</a></li>
-                                <li><a href="#"
-                                        class="block px-4 py-2 text-gray-700 hover:text-orange-600 hover:bg-orange-100">Energy
+                                <li><a href="#" class="block px-4 py-2 hover:bg-orange-100 hover:text-orange-600">Energy
                                         Solutions</a></li>
                                 <li><a href="#"
-                                        class="block px-4 py-2 text-gray-700 hover:text-orange-600 hover:bg-orange-100">Hydraulic
+                                        class="block px-4 py-2 hover:bg-orange-100 hover:text-orange-600">Hydraulic
                                         Power</a></li>
                                 <li><a href="#"
-                                        class="block px-4 py-2 text-gray-700 hover:text-orange-600 hover:bg-orange-100">Agricultural
-                                        / Tractor</a></li>
+                                        class="block px-4 py-2 hover:bg-orange-100 hover:text-orange-600">Agricultural /
+                                        Tractor</a></li>
                                 <li><a href="#"
-                                        class="block px-4 py-2 text-gray-700 hover:text-orange-600 hover:bg-orange-100">Aerospace
+                                        class="block px-4 py-2 hover:bg-orange-100 hover:text-orange-600">Aerospace
                                         Industry</a></li>
                             </ul>
                         </div>
                     </div>
                 </div>
 
+                <!-- Other Links -->
                 <!-- Locations -->
                 <div class="relative dropdown group">
                     <a href="#locations" class="nav-link font-bold text-gray-700 hover:text-orange-600">Locations</a>
@@ -117,7 +111,6 @@
                         </div>
                     </div>
                 </div>
-
                 <!-- Company -->
                 <div class="relative dropdown group">
                     <a href="#company" class="nav-link font-bold text-gray-700 hover:text-orange-600">Company</a>
@@ -172,10 +165,8 @@
                     </div>
                 </div>
 
-                <!-- Contact -->
-                <a href="#contact" class="font-bold text-gray-700 hover:text-orange-600">Contact</a>
+                <a href="contact.html" class="font-bold text-gray-700 hover:text-orange-600">Contact</a>
             </nav>
-
 
             <!-- Buttons -->
             <div class="flex items-center space-x-4">
@@ -183,12 +174,96 @@
                     class="hidden md:inline-block bg-orange-600 text-white px-4 py-2 rounded-lg shadow hover:bg-blue-900 transition">
                     Get Quote
                 </button>
-                <button class="md:hidden text-gray-700 text-2xl focus:outline-none">
-                    <i class="fas fa-bars"></i>
+                <!-- Mobile Menu Button -->
+                <button id="menu-toggle" class="md:hidden text-gray-700 text-3xl focus:outline-none">
+                    ☰
                 </button>
             </div>
         </div>
+
+        <!-- Mobile Nav (Right Sidebar) -->
+        <nav id="mobile-menu" class="hidden fixed top-0 right-0 h-full w-[50%] md:w-[20%] bg-white shadow-lg z-50 
+              transform translate-x-full transition-transform duration-300">
+            <ul class="flex flex-col space-y-4 p-6 overflow-y-auto">
+                <li><a href="index.html" class="font-bold text-gray-700 hover:text-orange-600">Home</a></li>
+
+                <!-- CNC Services -->
+                <li>
+                    <button
+                        class="w-full text-left font-bold text-gray-700 hover:text-orange-600 flex justify-between items-center"
+                        onclick="toggleDropdown('servicesDropdown')">
+                        CNC Services <span>+</span>
+                    </button>
+                    <ul id="servicesDropdown" class="hidden pl-4 space-y-2">
+                        <li><a href="#">CNC Milling</a></li>
+                        <li><a href="#">CNC Turning</a></li>
+                        <li><a href="#">5-Axis Machining</a></li>
+                        <li><a href="#">Precision Machining</a></li>
+                        <li><a href="#">CNC Prototyping</a></li>
+                        <li><a href="custom-machining.html">Custom Machining</a></li>
+                    </ul>
+                </li>
+
+                <!-- Industries -->
+                <li>
+                    <button
+                        class="w-full text-left font-bold text-gray-700 hover:text-orange-600 flex justify-between items-center"
+                        onclick="toggleDropdown('industriesDropdown')">
+                        Industries <span>+</span>
+                    </button>
+                    <ul id="industriesDropdown" class="hidden pl-4 space-y-2">
+                        <li><a href="defence.html">Defence Industry</a></li>
+                        <li><a href="oil&gas.html">Oil & Gas Industry</a></li>
+                        <li><a href="automotive.html">Automotive Industry</a></li>
+                        <li><a href="#">Construction Industry</a></li>
+                        <li><a href="#">Energy Solutions</a></li>
+                        <li><a href="#">Hydraulic Power</a></li>
+                        <li><a href="#">Agricultural / Tractor</a></li>
+                        <li><a href="#">Aerospace Industry</a></li>
+                    </ul>
+                </li>
+
+                <!-- Company -->
+                <li>
+                    <button
+                        class="w-full text-left font-bold text-gray-700 hover:text-orange-600 flex justify-between items-center"
+                        onclick="toggleDropdown('companyDropdown')">
+                        Company <span>+</span>
+                    </button>
+                    <ul id="companyDropdown" class="hidden pl-4 space-y-2">
+                        <li><a href="about-us.html">About Us</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Capabilities</a></li>
+                        <li><a href="#">Quality Standards</a></li>
+                    </ul>
+                </li>
+
+                <!-- Components -->
+                <li>
+                    <button
+                        class="w-full text-left font-bold text-gray-700 hover:text-orange-600 flex justify-between items-center"
+                        onclick="toggleDropdown('componentsDropdown')">
+                        Components <span>+</span>
+                    </button>
+                    <ul id="componentsDropdown" class="hidden pl-4 space-y-2">
+                        <li><a href="#">Drilling Components</a></li>
+                        <li><a href="#">Engine Components</a></li>
+                        <li><a href="#">Hydraulic Components</a></li>
+                        <li><a href="#">Turbine Components</a></li>
+                        <li><a href="#">Tractor Components</a></li>
+                        <li><a href="#">Military Components</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="#locations" class="font-bold text-gray-700 hover:text-orange-600">Locations</a></li>
+                <li><a href="contact.html" class="font-bold text-gray-700 hover:text-orange-600">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- Dark Overlay -->
+        <div id="overlay" class="hidden fixed inset-0 bg-black/50 z-40"></div>
     </header>
+
 
     <!-- Hero Section -->
     <section class="relative min-h-screen flex items-center">
@@ -826,7 +901,7 @@
                 <h3 class="text-orange-600 font-bold text-lg mb-4">Company</h3>
                 <ul class="space-y-3">
                     <li>
-                        <a href="#" class="text-sm hover:text-white transition-colors duration-300 flex items-center">About
+                        <a href="about-us.html" class="text-sm hover:text-white transition-colors duration-300 flex items-center">About
                             Us</a>
                     </li>
                     <li>
@@ -845,7 +920,7 @@
                             Services</a>
                     </li>
                     <li>
-                        <a href="#" class="text-sm hover:text-white transition-colors duration-300 flex items-center">Contact
+                        <a href="contact.html" class="text-sm hover:text-white transition-colors duration-300 flex items-center">Contact
                             Us</a>
                     </li>
                 </ul>

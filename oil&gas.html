@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Oil & Gas CNC Components</title>
     <script src="https://cdn.tailwindcss.com"></script>
-     <script type="text/javascript">
+    <script type="text/javascript">
         (function () {
             emailjs.init({
                 publicKey: "Xe_Mw3aGiwlJhrnTU",
@@ -725,65 +725,68 @@
         </div>
     </section>
 
-    <!--Contact Information-->
-    <section class="py-10 px-4 bg-green-900 text-white">
-        <h3 class="text-xl md:text-xl  text-center text-gray-200 pb-8">Ready to discuss your oil and gas CNC machining
+  
+
+      <!-- Contact Information + Form Section -->
+    <section class="py-10 px-4 bg-gray-200 text-white">
+         <h3 class="text-xl md:text-xl  text-center text-blue-900 pb-8">Ready to discuss your oil and gas CNC machining
             requirements?</h3>
         <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between gap-12">
             <!-- Contact Information -->
             <div class="md:w-1/2 space-y-6">
-                <h2 class="text-3xl font-bold text-white">Contact Information</h2>
+                <h2 class="text-3xl font-bold text-blue-900">Contact Information</h2>
                 <div class="flex items-start gap-3">
                     <div class="w-2 h-2 bg-blue-500 rounded-full mt-2"></div>
-                    <div>
-                        <h3 class="font-bold text-white">Phone:</h3>
+                    <div class="text-blue-900">
+                        <h3 class="font-bold text-blue-900">Phone:</h3>
                         <p>+1 (555) 123-4567</p>
                     </div>
                 </div>
                 <div class="flex items-start gap-3">
                     <div class="w-2 h-2 bg-blue-500 rounded-full mt-2"></div>
-                    <div>
-                        <h3 class="font-bold text-white">Email:</h3>
+                    <div class="text-blue-900">
+                        <h3 class="font-bold text-blue-900">Email:</h3>
                         <p>info@fedeleautocore.com</p>
                     </div>
                 </div>
                 <div class="flex items-start gap-3">
                     <div class="w-2 h-2 bg-blue-500 rounded-full mt-2"></div>
-                    <div>
-                        <h3 class="font-bold text-white">Business Hours:</h3>
+                    <div class="text-blue-900">
+                        <h3 class="font-bold text-blue-900">Business Hours:</h3>
                         <p>Monday - Friday: 8:00 AM - 6:00 PM</p>
                     </div>
                 </div>
                 <div class="flex items-start gap-3">
                     <div class="w-2 h-2 bg-blue-500 rounded-full mt-2"></div>
-                    <div>
-                        <h3 class="font-bold text-white">Specialization:</h3>
+                    <div class="text-blue-900">
+                        <h3 class="font-bold text-blue-900">Specialization:</h3>
                         <p>Oil and Gas CNC Components</p>
                     </div>
                 </div>
             </div>
 
             <!-- Request a Quote Form -->
-            <div class="md:w-1/2 bg-green-800 p-6 rounded-lg shadow-lg">
-                <h2 class="text-2xl font-semibold mb-6">Request a Quote</h2>
-                <form id="quoteForm" class="space-y-4">
-                   <input type="text" id="name" placeholder="Full Name *" name="fullName" required
+            <div class="md:w-1/2 bg-gray-500 p-6 rounded-lg shadow-lg">
+                <h2 class="text-2xl font-semibold mb-6 text-gray-800">Request a Quote</h2>
+              <form id="quoteForm" class="space-y-4" onsubmit="sendMail(event)">
+                    <input type="text" id="name" placeholder="Full Name *" name="name" required
                         class="w-full p-2 rounded border border-gray-400 text-black">
-                  <input type="text" id="company" placeholder="Company *" name="company" required
+                    <input type="text" id="company" placeholder="Company *" name="company" required
                         class="w-full p-2 rounded border border-gray-400 text-black">
-                 <input type="email" id="email" placeholder="Email Address *" name="email" required
+                    <input type="email" id="email" placeholder="Email Address *" name="email" required
                         class="w-full p-2 rounded border border-gray-400 text-black">
-               <select id="component" name="componentType" required class="w-full p-2 rounded border border-gray-400 text-black">
+                    <select id="component" name="component" required
+                        class="w-full p-2 rounded border border-gray-400 text-black">
                         <option value="">Select component type...</option>
                         <option>Valve</option>
                         <option>Flange</option>
                         <option>Pump</option>
                         <option>Other</option>
                     </select>
-                    <textarea id="message" name="projectDetails"
+                    <textarea id="message" name="message"
                         placeholder="Please describe your component requirements, quantities, tolerances and timelines..."
                         rows="4" class="w-full p-2 rounded border border-gray-400 text-black"></textarea>
-                    <button type="submit" onclick="sendMail()"
+                    <button type="submit"
                         class="w-full bg-blue-900 text-white py-2 rounded hover:bg-blue-700 transition">
                         Send Quote Request
                     </button>
@@ -792,7 +795,7 @@
         </div>
     </section>
 
-  <!-- Footer -->
+    <!-- Footer -->
     <footer class="bg-gray-800 text-gray-300 py-12 px-4 sm:px-6 lg:px-8">
         <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-5 gap-8">
             <!-- Column 1 -->
@@ -821,26 +824,33 @@
                 <h3 class="text-orange-600 font-bold text-lg mb-4">CNC Services</h3>
                 <ul class="space-y-3">
                     <li>
-                        <a href="#" class="text-sm hover:text-white transition-colors duration-300 flex items-center">CNC
+                        <a href="#"
+                            class="text-sm hover:text-white transition-colors duration-300 flex items-center">CNC
                             Machining</a>
                     </li>
                     <li>
-                        <a href="#" class="text-sm hover:text-white transition-colors duration-300 flex items-center">CNC
+                        <a href="#"
+                            class="text-sm hover:text-white transition-colors duration-300 flex items-center">CNC
                             Turning</a>
                     </li>
                     <li>
-                        <a href="#" class="text-sm hover:text-white transition-colors duration-300 flex items-center">CNC
+                        <a href="#"
+                            class="text-sm hover:text-white transition-colors duration-300 flex items-center">CNC
                             Milling</a>
                     </li>
                     <li>
-                        <a href="#" class="text-sm hover:text-white transition-colors duration-300 flex items-center">5-Axis
+                        <a href="#"
+                            class="text-sm hover:text-white transition-colors duration-300 flex items-center">5-Axis
                             Machining</a>
                     </li>
                     <li>
-                        <a href="#" class="text-sm hover:text-white transition-colors duration-300 flex items-center">Precision Machining</a>
+                        <a href="#"
+                            class="text-sm hover:text-white transition-colors duration-300 flex items-center">Precision
+                            Machining</a>
                     </li>
                     <li>
-                        <a href="#" class="text-sm hover:text-white transition-colors duration-300 flex items-center">CNC
+                        <a href="#"
+                            class="text-sm hover:text-white transition-colors duration-300 flex items-center">CNC
                             Prototyping</a>
                     </li>
                     <li>
@@ -856,22 +866,34 @@
                 <h3 class="text-orange-600 font-bold text-lg mb-4">Australian Locations</h3>
                 <ul class="space-y-3">
                     <li>
-                        <a href="#" class="text-sm hover:text-white transition-colors duration-300 flex items-center">Melbourne CNC</a>
+                        <a href="#"
+                            class="text-sm hover:text-white transition-colors duration-300 flex items-center">Melbourne
+                            CNC</a>
                     </li>
                     <li>
-                        <a href="#" class="text-sm hover:text-white transition-colors duration-300 flex items-center">Sydney CNC</a>
+                        <a href="#"
+                            class="text-sm hover:text-white transition-colors duration-300 flex items-center">Sydney
+                            CNC</a>
                     </li>
                     <li>
-                        <a href="#" class="text-sm hover:text-white transition-colors duration-300 flex items-center">Perth CNC</a>
+                        <a href="#"
+                            class="text-sm hover:text-white transition-colors duration-300 flex items-center">Perth
+                            CNC</a>
                     </li>
                     <li>
-                        <a href="#" class="text-sm hover:text-white transition-colors duration-300 flex items-center">Adelaide CNC</a>
+                        <a href="#"
+                            class="text-sm hover:text-white transition-colors duration-300 flex items-center">Adelaide
+                            CNC</a>
                     </li>
                     <li>
-                        <a href="#" class="text-sm hover:text-white transition-colors duration-300 flex items-center">Brisbane CNC</a>
+                        <a href="#"
+                            class="text-sm hover:text-white transition-colors duration-300 flex items-center">Brisbane
+                            CNC</a>
                     </li>
                     <li>
-                        <a href="#" class="text-sm hover:text-white transition-colors duration-300 flex items-center">Darwin CNC</a>
+                        <a href="#"
+                            class="text-sm hover:text-white transition-colors duration-300 flex items-center">Darwin
+                            CNC</a>
                     </li>
                 </ul>
             </div>
@@ -881,7 +903,8 @@
                 <h3 class="text-orange-600 font-bold text-lg mb-4">Industries Served</h3>
                 <ul class="space-y-3">
                     <li>
-                        <a href="#" class="text-sm hover:text-white transition-colors duration-300 flex items-center">Defence</a>
+                        <a href="#"
+                            class="text-sm hover:text-white transition-colors duration-300 flex items-center">Defence</a>
                     </li>
                     <li>
                         <a href="oil&gas.html"
@@ -889,16 +912,20 @@
                             Gas</a>
                     </li>
                     <li>
-                        <a href="#" class="text-sm hover:text-white transition-colors duration-300 flex items-center">Aerospace</a>
+                        <a href="#"
+                            class="text-sm hover:text-white transition-colors duration-300 flex items-center">Aerospace</a>
                     </li>
                     <li>
-                        <a href="#" class="text-sm hover:text-white transition-colors duration-300 flex items-center">Automotive</a>
+                        <a href="#"
+                            class="text-sm hover:text-white transition-colors duration-300 flex items-center">Automotive</a>
                     </li>
                     <li>
-                        <a href="#" class="text-sm hover:text-white transition-colors duration-300 flex items-center">Manufacturing</a>
+                        <a href="#"
+                            class="text-sm hover:text-white transition-colors duration-300 flex items-center">Manufacturing</a>
                     </li>
                     <li>
-                        <a href="#" class="text-sm hover:text-white transition-colors duration-300 flex items-center">Medical</a>
+                        <a href="#"
+                            class="text-sm hover:text-white transition-colors duration-300 flex items-center">Medical</a>
                     </li>
                 </ul>
             </div>
@@ -908,26 +935,32 @@
                 <h3 class="text-orange-600 font-bold text-lg mb-4">Company</h3>
                 <ul class="space-y-3">
                     <li>
-                        <a href="about-us.html" class="text-sm hover:text-white transition-colors duration-300 flex items-center">About
+                        <a href="about-us.html"
+                            class="text-sm hover:text-white transition-colors duration-300 flex items-center">About
                             Us</a>
                     </li>
                     <li>
-                        <a href="#" class="text-sm hover:text-white transition-colors duration-300 flex items-center">Industry
+                        <a href="#"
+                            class="text-sm hover:text-white transition-colors duration-300 flex items-center">Industry
                             Blog</a>
                     </li>
                     <li>
-                        <a href="#" class="text-sm hover:text-white transition-colors duration-300 flex items-center">Capabilities</a>
+                        <a href="#"
+                            class="text-sm hover:text-white transition-colors duration-300 flex items-center">Capabilities</a>
                     </li>
                     <li>
-                        <a href="#" class="text-sm hover:text-white transition-colors duration-300 flex items-center">Quality
+                        <a href="#"
+                            class="text-sm hover:text-white transition-colors duration-300 flex items-center">Quality
                             Standards</a>
                     </li>
                     <li>
-                        <a href="#" class="text-sm hover:text-white transition-colors duration-300 flex items-center">Emerging
+                        <a href="#"
+                            class="text-sm hover:text-white transition-colors duration-300 flex items-center">Emerging
                             Services</a>
                     </li>
                     <li>
-                        <a href="contact.html" class="text-sm hover:text-white transition-colors duration-300 flex items-center">Contact
+                        <a href="contact.html"
+                            class="text-sm hover:text-white transition-colors duration-300 flex items-center">Contact
                             Us</a>
                     </li>
                 </ul>

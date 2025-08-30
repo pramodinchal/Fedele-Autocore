@@ -333,24 +333,25 @@
             <!-- Request a Quote Form -->
             <div class="md:w-1/2 bg-gray-500 p-6 rounded-lg shadow-lg">
                 <h2 class="text-2xl font-semibold mb-6 text-gray-800">Request a Quote</h2>
-                <form id="quoteForm" class="space-y-4">
-                   <input type="text" id="name" placeholder="Full Name *" name="fullName" required
+              <form id="quoteForm" class="space-y-4" onsubmit="sendMail(event)">
+                    <input type="text" id="name" placeholder="Full Name *" name="name" required
                         class="w-full p-2 rounded border border-gray-400 text-black">
-                  <input type="text" id="company" placeholder="Company *" name="company" required
+                    <input type="text" id="company" placeholder="Company *" name="company" required
                         class="w-full p-2 rounded border border-gray-400 text-black">
-                   <input type="email" id="email" placeholder="Email Address *" name="email" required
+                    <input type="email" id="email" placeholder="Email Address *" name="email" required
                         class="w-full p-2 rounded border border-gray-400 text-black">
-                   <select id="component" name="componentType" required class="w-full p-2 rounded border border-gray-400 text-black">
+                    <select id="component" name="component" required
+                        class="w-full p-2 rounded border border-gray-400 text-black">
                         <option value="">Select component type...</option>
                         <option>Valve</option>
                         <option>Flange</option>
                         <option>Pump</option>
                         <option>Other</option>
                     </select>
-                    <textarea id="message" name="projectDetails"
+                    <textarea id="message" name="message"
                         placeholder="Please describe your component requirements, quantities, tolerances and timelines..."
                         rows="4" class="w-full p-2 rounded border border-gray-400 text-black"></textarea>
-                    <button type="submit" onclick="sendMail()"
+                    <button type="submit"
                         class="w-full bg-blue-900 text-white py-2 rounded hover:bg-blue-700 transition">
                         Send Quote Request
                     </button>

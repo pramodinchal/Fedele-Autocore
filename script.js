@@ -1,21 +1,19 @@
-function sendMail() {
+function sendMail(e){
+    e.preventDefault(); // stop form reload
+
     let parms = {
-        name: document.getElementById("name").value,
-        company: document.getElementById("company").value,
-        email: document.getElementById("email").value,
-        component: document.getElementById("component").value,
-        message: document.getElementById("message").value,
+        name: document.querySelector("input[name='name']").value,
+        company: document.querySelector("input[name='company']").value,
+        email: document.querySelector("input[name='email']").value,
+        component: document.querySelector("select[name='component']").value,
+        message: document.querySelector("textarea[name='message']").value,
     };
 
     emailjs.send("service_j5u8tlj", "template_2qg58af", parms)
-        .then(() => {
-            alert("Email Sent!!");
-        })
-        .catch((err) => {
-            console.error("Email failed:", err);
-            alert("Failed to send email. Please try again.");
-        });
+        .then(() => alert("✅ Quote request sent!"))
+        .catch((err) => console.error("❌ EmailJS error:", err));
 }
+
 
 
 // mobile toggle

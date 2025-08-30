@@ -767,20 +767,20 @@
             <div class="md:w-1/2 bg-green-800 p-6 rounded-lg shadow-lg">
                 <h2 class="text-2xl font-semibold mb-6">Request a Quote</h2>
                 <form id="quoteForm" class="space-y-4">
-                    <input type="text" placeholder="Full Name *" name="fullName" required
+                   <input type="text" id="name" placeholder="Full Name *" name="fullName" required
                         class="w-full p-2 rounded border border-gray-400 text-black">
-                    <input type="text" placeholder="Company *" name="company" required
+                  <input type="text" id="company" placeholder="Company *" name="company" required
                         class="w-full p-2 rounded border border-gray-400 text-black">
-                    <input type="email" placeholder="Email Address *" name="email" required
+                 <input type="email" id="email" placeholder="Email Address *" name="email" required
                         class="w-full p-2 rounded border border-gray-400 text-black">
-                    <select name="componentType" required class="w-full p-2 rounded border border-gray-400 text-black">
+               <select id="component" name="componentType" required class="w-full p-2 rounded border border-gray-400 text-black">
                         <option value="">Select component type...</option>
                         <option>Valve</option>
                         <option>Flange</option>
                         <option>Pump</option>
                         <option>Other</option>
                     </select>
-                    <textarea name="projectDetails"
+                    <textarea id="message" name="projectDetails"
                         placeholder="Please describe your component requirements, quantities, tolerances and timelines..."
                         rows="4" class="w-full p-2 rounded border border-gray-400 text-black"></textarea>
                     <button type="submit" onclick="sendMail()"
@@ -955,8 +955,6 @@
             </div>
         </div>
     </footer>
-
-    <script src="script.js"></script>
 </body>
 
 </html>

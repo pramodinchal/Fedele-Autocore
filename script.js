@@ -1,3 +1,23 @@
+function sendMail() {
+    let parms = {
+        name: document.getElementById("name").value,
+        company: document.getElementById("company").value,
+        email: document.getElementById("email").value,
+        component: document.getElementById("component").value,
+        message: document.getElementById("message").value,
+    };
+
+    emailjs.send("service_j5u8tlj", "template_2qg58af", parms)
+        .then(() => {
+            alert("Email Sent!!");
+        })
+        .catch((err) => {
+            console.error("Email failed:", err);
+            alert("Failed to send email. Please try again.");
+        });
+}
+
+
 // mobile toggle
   const menuToggle = document.getElementById("menu-toggle");
   const mobileMenu = document.getElementById("mobile-menu");
@@ -291,16 +311,6 @@ document.getElementById('quoteForm').addEventListener('submit', function(e) {
     e.target.reset();
 });
 
-function sendMail(){
-    let parms = {
-        name: document.getElementById("name").value,
-        email: document.getElementById("email").value,
-        subject: document.getElementById("subject").value,
-        message: document.getElementById("message").value,
-    }
-    emailjs.send("service_j5u8tlj", "template_2qg58af",parms).then(alert("Email Sent!!"))
-
-}
 
 // Add CSS for active city button
 const style = document.createElement('style');

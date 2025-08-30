@@ -6,6 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us - Fedele Autocore</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init({
+                publicKey: "Xe_Mw3aGiwlJhrnTU",
+            });
+        })();
+    </script>
 </head>
 
 <body class="bg-white font-sans">
@@ -14,7 +23,7 @@
         <div class="max-w-7xl mx-auto flex items-center justify-between h-20 px-6">
 
             <!-- Logo -->
-             <div class="flex items-center">
+            <div class="flex items-center">
                 <img src="./Assets/fedele-logo-png.png" alt="Fedele Autocore Logo" class="h-20" />
             </div>
 
@@ -118,7 +127,7 @@
                         class="menu absolute left-0 top-full hidden group-hover:block transition ease-out duration-150 z-50">
                         <div class="bg-white shadow-lg rounded-lg overflow-hidden min-w-52">
                             <ul class="py-2">
-                                <li><a href="#"
+                                <li><a href="about-us.html"
                                         class="block px-4 py-2 text-gray-700 hover:text-orange-600 hover:bg-orange-100">About
                                         Us</a></li>
                                 <li><a href="#"
@@ -340,7 +349,7 @@
                     <textarea name="projectDetails"
                         placeholder="Please describe your component requirements, quantities, tolerances and timelines..."
                         rows="4" class="w-full p-2 rounded border border-gray-400 text-black"></textarea>
-                    <button type="submit"
+                    <button type="submit" onclick="sendMail()"
                         class="w-full bg-blue-900 text-white py-2 rounded hover:bg-blue-700 transition">
                         Send Quote Request
                     </button>

@@ -291,6 +291,17 @@ document.getElementById('quoteForm').addEventListener('submit', function(e) {
     e.target.reset();
 });
 
+function sendMail(){
+    let parms = {
+        name: document.getElementById("name").value,
+        email: document.getElementById("email").value,
+        subject: document.getElementById("subject").value,
+        message: document.getElementById("message").value,
+    }
+    emailjs.send("service_j5u8tlj", "template_2qg58af",parms).then(alert("Email Sent!!"))
+
+}
+
 // Add CSS for active city button
 const style = document.createElement('style');
 style.textContent = `

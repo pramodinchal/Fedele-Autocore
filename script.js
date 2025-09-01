@@ -1,4 +1,4 @@
-function sendMail(e){
+function sendMail(e) {
     e.preventDefault(); // stop form reload
 
     let parms = {
@@ -17,38 +17,38 @@ function sendMail(e){
 
 
 // mobile toggle
-  const menuToggle = document.getElementById("menu-toggle");
-  const mobileMenu = document.getElementById("mobile-menu");
-  const overlay = document.getElementById("overlay");
+const menuToggle = document.getElementById("menu-toggle");
+const mobileMenu = document.getElementById("mobile-menu");
+const overlay = document.getElementById("overlay");
 
-  menuToggle.addEventListener("click", () => {
+menuToggle.addEventListener("click", () => {
     mobileMenu.classList.toggle("hidden");
     mobileMenu.classList.toggle("translate-x-0");
     mobileMenu.classList.toggle("translate-x-full");
     overlay.classList.toggle("hidden");
-  });
+});
 
-  overlay.addEventListener("click", () => {
+overlay.addEventListener("click", () => {
     closeMobileMenu();
-  });
+});
 
-  function closeMobileMenu() {
+function closeMobileMenu() {
     mobileMenu.classList.add("hidden", "translate-x-full");
     mobileMenu.classList.remove("translate-x-0");
     overlay.classList.add("hidden");
-  }
+}
 
-  // ✅ Allow only one dropdown open at a time
-  function toggleDropdown(id) {
+// ✅ Allow only one dropdown open at a time
+function toggleDropdown(id) {
     const dropdowns = document.querySelectorAll("#mobile-menu ul ul");
     dropdowns.forEach(dropdown => {
-      if (dropdown.id !== id) {
-        dropdown.classList.add("hidden"); // close others
-      }
+        if (dropdown.id !== id) {
+            dropdown.classList.add("hidden"); // close others
+        }
     });
 
     document.getElementById(id).classList.toggle("hidden"); // toggle current
-  }
+}
 // Mobile Menu Toggle
 document.addEventListener('DOMContentLoaded', function () {
     const mobileMenuToggle = document.getElementById('mobileMenuToggle');
@@ -227,67 +227,67 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 // <---------------------------Common logic for all FAQs------------------------------------------------>
 document.addEventListener("DOMContentLoaded", () => {
-  const faqQuestions = document.querySelectorAll(".faq-question");
+    const faqQuestions = document.querySelectorAll(".faq-question");
 
-  faqQuestions.forEach((button) => {
-    button.addEventListener("click", () => {
-      const faqItem = button.parentElement;
-      const faqAnswer = faqItem.querySelector(".faq-answer");
-      const faqIcon = button.querySelector(".faq-icon");
+    faqQuestions.forEach((button) => {
+        button.addEventListener("click", () => {
+            const faqItem = button.parentElement;
+            const faqAnswer = faqItem.querySelector(".faq-answer");
+            const faqIcon = button.querySelector(".faq-icon");
 
-      // Close all other FAQs
-      document.querySelectorAll(".faq-item").forEach((item) => {
-        if (item !== faqItem) {
-          const answer = item.querySelector(".faq-answer");
-          const icon = item.querySelector(".faq-icon");
-          answer.style.maxHeight = null;
-          icon.textContent = "+";
-        }
-      });
+            // Close all other FAQs
+            document.querySelectorAll(".faq-item").forEach((item) => {
+                if (item !== faqItem) {
+                    const answer = item.querySelector(".faq-answer");
+                    const icon = item.querySelector(".faq-icon");
+                    answer.style.maxHeight = null;
+                    icon.textContent = "+";
+                }
+            });
 
-      // Toggle the clicked FAQ
-      if (faqAnswer.style.maxHeight && faqAnswer.style.maxHeight !== "0px") {
-        faqAnswer.style.maxHeight = null;
-        faqIcon.textContent = "+";
-      } else {
-        faqAnswer.style.maxHeight = faqAnswer.scrollHeight + "px";
-        faqIcon.textContent = "−";
-      }
+            // Toggle the clicked FAQ
+            if (faqAnswer.style.maxHeight && faqAnswer.style.maxHeight !== "0px") {
+                faqAnswer.style.maxHeight = null;
+                faqIcon.textContent = "+";
+            } else {
+                faqAnswer.style.maxHeight = faqAnswer.scrollHeight + "px";
+                faqIcon.textContent = "−";
+            }
+        });
     });
-  });
 
-  // Optional: Smooth transition fix for resizing
-  window.addEventListener("resize", () => {
-    document.querySelectorAll(".faq-item .faq-answer").forEach((answer) => {
-      if (answer.style.maxHeight && answer.style.maxHeight !== "0px") {
-        answer.style.maxHeight = answer.scrollHeight + "px";
-      }
+    // Optional: Smooth transition fix for resizing
+    window.addEventListener("resize", () => {
+        document.querySelectorAll(".faq-item .faq-answer").forEach((answer) => {
+            if (answer.style.maxHeight && answer.style.maxHeight !== "0px") {
+                answer.style.maxHeight = answer.scrollHeight + "px";
+            }
+        });
     });
-  });
 });
 
 
 // <-------------------------nav hover logic --------------------------------->
 const dropdowns = document.querySelectorAll(".dropdown");
 
-  dropdowns.forEach(drop => {
+dropdowns.forEach(drop => {
     const link = drop.querySelector(".nav-link");
     const menu = drop.querySelector(".menu");
 
     link.addEventListener("mouseenter", () => {
-      // close all dropdowns
-      dropdowns.forEach(d => d.querySelector(".menu").classList.add("hidden"));
-      // open this one
-      menu.classList.remove("hidden");
+        // close all dropdowns
+        dropdowns.forEach(d => d.querySelector(".menu").classList.add("hidden"));
+        // open this one
+        menu.classList.remove("hidden");
     });
 
     drop.addEventListener("mouseleave", () => {
-      menu.classList.add("hidden");
+        menu.classList.add("hidden");
     });
-  });
+});
 
 //Contact Information
-document.getElementById('quoteForm').addEventListener('submit', function(e) {
+document.getElementById('quoteForm').addEventListener('submit', function (e) {
     e.preventDefault();
 
     const formData = new FormData(e.target);

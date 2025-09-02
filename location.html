@@ -8,7 +8,281 @@
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="bg-white">
+<body class="bg-white w-full overflow-x-hidden">
+
+  <!-- Header -->
+  <header class="fixed top-0 left-0 w-full bg-white shadow-md z-50">
+    <div class="max-w-7xl mx-auto flex items-center justify-between h-16 md:h-20 px-3 sm:px-4 lg:px-6">
+
+      <!-- Logo -->
+      <div class="flex items-center flex-shrink-0">
+        <img src="./Assets/fedele-logo-png.png" alt="Fedele Autocore Logo"
+          class="h-10 sm:h-12 md:h-14 lg:h-16 w-auto object-contain" />
+      </div>
+
+      <!-- Nav Links (Desktop) -->
+      <nav class="hidden lg:flex items-center space-x-6 xl:space-x-5 2xl:space-x-6">
+        <a href="index.html"
+          class="text-sm 2xl:text-base font-medium text-gray-700 hover:text-orange-600 transition-colors whitespace-nowrap">Home</a>
+
+        <!-- CNC Services -->
+        <div class="relative group">
+          <a href="#"
+            class="text-sm 2xl:text-base font-medium text-gray-700 hover:text-orange-600 transition-colors whitespace-nowrap">CNC
+            Services</a>
+          <div
+            class="absolute left-0 top-full mt-1 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+            <div class="bg-white shadow-xl rounded-lg min-w-48 border">
+              <ul class="py-2">
+                <li><a href="#"
+                    class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">CNC
+                    Milling</a></li>
+                <li><a href="#"
+                    class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">CNC
+                    Turning</a></li>
+                <li><a href="#"
+                    class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">5-Axis
+                    Machining</a></li>
+                <li><a href="#"
+                    class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">Precision
+                    Machining</a></li>
+                <li><a href="#"
+                    class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">CNC
+                    Prototyping</a></li>
+                <li><a href="custom-machining.html"
+                    class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">Custom
+                    Machining</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Industries -->
+        <div class="relative group">
+          <a href="#"
+            class="text-sm 2xl:text-base font-medium text-gray-700 hover:text-orange-600 transition-colors whitespace-nowrap">Industries</a>
+          <div
+            class="absolute left-0 top-full mt-1 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+            <div class="bg-white shadow-xl rounded-lg min-w-56 border">
+              <ul class="py-2">
+                <li><a href="defence.html"
+                    class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">Defence
+                    Industry</a></li>
+                <li><a href="oil&gas.html"
+                    class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">Oil
+                    & Gas Industry</a></li>
+                <li><a href="automotive.html"
+                    class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">Automotive
+                    Industry</a></li>
+                <li><a href="#"
+                    class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">Construction
+                    Industry</a></li>
+                <li><a href="#"
+                    class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">Energy
+                    Solutions</a></li>
+                <li><a href="#"
+                    class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">Hydraulic
+                    Power</a></li>
+                <li><a href="#"
+                    class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">Agricultural
+                    / Tractor</a></li>
+                <li><a href="#"
+                    class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">Aerospace
+                    Industry</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Locations -->
+        <div class="relative group">
+          <a href="location.html"
+            class="text-sm 2xl:text-base font-medium text-gray-700 hover:text-orange-600 transition-colors whitespace-nowrap">Locations</a>
+          <div
+            class="absolute left-0 top-full mt-1 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+            <div class="bg-white shadow-xl rounded-lg min-w-40 border">
+              <ul class="py-2">
+                <li><a href="location.html"
+                    class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">Melbourne</a>
+                </li>
+                <li><a href="#"
+                    class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">Sydney</a>
+                </li>
+                <li><a href="#"
+                    class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">Perth</a>
+                </li>
+                <li><a href="#"
+                    class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">Adelaide</a>
+                </li>
+                <li><a href="#"
+                    class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">Brisbane</a>
+                </li>
+                <li><a href="#"
+                    class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">Darwin</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Company -->
+        <div class="relative group">
+          <a href="#company"
+            class="text-sm 2xl:text-base font-medium text-gray-700 hover:text-orange-600 transition-colors whitespace-nowrap">Company</a>
+          <div
+            class="absolute left-0 top-full mt-1 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+            <div class="bg-white shadow-xl rounded-lg min-w-44 border">
+              <ul class="py-2">
+                <li><a href="about-us.html"
+                    class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">About
+                    Us</a></li>
+                <li><a href="#"
+                    class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">Blog</a>
+                </li>
+                <li><a href="#"
+                    class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">Capabilities</a>
+                </li>
+                <li><a href="#"
+                    class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">Quality
+                    Standards</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Components -->
+        <div class="relative group">
+          <a href="#components"
+            class="text-sm 2xl:text-base font-medium text-gray-700 hover:text-orange-600 transition-colors whitespace-nowrap">Components</a>
+          <div
+            class="absolute left-0 top-full mt-1 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+            <div class="bg-white shadow-xl rounded-lg min-w-52 border">
+              <ul class="py-2">
+                <li><a href="#"
+                    class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">Drilling
+                    Components</a></li>
+                <li><a href="#"
+                    class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">Engine
+                    Components</a></li>
+                <li><a href="#"
+                    class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">Hydraulic
+                    Components</a></li>
+                <li><a href="#"
+                    class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">Turbine
+                    Components</a></li>
+                <li><a href="#"
+                    class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">Tractor
+                    Components</a></li>
+                <li><a href="#"
+                    class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">Military
+                    Components</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <a href="contact.html"
+          class="text-sm 2xl:text-base font-medium text-gray-700 hover:text-orange-600 transition-colors whitespace-nowrap">Contact</a>
+      </nav>
+
+      <!-- Action Buttons -->
+      <div class="flex items-center space-x-2 sm:space-x-3">
+        <!-- Quote Button -->
+        <button onclick="window.location.href='contact.html'"
+          class="hidden md:inline-block bg-orange-600 text-white px-3 py-1.5 lg:px-4 lg:py-2 rounded-lg shadow text-xs lg:text-sm font-medium hover:bg-blue-900 transition-colors whitespace-nowrap">
+          Get Quote
+        </button>
+
+        <!-- Mobile Menu Button -->
+        <button id="menu-toggle"
+          class="lg:hidden text-gray-700 text-xl sm:text-2xl focus:outline-none p-1 hover:text-orange-600 transition-colors">
+          <span class="block">☰</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Nav (Right Sidebar) -->
+    <nav id="mobile-menu" class="hidden fixed top-0 right-0 h-full w-[50%] md:w-[20%] bg-white shadow-lg z-50 
+              transform translate-x-full transition-transform duration-300">
+      <ul class="flex flex-col space-y-4 p-6 overflow-y-auto">
+        <li><a href="index.html" class="font-bold text-gray-700 hover:text-orange-600">Home</a></li>
+
+        <!-- CNC Services -->
+        <li>
+          <button
+            class="w-full text-left font-bold text-gray-700 hover:text-orange-600 flex justify-between items-center"
+            onclick="toggleDropdown('servicesDropdown')">
+            CNC Services <span>+</span>
+          </button>
+          <ul id="servicesDropdown" class="hidden pl-4 space-y-2">
+            <li><a href="#">CNC Milling</a></li>
+            <li><a href="#">CNC Turning</a></li>
+            <li><a href="#">5-Axis Machining</a></li>
+            <li><a href="#">Precision Machining</a></li>
+            <li><a href="#">CNC Prototyping</a></li>
+            <li><a href="custom-machining.html">Custom Machining</a></li>
+          </ul>
+        </li>
+
+        <!-- Industries -->
+        <li>
+          <button
+            class="w-full text-left font-bold text-gray-700 hover:text-orange-600 flex justify-between items-center"
+            onclick="toggleDropdown('industriesDropdown')">
+            Industries <span>+</span>
+          </button>
+          <ul id="industriesDropdown" class="hidden pl-4 space-y-2">
+            <li><a href="defence.html">Defence Industry</a></li>
+            <li><a href="oil&gas.html">Oil & Gas Industry</a></li>
+            <li><a href="automotive.html">Automotive Industry</a></li>
+            <li><a href="#">Construction Industry</a></li>
+            <li><a href="#">Energy Solutions</a></li>
+            <li><a href="#">Hydraulic Power</a></li>
+            <li><a href="#">Agricultural / Tractor</a></li>
+            <li><a href="#">Aerospace Industry</a></li>
+          </ul>
+        </li>
+
+        <!-- Company -->
+        <li>
+          <button
+            class="w-full text-left font-bold text-gray-700 hover:text-orange-600 flex justify-between items-center"
+            onclick="toggleDropdown('companyDropdown')">
+            Company <span>+</span>
+          </button>
+          <ul id="companyDropdown" class="hidden pl-4 space-y-2">
+            <li><a href="about-us.html">About Us</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Capabilities</a></li>
+            <li><a href="#">Quality Standards</a></li>
+          </ul>
+        </li>
+
+        <!-- Components -->
+        <li>
+          <button
+            class="w-full text-left font-bold text-gray-700 hover:text-orange-600 flex justify-between items-center"
+            onclick="toggleDropdown('componentsDropdown')">
+            Components <span>+</span>
+          </button>
+          <ul id="componentsDropdown" class="hidden pl-4 space-y-2">
+            <li><a href="#">Drilling Components</a></li>
+            <li><a href="#">Engine Components</a></li>
+            <li><a href="#">Hydraulic Components</a></li>
+            <li><a href="#">Turbine Components</a></li>
+            <li><a href="#">Tractor Components</a></li>
+            <li><a href="#">Military Components</a></li>
+          </ul>
+        </li>
+
+        <li><a href="location.html" class="font-bold text-gray-700 hover:text-orange-600">Locations</a></li>
+        <li><a href="contact.html" class="font-bold text-gray-700 hover:text-orange-600">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Dark Overlay -->
+    <div id="overlay" class="hidden fixed inset-0 bg-black/50 z-40"></div>
+  </header>
 
   <!-- Hero Section -->
   <section id="home" class="relative min-h-screen flex items-center justify-center bg-cover bg-center bg-no-repeat"
@@ -18,7 +292,7 @@
     <div class="absolute inset-0 bg-gradient-to-r from-blue-900/80 via-blue-900/60 to-blue-900/40"></div>
 
     <!-- Content -->
-    <div class="relative z-10 max-w-4xl mx-auto px-6 text-center">
+    <div class="relative z-10 max-w-4xl w-full px-6 text-center">
       <h1 class="text-orange-500 text-4xl md:text-6xl font-extrabold mb-4 drop-shadow-lg">
         CNC Machining Melbourne
       </h1>
@@ -35,26 +309,7 @@
     </div>
   </section>
 
-  <!-- Navigation Section -->
-  <section class="bg-white text-blue-900 py-12">
-    <div class="max-w-2xl mx-auto text-center font-extrabold space-y-4">
-      <a href="#services"
-        class="block hover:text-orange-500 hover:scale-105 transform transition duration-300 ease-in-out">Services</a>
-      <a href="#capabilities"
-        class="block hover:text-orange-500 hover:scale-105 transform transition duration-300 ease-in-out">Capabilities</a>
-      <a href="#partnership"
-        class="block hover:text-orange-500 hover:scale-105 transform transition duration-300 ease-in-out">Fedele
-        Partnership</a>
-      <a href="#about"
-        class="block hover:text-orange-500 hover:scale-105 transform transition duration-300 ease-in-out">About Us</a>
-      <a href="#equipment"
-        class="block hover:text-orange-500 hover:scale-105 transform transition duration-300 ease-in-out">Equipment</a>
-      <a href="contact.html"
-        class="block hover:text-orange-500 hover:scale-105 transform transition duration-300 ease-in-out">Contact</a>
-      <a href="#faq"
-        class="block hover:text-orange-500 hover:scale-105 transform transition duration-300 ease-in-out">FAQ</a>
-    </div>
-  </section>
+
 
   <!-- Services Section -->
   <section id="services" class="py-16 bg-white">
@@ -141,7 +396,8 @@
 
     </div>
   </section>
-
+  <!-- Divider Line -->
+  <hr class="border-t border-gray-300 my-12 max-w-6xl mx-auto">
   <!-- ISO Certification -->
   <section class="max-w-6xl mx-auto px-6 py-10">
     <div class="bg-gradient-to-r from-gray-100 to-gray-300 shadow-md rounded-lg p-6 text-center border">
@@ -149,6 +405,8 @@
       <p class="text-blue-900">Quality management system ensuring consistent excellence in every project</p>
     </div>
   </section>
+  <!-- Divider Line -->
+  <hr class="border-t border-gray-300 my-12 max-w-6xl mx-auto">
 
   <!-- Manufacturing Capabilities -->
   <section class="max-w-6xl mx-auto px-6 py-12 bg-white rounded-lg shadow-md">
@@ -185,7 +443,8 @@
       </div>
     </div>
   </section>
-
+  <!-- Divider Line -->
+  <hr class="border-t border-gray-300 my-12 max-w-6xl mx-auto">
   <!-- Fedele Autocore Partnership -->
   <section class="max-w-6xl mx-auto px-6 py-12 bg-white">
     <!-- Heading -->
@@ -254,7 +513,8 @@
     </div>
 
   </section>
-
+  <!-- Divider Line -->
+  <hr class="border-t border-gray-300 my-12 max-w-6xl mx-auto">
 
   <!-- About Section -->
   <section class="max-w-6xl mx-auto px-6 py-12 bg-white rounded-lg shadow-md">
@@ -275,7 +535,8 @@
       Local Melbourne Expertise • Competitive Pricing • Fast Turnaround • Quality Guarantee • Technical Support
     </div>
   </section>
-
+  <!-- Divider Line -->
+  <hr class="border-t border-gray-300 my-12 max-w-6xl mx-auto">
   <!-- Equipment -->
   <section class="max-w-6xl mx-auto px-6 py-12 bg-white rounded-lg shadow-md">
     <h2 class="text-blue-900 text-3xl font-bold mb-4">State-of-the-Art Equipment</h2>
@@ -291,7 +552,8 @@
       <div class="bg-gradient-to-r from-blue-900 to-gray-700 text-white p-4 rounded-lg">SolidWorks Design Suite</div>
     </div>
   </section>
-
+  <!-- Divider Line -->
+  <hr class="border-t border-gray-300 my-12 max-w-6xl mx-auto">
   <!-- Contact Info -->
   <section class="max-w-6xl mx-auto px-6 py-12 bg-white rounded-lg shadow-md">
     <h2 class="text-blue-900 text-3xl font-bold mb-4">Contact Information</h2>
@@ -309,7 +571,8 @@
       <button class="bg-orange-500 hover:bg-orange-600 text-white px-6 py-2 rounded-lg">Email Quote Request</button>
     </div>
   </section>
-
+  <!-- Divider Line -->
+  <hr class="border-t border-gray-300 my-12 max-w-6xl mx-auto">
   <section id="faq" class="py-16 px-4 bg-white">
     <div class="max-w-4xl mx-auto">
       <div class="text-center mb-16">
@@ -497,7 +760,8 @@
       </div>
     </div>
   </section>
-
+  <!-- Divider Line -->
+  <hr class="border-t border-gray-300 max-w-6xl mx-auto">
 
 
   <!-- Footer -->

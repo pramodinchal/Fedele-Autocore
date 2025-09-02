@@ -225,6 +225,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     window.addEventListener('scroll', debouncedScrollHandler);
 });
+
 // <---------------------------Common logic for all FAQs------------------------------------------------>
 document.addEventListener("DOMContentLoaded", () => {
     const faqQuestions = document.querySelectorAll(".faq-question");
@@ -240,14 +241,14 @@ document.addEventListener("DOMContentLoaded", () => {
                 if (item !== faqItem) {
                     const answer = item.querySelector(".faq-answer");
                     const icon = item.querySelector(".faq-icon");
-                    answer.style.maxHeight = null;
+                    answer.style.maxHeight = "0px";
                     icon.textContent = "+";
                 }
             });
 
             // Toggle the clicked FAQ
             if (faqAnswer.style.maxHeight && faqAnswer.style.maxHeight !== "0px") {
-                faqAnswer.style.maxHeight = null;
+                faqAnswer.style.maxHeight = "0px";
                 faqIcon.textContent = "+";
             } else {
                 faqAnswer.style.maxHeight = faqAnswer.scrollHeight + "px";

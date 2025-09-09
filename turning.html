@@ -1,0 +1,1104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CNC Turning Services</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-50">
+
+    <!-- Header -->
+    <header class="fixed top-0 left-0 w-full bg-white shadow-md z-50">
+        <div class="max-w-7xl mx-auto flex items-center justify-between h-16 md:h-20 px-12 sm:px-8 lg:px-12">
+
+            <!-- Logo -->
+            <div class="flex items-center flex-shrink-0">
+                <img src="./Assets/fedele-logo-png.png" alt="Fedele Autocore Logo"
+                    class="h-10 sm:h-12 md:h-14 lg:h-16 w-auto object-contain" />
+            </div>
+
+            <!-- Nav Links (Desktop) -->
+            <nav class="hidden lg:flex items-center space-x-6 xl:space-x-5 2xl:space-x-6">
+                <a href="index.html"
+                    class="text-sm 2xl:text-base font-medium text-gray-700 hover:text-orange-600 transition-colors whitespace-nowrap">Home</a>
+
+                <!-- CNC Services -->
+                <div class="relative group">
+                    <a href="#"
+                        class="text-sm 2xl:text-base font-medium text-gray-700 hover:text-orange-600 transition-colors whitespace-nowrap">CNC
+                        Services</a>
+                    <div
+                        class="absolute left-0 top-full mt-1 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+                        <div class="bg-white shadow-xl rounded-lg min-w-48 border">
+                            <ul class="py-2">
+                                <li><a href="#"
+                                        class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">CNC
+                                        Milling</a></li>
+                                <li><a href="turning.html"
+                                        class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">CNC
+                                        Turning</a></li>
+                                <li><a href="#"
+                                        class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">5-Axis
+                                        Machining</a></li>
+                                <li><a href="#"
+                                        class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">Precision
+                                        Machining</a></li>
+                                <li><a href="#"
+                                        class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">CNC
+                                        Prototyping</a></li>
+                                <li><a href="custom-machining.html"
+                                        class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">Custom
+                                        Machining</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Industries -->
+                <div class="relative group">
+                    <a href="#"
+                        class="text-sm 2xl:text-base font-medium text-gray-700 hover:text-orange-600 transition-colors whitespace-nowrap">Industries</a>
+                    <div
+                        class="absolute left-0 top-full mt-1 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+                        <div class="bg-white shadow-xl rounded-lg min-w-56 border">
+                            <ul class="py-2">
+                                <li><a href="defence.html"
+                                        class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">Defence
+                                        Industry</a></li>
+                                <li><a href="oil&gas.html"
+                                        class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">Oil
+                                        & Gas Industry</a></li>
+                                <li><a href="automotive.html"
+                                        class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">Automotive
+                                        Industry</a></li>
+                                <li><a href="#"
+                                        class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">Construction
+                                        Industry</a></li>
+                                <li><a href="#"
+                                        class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">Energy
+                                        Solutions</a></li>
+                                <li><a href="#"
+                                        class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">Hydraulic
+                                        Power</a></li>
+                                <li><a href="#"
+                                        class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">Agricultural
+                                        / Tractor</a></li>
+                                <li><a href="#"
+                                        class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">Aerospace
+                                        Industry</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Locations -->
+                <div class="relative group">
+                    <a href="location.html"
+                        class="text-sm 2xl:text-base font-medium text-gray-700 hover:text-orange-600 transition-colors whitespace-nowrap">Locations</a>
+                    <div
+                        class="absolute left-0 top-full mt-1 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+                        <div class="bg-white shadow-xl rounded-lg min-w-40 border">
+                            <ul class="py-2">
+                                <li><a href="location.html"
+                                        class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">Melbourne</a>
+                                </li>
+                                <li><a href="#"
+                                        class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">Sydney</a>
+                                </li>
+                                <li><a href="#"
+                                        class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">Perth</a>
+                                </li>
+                                <li><a href="#"
+                                        class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">Adelaide</a>
+                                </li>
+                                <li><a href="#"
+                                        class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">Brisbane</a>
+                                </li>
+                                <li><a href="#"
+                                        class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">Darwin</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Company -->
+                <div class="relative group">
+                    <a href="#company"
+                        class="text-sm 2xl:text-base font-medium text-gray-700 hover:text-orange-600 transition-colors whitespace-nowrap">Company</a>
+                    <div
+                        class="absolute left-0 top-full mt-1 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+                        <div class="bg-white shadow-xl rounded-lg min-w-44 border">
+                            <ul class="py-2">
+                                <li><a href="about-us.html"
+                                        class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">About
+                                        Us</a></li>
+                                <li><a href="#"
+                                        class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">Blog</a>
+                                </li>
+                                <li><a href="#"
+                                        class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">Capabilities</a>
+                                </li>
+                                <li><a href="#"
+                                        class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">Quality
+                                        Standards</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Components -->
+                <div class="relative group">
+                    <a href="#components"
+                        class="text-sm 2xl:text-base font-medium text-gray-700 hover:text-orange-600 transition-colors whitespace-nowrap">Components</a>
+                    <div
+                        class="absolute left-0 top-full mt-1 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+                        <div class="bg-white shadow-xl rounded-lg min-w-52 border">
+                            <ul class="py-2">
+                                <li><a href="#"
+                                        class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">Drilling
+                                        Components</a></li>
+                                <li><a href="#"
+                                        class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">Engine
+                                        Components</a></li>
+                                <li><a href="#"
+                                        class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">Hydraulic
+                                        Components</a></li>
+                                <li><a href="#"
+                                        class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">Turbine
+                                        Components</a></li>
+                                <li><a href="#"
+                                        class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">Tractor
+                                        Components</a></li>
+                                <li><a href="#"
+                                        class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">Military
+                                        Components</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="contact.html"
+                    class="text-sm 2xl:text-base font-medium text-gray-700 hover:text-orange-600 transition-colors whitespace-nowrap">Contact</a>
+            </nav>
+
+            <!-- Action Buttons -->
+            <div class="flex items-center space-x-2 sm:space-x-3">
+                <!-- Quote Button -->
+                <button onclick="window.location.href='contact.html'"
+                    class="hidden md:inline-block bg-orange-600 text-white px-3 py-1.5 lg:px-4 lg:py-2 rounded-lg shadow text-xs lg:text-sm font-medium hover:bg-blue-900 transition-colors whitespace-nowrap">
+                    Get Quote
+                </button>
+
+                <!-- Mobile Menu Button -->
+                <button id="menu-toggle"
+                    class="lg:hidden text-gray-700 text-xl sm:text-2xl focus:outline-none p-1 hover:text-orange-600 transition-colors">
+                    <span class="block">☰</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Nav (Right Sidebar) -->
+        <nav id="mobile-menu" class="hidden fixed top-0 right-0 h-full w-[50%] md:w-[20%] bg-white shadow-lg z-50 
+              transform translate-x-full transition-transform duration-300">
+            <ul class="flex flex-col space-y-4 p-6 overflow-y-auto">
+                <li><a href="index.html" class="font-bold text-gray-700 hover:text-orange-600">Home</a></li>
+
+                <!-- CNC Services -->
+                <li>
+                    <button
+                        class="w-full text-left font-bold text-gray-700 hover:text-orange-600 flex justify-between items-center"
+                        onclick="toggleDropdown('servicesDropdown')">
+                        CNC Services <span>+</span>
+                    </button>
+                    <ul id="servicesDropdown" class="hidden pl-4 space-y-2">
+                        <li><a href="#">CNC Milling</a></li>
+                        <li><a href="#">CNC Turning</a></li>
+                        <li><a href="#">5-Axis Machining</a></li>
+                        <li><a href="#">Precision Machining</a></li>
+                        <li><a href="#">CNC Prototyping</a></li>
+                        <li><a href="custom-machining.html">Custom Machining</a></li>
+                    </ul>
+                </li>
+
+                <!-- Industries -->
+                <li>
+                    <button
+                        class="w-full text-left font-bold text-gray-700 hover:text-orange-600 flex justify-between items-center"
+                        onclick="toggleDropdown('industriesDropdown')">
+                        Industries <span>+</span>
+                    </button>
+                    <ul id="industriesDropdown" class="hidden pl-4 space-y-2">
+                        <li><a href="defence.html">Defence Industry</a></li>
+                        <li><a href="oil&gas.html">Oil & Gas Industry</a></li>
+                        <li><a href="automotive.html">Automotive Industry</a></li>
+                        <li><a href="#">Construction Industry</a></li>
+                        <li><a href="#">Energy Solutions</a></li>
+                        <li><a href="#">Hydraulic Power</a></li>
+                        <li><a href="#">Agricultural / Tractor</a></li>
+                        <li><a href="#">Aerospace Industry</a></li>
+                    </ul>
+                </li>
+
+                <!-- Company -->
+                <li>
+                    <button
+                        class="w-full text-left font-bold text-gray-700 hover:text-orange-600 flex justify-between items-center"
+                        onclick="toggleDropdown('companyDropdown')">
+                        Company <span>+</span>
+                    </button>
+                    <ul id="companyDropdown" class="hidden pl-4 space-y-2">
+                        <li><a href="about-us.html">About Us</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Capabilities</a></li>
+                        <li><a href="#">Quality Standards</a></li>
+                    </ul>
+                </li>
+
+                <!-- Components -->
+                <li>
+                    <button
+                        class="w-full text-left font-bold text-gray-700 hover:text-orange-600 flex justify-between items-center"
+                        onclick="toggleDropdown('componentsDropdown')">
+                        Components <span>+</span>
+                    </button>
+                    <ul id="componentsDropdown" class="hidden pl-4 space-y-2">
+                        <li><a href="#">Drilling Components</a></li>
+                        <li><a href="#">Engine Components</a></li>
+                        <li><a href="#">Hydraulic Components</a></li>
+                        <li><a href="#">Turbine Components</a></li>
+                        <li><a href="#">Tractor Components</a></li>
+                        <li><a href="#">Military Components</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="location.html" class="font-bold text-gray-700 hover:text-orange-600">Locations</a></li>
+                <li><a href="contact.html" class="font-bold text-gray-700 hover:text-orange-600">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- Dark Overlay -->
+        <div id="overlay" class="hidden fixed inset-0 bg-black/50 z-40"></div>
+    </header>
+
+
+    <!--Hero Section-->
+    <section class="relative min-h-screen flex items-center bg-cover bg-center bg-no-repeat w-full">
+        <!-- Background Image -->
+        <div class="absolute inset-0 -z-10">
+            <img src="Assets/cnc-turning-banner.jpg" alt="automotive-precision component"
+                class="w-full h-full object-cover [object-position:20%_50%] brightness-125 absolute inset-0" />
+
+            <!-- Overlay -->
+            <div class="absolute inset-0 bg-gradient-to-r from-black via-black/70 to-transparent"></div>
+        </div>
+
+        <!-- Content -->
+
+        <div class="relative z-10 w-full px-12 md:px-12 flex flex-col md:flex-row items-center md:items-start">
+
+            <!-- Left Content -->
+            <div class="text-left w-full md:w-1/2 mt-24 md:mt-32">
+                <h1 class="text-4xl md:text-6xl font-bold mb-6 text-white max-w-2xl">
+                    CNC <span class="text-orange-500">Turning</span> Services
+                </h1>
+                <p class="text-lg md:text-xl text-gray-200 max-w-xl leading-relaxed">
+                    Precision Machining Solutions Across Australia
+                </p>
+            </div>
+
+            <!-- Right side (empty space to reveal background image) -->
+            <div class="hidden md:block md:w-1/2"></div>
+        </div>
+
+    </section>
+
+    <!--About turning and manufacturing-->
+    <section class="bg-gray-50">
+        <div class=" mx-auto w-full p-12 lg:px-12 bg-gray-100">
+
+            <!-- Header Section -->
+            <div class="mb-16 bg-gray-100">
+                <h1 class="text-2xl md:text-3xl lg:text-4xl font-bold text-blue-900 mb-8">
+                    <span class="border-l-4 border-orange-500 pl-4"> Professional CNC Turning Manufacturing</span>
+                </h1>
+
+                <p class="text-lg text-grey-900 leading-relaxed mb-6">
+                    Fedele Autocore delivers exceptional CNC turning services throughout Australia, specializing in
+                    precision-machined cylindrical components and custom turned parts. Our advanced manufacturing
+                    capabilities combine state-of-the-art technology with decades of expertise to produce high-quality
+                    components that meet the most demanding specifications.
+                </p>
+                <p class="text-lg text-grey-900 leading-relaxed mb-6">
+                    CNC turning is a sophisticated subtractive manufacturing process where raw material is rotated on a
+                    spindle while precision cutting tools remove material to create the desired shape. This method
+                    excels in producing cylindrical, conical, and complex rotational geometries with exceptional
+                    accuracy and surface finish quality.
+                </p>
+            </div>
+
+
+            <div class="mb-16 bg-gray-100">
+                <h1 class="text-2xl md:text-3xl lg:text-4xl font-bold text-blue-900 mb-8">
+                    <span class="border-l-4 border-orange-500 pl-4">What is CNC Turning?</span>
+                </h1>
+
+                <p class="text-lg text-grey-900 leading-relaxed mb-6">
+                    CNC turning utilizes computer-controlled lathes to rotate workpieces while stationary cutting tools
+                    precisely remove material. Unlike CNC milling where the cutting tool rotates, turning operations
+                    involve continuous cutting contact as the workpiece spins at controlled speeds. This process is
+                    ideal for creating shafts, bushings, pins, fittings, and other cylindrical components with tight
+                    tolerances and superior surface finishes.
+                </p>
+                <p class="text-lg text-grey-900 leading-relaxed mb-6">
+                    The turning process can accommodate both external and internal machining operations, enabling the
+                    production of complex hollow components, threaded parts, and intricate profiles. Our skilled
+                    machinists program each operation to optimize cutting parameters, ensuring consistent quality across
+                    production runs.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Our Custom Machining Capabilities -->
+    <section class="p-12 bg-gray-50">
+        <div class="w-full mx-auto">
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <!-- Precision CNC Machining -->
+                <div class="bg-white rounded-lg border border-gray-200 hover:shadow-lg transition-shadow">
+                    <img src="Assets/precision-cnc-machining.jpg" alt="Aircraft Components"
+                        class="w-full h-60 object-cover rounded-md mb-4">
+                    <h3 class="text-xl font-bold text-blue-900 mb-4 text-center">Precision Engineering</h3>
+                    <p class="text-gray-600 text-center px-4 py-2">
+                        Achieve tolerances as tight as ±0.005mm with our advanced CNC turning capabilities. Every
+                        component undergoes rigorous quality control to ensure dimensional accuracy and geometric
+                        precision.
+                    </p>
+                </div>
+
+                <!-- Custom Engineering Solutions -->
+                <div class="bg-white rounded-lg border border-gray-200 hover:shadow-lg transition-shadow">
+                    <img src="Assets/precision-cnc-machining.jpg" alt="Weapon System Parts"
+                        class="w-full h-60 object-cover rounded-md mb-4">
+                    <h3 class="text-xl font-bold text-blue-900 mb-4 text-center">Rapid Production</h3>
+                    <p class="text-gray-600 text-center px-4 py-2">
+                        Efficient programming and optimized machining cycles enable quick turnaround times without
+                        compromising quality. Perfect for both prototype development and high-volume production runs.
+                    </p>
+                </div>
+
+                <!-- Rapid Prototyping -->
+                <div class="bg-white rounded-lg border border-gray-200 hover:shadow-lg transition-shadow">
+                    <img src="Assets/precision-cnc-machining.jpg" alt="Vehicle Components"
+                        class="w-full h-60 object-cover rounded-md mb-4">
+                    <h3 class="text-xl font-bold text-blue-900 mb-4 text-center">Repeatable Results</h3>
+                    <p class="text-gray-600 text-center px-4 py-2">
+                        CNC automation ensures consistent part-to-part repeatability, eliminating human error and
+                        maintaining quality standards across entire production batches.
+                    </p>
+                </div>
+
+                <!-- Quality Excellence -->
+                <div class="bg-white rounded-lg border border-gray-200 hover:shadow-lg transition-shadow">
+                    <img src="Assets/precision-cnc-machining.jpg" alt="Naval Components"
+                        class="w-full h-60 object-cover rounded-md mb-4">
+                    <h3 class="text-xl font-bold text-blue-900 mb-4 text-center">Versatile Capabilities</h3>
+                    <p class="text-gray-600 text-center px-4 py-2">
+                        From simple bushings to complex multi-feature components, our turning centers handle diverse
+                        geometries and specifications with equal precision and efficiency.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- Divider Line -->
+    <hr class="border-t border-gray-300 w-full mx-auto">
+
+    <!-- Key Advantages Section -->
+    <section class="w-full bg-blue-950 text-white p-12">
+        <div class="max-w-6xl mx-auto">
+            <!-- Heading -->
+            <h2 class="text-3xl md:text-4xl font-extrabold mb-8 flex items-center">
+                <span class="border-l-4 border-orange-500 pl-4">Key Advantages of CNC Turning</span>
+            </h2>
+
+            <!-- List -->
+            <ul class="space-y-4 text-lg leading-relaxed">
+                <li>
+                    <span class="font-bold text-orange-500">Superior Accuracy:</span>
+                    Achieve dimensional tolerances that exceed traditional machining methods
+                </li>
+                <li>
+                    <span class="font-bold text-orange-500">Excellent Surface Finish:</span>
+                    Produce components with smooth surfaces requiring minimal post-processing
+                </li>
+                <li>
+                    <span class="font-bold text-orange-500">Cost-Effective Production:</span>
+                    Reduced setup time and minimal tooling requirements lower per-part costs
+                </li>
+                <li>
+                    <span class="font-bold text-orange-500">Material Efficiency:</span>
+                    Precise material removal minimizes waste and optimizes raw material usage
+                </li>
+                <li>
+                    <span class="font-bold text-orange-500">Complex Geometries:</span>
+                    Create intricate profiles, threads, and multi-diameter features in single setups
+                </li>
+                <li>
+                    <span class="font-bold text-orange-500">Scalable Manufacturing:</span>
+                    Seamlessly transition from prototype quantities to high-volume production
+                </li>
+                <li>
+                    <span class="font-bold text-orange-500">Quality Consistency:</span>
+                    Automated processes ensure uniform quality across all manufactured parts
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!-- Divider Line -->
+    <hr class="border-t border-gray-300 w-full mx-auto">
+
+    <!---Materials we machine-->
+
+    <section class="bg-gray-50">
+        <div class=" mx-auto w-full lg:px-12 bg-gray-100 p-12">
+
+            <!-- Header Section -->
+            <div class="mb-16 bg-gray-100">
+                <h1 class="text-2xl md:text-3xl lg:text-4xl font-bold text-blue-900 mb-8">
+                    <span class="border-l-4 border-orange-500 pl-4"> Materials We Machine</span>
+                </h1>
+
+                <p class="text-lg text-grey-900 leading-relaxed mb-6">
+                    Fedele Autocore's CNC turning capabilities encompass an extensive range of engineering materials,
+                    each carefully selected and machined using optimized parameters to achieve superior results.
+                </p>
+            </div>
+            <div class="w-full mx-auto text-center">
+                <!-- Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+
+                    <!-- Steel Alloys -->
+                    <div
+                        class="bg-white rounded-lg border border-gray-200 overflow-hidden hover:shadow-xl transition-shadow">
+                        <img src="Assets/steel.jpeg" alt="Aluminum Alloys" class="w-full h-48 object-cover">
+                        <div class="p-6 border-l-4 border-blue-500 h-full">
+                            <h3 class="text-xl font-bold text-blue-900 mb-4">Steel Alloys</h3>
+                            <p class="text-gray-600">
+                                Mild steel, stainless steel 304/316, tool steels, hardened alloys
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Card 2 -->
+                    <!-- Aluminum Alloys -->
+                    <div
+                        class="bg-white rounded-lg border border-gray-200 overflow-hidden hover:shadow-xl transition-shadow">
+                        <img src="Assets/steel.jpeg" alt="Aluminum Alloys" class="w-full h-48 object-cover">
+                        <div class="p-6 border-l-4 border-blue-500 h-full">
+                            <h3 class="text-xl font-bold text-blue-900 mb-4">Aluminium Alloys</h3>
+                            <p class="text-gray-600">
+                                Excellent strength, corrosion resistance and machinability for lightweight applications
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Card 3 -->
+                    <div
+                        class="bg-white rounded-lg border border-gray-200 overflow-hidden hover:shadow-xl transition-shadow">
+                        <img src="Assets/steel.jpeg" alt="Aluminum Alloys" class="w-full h-48 object-cover">
+                        <div class="p-6 border-l-4 border-blue-500 h-full">
+                            <h3 class="text-xl font-bold text-blue-900 mb-4">Brass & Bronze</h3>
+                            <p class="text-gray-600">
+                                Naval brass, phosphor bronze, silicon bronze
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div
+                        class="bg-white rounded-lg border border-gray-200 overflow-hidden hover:shadow-xl transition-shadow">
+                        <img src="Assets/steel.jpeg" alt="Aluminum Alloys" class="w-full h-48 object-cover">
+                        <div class="p-6 border-l-4 border-blue-500 h-full">
+                            <h3 class="text-xl font-bold text-blue-900 mb-4">Engineering Plastics</h3>
+                            <p class="text-gray-600">
+                                Nylon, Acetal (POM), PEEK, PTFE, HDPE
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Card 5 -->
+                    <div
+                        class="bg-white rounded-lg border border-gray-200 overflow-hidden hover:shadow-xl transition-shadow">
+                        <img src="Assets/steel.jpeg" alt="Aluminum Alloys" class="w-full h-48 object-cover">
+                        <div class="p-6 border-l-4 border-blue-500 h-full">
+                            <h3 class="text-xl font-bold text-blue-900 mb-4">Copper Alloys</h3>
+                            <p class="text-gray-600">
+                                Copper, beryllium copper, electrical grade materials
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Card 6 -->
+                    <div
+                        class="bg-white rounded-lg border border-gray-200 overflow-hidden hover:shadow-xl transition-shadow">
+                        <img src="Assets/steel.jpeg" alt="Aluminum Alloys" class="w-full h-48 object-cover">
+                        <div class="p-6 border-l-4 border-blue-500 h-full">
+                            <h3 class="text-xl font-bold text-blue-900 mb-4">Titanium</h3>
+                            <p class="text-gray-600">
+                                Grade 2, Grade 5 titanium alloys for aerospace applications
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Divider Line -->
+    <hr class="border-t border-gray-300 w-full mx-auto">
+
+    <!---Industry Applications-->
+
+    <section class="bg-gray-50">
+        <div class=" mx-auto w-full lg:px-12 bg-gray-100 p-12">
+
+            <!-- Header Section -->
+            <div class="mb-16 bg-gray-100">
+                <h1 class="text-2xl md:text-3xl lg:text-4xl font-bold text-blue-900 mb-8">
+                    <span class="border-l-4 border-orange-500 pl-4"> Industry Applications</span>
+                </h1>
+
+                <p class="text-lg text-grey-900 leading-relaxed mb-6">
+                    Our precision CNC turning services support diverse industries across Australia, delivering
+                    components that meet stringent quality and performance requirements.
+                </p>
+            </div>
+            <div class="w-full mx-auto text-center">
+                <!-- Grid -->
+                <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+
+                    <!-- Automotive -->
+                    <div class="bg-white rounded-2xl shadow-lg hover:shadow-xl flex flex-col items-center transition">
+                        <img src="Assets/automotive.jpeg" alt="Automotive Industry"
+                            class="w-full h-40 object-cover rounded-lg mb-4">
+                        <h3 class="font-semibold text-lg text-gray-800 mb-2">Automotive Industry</h3>
+                        <p class="text-gray-600 text-sm mb-4 px-4">
+                            Engine components, transmission parts, suspension bushings, custom fasteners, and precision
+                            shafts for automotive applications.
+                        </p>
+                        <div class="flex flex-wrap gap-2 justify-center px-4 pb-4">
+                            <span class="px-3 py-1 bg-blue-600 text-white rounded-full text-xs">Melbourne</span>
+                            <span class="px-3 py-1 bg-gray-200 text-gray-700 rounded-full text-xs">Adelaide</span>
+                            <span class="px-3 py-1 bg-gray-200 text-gray-700 rounded-full text-xs">Sydney</span>
+                            <span class="px-3 py-1 bg-gray-200 text-gray-700 rounded-full text-xs">Brisbane</span>
+                        </div>
+                    </div>
+
+                    <!--Aerospace & Defence -->
+                    <div class="bg-white rounded-2xl shadow-lg hover:shadow-xl flex flex-col items-center transition">
+                        <img src="Assets/defence.jpg" alt="Aerospace & Defense"
+                            class="w-full h-40 object-cover rounded-lg mb-4">
+                        <h3 class="font-semibold text-lg text-gray-800 mb-2">Aerospace & Defense</h3>
+                        <p class="text-gray-600 text-sm mb-4 px-4">
+                            Flight-critical components, landing gear parts, hydraulic fittings, and specialized
+                            fasteners meeting aerospace standards.
+                        </p>
+                        <div class="flex flex-wrap gap-2 justify-center px-4 pb-4">
+                            <span class="px-3 py-1 bg-blue-600 text-white rounded-full text-xs">Adelaide</span>
+                            <span class="px-3 py-1 bg-gray-200 text-gray-700 rounded-full text-xs">Melbourne</span>
+                            <span class="px-3 py-1 bg-gray-200 text-gray-700 rounded-full text-xs">Sydney</span>
+                            <span class="px-3 py-1 bg-gray-200 text-gray-700 rounded-full text-xs">Perth</span>
+                        </div>
+
+
+                    </div>
+
+                    <!-- Oil & Gas -->
+                    <div class="bg-white rounded-2xl shadow-lg hover:shadow-xl flex flex-col items-center transition">
+                        <img src="Assets/gas&oil.jpg" alt="Oil & Gas Industry"
+                            class="w-full h-40 object-cover rounded-lg mb-4">
+                        <h3 class="font-semibold text-lg text-gray-800 mb-2">Oil & Gas Industry</h3>
+                        <p class="text-gray-600 text-sm mb-4 px-4">
+                            Offshore drilling, subsea equipment, pipeline components and LNG facility parts.
+                        </p>
+                        <div class="flex flex-wrap gap-2 justify-center px-4 pb-4">
+                            <span class="px-3 py-1 bg-blue-600 text-white rounded-full text-xs">Perth</span>
+                            <span class="px-3 py-1 bg-gray-200 text-gray-700 rounded-full text-xs">Darwin</span>
+                            <span class="px-3 py-1 bg-gray-200 text-gray-700 rounded-full text-xs">Melbourne</span>
+                        </div>
+                    </div>
+
+
+                    <!-- Medical Devices -->
+                    <div class="bg-white rounded-2xl shadow-lg hover:shadow-xl flex flex-col items-center transition">
+                        <img src="Assets/" alt="Medical Devices" class="w-full h-40 object-cover rounded-lg mb-4">
+                        <h3 class="font-semibold text-lg text-gray-800 mb-2">Medical Devices</h3>
+                        <p class="text-gray-600 text-sm mb-4 px-4">
+                            Heavy machinery parts, infrastructure components and construction equipment solutions.
+                        </p>
+                        <div class="flex flex-wrap gap-2 justify-center px-4 pb-4">
+                            <span class="px-3 py-1 bg-blue-600 text-white rounded-full text-xs">Sydney</span>
+                            <span class="px-3 py-1 bg-gray-200 text-gray-700 rounded-full text-xs">Brisbane</span>
+                            <span class="px-3 py-1 bg-gray-200 text-gray-700 rounded-full text-xs">Melbourne</span>
+                            <span class="px-3 py-1 bg-gray-200 text-gray-700 rounded-full text-xs">Perth</span>
+                        </div>
+                    </div>
+
+                    <!-- Industrial Equipment -->
+                    <div class="bg-white rounded-2xl shadow-lg hover:shadow-xl flex flex-col items-center transition">
+                        <img src="Assets/hydraulic.jpeg" alt="Industrial Equipment"
+                            class="w-full h-40 object-cover rounded-lg mb-4">
+                        <h3 class="font-semibold text-lg text-gray-800 mb-2">Industrial Equipment</h3>
+                        <p class="text-gray-600 text-sm mb-4 px-4">
+                            Pump components, valve parts, bearing housings, coupling elements, and machinery components.
+                        </p>
+                        <div class="flex flex-wrap gap-2 justify-center px-4 pb-4">
+                            <span class="px-3 py-1 bg-blue-600 text-white rounded-full text-xs">Melbourne</span>
+                            <span class="px-3 py-1 bg-gray-200 text-gray-700 rounded-full text-xs">Sydney</span>
+                            <span class="px-3 py-1 bg-gray-200 text-gray-700 rounded-full text-xs">Perth</span>
+                        </div>
+                    </div>
+
+                    <!-- Electronics -->
+                    <div class="bg-white rounded-2xl shadow-lg hover:shadow-xl flex flex-col items-center transition">
+                        <img src="Assets/" alt="Electronics" class="w-full h-40 object-cover rounded-lg mb-4">
+                        <h3 class="font-semibold text-lg text-gray-800 mb-2">Electronics</h3>
+                        <p class="text-gray-600 text-sm mb-4 px-4">
+                            Connector housings, heat sinks, precision pins, and custom electronic enclosure components.
+                        </p>
+                        <div class="flex flex-wrap gap-2 justify-center px-4 pb-4">
+                            <span class="px-3 py-1 bg-blue-600 text-white rounded-full text-xs">Melbourne</span>
+                            <span class="px-3 py-1 bg-gray-200 text-gray-700 rounded-full text-xs">Brisbane</span>
+                            <span class="px-3 py-1 bg-gray-200 text-gray-700 rounded-full text-xs">Adelaide</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Divider Line -->
+    <hr class="border-t border-gray-300 w-full mx-auto">
+
+    <!-- Manufacturing Process Section -->
+    <section class="w-full bg-white p-12">
+        <div class="max-w-6xl mx-auto">
+            <!-- Heading -->
+            <h2 class="text-3xl md:text-4xl font-extrabold text-blue-900 mb-10 flex items-center">
+                <span class="border-l-4 border-orange-500 pl-4">Our Manufacturing Process</span>
+            </h2>
+
+            <!-- Steps -->
+            <div class="space-y-6">
+                <!-- Step 1 -->
+                <div class="flex items-start bg-white shadow-md rounded-lg p-6">
+                    <div
+                        class="flex-shrink-0 w-10 h-10 flex items-center justify-center bg-orange-500 text-white font-bold rounded-full mr-4">
+                        1
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-semibold text-blue-900">Design Analysis & Consultation</h3>
+                        <p class="text-gray-700">
+                            Our engineering team reviews your specifications, optimizes designs for manufacturability,
+                            and provides technical recommendations to enhance part performance and reduce costs.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="flex items-start bg-white shadow-md rounded-lg p-6">
+                    <div
+                        class="flex-shrink-0 w-10 h-10 flex items-center justify-center bg-orange-500 text-white font-bold rounded-full mr-4">
+                        2
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-semibold text-blue-900">Material Selection & Procurement</h3>
+                        <p class="text-gray-700">
+                            We source high-quality raw materials from certified suppliers, ensuring material properties
+                            meet your application requirements and industry standards.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="flex items-start bg-white shadow-md rounded-lg p-6">
+                    <div
+                        class="flex-shrink-0 w-10 h-10 flex items-center justify-center bg-orange-500 text-white font-bold rounded-full mr-4">
+                        3
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-semibold text-blue-900">Programming & Setup</h3>
+                        <p class="text-gray-700">
+                            Skilled programmers create optimized CNC programs, select appropriate cutting tools,
+                            and configure machine setups for maximum efficiency and precision.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="flex items-start bg-white shadow-md rounded-lg p-6">
+                    <div
+                        class="flex-shrink-0 w-10 h-10 flex items-center justify-center bg-orange-500 text-white font-bold rounded-full mr-4">
+                        4
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-semibold text-blue-900">Precision Machining</h3>
+                        <p class="text-gray-700">
+                            Components are machined using state-of-the-art CNC lathes with continuous monitoring
+                            to ensure dimensional accuracy and surface finish quality.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Step 5 -->
+                <div class="flex items-start bg-white shadow-md rounded-lg p-6">
+                    <div
+                        class="flex-shrink-0 w-10 h-10 flex items-center justify-center bg-orange-500 text-white font-bold rounded-full mr-4">
+                        5
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-semibold text-blue-900">Quality Inspection</h3>
+                        <p class="text-gray-700">
+                            Every part undergoes comprehensive inspection using precision measuring equipment,
+                            ensuring conformance to specifications and quality standards.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Step 6 -->
+                <div class="flex items-start bg-white shadow-md rounded-lg p-6">
+                    <div
+                        class="flex-shrink-0 w-10 h-10 flex items-center justify-center bg-orange-500 text-white font-bold rounded-full mr-4">
+                        6
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-semibold text-blue-900">Finishing & Delivery</h3>
+                        <p class="text-gray-700">
+                            Parts receive appropriate surface treatments or coatings as specified, followed by
+                            careful packaging and timely delivery to your facility.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Divider Line -->
+    <hr class="border-t border-gray-300 w-full mx-auto">
+
+    <!-- Quality Assurance & Certifications Section -->
+    <section class="w-full bg-white p-12">
+        <div class="max-w-6xl mx-auto">
+            <!-- Heading -->
+            <h2 class="text-3xl md:text-4xl font-extrabold text-blue-900 mb-6 flex items-center">
+                <span class="border-l-4 border-orange-500 pl-4">Quality Assurance & Certifications</span>
+            </h2>
+
+            <!-- Description -->
+            <p class="text-gray-700 leading-relaxed mb-8">
+                Fedele Autocore maintains rigorous quality management systems to ensure every turned
+                component meets or exceeds customer expectations. Our quality assurance process includes
+                incoming material inspection, in-process monitoring, and final dimensional verification
+                using calibrated measuring instruments.
+            </p>
+
+            <!-- Certifications Badges -->
+            <div class="flex justify-center flex-wrap gap-4">
+                <span class="bg-green-500 text-white px-6 py-2 rounded-full font-semibold text-sm shadow-md">
+                    ISO 9001:2015 Certified
+                </span>
+                <span class="bg-green-500 text-white px-6 py-2 rounded-full font-semibold text-sm shadow-md">
+                    AS9100 Aerospace
+                </span>
+                <span class="bg-green-500 text-white px-6 py-2 rounded-full font-semibold text-sm shadow-md">
+                    Certified Measuring Equipment
+                </span>
+                <span class="bg-green-500 text-white px-6 py-2 rounded-full font-semibold text-sm shadow-md">
+                    Statistical Process Control
+                </span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Divider Line -->
+    <hr class="border-t border-gray-300 w-full mx-auto">
+
+
+    <!-- Why Choose Fedele Autocore? -->
+    <section class="w-full white text-blue-900 p-12">
+        <div class="max-w-6xl mx-auto">
+            <!-- Heading -->
+            <h2 class="text-3xl md:text-4xl font-extrabold mb-8 flex items-center">
+                <span class="border-l-4 border-orange-500 pl-4">Why Choose Fedele Autocore?</span>
+            </h2>
+
+            <!-- List -->
+            <ul class="space-y-4 text-lg leading-relaxed">
+                <li>
+                    <span class="font-bold text-orange-500">Advanced Equipment:</span>
+                    State-of-the-art CNC turning centers with multi-axis capabilities
+                </li>
+                <li>
+                    <span class="font-bold text-orange-500">Expert Machinists:</span>
+                    Highly skilled operators with extensive experience in precision machining
+                </li>
+                <li>
+                    <span class="font-bold text-orange-500">Nationwide Service:</span>
+                    Serving customers across Australia with consistent quality and delivery
+                </li>
+                <li>
+                    <span class="font-bold text-orange-500">Competitive Pricing:</span>
+                    Efficient operations and strategic sourcing deliver excellent value
+                </li>
+                <li>
+                    <span class="font-bold text-orange-500">Technical Support:</span>
+                    Engineering assistance from design through production and beyond
+                </li>
+                <li>
+                    <span class="font-bold text-orange-500">Flexible Capacity:</span>
+                    Accommodating both small-batch prototypes and large production runs
+                </li>
+                <li>
+                    <span class="font-bold text-orange-500">Quick Turnaround:</span>
+                    Streamlined processes ensure rapid delivery without quality compromise
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Divider Line -->
+    <hr class="border-t border-gray-300 w-full mx-auto">
+
+    <!-- Call-to-Action Section -->
+    <section class="w-full bg-white px-12 p-12">
+        <div class="w-full mx-auto text-center border border-gray-200 rounded-xl shadow-md p-10">
+            <!-- Heading -->
+            <h2 class="text-3xl md:text-4xl font-extrabold text-blue-900 mb-6 flex items-center justify-center">
+                <span class="border-l-4 border-blue-500 pl-4">Ready to Start Your CNC Turning Project?</span>
+            </h2>
+
+            <!-- Description -->
+            <p class="text-gray-700 leading-relaxed mb-8">
+                Experience the precision and reliability of Fedele Autocore's CNC turning services.
+                Our team is ready to discuss your requirements and provide solutions that exceed expectations.
+            </p>
+
+            <!-- Button -->
+            <a href="contact.html"
+                class="inline-block bg-orange-500 hover:bg-orange-600 transform hover:scale-105 transition duration-300 ease-in-out text-white font-semibold px-8 py-3 rounded-full shadow-md">
+                Get Your Quote Today
+            </a>
+
+            <!-- Contact text -->
+            <p class="mt-8 text-gray-700">
+                <span class="font-bold text-blue-900">Contact us:</span>
+                Discuss your CNC turning requirements with our experienced team and discover how we can support your
+                manufacturing goals across Australia.
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-gray-300 py-12 px-12 sm:px-8 lg:px-12">
+        <div class="w-full mx-auto grid grid-cols-1 md:grid-cols-5 gap-8">
+            <!-- Column 1 -->
+            <div>
+                <h3 class="text-orange-600 font-bold text-lg mb-4">Fedele Autocore</h3>
+                <p class="text-sm mb-4">
+                    Australia's leading CNC machining specialists serving major industries
+                    across Melbourne, Sydney, Perth, Adelaide, Brisbane and Darwin.
+                </p>
+                <div class="space-y-2">
+                    <p class="text-sm flex items-start">
+                        <span class="font-semibold mr-2">Phone:</span> 1300 CNC TECH
+                    </p>
+                    <p class="text-sm flex items-start">
+                        <span class="font-semibold mr-2">Email:</span>
+                        info@fedeleautocore.com.au
+                    </p>
+                    <p class="text-sm flex items-start">
+                        <span class="font-semibold mr-2">ABN:</span> 12 345 678 901
+                    </p>
+                </div>
+            </div>
+
+            <!-- Column 2 -->
+            <div>
+                <h3 class="text-orange-600 font-bold text-lg mb-4">CNC Services</h3>
+                <ul class="space-y-3">
+                    <li>
+                        <a href="#"
+                            class="text-sm hover:text-white transition-colors duration-300 flex items-center">CNC
+                            Machining</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="text-sm hover:text-white transition-colors duration-300 flex items-center">CNC
+                            Turning</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="text-sm hover:text-white transition-colors duration-300 flex items-center">CNC
+                            Milling</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="text-sm hover:text-white transition-colors duration-300 flex items-center">5-Axis
+                            Machining</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="text-sm hover:text-white transition-colors duration-300 flex items-center">Precision
+                            Machining</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="text-sm hover:text-white transition-colors duration-300 flex items-center">CNC
+                            Prototyping</a>
+                    </li>
+                    <li>
+                        <a href="custom-machining.html"
+                            class="text-sm hover:text-white transition-colors duration-300 flex items-center">Custom
+                            Machining</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Column 3 -->
+            <div>
+                <h3 class="text-orange-600 font-bold text-lg mb-4">Australian Locations</h3>
+                <ul class="space-y-3">
+                    <li>
+                        <a href="#"
+                            class="text-sm hover:text-white transition-colors duration-300 flex items-center">Melbourne
+                            CNC</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="text-sm hover:text-white transition-colors duration-300 flex items-center">Sydney
+                            CNC</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="text-sm hover:text-white transition-colors duration-300 flex items-center">Perth
+                            CNC</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="text-sm hover:text-white transition-colors duration-300 flex items-center">Adelaide
+                            CNC</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="text-sm hover:text-white transition-colors duration-300 flex items-center">Brisbane
+                            CNC</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="text-sm hover:text-white transition-colors duration-300 flex items-center">Darwin
+                            CNC</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Column 4 -->
+            <div>
+                <h3 class="text-orange-600 font-bold text-lg mb-4">Industries Served</h3>
+                <ul class="space-y-3">
+                    <li>
+                        <a href="#"
+                            class="text-sm hover:text-white transition-colors duration-300 flex items-center">Defence</a>
+                    </li>
+                    <li>
+                        <a href="oil&gas.html"
+                            class="text-sm hover:text-white transition-colors duration-300 flex items-center">Oil &
+                            Gas</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="text-sm hover:text-white transition-colors duration-300 flex items-center">Aerospace</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="text-sm hover:text-white transition-colors duration-300 flex items-center">Automotive</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="text-sm hover:text-white transition-colors duration-300 flex items-center">Manufacturing</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="text-sm hover:text-white transition-colors duration-300 flex items-center">Medical</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Column 5 -->
+            <div>
+                <h3 class="text-orange-600 font-bold text-lg mb-4">Company</h3>
+                <ul class="space-y-3">
+                    <li>
+                        <a href="about-us.html"
+                            class="text-sm hover:text-white transition-colors duration-300 flex items-center">About
+                            Us</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="text-sm hover:text-white transition-colors duration-300 flex items-center">Industry
+                            Blog</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="text-sm hover:text-white transition-colors duration-300 flex items-center">Capabilities</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="text-sm hover:text-white transition-colors duration-300 flex items-center">Quality
+                            Standards</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="text-sm hover:text-white transition-colors duration-300 flex items-center">Emerging
+                            Services</a>
+                    </li>
+                    <li>
+                        <a href="contact.html"
+                            class="text-sm hover:text-white transition-colors duration-300 flex items-center">Contact
+                            Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Bottom Section -->
+        <div class="max-w-7xl mx-auto mt-10 pt-8 border-t border-gray-700">
+            <div class="flex flex-col md:flex-row justify-center items-center">
+                <p class="text-sm text-gray-400 mb-4 md:mb-0">
+                    &copy; 2024 Fedele Autocore. All rights reserved.
+                </p>
+                <div class="flex flex-wrap justify-center gap-6">
+                    <a href="#" class="text-sm text-blue-600 hover:text-white transition-colors duration-300"> Privacy
+                        Policy</a>
+                    <a href="#" class="text-sm text-blue-600 hover:text-white transition-colors duration-300">Terms of
+                        Service</a>
+                    <a href="#"
+                        class="text-sm text-blue-600 hover:text-white transition-colors duration-300">Sitemap</a>
+                    <a href="#"
+                        class="text-sm text-blue-600 hover:text-white transition-colors duration-300">Careers</a>
+                    <a href="#" class="text-sm text-blue-600 hover:text-white transition-colors duration-300">Supplier
+                        Portal</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

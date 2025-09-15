@@ -2,15 +2,22 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Service Page - Defence CNC Machining</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Precision Hydraulic CNC Machining</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init({
+                publicKey: "Xe_Mw3aGiwlJhrnTU",
+            });
+        })();
+    </script>
 </head>
 
-<body class="bg-gray-900 text-white">
+<body class="bg-gray-50 w-full">
     <!-- Header -->
-    <header class="fixed top-0 left-0 w-full bg-white shadow-md z-50 text-gray-700">
+    <header class="fixed top-0 left-0 w-full bg-white shadow-md z-50">
         <div class="max-w-7xl mx-auto flex items-center justify-between h-16 md:h-20 px-12 sm:px-8 lg:px-12">
 
             <!-- Logo -->
@@ -73,13 +80,13 @@
                                 <li><a href="automotive.html"
                                         class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">Automotive
                                         Industry</a></li>
-                                <li><a href="#"
+                                <li><a href="construction.html"
                                         class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">Construction
                                         Industry</a></li>
-                                <li><a href="#"
+                                <li><a href="energy.html"
                                         class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">Energy
                                         Solutions</a></li>
-                                <li><a href="#"
+                                <li><a href="hydraulic.html"
                                         class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">Hydraulic
                                         Power</a></li>
                                 <li><a href="#"
@@ -307,7 +314,7 @@
                     <ul id="servicesDropdown" class="hidden pl-4 space-y-2">
                         <li><a href="milling.html">CNC Milling</a></li>
                         <li><a href="turning.html">CNC Turning</a></li>
-                        <li><a href="5-axis-machining.html">5-Axis Machining</a></li>
+                        <li><a href="#">5-Axis Machining</a></li>
                         <li><a href="precision-machining.html">Precision Machining</a></li>
                         <li><a href="#">CNC Prototyping</a></li>
                         <li><a href="custom-machining.html">Custom Machining</a></li>
@@ -325,9 +332,9 @@
                         <li><a href="defence.html">Defence Industry</a></li>
                         <li><a href="oil&gas.html">Oil & Gas Industry</a></li>
                         <li><a href="automotive.html">Automotive Industry</a></li>
-                        <li><a href="#">Construction Industry</a></li>
-                        <li><a href="#">Energy Solutions</a></li>
-                        <li><a href="#">Hydraulic Power</a></li>
+                        <li><a href="construction.html">Construction Industry</a></li>
+                        <li><a href="energy.html">Energy Solutions</a></li>
+                        <li><a href="hydraulic.html">Hydraulic Power</a></li>
                         <li><a href="#">Agricultural / Tractor</a></li>
                         <li><a href="#">Aerospace Industry</a></li>
                     </ul>
@@ -495,27 +502,29 @@
     </header>
 
 
-
     <!-- Hero Section -->
-    <section class="relative w-full h-screen flex items-center">
+    <section class="relative min-h-screen flex items-center bg-cover bg-center bg-no-repeat w-full">
         <!-- Background Image -->
-        <div class="absolute inset-0">
-            <img src="Assets/defence-service.jpg" alt="Defence CNC Machining" class="w-full h-full object-cover" />
-            <!-- Overlay -->
+        <div class="absolute inset-0 z-0">
+            <img src="Assets/hydraulic-banner.jpg" alt="hydraulic banner"
+                class="w-full h-full object-cover brightness-140" />
+
+            <!-- Gradient Overlay -->
             <div class="absolute inset-0 bg-gradient-to-r from-black via-black/70 to-transparent"></div>
         </div>
 
         <!-- Content -->
-        <!-- Defence CNC Machining Adelaide Block -->
+        <!-- hydraulic Components Block -->
         <div class="relative z-10 w-full px-12 md:px-12 flex flex-col md:flex-row items-center md:items-start">
 
             <!-- Left Content -->
             <div class="text-left w-full md:w-1/2 mt-24 md:mt-32">
-                <h1 class="text-3xl sm:text-4xl md:text-6xl font-bold mb-6 text-white">
-                    <span class="text-orange-500">Defence</span> CNC Machining Adelaide
+                <h1 class="text-4xl md:text-6xl font-bold mb-6 text-white">
+                    Precision <span class="text-orange-500">Hydraulic </span>CNC Machining
                 </h1>
-                <p class="text-base sm:text-lg md:text-xl text-gray-200 max-w-xl leading-relaxed">
-                    Precision Manufacturing for Critical Defence Applications
+                <p class="text-lg md:text-xl text-gray-200 max-w-xl leading-relaxed">
+                    Advanced CNC manufacturing solutions for Australia's hydraulic industry. Delivering exceptional
+                    precision, quality, and reliability for critical hydraulic applications.
                 </p>
             </div>
 
@@ -525,107 +534,220 @@
 
     </section>
 
-
-
-
-    <!-- Main Content Section -->
-    <section class="py-24 px-12 bg-white">
+    <!--   Specialized Hydraulic CNC Components-->
+    <section class="py-16 px-12 bg-gray-50">
         <div class="w-full mx-auto">
-            <div class="mb-12 text-left">
-                <h2 class="text-4xl md:text-5xl font-bold text-gray-800 mb-2 tracking-wide">
-                    DEFENCE CNC PARTS
-                </h2>
-                <h3 class="text-3xl md:text-4xl font-bold text-blue-900">
-                    MANUFACTURING EXCELLENCE
-                </h3>
-            </div>
+            <h2 class="text-3xl font-bold text-blue-900 text-center mb-4">
+                Specialized Hydraulic CNC Components
+            </h2>
+            <div class="w-24 h-1 bg-orange-500 mx-auto mb-6"></div>
 
-            <div class="grid lg:grid-cols-2 gap-16 items-center">
-                <!-- Left Content -->
-                <div>
-                    <p class="text-gray-700 text-lg mb-8">
-                        Fedele Autocore stands at the forefront of precision defence manufacturing, serving Adelaide
-                        and surrounding regions with cutting-edge CNC machining capabilities. Our state-of-the-art
-                        facility specializes in producing critical components for military, aerospace, and defence
-                        applications where precision, reliability, and performance are non-negotiable.
-                    </p>
 
-                    <h4 class="text-2xl font-bold text-gray-800 mb-6">
-                        Our Manufacturing Capabilities
-                    </h4>
+            <!-- Grid Layout -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
-                    <div class="space-y-6">
-                        <!-- Capability Item -->
-                        <div class="flex items-start">
-                            <span class="list-icon text-blue-900 mt-1">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
-                                    stroke="currentColor" stroke-width="2">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
-                                </svg>
-                            </span>
-                            <div>
-                                <span class="font-bold text-blue-900">Multi-Axis CNC Machining:</span>
-                                <span class="text-gray-700"> 3, 4, and 5-axis precision manufacturing for complex
-                                    geometries.</span>
-                            </div>
-                        </div>
-
-                        <div class="flex items-start">
-                            <span class="list-icon text-blue-900 mt-1">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
-                                    stroke="currentColor" stroke-width="2">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
-                                </svg>
-                            </span>
-                            <div>
-                                <span class="font-bold text-blue-900">Advanced Material Processing:</span>
-                                <span class="text-gray-700"> Expertise in titanium, inconel, hardened steels, and
-                                    aerospace alloys.</span>
-                            </div>
-                        </div>
-
-                        <div class="flex items-start">
-                            <span class="list-icon text-blue-900 mt-1">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
-                                    stroke="currentColor" stroke-width="2">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
-                                </svg>
-                            </span>
-                            <div>
-                                <span class="font-bold text-blue-900">Quality Assurance:</span>
-                                <span class="text-gray-700"> CMM inspection, optical measurement, and full traceability
-                                    documentation.</span>
-                            </div>
-                        </div>
-
-                        <div class="flex items-start">
-                            <span class="list-icon text-blue-900 mt-1">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
-                                    stroke="currentColor" stroke-width="2">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
-                                </svg>
-                            </span>
-                            <div>
-                                <span class="font-bold text-blue-900">Rapid Prototyping:</span>
-                                <span class="text-gray-700"> Fast turnaround for defence project development
-                                    phases.</span>
-                            </div>
-                        </div>
+                <!-- Cylinder Components -->
+                <div
+                    class="bg-white rounded-lg border border-gray-200 overflow-hidden hover:shadow-xl transition-shadow">
+                    <img src="Assets/cylinder.jpg" alt="Cylinder Components" class="w-full h-48 object-cover">
+                    <div class="p-6 border-l-4 border-blue-500">
+                        <h3 class="text-xl font-bold text-blue-900 mb-4">Cylinder Components</h3>
+                        <ul class="space-y-2 text-gray-700">
+                            <li>✔ Hydraulic cylinder barrels</li>
+                            <li>✔ Piston rods and pistons</li>
+                            <li>✔ End caps and glands</li>
+                            <li>✔ Rod guides and sealing assemblies</li>
+                            <li>✔ Mounting brackets and clevises</li>
+                        </ul>
                     </div>
                 </div>
 
-                <!-- Right Image Card -->
-                <div class="bg-white rounded-2xl shadow-xl border border-gray-200 overflow-hidden flex flex-col">
-                    <div class="flex-1">
-                        <img src="Assets/advance-cnc.webp" alt="Precision machined defence components"
-                            class="w-full h-full object-cover" />
+                <!-- Valve Bodies & Manifolds -->
+                <div
+                    class="bg-white rounded-lg border border-gray-200 overflow-hidden hover:shadow-xl transition-shadow">
+                    <img src="Assets/valve.jpg" alt="Valve Bodies & Manifolds" class="w-full h-48 object-cover">
+                    <div class="p-6 border-l-4 border-blue-500">
+                        <h3 class="text-xl font-bold text-blue-900 mb-4">Valve Bodies & Manifolds</h3>
+                        <ul class="space-y-2 text-gray-700">
+                            <li>✔ Directional valve housings</li>
+                            <li>✔ Pressure relief valve bodies</li>
+                            <li>✔ Flow control valve components</li>
+                            <li>✔ Hydraulic manifold blocks</li>
+                            <li>✔ Custom valve assemblies</li>
+                        </ul>
                     </div>
-                    <p class="text-gray-700 text-md font-bold p-4 text-center bg-gray-50">
-                        Advanced CNC machining center producing precision defence components
-                    </p>
                 </div>
+
+                <!-- Pump & Motor Parts -->
+                <div
+                    class="bg-white rounded-lg border border-gray-200 overflow-hidden hover:shadow-xl transition-shadow">
+                    <img src="Assets/pump.jpg" alt="Pump & Motor Parts" class="w-full h-48 object-cover">
+                    <div class="p-6 border-l-4 border-blue-500">
+                        <h3 class="text-xl font-bold text-blue-900 mb-4">Pump & Motor Parts</h3>
+                        <ul class="space-y-2 text-gray-700">
+                            <li>✔ Pump housings and covers</li>
+                            <li>✔ Gear pump components</li>
+                            <li>✔ Vane pump assemblies</li>
+                            <li>✔ Hydraulic motor housings</li>
+                            <li>✔ Port plates and valve plates</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Precision Fittings -->
+                <div
+                    class="bg-white rounded-lg border border-gray-200 overflow-hidden hover:shadow-xl transition-shadow">
+                    <img src="Assets/fittings.jpg" alt="Precision Fittings" class="w-full h-48 object-cover">
+                    <div class="p-6 border-l-4 border-blue-500">
+                        <h3 class="text-xl font-bold text-blue-900 mb-4">Precision Fittings</h3>
+                        <ul class="space-y-2 text-gray-700">
+                            <li>✔ High-pressure hydraulic fittings</li>
+                            <li>✔ Custom adapters and couplings</li>
+                            <li>✔ Threaded and flanged connections</li>
+                            <li>✔ Quick-disconnect assemblies</li>
+                            <li>✔ Specialty hydraulic connectors</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Filtration Components -->
+                <div
+                    class="bg-white rounded-lg border border-gray-200 overflow-hidden hover:shadow-xl transition-shadow">
+                    <img src="Assets/filtration.jpg" alt="Filtration Components" class="w-full h-48 object-cover">
+                    <div class="p-6 border-l-4 border-blue-500">
+                        <h3 class="text-xl font-bold text-blue-900 mb-4">Filtration Components</h3>
+                        <ul class="space-y-2 text-gray-700">
+                            <li>✔ Filter housing assemblies</li>
+                            <li>✔ Return line filter bodies</li>
+                            <li>✔ Suction strainer components</li>
+                            <li>✔ Pressure filter housings</li>
+                            <li>✔ Bypass valve assemblies</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Accumulator Parts -->
+                <div
+                    class="bg-white rounded-lg border border-gray-200 overflow-hidden hover:shadow-xl transition-shadow">
+                    <img src="Assets/accumulator.jpg" alt="Accumulator Parts" class="w-full h-48 object-cover">
+                    <div class="p-6 border-l-4 border-blue-500">
+                        <h3 class="text-xl font-bold text-blue-900 mb-4">Accumulator Parts</h3>
+                        <ul class="space-y-2 text-gray-700">
+                            <li>✔ Accumulator shells and caps</li>
+                            <li>✔ Charging valve assemblies</li>
+                            <li>✔ Safety block components</li>
+                            <li>✔ Mounting hardware</li>
+                            <li>✔ Custom accumulator brackets</li>
+                        </ul>
+                    </div>
+                </div>
+
             </div>
 
+
+    </section>
+
+    <!-- Divider Line -->
+    <hr class="border-t border-gray-300 w-full mx-auto">
+
+
+    <!----Premium Materials for Hydraulic Applications -->
+
+
+    <section class="py-16 px-12 bg-gray-50">
+        <div class="w-full mx-auto text-center">
+            <!-- Heading -->
+            <h2 class="text-3xl md:text-4xl font-extrabold text-blue-900 mb-4">
+                Premium Materials for Hydraulic Applications
+            </h2>
+            <div class="w-24 h-1 bg-orange-500 mx-auto mb-6"></div>
+            <p class="text-gray-500 text-lg mb-12">
+                Our hydraulic CNC components are manufactured using only the finest materials, specifically selected for
+                their exceptional performance in demanding hydraulic environments.
+            </p>
+
+            <!-- Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <!-- 316 Stainless Steel -->
+                <div
+                    class="bg-white rounded-lg border border-gray-200 overflow-hidden hover:shadow-xl transition-shadow">
+                    <img src="Assets/316L-stainless.jpg" alt="316 Stainless Steel" class="w-full h-40 object-cover">
+                    <div class="p-6 border-l-4 border-blue-900">
+                        <h3 class="text-xl font-bold text-blue-900 mb-4">316 Stainless Steel</h3>
+                        <p class="text-gray-700 text-left">
+                            Superior corrosion resistance, excellent strength-to-weight ratio, and outstanding
+                            durability in harsh hydraulic conditions.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- 4140 Alloy Steel -->
+                <div
+                    class="bg-white rounded-lg border border-gray-200 overflow-hidden hover:shadow-xl transition-shadow">
+                    <img src="Assets/4140-alloy-steel.jpg" alt="4140 Alloy Steel" class="w-full h-40 object-cover">
+                    <div class="p-6 border-l-4 border-blue-900">
+                        <h3 class="text-xl font-bold text-blue-900 mb-4">4140 Alloy Steel</h3>
+                        <p class="text-gray-700 text-left">
+                            High tensile strength, excellent fatigue resistance, and superior hardenability for
+                            critical load-bearing hydraulic components.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- 7075 Aluminum -->
+                <div
+                    class="bg-white rounded-lg border border-gray-200 overflow-hidden hover:shadow-xl transition-shadow">
+                    <img src="Assets/7075-t6-aluminum.jpg" alt="7075 Aluminum" class="w-full h-40 object-cover">
+                    <div class="p-6 border-l-4 border-blue-900">
+                        <h3 class="text-xl font-bold text-blue-900 mb-4">7075 Aluminum</h3>
+                        <p class="text-gray-700 text-left">
+                            Aerospace-grade aluminum with exceptional strength, lightweight properties, and
+                            excellent machinability for precision parts.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- C45 Carbon Steel -->
+                <div
+                    class="bg-white rounded-lg border border-gray-200 overflow-hidden hover:shadow-xl transition-shadow">
+                    <img src="Assets/c45-carbon-steel.jpg" alt="C45 Carbon Steel" class="w-full h-40 object-cover">
+                    <div class="p-6 border-l-4 border-blue-900">
+                        <h3 class="text-xl font-bold text-blue-900 mb-4">C45 Carbon Steel</h3>
+                        <p class="text-gray-700 text-left">
+                            Medium carbon steel offering excellent balance of strength, toughness, and cost-
+                            effectiveness for hydraulic applications.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Brass & Bronze Alloys -->
+                <div
+                    class="bg-white rounded-lg border border-gray-200 overflow-hidden hover:shadow-xl transition-shadow">
+                    <img src="Assets/brass-bronze.jpg" alt="Brass & Bronze Alloys" class="w-full h-40 object-cover">
+                    <div class="p-6 border-l-4 border-blue-900">
+                        <h3 class="text-xl font-bold text-blue-900 mb-4">Brass & Bronze Alloys</h3>
+                        <p class="text-gray-700 text-left">
+                            Exceptional wear resistance, natural lubricity, and corrosion resistance ideal for
+                            valve components and fittings.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Inconel & Hastelloy -->
+                <div
+                    class="bg-white rounded-lg border border-gray-200 overflow-hidden hover:shadow-xl transition-shadow">
+                    <img src="Assets/inconel-hastelloy.jpg" alt="Inconel & Hastelloy" class="w-full h-40 object-cover">
+                    <div class="p-6 border-l-4 border-blue-900">
+                        <h3 class="text-xl font-bold text-blue-900 mb-4">Inconel & Hastelloy</h3>
+                        <p class="text-gray-700 text-left">
+                            Premium superalloys for extreme temperature and corrosive environments requiring
+                            ultimate material performance.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
         </div>
     </section>
 
@@ -633,86 +755,56 @@
     <!-- Divider Line -->
     <hr class="border-t border-gray-300 w-full mx-auto">
 
-    <!-- Specific Precision Parts Section -->
+    <!-- Why Choose Our Hydraulic CNC Services -->
     <section class="py-16 px-12 bg-gray-50">
         <div class="w-full mx-auto">
             <div class="text-center mb-16">
-                <h2 class="text-4xl md:text-5xl font-bold text-blue-900 mb-8">SPECIFIC PRECISION PARTS</h2>
-                <p class="text-gray-600 max-w-4xl mx-auto font-semibold px-4 py-2">
-                    Fedele Autocore specializes in manufacturing high-precision components for defence applications,
-                    delivering critical parts that meet the demanding
-                    requirements of military and aerospace sectors.
-                </p>
+                <h2 class="text-4xl md:text-5xl font-bold text-blue-900 mb-4">Why Choose Our Hydraulic CNC Services</h2>
+                <div class="w-24 h-1 bg-orange-500 mx-auto rounded-full"></div>
             </div>
 
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
 
-                <!-- Aircraft Components -->
+                <!--Precision Engineering -->
                 <div class="bg-white rounded-lg border border-gray-200 hover:shadow-lg transition-shadow">
-                    <img src="Assets/aircraft-component.jpg" alt="Aircraft Components"
-                        class="w-full h-60 object-cover rounded-md mb-4">
-                    <h3 class="text-xl font-bold text-blue-900 mb-4 text-center">Aircraft Components</h3>
+                    <img src="Assets/" alt="Precision-engineering" class="w-full h-60 object-cover rounded-md mb-4">
+                    <h3 class="text-xl font-bold text-blue-900 mb-4 text-center">Precision Engineering</h3>
                     <p class="text-gray-600 text-center px-4 py-2">
-                        Precision-manufactured structural components, landing gear parts, engine mounts, and critical
-                        airframe elements designed to meet stringent aerospace standards and withstand extreme
-                        operational conditions.
+                        State-of-the-art CNC machinery delivers tolerances down to ±0.001mm, ensuring perfect fit and
+                        optimal performance in critical hydraulic systems.
                     </p>
                 </div>
 
-                <!-- Weapon System Parts -->
+                <!--Advanced Manufacturing -->
                 <div class="bg-white rounded-lg border border-gray-200 hover:shadow-lg transition-shadow">
-                    <img src="Assets/weapon-system.jpg" alt="Weapon System Parts"
-                        class="w-full h-60 object-cover rounded-md mb-4">
-                    <h3 class="text-xl font-bold text-blue-900 mb-4 text-center">Weapon System Parts</h3>
+                    <img src="Assets/" alt="Advanced Manufacturing" class="w-full h-60 object-cover rounded-md mb-4">
+                    <h3 class="text-xl font-bold text-blue-900 mb-4 text-center">Advanced Manufacturing</h3>
                     <p class="text-gray-600 text-center px-4 py-2">
-                        High-precision manufacturing of firing mechanisms, barrel components, trigger assemblies, and
-                        support structures with exact dimensional accuracy for reliable defence system performance.
+                        Multi-axis CNC centers, EDM capabilities, and comprehensive quality control systems guarantee
+                        consistent, high-quality production.
                     </p>
                 </div>
 
-                <!-- Vehicle Components -->
+                <!-- Quality Assurance -->
                 <div class="bg-white rounded-lg border border-gray-200 hover:shadow-lg transition-shadow">
-                    <img src="Assets/vehicle-component.jpg" alt="Vehicle Components"
-                        class="w-full h-60 object-cover rounded-md mb-4">
-                    <h3 class="text-xl font-bold text-blue-900 mb-4 text-center">Vehicle Components</h3>
+                    <img src="Assets/" alt=" Quality Assurance" class="w-full h-60 object-cover rounded-md mb-4">
+                    <h3 class="text-xl font-bold text-blue-900 mb-4 text-center"> Quality Assurance</h3>
                     <p class="text-gray-600 text-center px-4 py-2">
-                        Armored vehicle parts including suspension components, drive train elements, armor mounting
-                        brackets, and specialized mechanical systems for military ground vehicles.
+                        ISO 9001:2015 certified processes, comprehensive material certifications, and rigorous testing
+                        protocols ensure compliance with Australian standards.
                     </p>
                 </div>
 
-                <!-- Naval Components -->
+                <!-- Fast Turnaround -->
                 <div class="bg-white rounded-lg border border-gray-200 hover:shadow-lg transition-shadow">
-                    <img src="Assets/naval-component.jpg" alt="Naval Components"
-                        class="w-full h-60 object-cover rounded-md mb-4">
-                    <h3 class="text-xl font-bold text-blue-900 mb-4 text-center">Naval Components</h3>
+                    <img src="Assets/" alt="Fast Turnaround" class="w-full h-60 object-cover rounded-md mb-4">
+                    <h3 class="text-xl font-bold text-blue-900 mb-4 text-center">Fast Turnaround</h3>
                     <p class="text-gray-600 text-center px-4 py-2">
-                        Marine-grade precision parts for naval vessels including propulsion system components, deck
-                        hardware, navigation equipment housings, and critical structural elements.
+                        Efficient production scheduling and dedicated hydraulic component expertise enable rapid
+                        delivery across Australia without compromising quality.
                     </p>
                 </div>
 
-                <!-- Communication Equipment -->
-                <div class="bg-white rounded-lg border border-gray-200  hover:shadow-lg transition-shadow">
-                    <img src="Assets/communication-equip.jpg" alt="Communication Equipment"
-                        class="w-full h-60 object-cover rounded-md mb-4">
-                    <h3 class="text-xl font-bold text-blue-900 mb-4 text-center">Communication Equipment</h3>
-                    <p class="text-gray-600 text-center px-4 py-2">
-                        Precision housings and mounting systems for military communication devices, radar components,
-                        and electronic warfare systems requiring electromagnetic shielding.
-                    </p>
-                </div>
-
-                <!-- Missile Components -->
-                <div class="bg-white rounded-lg border border-gray-200 hover:shadow-lg transition-shadow">
-                    <img src="Assets/missile.jpg" alt="Missile Components"
-                        class="w-full h-60 object-cover rounded-md mb-4">
-                    <h3 class="text-xl font-bold text-blue-900 mb-4 text-center">Missile Components</h3>
-                    <p class="text-gray-600 text-center px-4 py-2">
-                        Critical guidance system parts, fin assemblies, nose cone components, and precision-manufactured
-                        elements for guided missile systems and defence projectiles.
-                    </p>
-                </div>
 
             </div>
         </div>
@@ -722,319 +814,122 @@
     <!-- Divider Line -->
     <hr class="border-t border-gray-300 w-full mx-auto">
 
-    <!-- Tolerance Levels Section -->
-    <section class="py-16 px-12 bg-white">
-        <div class="w-full mx-auto">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl md:text-5xl font-bold text-blue-900 mb-8">TOLERANCE LEVELS</h2>
-                <p class="text-gray-600 max-w-4xl mx-auto">
-                    Our advanced CNC machining capabilities deliver exceptional precision across all defence
-                    applications, meeting the most stringent military
-                    specifications and quality standards.
-                </p>
-            </div>
-
-            <div class="overflow-x-auto">
-                <table class="w-full bg-white rounded-lg overflow-hidden shadow-lg">
-                    <thead class="bg-blue-900 text-white">
-                        <tr>
-                            <th class="px-6 py-4 text-left font-bold">PRECISION PARTS</th>
-                            <th class="px-6 py-4 text-left font-bold">STANDARD TOLERANCE</th>
-                            <th class="px-6 py-4 text-left font-bold">PRECISION TOLERANCE</th>
-                            <th class="px-6 py-4 text-left font-bold">CRITICAL APPLICATIONS</th>
-                        </tr>
-                    </thead>
-                    <tbody class="divide-y divide-gray-200 text-black">
-                        <tr class="hover:bg-gray-50">
-                            <td class="px-6 py-4 font-medium">Aircraft Wing Brackets</td>
-                            <td class="px-6 py-4">±0.05mm</td>
-                            <td class="px-6 py-4">±0.02mm</td>
-                            <td class="px-6 py-4">Flight-critical mounting systems</td>
-                        </tr>
-                        <tr class="hover:bg-gray-50 bg-gray-50">
-                            <td class="px-6 py-4 font-medium">Weapon Barrel Components</td>
-                            <td class="px-6 py-4">±0.03mm</td>
-                            <td class="px-6 py-4">±0.01mm</td>
-                            <td class="px-6 py-4">Firing mechanisms, rifling systems</td>
-                        </tr>
-                        <tr class="hover:bg-gray-50">
-                            <td class="px-6 py-4 font-medium">Landing Gear Assemblies</td>
-                            <td class="px-6 py-4">±0.08mm</td>
-                            <td class="px-6 py-4">±0.03mm</td>
-                            <td class="px-6 py-4">Aircraft landing systems</td>
-                        </tr>
-                        <tr class="hover:bg-gray-50 bg-gray-50">
-                            <td class="px-6 py-4 font-medium">Propeller Hub Components</td>
-                            <td class="px-6 py-4">±0.1mm</td>
-                            <td class="px-6 py-4">±0.05mm</td>
-                            <td class="px-6 py-4">Naval propulsion systems</td>
-                        </tr>
-                        <tr class="hover:bg-gray-50">
-                            <td class="px-6 py-4 font-medium">Radar Mount Housings</td>
-                            <td class="px-6 py-4">±0.15mm</td>
-                            <td class="px-6 py-4">±0.08mm</td>
-                            <td class="px-6 py-4">Communication equipment mounts</td>
-                        </tr>
-                        <tr class="hover:bg-gray-50 bg-gray-50">
-                            <td class="px-6 py-4 font-medium">Missile Guidance Fins</td>
-                            <td class="px-6 py-4">±0.02mm</td>
-                            <td class="px-6 py-4">±0.005mm</td>
-                            <td class="px-6 py-4">Precision flight control</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-    </section>
 
 
-    <!-- Divider Line -->
-    <hr class="border-t border-gray-300 w-full mx-auto">
-
-    <!-- Materials Used Section -->
-    <section class="py-16 px-12 bg-gray-50">
-        <div class="w-full mx-auto">
-            <!-- Section Title -->
-            <div class="text-center mb-16">
-                <h2 class="text-4xl md:text-5xl font-bold text-blue-900 mb-8">MATERIALS USED</h2>
-                <p class="text-gray-600 max-w-4xl mx-auto">
-                    We work with aerospace and defence-grade materials, ensuring all components meet military
-                    specifications for durability, strength, and performance
-                    in extreme environments.
-                </p>
-            </div>
-
-            <!-- Cards Grid -->
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-
-                <!-- Titanium Alloys -->
-                <div
-                    class="bg-white rounded-lg border border-gray-200 overflow-hidden hover:shadow-xl transition-shadow">
-                    <img src="Assets/titanium.jpg" alt="Titanium Alloys" class="w-full h-48 object-cover">
-                    <div class="p-6 border-l-4 border-blue-500 h-full">
-                        <h3 class="text-xl font-bold text-blue-900 mb-4">Titanium Alloys (Ti-6Al-4V)</h3>
-                        <p class="text-gray-600">
-                            Superior strength-to-weight ratio, excellent corrosion resistance, ideal for aerospace and
-                            high-stress applications.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- Stainless Steel -->
-                <div
-                    class="bg-white rounded-lg border border-gray-200 overflow-hidden hover:shadow-xl transition-shadow">
-                    <img src="Assets/steel.jpeg" alt="Stainless Steel" class="w-full h-48 object-cover">
-                    <div class="p-6 border-l-4 border-blue-500 h-full">
-                        <h3 class="text-xl font-bold text-blue-900 mb-4">Stainless Steel (316L, 17-4 PH)</h3>
-                        <p class="text-gray-600">
-                            High corrosion resistance, excellent mechanical properties, suitable for marine and weapon
-                            applications.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- Aluminum Alloys -->
-                <div
-                    class="bg-white rounded-lg border border-gray-200 overflow-hidden hover:shadow-xl transition-shadow">
-                    <img src="Assets/Aluminium.jpg" alt="Aluminum Alloys" class="w-full h-48 object-cover">
-                    <div class="p-6 border-l-4 border-blue-500 h-full">
-                        <h3 class="text-xl font-bold text-blue-900 mb-4">Aluminum Alloys (7075-T6, 6061-T6)</h3>
-                        <p class="text-gray-600">
-                            Lightweight yet strong, excellent machinability, commonly used in aircraft structural
-                            components.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- Inconel -->
-                <div
-                    class="bg-white rounded-lg border border-gray-200 overflow-hidden hover:shadow-xl transition-shadow">
-                    <img src="Assets/Inconel.jpg" alt="Inconel" class="w-full h-48 object-cover">
-                    <div class="p-6 border-l-4 border-blue-500 h-full">
-                        <h3 class="text-xl font-bold text-blue-900 mb-4">Inconel 625/718</h3>
-                        <p class="text-gray-600">
-                            Exceptional high-temperature performance, oxidation resistance, critical for jet engine
-                            components.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- Hardened Steel -->
-                <div
-                    class="bg-white rounded-lg border border-gray-200 overflow-hidden hover:shadow-xl transition-shadow">
-                    <img src="Assets/hardest-steel.webp" alt="Hardened Steel" class="w-full h-48 object-cover">
-                    <div class="p-6 border-l-4 border-blue-500 h-full">
-                        <h3 class="text-xl font-bold text-blue-900 mb-4">Hardened Steel (4140, 4340)</h3>
-                        <p class="text-gray-600">
-                            High strength and toughness after heat treatment, ideal for weapon barrels and critical
-                            stress
-                            components.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- Hastelloy X -->
-                <div
-                    class="bg-white rounded-lg border border-gray-200 overflow-hidden hover:shadow-xl transition-shadow">
-                    <img src="Assets/Hastelloy.jpeg" alt="Hastelloy X" class="w-full h-48 object-cover">
-                    <div class="p-6 border-l-4 border-blue-500 h-full">
-                        <h3 class="text-xl font-bold text-blue-900 mb-4">Hastelloy X</h3>
-                        <p class="text-gray-600">
-                            Superior high-temperature strength and oxidation resistance for extreme environment
-                            applications.
-                        </p>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-
-    <!-- Divider Line -->
-    <hr class="border-t border-gray-300 w-full mx-auto">
-
-    <!-- FAQ Section -->
+    <!---- FAQ Section -->
     <section class="py-16 px-6 bg-white">
         <div class="max-w-4xl mx-auto">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl md:text-5xl font-bold text-blue-900 mb-8">
-                    FREQUENTLY ASKED QUESTIONS
-                </h2>
+            <div class="text-center mb-4">
+                <h2 class="text-4xl md:text-5xl font-bold text-blue-900"> FREQUENTLY ASKED QUESTIONS </h2>
             </div>
-
+            <div class="w-24 h-1 bg-orange-500 mx-auto mb-6"></div>
             <div class="space-y-4">
                 <!-- FAQ Item -->
                 <div class="faq-item rounded-lg border border-blue-900 overflow-hidden">
-                    <button
+                    <button type="button"
                         class="faq-question w-full text-left p-6 flex justify-between items-center text-blue-900 font-medium bg-gray-100 hover:bg-gray-200 transition-colors">
-                        What defence industry certifications do you maintain?
+                        What types of hydraulic CNC components can you manufacture?
                         <span class="faq-icon text-2xl transition-transform duration-300">+</span>
                     </button>
                     <div class="faq-answer max-h-0 overflow-hidden transition-all duration-300 bg-white px-6">
                         <p class="text-gray-800 pb-5">
-                            We maintain ISO 9001:2015, AS9100D aerospace quality management
-                            certification, and comply with ITAR regulations for defense
-                            manufacturing. Our facility is regularly audited to ensure compliance
-                            with military standards.
-                        </p>
+                            We specialize in manufacturing a comprehensive range of hydraulic components including
+                            cylinder parts, valve bodies, pump housings, manifold blocks, precision fittings, filter
+                            assemblies, and accumulator components. Our expertise covers both standard and custom
+                            hydraulic parts for various industries across Australia.</p>
                     </div>
                 </div>
 
-
-                <!-- FAQ Item 2 -->
+                <!-- FAQ 2 -->
                 <div class="faq-item rounded-lg border border-blue-900 overflow-hidden">
                     <button
                         class="faq-question w-full text-left p-6 flex justify-between items-center text-blue-900 font-medium bg-gray-100 hover:bg-gray-200 transition-colors">
-                        What is your typical lead time for defence components?
+                        What materials do you use for hydraulic CNC machining?
                         <span class="faq-icon text-2xl transition-transform duration-300">+</span>
                     </button>
                     <div class="faq-answer max-h-0 overflow-hidden transition-all duration-300 bg-white px-6">
                         <p class="text-gray-800 pb-5">
-                            Lead times vary based on complexity and material requirements. Standard
-                            components typically require 2-4 weeks, while complex multi-axis parts may
-                            take 4-8 weeks. We offer expedited services for critical defense projects.
+                            We work with premium materials specifically chosen for hydraulic applications, including 316
+                            stainless steel, 4140 alloy steel, 7075 aluminum, C45 carbon steel, brass and bronze alloys,
+                            and specialty superalloys like Inconel and Hastelloy. All materials come with full material
+                            certifications and traceability.
                         </p>
                     </div>
                 </div>
 
-                <!-- FAQ Item 3 -->
+                <!-- FAQ 3 -->
                 <div class="faq-item rounded-lg border border-blue-900 overflow-hidden">
                     <button
                         class="faq-question w-full text-left p-6 flex justify-between items-center text-blue-900 font-medium bg-gray-100 hover:bg-gray-200 transition-colors">
-                        Do you provide material certifications and traceability?
+                        What precision tolerances can you achieve for hydraulic components?
                         <span class="faq-icon text-2xl transition-transform duration-300">+</span>
                     </button>
                     <div class="faq-answer max-h-0 overflow-hidden transition-all duration-300 bg-white px-6">
                         <p class="text-gray-800 pb-5">
-                            Yes, we provide complete material certifications including mill test
-                            certificates, chemical composition reports, and full traceability
-                            documentation from raw material to finished component as required by
-                            defense standards.
+                            Our advanced CNC machinery can achieve tolerances as tight as ±0.001mm (±0.00004") for
+                            critical hydraulic components. We maintain strict quality control throughout the
+                            manufacturing process to ensure consistent precision across all parts, regardless of batch
+                            size.
                         </p>
                     </div>
                 </div>
 
-                <!-- FAQ Item 4 -->
+                <!-- FAQ 4 -->
                 <div class="faq-item rounded-lg border border-blue-900 overflow-hidden">
                     <button
                         class="faq-question w-full text-left p-6 flex justify-between items-center text-blue-900 font-medium bg-gray-100 hover:bg-gray-200 transition-colors">
-                        What inspection and quality control processes do you use?
+                        Do you provide custom hydraulic component design services?
                         <span class="faq-icon text-2xl transition-transform duration-300">+</span>
                     </button>
                     <div class="faq-answer max-h-0 overflow-hidden transition-all duration-300 bg-white px-6">
                         <p class="text-gray-800 pb-5">
-                            We utilize CMM inspection, optical measurement systems, surface roughness
-                            testing, and coordinate measuring machines. All parts receive first
-                            article inspection reports (FAIR) and dimensional inspection reports as
-                            required.
+                            Yes, our experienced engineering team can work from your drawings, specifications, or even
+                            samples to create custom hydraulic components. We also offer design consultation services to
+                            optimize your hydraulic system performance and manufacturability.
                         </p>
                     </div>
                 </div>
 
-                <!-- FAQ Item 5 -->
+                <!-- FAQ 5 -->
                 <div class="faq-item rounded-lg border border-blue-900 overflow-hidden">
                     <button
                         class="faq-question w-full text-left p-6 flex justify-between items-center text-blue-900 font-medium bg-gray-100 hover:bg-gray-200 transition-colors">
-                        Can you handle classified or restricted projects?
+                        What is your typical turnaround time for hydraulic CNC parts?
                         <span class="faq-icon text-2xl transition-transform duration-300">+</span>
                     </button>
                     <div class="faq-answer max-h-0 overflow-hidden transition-all duration-300 bg-white px-6">
                         <p class="text-gray-800 pb-5">
-                            Yes, our facility is approved for handling classified defense projects. We
-                            maintain appropriate security clearances and follow strict protocols for
-                            classified material handling and secure manufacturing processes.
+                            Standard hydraulic components typically have a 2-3 week turnaround time, while complex
+                            custom parts may require 3-4 weeks. We offer expedited services for urgent requirements and
+                            maintain clear communication throughout the production process to keep you informed of
+                            progress.
                         </p>
                     </div>
                 </div>
 
-                <!-- FAQ Item 6 -->
+                <!-- FAQ 6 -->
                 <div class="faq-item rounded-lg border border-blue-900 overflow-hidden">
                     <button
                         class="faq-question w-full text-left p-6 flex justify-between items-center text-blue-900 font-medium bg-gray-100 hover:bg-gray-200 transition-colors">
-                        What is your capacity for large volume defence orders?
+                        Do you provide quality certifications and testing reports?
                         <span class="faq-icon text-2xl transition-transform duration-300">+</span>
                     </button>
                     <div class="faq-answer max-h-0 overflow-hidden transition-all duration-300 bg-white px-6">
                         <p class="text-gray-800 pb-5">
-                            Our facility can handle both prototype and production volumes. We have
-                            multiple CNC machining centers and can scale production to meet large
-                            defense contracts while maintaining strict quality standards and delivery
-                            schedules.
+                            Absolutely. All hydraulic components come with comprehensive quality documentation including
+                            material certificates, dimensional inspection reports, pressure testing results where
+                            applicable, and full traceability documentation. We maintain ISO 9001:2015 certification and
+                            can provide additional testing as required.
                         </p>
                     </div>
                 </div>
+
 
             </div>
         </div>
-    </section>
 
-    <!-- CTA Section -->
-    <section class="bg-gray-600 py-16 px-12">
-        <div class="max-w-4xl mx-auto text-center text-white">
-            <h2 class="text-4xl md:text-5xl font-bold mb-8 drop-shadow-lg">
-                Ready to Partner with Defence <span class="text-orange-500 drop-shadow-lg">CNC </span>Experts?
-            </h2>
-            <p class="text-xl mb-12">
-                Get precision manufacturing solutions for your critical defence applications. Contact
-                <span class="text-orange-500">Fedele Autocore</span> today for a consultation and quote.
-            </p>
-
-            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
-                <button
-                    class="toggle-btn bg-transparent text-white font-bold py-4 px-8 rounded-full border-2 border-white hover:bg-white hover:text-blue-900 transition-colors">
-                    REQUEST QUOTE
-                </button>
-                <button
-                    class="toggle-btn bg-transparent text-white font-bold py-4 px-8 rounded-full border-2 border-white hover:bg-white hover:text-blue-900 transition-colors">
-                    SCHEDULE CONSULTATION
-                </button>
-                <button
-                    class="toggle-btn bg-transparent text-white font-bold py-4 px-8 rounded-full border-2 border-white hover:bg-white hover:text-blue-900 transition-colors">
-                    DOWNLOAD CAPABILITIES
-                </button>
-            </div>
-
+        </div>
+        </div>
         </div>
     </section>
 
@@ -1227,7 +1122,6 @@
             </div>
         </div>
     </footer>
-
     <script src="script.js"></script>
 </body>
 

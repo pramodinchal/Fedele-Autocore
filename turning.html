@@ -12,7 +12,7 @@
 
     <!-- Header -->
     <header class="fixed top-0 left-0 w-full bg-white shadow-md z-50">
-        <div class="max-w-7xl mx-auto flex items-center justify-between h-16 md:h-20 px-12 sm:px-8 lg:px-12">
+        <div class="w-full mx-auto flex items-center justify-between h-16 md:h-20 px-12 sm:px-8 lg:px-12">
 
             <!-- Logo -->
             <div class="flex items-center flex-shrink-0">
@@ -248,7 +248,7 @@
                     <div
                         class="absolute left-0 top-full mt-1 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
                         <div class="bg-white shadow-xl rounded-lg min-w-52 border">
-                             <ul class="py-2">
+                            <ul class="py-2">
                                 <li><a href="drilling-components.html"
                                         class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">Drilling
                                         Components</a></li>
@@ -279,7 +279,7 @@
             <!-- Action Buttons -->
             <div class="flex items-center space-x-2 sm:space-x-3">
                 <!-- Quote Button -->
-                <button onclick="window.location.href='contact.html'"
+                <button onclick="openQuoteModal()"
                     class="hidden md:inline-block bg-orange-600 text-white px-3 py-1.5 lg:px-4 lg:py-2 rounded-lg shadow text-xs lg:text-sm font-medium hover:bg-blue-900 transition-colors whitespace-nowrap">
                     Get Quote
                 </button>
@@ -356,7 +356,7 @@
                         onclick="toggleDropdown('componentsDropdown')">
                         Components <span>+</span>
                     </button>
-               <ul id="componentsDropdown" class="hidden pl-4 space-y-2">
+                    <ul id="componentsDropdown" class="hidden pl-4 space-y-2">
                         <li><a href="drilling-components.html">Drilling Components</a></li>
                         <li><a href="engine-components.html">Engine Components</a></li>
                         <li><a href="hydraulic-components.html">Hydraulic Components</a></li>
@@ -519,6 +519,12 @@
                 <p class="text-lg md:text-xl text-gray-200 max-w-xl leading-relaxed">
                     Precision Machining Solutions Across Australia
                 </p>
+                <!-- CTA buttons -->
+                <div class="flex flex-col sm:flex-row gap-4 py-4">
+                    <button onclick="openQuoteModal()" class="px-6 py-3 bg-orange-500 text-white font-semibold rounded-lg shadow-md hover:bg-orange-600 transition transform hover:scale-105">
+                        Get a Quote
+                    </button>
+                </div>
             </div>
 
             <!-- Right side (empty space to reveal background image) -->
@@ -634,7 +640,7 @@
 
     <!-- Key Advantages Section -->
     <section class="w-full bg-blue-950 text-white p-12">
-        <div class="max-w-6xl mx-auto">
+        <div class="w-full mx-auto">
             <!-- Heading -->
             <h2 class="text-3xl md:text-4xl font-extrabold mb-8 flex items-center">
                 <span class="border-l-4 border-orange-500 pl-4">Key Advantages of CNC Turning</span>
@@ -899,8 +905,8 @@
     <hr class="border-t border-gray-300 w-full mx-auto">
 
     <!-- Manufacturing Process Section -->
-    <section class="w-full bg-white p-12">
-        <div class="max-w-6xl mx-auto">
+    <section class="w-full bg-gray-50 p-12">
+        <div class="w-full mx-auto">
             <!-- Heading -->
             <h2 class="text-3xl md:text-4xl font-extrabold text-blue-900 mb-10 flex items-center">
                 <span class="border-l-4 border-orange-500 pl-4">Our Manufacturing Process</span>
@@ -908,14 +914,18 @@
 
             <!-- Steps -->
             <div class="space-y-6">
-                <!-- Step 1 -->
-                <div class="flex items-start bg-white shadow-md rounded-lg p-6">
+                <!-- Step 1 - Design Analysis -->
+                <div
+                    class="flex items-start bg-white shadow-md rounded-lg p-6 border-l-4 border-orange-500 hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
                     <div
-                        class="flex-shrink-0 w-10 h-10 flex items-center justify-center bg-orange-500 text-white font-bold rounded-full mr-4">
-                        1
+                        class="flex-shrink-0 w-14 h-14 flex items-center justify-center bg-orange-500 text-white rounded-full mr-6 hover:scale-110 hover:bg-orange-600 transition-all duration-300">
+                        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                        </svg>
                     </div>
                     <div>
-                        <h3 class="text-lg font-semibold text-blue-900">Design Analysis & Consultation</h3>
+                        <h3 class="text-lg font-semibold text-blue-900 mb-2">Design Analysis & Consultation</h3>
                         <p class="text-gray-700">
                             Our engineering team reviews your specifications, optimizes designs for manufacturability,
                             and provides technical recommendations to enhance part performance and reduce costs.
@@ -923,14 +933,18 @@
                     </div>
                 </div>
 
-                <!-- Step 2 -->
-                <div class="flex items-start bg-white shadow-md rounded-lg p-6">
+                <!-- Step 2 - Material Selection -->
+                <div
+                    class="flex items-start bg-white shadow-md rounded-lg p-6 border-l-4 border-orange-500 hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
                     <div
-                        class="flex-shrink-0 w-10 h-10 flex items-center justify-center bg-orange-500 text-white font-bold rounded-full mr-4">
-                        2
+                        class="flex-shrink-0 w-14 h-14 flex items-center justify-center bg-blue-900 text-white rounded-full mr-6 hover:scale-110 hover:bg-blue-800 transition-all duration-300">
+                        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
+                        </svg>
                     </div>
                     <div>
-                        <h3 class="text-lg font-semibold text-blue-900">Material Selection & Procurement</h3>
+                        <h3 class="text-lg font-semibold text-blue-900 mb-2">Material Selection & Procurement</h3>
                         <p class="text-gray-700">
                             We source high-quality raw materials from certified suppliers, ensuring material properties
                             meet your application requirements and industry standards.
@@ -938,14 +952,18 @@
                     </div>
                 </div>
 
-                <!-- Step 3 -->
-                <div class="flex items-start bg-white shadow-md rounded-lg p-6">
+                <!-- Step 3 - Programming & Setup -->
+                <div
+                    class="flex items-start bg-white shadow-md rounded-lg p-6 border-l-4 border-orange-500 hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
                     <div
-                        class="flex-shrink-0 w-10 h-10 flex items-center justify-center bg-orange-500 text-white font-bold rounded-full mr-4">
-                        3
+                        class="flex-shrink-0 w-14 h-14 flex items-center justify-center bg-orange-500 text-white rounded-full mr-6 hover:scale-110 hover:bg-orange-600 transition-all duration-300">
+                        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+                        </svg>
                     </div>
                     <div>
-                        <h3 class="text-lg font-semibold text-blue-900">Programming & Setup</h3>
+                        <h3 class="text-lg font-semibold text-blue-900 mb-2">Programming & Setup</h3>
                         <p class="text-gray-700">
                             Skilled programmers create optimized CNC programs, select appropriate cutting tools,
                             and configure machine setups for maximum efficiency and precision.
@@ -953,14 +971,20 @@
                     </div>
                 </div>
 
-                <!-- Step 4 -->
-                <div class="flex items-start bg-white shadow-md rounded-lg p-6">
+                <!-- Step 4 - Precision Machining -->
+                <div
+                    class="flex items-start bg-white shadow-md rounded-lg p-6 border-l-4 border-orange-500 hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
                     <div
-                        class="flex-shrink-0 w-10 h-10 flex items-center justify-center bg-orange-500 text-white font-bold rounded-full mr-4">
-                        4
+                        class="flex-shrink-0 w-14 h-14 flex items-center justify-center bg-blue-900 text-white rounded-full mr-6 hover:scale-110 hover:bg-blue-800 transition-all duration-300">
+                        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                        </svg>
                     </div>
                     <div>
-                        <h3 class="text-lg font-semibold text-blue-900">Precision Machining</h3>
+                        <h3 class="text-lg font-semibold text-blue-900 mb-2">Precision Machining</h3>
                         <p class="text-gray-700">
                             Components are machined using state-of-the-art CNC lathes with continuous monitoring
                             to ensure dimensional accuracy and surface finish quality.
@@ -968,14 +992,18 @@
                     </div>
                 </div>
 
-                <!-- Step 5 -->
-                <div class="flex items-start bg-white shadow-md rounded-lg p-6">
+                <!-- Step 5 - Quality Inspection -->
+                <div
+                    class="flex items-start bg-white shadow-md rounded-lg p-6 border-l-4 border-orange-500 hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
                     <div
-                        class="flex-shrink-0 w-10 h-10 flex items-center justify-center bg-orange-500 text-white font-bold rounded-full mr-4">
-                        5
+                        class="flex-shrink-0 w-14 h-14 flex items-center justify-center bg-orange-500 text-white rounded-full mr-6 hover:scale-110 hover:bg-orange-600 transition-all duration-300">
+                        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
+                        </svg>
                     </div>
                     <div>
-                        <h3 class="text-lg font-semibold text-blue-900">Quality Inspection</h3>
+                        <h3 class="text-lg font-semibold text-blue-900 mb-2">Quality Inspection</h3>
                         <p class="text-gray-700">
                             Every part undergoes comprehensive inspection using precision measuring equipment,
                             ensuring conformance to specifications and quality standards.
@@ -983,14 +1011,18 @@
                     </div>
                 </div>
 
-                <!-- Step 6 -->
-                <div class="flex items-start bg-white shadow-md rounded-lg p-6">
+                <!-- Step 6 - Finishing & Delivery -->
+                <div
+                    class="flex items-start bg-white shadow-md rounded-lg p-6 border-l-4 border-orange-500 hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
                     <div
-                        class="flex-shrink-0 w-10 h-10 flex items-center justify-center bg-orange-500 text-white font-bold rounded-full mr-4">
-                        6
+                        class="flex-shrink-0 w-14 h-14 flex items-center justify-center bg-blue-900 text-white rounded-full mr-6 hover:scale-110 hover:bg-blue-800 transition-all duration-300">
+                        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M8 14v3m4-3v3m4-3v3M3 21h18M3 10h18M3 7l9-4 9 4M4 10h16v11H4V10z" />
+                        </svg>
                     </div>
                     <div>
-                        <h3 class="text-lg font-semibold text-blue-900">Finishing & Delivery</h3>
+                        <h3 class="text-lg font-semibold text-blue-900 mb-2">Finishing & Delivery</h3>
                         <p class="text-gray-700">
                             Parts receive appropriate surface treatments or coatings as specified, followed by
                             careful packaging and timely delivery to your facility.
@@ -1006,7 +1038,7 @@
 
     <!-- Quality Assurance & Certifications Section -->
     <section class="w-full bg-white p-12">
-        <div class="max-w-6xl mx-auto">
+        <div class="w-full mx-auto">
             <!-- Heading -->
             <h2 class="text-3xl md:text-4xl font-extrabold text-blue-900 mb-6 flex items-center">
                 <span class="border-l-4 border-orange-500 pl-4">Quality Assurance & Certifications</span>
@@ -1043,44 +1075,135 @@
 
 
     <!-- Why Choose Fedele Autocore? -->
-    <section class="w-full white text-blue-900 p-12">
-        <div class="max-w-6xl mx-auto">
-            <!-- Heading -->
-            <h2 class="text-3xl md:text-4xl font-extrabold mb-8 flex items-center">
-                <span class="border-l-4 border-orange-500 pl-4">Why Choose Fedele Autocore?</span>
-            </h2>
+    <section class="bg-white w-full px-6 py-16">
+        <!-- Header -->
+        <div class="border-l-4 border-orange-500 pl-6 mb-12">
+            <h2 class="text-4xl font-bold text-blue-900 mb-4">Why Choose Fedele Autocore?</h2>
+            <p class="text-blue-900 text-lg leading-relaxed max-w-4xl">
+                Experience precision engineering excellence with our comprehensive manufacturing capabilities and
+                commitment to quality:
+            </p>
+        </div>
 
-            <!-- List -->
-            <ul class="space-y-4 text-lg leading-relaxed">
-                <li>
-                    <span class="font-bold text-orange-500">Advanced Equipment:</span>
-                    State-of-the-art CNC turning centers with multi-axis capabilities
-                </li>
-                <li>
-                    <span class="font-bold text-orange-500">Expert Machinists:</span>
-                    Highly skilled operators with extensive experience in precision machining
-                </li>
-                <li>
-                    <span class="font-bold text-orange-500">Nationwide Service:</span>
-                    Serving customers across Australia with consistent quality and delivery
-                </li>
-                <li>
-                    <span class="font-bold text-orange-500">Competitive Pricing:</span>
-                    Efficient operations and strategic sourcing deliver excellent value
-                </li>
-                <li>
-                    <span class="font-bold text-orange-500">Technical Support:</span>
-                    Engineering assistance from design through production and beyond
-                </li>
-                <li>
-                    <span class="font-bold text-orange-500">Flexible Capacity:</span>
-                    Accommodating both small-batch prototypes and large production runs
-                </li>
-                <li>
-                    <span class="font-bold text-orange-500">Quick Turnaround:</span>
-                    Streamlined processes ensure rapid delivery without quality compromise
-                </li>
-            </ul>
+        <!-- Full Width Advantages Grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 w-full">
+
+            <!-- Advanced Equipment -->
+            <div
+                class="bg-gradient-to-br from-blue-50 to-white rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 border border-blue-100 w-full">
+                <div class="p-5 text-center">
+                    <div class="w-14 h-14 bg-orange-500 rounded-full flex items-center justify-center mx-auto mb-3">
+                        <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-bold text-blue-900 mb-2">Advanced Equipment</h3>
+                    <p class="text-gray-600 text-sm">State-of-the-art CNC turning centers with multi-axis capabilities
+                    </p>
+                </div>
+            </div>
+
+            <!-- Expert Machinists -->
+            <div
+                class="bg-gradient-to-br from-blue-50 to-white rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 border border-blue-100 w-full">
+                <div class="p-5 text-center">
+                    <div class="w-14 h-14 bg-blue-900 rounded-full flex items-center justify-center mx-auto mb-3">
+                        <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-bold text-blue-900 mb-2">Expert Machinists</h3>
+                    <p class="text-gray-600 text-sm">Highly skilled operators with extensive experience in precision
+                        machining</p>
+                </div>
+            </div>
+
+            <!-- Nationwide Service -->
+            <div
+                class="bg-gradient-to-br from-blue-50 to-white rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 border border-blue-100 w-full">
+                <div class="p-5 text-center">
+                    <div class="w-14 h-14 bg-orange-500 rounded-full flex items-center justify-center mx-auto mb-3">
+                        <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-bold text-blue-900 mb-2">Nationwide Service</h3>
+                    <p class="text-gray-600 text-sm">Serving customers across Australia with consistent quality and
+                        delivery</p>
+                </div>
+            </div>
+
+            <!-- Competitive Pricing -->
+            <div
+                class="bg-gradient-to-br from-blue-50 to-white rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 border border-blue-100 w-full">
+                <div class="p-5 text-center">
+                    <div class="w-14 h-14 bg-blue-900 rounded-full flex items-center justify-center mx-auto mb-3">
+                        <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1" />
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-bold text-blue-900 mb-2">Competitive Pricing</h3>
+                    <p class="text-gray-600 text-sm">Efficient operations and strategic sourcing deliver excellent value
+                    </p>
+                </div>
+            </div>
+
+            <!-- Technical Support -->
+            <div
+                class="bg-gradient-to-br from-blue-50 to-white rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 border border-blue-100 w-full">
+                <div class="p-5 text-center">
+                    <div class="w-14 h-14 bg-orange-500 rounded-full flex items-center justify-center mx-auto mb-3">
+                        <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192L5.636 18.364M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-bold text-blue-900 mb-2">Technical Support</h3>
+                    <p class="text-gray-600 text-sm">Engineering assistance from design through production and beyond
+                    </p>
+                </div>
+            </div>
+
+            <!-- Flexible Capacity -->
+            <div
+                class="bg-gradient-to-br from-blue-50 to-white rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 border border-blue-100 w-full">
+                <div class="p-5 text-center">
+                    <div class="w-14 h-14 bg-blue-900 rounded-full flex items-center justify-center mx-auto mb-3">
+                        <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4" />
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-bold text-blue-900 mb-2">Flexible Capacity</h3>
+                    <p class="text-gray-600 text-sm">Accommodating both small-batch prototypes and large production runs
+                    </p>
+                </div>
+            </div>
+
+            <!-- Quick Turnaround -->
+            <div
+                class="bg-gradient-to-br from-blue-50 to-white rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 border border-blue-100 w-full">
+                <div class="p-5 text-center">
+                    <div class="w-14 h-14 bg-orange-500 rounded-full flex items-center justify-center mx-auto mb-3">
+                        <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-bold text-blue-900 mb-2">Quick Turnaround</h3>
+                    <p class="text-gray-600 text-sm">Streamlined processes ensure rapid delivery without quality
+                        compromise</p>
+                </div>
+            </div>
+
         </div>
     </section>
 
@@ -1102,10 +1225,9 @@
             </p>
 
             <!-- Button -->
-            <a href="contact.html"
-                class="inline-block bg-orange-500 hover:bg-orange-600 transform hover:scale-105 transition duration-300 ease-in-out text-white font-semibold px-8 py-3 rounded-full shadow-md">
+            <button onclick="openQuoteModal()" class="inline-block bg-orange-500 hover:bg-orange-600 transform hover:scale-105 transition duration-300 ease-in-out text-white font-semibold px-8 py-3 rounded-full shadow-md" onclick="openQuoteModal()">
                 Get Your Quote Today
-            </a>
+            </button>
 
             <!-- Contact text -->
             <p class="mt-8 text-gray-700">
@@ -1286,10 +1408,10 @@
         </div>
 
         <!-- Bottom Section -->
-        <div class="max-w-7xl mx-auto mt-10 pt-8 border-t border-gray-700">
+        <div class="w-full mx-auto mt-10 pt-8 border-t border-gray-700">
             <div class="flex flex-col md:flex-row justify-center items-center">
                 <p class="text-sm text-gray-400 mb-4 md:mb-0">
-                    &copy; 2024 Fedele Autocore. All rights reserved.
+                    &copy; 2025 Fedele Autocore. All rights reserved.
                 </p>
                 <div class="flex flex-wrap justify-center gap-6">
                     <a href="#" class="text-sm text-blue-600 hover:text-white transition-colors duration-300"> Privacy
@@ -1306,6 +1428,93 @@
             </div>
         </div>
     </footer>
+     <!-- Quote Modal -->
+<div id="quoteModal" class="modal">
+    <div class="modal-content">
+        <div class="p-6">
+            <div class="flex justify-between items-center mb-4">
+                <h2 class="text-2xl font-bold text-gray-800">Get a CNC Turning Quote</h2>
+                <button onclick="closeQuoteModal()" class="text-gray-500 hover:text-gray-700 text-xl">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            
+            <form id="quoteForm" class="space-y-4">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-1">First Name *</label>
+                        <input type="text" name="firstName" required 
+                               class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-1">Last Name *</label>
+                        <input type="text" name="lastName" required 
+                               class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500">
+                    </div>
+                </div>
+                
+                <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-1">Email *</label>
+                    <input type="email" name="email" required 
+                           class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500">
+                </div>
+                
+                <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-1">Phone</label>
+                    <input type="tel" name="phone" 
+                           class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500">
+                </div>
+                
+                <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-1">Company</label>
+                    <input type="text" name="company" 
+                           class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500">
+                </div>
+                
+                <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-1">Location *</label>
+                    <select name="location" required 
+                            class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500">
+                        <option value="">Select your city</option>
+                        <option value="melbourne">Melbourne</option>
+                        <option value="sydney">Sydney</option>
+                        <option value="perth">Perth</option>
+                        <option value="adelaide">Adelaide</option>
+                        <option value="brisbane">Brisbane</option>
+                        <option value="darwin">Darwin</option>
+                        <option value="other">Other Australian Location</option>
+                    </select>
+                </div>
+                
+                <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-1">Project Description *</label>
+                    <textarea name="description" required rows="3" 
+                              class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500"
+                              placeholder="Describe your CNC machining requirements, materials, quantities, etc."></textarea>
+                </div>
+                
+                <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-1">Upload Files (Optional)</label>
+                    <input type="file" id="fileInput" multiple accept=".pdf,.dwg,.step,.stp,.igs,.iges,.jpg,.png" 
+                           class="hidden" onchange="handleFileUpload(this)">
+                    
+                    <div id="uploadArea" class="upload-area" onclick="document.getElementById('fileInput').click()">
+                        <i class="fas fa-cloud-upload-alt text-3xl text-gray-400 mb-2"></i>
+                        <p class="text-gray-600 font-medium">Click to upload CAD files, drawings, or specifications</p>
+                        <p class="text-xs text-gray-500 mt-2">Supported: PDF, DWG, STEP, STP, IGS, IGES, JPG, PNG (Max 10MB each)</p>
+                    </div>
+                </div>
+                
+                <div class="pt-4">
+                    <button type="submit" 
+                            class="w-full bg-orange-600 text-white py-3 px-4 rounded-lg font-semibold hover:bg-orange-700 transition-colors">
+                        Submit Quote Request
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
     <script src="script.js"></script>
 </body>
 

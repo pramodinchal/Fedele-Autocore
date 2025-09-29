@@ -10,7 +10,7 @@
 
 <body class="bg-white w-full text-gray-800">
 
-  <!-- Header -->
+    <!-- Header -->
     <header class="fixed top-0 left-0 w-full bg-white shadow-md z-50">
         <div class="max-w-7xl mx-auto flex items-center justify-between h-16 md:h-20 px-12 sm:px-8 lg:px-12">
 
@@ -248,7 +248,7 @@
                     <div
                         class="absolute left-0 top-full mt-1 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
                         <div class="bg-white shadow-xl rounded-lg min-w-52 border">
-                           <ul class="py-2">
+                            <ul class="py-2">
                                 <li><a href="drilling-components.html"
                                         class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">Drilling
                                         Components</a></li>
@@ -356,7 +356,7 @@
                         onclick="toggleDropdown('componentsDropdown')">
                         Components <span>+</span>
                     </button>
-                   <ul id="componentsDropdown" class="hidden pl-4 space-y-2">
+                    <ul id="componentsDropdown" class="hidden pl-4 space-y-2">
                         <li><a href="drilling-components.html">Drilling Components</a></li>
                         <li><a href="engine-components.html">Engine Components</a></li>
                         <li><a href="hydraulic-components.html">Hydraulic Components</a></li>
@@ -498,66 +498,72 @@
 
 
     <!-- Hero Section -->
-    <section id="home"
-        class="relative min-h-screen flex items-center justify-center bg-cover bg-center bg-no-repeat w-full"
+    <section id="home" class="relative h-[50vh] flex items-center justify-center bg-cover bg-center bg-no-repeat w-full"
         style="background-image: url('Assets/about-us.webp');">
 
         <!-- Dark Overlay -->
         <div class="absolute inset-0 bg-gradient-to-r from-blue-900/80 via-blue-900/60 to-blue-900/40"></div>
 
         <!-- Content -->
-        <div class="relative z-10 w-full mx-auto px-12 text-center">
-            <h1 class="text-orange-500 text-4xl md:text-6xl font-extrabold mb-4 drop-shadow-lg">
+        <div class="relative z-10 w-full mx-auto px-6 md:px-12 text-center">
+            <h1 class="text-orange-500 text-3xl md:text-5xl font-extrabold mb-2 drop-shadow-lg">
                 About Us
             </h1>
-            <p class="text-white font-semibold md:text-xl leading-relaxed drop-shadow-lg">
+            <p class="text-white font-medium md:text-lg leading-relaxed drop-shadow-lg">
                 We are committed to delivering <span class="text-orange-400">innovative solutions</span>
                 with <span class="text-blue-200">excellence</span> and passion.
             </p>
         </div>
     </section>
 
-
-
     <!-- About us -->
-    <section class="py-16 px-12">
+    <section class="py-16 px-6 md:px-12 bg-white">
         <div class="w-full mx-auto grid md:grid-cols-2 gap-12 items-center">
             <!-- Text -->
-            <div>
-                <h2 class="text-2xl font-bold text-orange-500 mb-6">About Us</h2>
-                <h2 class="text-3xl font-bold text-blue-900 mb-6">Our Company</h2>
-                <p class="text-xl text-gray-700 mb-4">
-                    Fedele Autocore Established In Year 2004. We Are One Of The Noted
-                    Exporters And Manufactured Of Precision Machine Parts, Forging & Casting.
-                    These Are Use In Oil And Gas Industry, Machines, Tractors, Value Industry And Hydraulic Industry.
+            <div class="space-y-6">
+                <div>
+                    <h2 class="text-3xl md:text-4xl font-bold text-orange-500 mb-2">About Us</h2>
+                    <h2 class="text-3xl md:text-4xl font-extrabold text-blue-900">Our Company</h2>
+                </div>
+                <p class="text-lg md:text-xl text-gray-700 leading-relaxed">
+                    Fedele Autocore was established in 2004. We are one of the noted
+                    exporters and manufacturers of precision machine parts, forging, and casting.
+                    Our products are widely used in the oil and gas industry, machines, tractors,
+                    valve industry, and hydraulic systems.
                 </p>
-                <p class="text-xl text-gray-700 mb-4">
-                    We Are Exporting Material To Different Countries From Last 20 Years. Quality And Accuracy Of Every
-                    Single Component Are Inspected Live On Production Lines And Off Line By Quality Analyst After Well
-                    Defined Interval Of Time.
+                <p class="text-lg md:text-xl text-gray-700 leading-relaxed">
+                    For the last 20+ years, we have been exporting to different countries.
+                    Every single component undergoes stringent quality checks both on
+                    production lines and offline by experienced analysts at regular intervals.
                 </p>
             </div>
+
             <!-- Image -->
-            <div>
+            <div class="flex justify-center md:justify-end">
                 <img src="Assets/fedele_ceo.webp" alt="Our Team"
-                    class="rounded-2xl shadow-lg border-2 border-orange-500">
+                    class="rounded-2xl shadow-xl border-2 border-orange-500 w-full max-w-md object-cover">
             </div>
         </div>
     </section>
+
 
 
     <!-- Divider Line -->
     <hr class="border-t border-gray-300 w-full mx-auto">
 
     <!-- Infrastructure Section -->
-    <section class="py-16 px-12 bg-gray-50">
-        <div class="w-full mx-auto text-center mb-12">
+    <section class="py-8 px-6 md:px-12 bg-gray-50">
+        <div class="max-w-7xl mx-auto text-center mb-6">
             <h2 class="text-4xl font-bold text-blue-900">Infrastructure</h2>
+            <div class="w-24 h-1 bg-orange-500 mx-auto mt-4"></div>
         </div>
-        <div class="w-full mx-auto grid md:grid-cols-4 gap-10 text-left">
+
+        <!-- Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+
             <!-- CNC COMPONENTS -->
-            <div>
-                <h3 class="text-xl font-semibold text-orange-500 mb-4">CNC Components</h3>
+            <div class="bg-white shadow-lg rounded-xl p-6 border-t-4 border-orange-500 hover:shadow-xl transition">
+                <h3 class="text-xl font-semibold text-blue-900 mb-4">CNC Components</h3>
                 <ul class="list-disc list-inside space-y-2 text-gray-700">
                     <li>CNC Turning Center – 12 NOS</li>
                     <li>VMC – 7 NOS</li>
@@ -572,9 +578,10 @@
                     <li>Spring Making M/C – 2 NOS</li>
                 </ul>
             </div>
+
             <!-- Casting -->
-            <div>
-                <h3 class="text-xl font-semibold text-orange-500 mb-4">Casting</h3>
+            <div class="bg-white shadow-lg rounded-xl p-6 border-t-4 border-orange-500 hover:shadow-xl transition">
+                <h3 class="text-xl font-semibold text-blue-900 mb-4">Casting</h3>
                 <ul class="list-disc list-inside space-y-2 text-gray-700">
                     <li>100 Kg Capacity</li>
                     <li>200 Kg Capacity</li>
@@ -582,17 +589,19 @@
                     <li>Short Blasting Machine – 1 NOS</li>
                 </ul>
             </div>
+
             <!-- Forging -->
-            <div>
-                <h3 class="text-xl font-semibold text-orange-500 mb-4">Forging</h3>
+            <div class="bg-white shadow-lg rounded-xl p-6 border-t-4 border-orange-500 hover:shadow-xl transition">
+                <h3 class="text-xl font-semibold text-blue-900 mb-4">Forging</h3>
                 <ul class="list-disc list-inside space-y-2 text-gray-700">
                     <li>Hot Forging (0.5kg To 40kg)</li>
                     <li>Screw Press Forging (0.1kg To 2kg)</li>
                 </ul>
             </div>
+
             <!-- Sheet Metal -->
-            <div>
-                <h3 class="text-xl font-semibold text-orange-500 mb-4">Sheet Metal</h3>
+            <div class="bg-white shadow-lg rounded-xl p-6 border-t-4 border-orange-500 hover:shadow-xl transition">
+                <h3 class="text-xl font-semibold text-blue-900 mb-4">Sheet Metal</h3>
                 <ul class="list-disc list-inside space-y-2 text-gray-700">
                     <li>150 Ton – 2</li>
                     <li>125 Ton – 2</li>
@@ -602,63 +611,113 @@
                     <li>10 Ton – 4</li>
                 </ul>
             </div>
+
         </div>
     </section>
+
 
     <!-- Divider Line -->
     <hr class="border-t border-gray-300 w-full mx-auto">
 
     <!-- Quality Policy Section -->
-    <section class="py-16 px-12 bg-white">
-        <div class="w-full mx-auto text-center mb-12">
+    <section class="py-8 px-12 bg-white">
+        <!-- Title -->
+        <div class="w-full mx-auto text-center mb-6">
             <h2 class="text-4xl font-bold text-blue-900">Quality Policy</h2>
         </div>
-        <div class="w-full mx-auto grid md:grid-cols-2 gap-10 items-center">
+
+        <!-- Content Grid -->
+        <div class="w-full mx-auto grid md:grid-cols-2 gap-12 items-center">
+
             <!-- Text -->
-            <ul class="list-disc list-inside space-y-4 text-gray-700">
-                <li>To strive and offer world class quality products and services to our customers in domestic and
-                    international market.</li>
-                <li>To accomplish the corporate vision of the company by offering technologically advanced and reliable
-                    products and services to the best satisfaction of the customers.</li>
-                <li>To improve competitiveness and profitability through continual improvement in quality of products,
-                    processes, systems and after-sales-service.</li>
-            </ul>
-            <!-- Image -->
-            <div>
-                <img src="Assets/ISO-9001.jpg" alt="Quality ISO"
-                    class="rounded-xl shadow-lg border-2 border-orange-500">
+            <div class="flex justify-center">
+                <ul class="list-disc list-inside space-y-4 text-gray-700 max-w-lg">
+                    <li>
+                        To strive and offer world class quality products and services to our customers
+                        in domestic and international market.
+                    </li>
+                    <li>
+                        To accomplish the corporate vision of the company by offering technologically
+                        advanced and reliable products and services to the best satisfaction of the customers.
+                    </li>
+                    <li>
+                        To improve competitiveness and profitability through continual improvement
+                        in quality of products, processes, systems and after-sales-service.
+                    </li>
+                </ul>
             </div>
+
+            <!-- Image -->
+            <div class="flex justify-center">
+                <img src="Assets/ISO-9001.jpg" alt="Quality ISO"
+                    class="rounded-xl shadow-lg border-2 border-orange-500 max-w-sm w-full object-contain">
+            </div>
+
         </div>
     </section>
+
 
 
     <!-- Divider Line -->
     <hr class="border-t border-gray-300 w-full mx-auto">
 
     <!-- Quality Objectives Section -->
-    <section class="py-16 px-12 bg-gray-50">
-        <div class="w-full mx-auto text-center mb-12">
+    <section class="py-8 px-12 bg-gray-50">
+        <!-- Title -->
+        <div class="w-full mx-auto text-center mb-6">
             <h2 class="text-4xl font-bold text-blue-900">Quality Objectives</h2>
+            <p class="text-gray-600 max-w-2xl mx-auto mt-4">
+                Our objectives ensure excellence in products, processes, and customer satisfaction through innovation
+                and continuous improvement.
+            </p>
         </div>
-        <div class="w-full mx-auto grid md:grid-cols-2 gap-10">
-            <ul class="list-disc list-inside space-y-4 text-gray-700">
-                <li>Manufacture and supply quality products to meet customers’ needs, applicable statutory, regulatory
-                    and safety standards.</li>
-                <li>Provide total engineering solutions to the customers ensuring satisfactory performance.</li>
-                <li>Have an effective documented system to meet customers’ needs and ensure product quality and service.
-                </li>
-            </ul>
-            <ul class="list-disc list-inside space-y-4 text-gray-700">
-                <li>Establish systems to provide customer support at the shortest possible time.</li>
-                <li>Develop state-of-the-art technology for all products.</li>
-                <li>Adopt best quality practices and emerging concepts for improvement of systems, processes, products
-                    and services.</li>
-            </ul>
+
+        <!-- Grid -->
+        <div class="w-full mx-auto grid md:grid-cols-2 gap-8">
+            <!-- Column 1 -->
+            <div class="bg-white shadow-md rounded-xl p-6 hover:shadow-lg transition-shadow">
+                <ul class="space-y-4 text-gray-700">
+                    <li class="flex items-start">
+                        <span class="text-orange-500 text-lg font-bold mr-2">✔</span>
+                        Manufacture and supply quality products to meet customers’ needs, applicable statutory,
+                        regulatory and safety standards.
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-orange-500 text-lg font-bold mr-2">✔</span>
+                        Provide total engineering solutions to the customers ensuring satisfactory performance.
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-orange-500 text-lg font-bold mr-2">✔</span>
+                        Have an effective documented system to meet customers’ needs and ensure product quality and
+                        service.
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Column 2 -->
+            <div class="bg-white shadow-md rounded-xl p-6 hover:shadow-lg transition-shadow">
+                <ul class="space-y-4 text-gray-700">
+                    <li class="flex items-start">
+                        <span class="text-orange-500 text-lg font-bold mr-2">✔</span>
+                        Establish systems to provide customer support at the shortest possible time.
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-orange-500 text-lg font-bold mr-2">✔</span>
+                        Develop state-of-the-art technology for all products.
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-orange-500 text-lg font-bold mr-2">✔</span>
+                        Adopt best quality practices and emerging concepts for improvement of systems, processes,
+                        products and services.
+                    </li>
+                </ul>
+            </div>
         </div>
     </section>
 
- 
-       <!-- Footer -->
+
+
+    <!-- Footer -->
     <footer class="bg-gray-800 text-gray-300 py-12 px-12 sm:px-8 lg:px-12">
         <div class="w-full mx-auto grid grid-cols-1 md:grid-cols-5 gap-8">
             <!-- Column 1 -->

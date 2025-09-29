@@ -285,7 +285,7 @@
             <!-- Action Buttons -->
             <div class="flex items-center space-x-2 sm:space-x-3">
                 <!-- Quote Button -->
-                <button onclick="window.location.href='contact.html'"
+                <button onclick="openQuoteModal()"
                     class="hidden md:inline-block bg-orange-600 text-white px-3 py-1.5 lg:px-4 lg:py-2 rounded-lg shadow text-xs lg:text-sm font-medium hover:bg-blue-900 transition-colors whitespace-nowrap">
                     Get Quote
                 </button>
@@ -527,6 +527,12 @@
                     structural brackets to custom architectural elements, we manufacture with uncompromising quality and
                     precision.
                 </p>
+                 <div class="flex flex-col sm:flex-row gap-4 py-4">
+                    <button onclick="openQuoteModal()"
+                        class="px-6 py-3 bg-orange-500 text-white font-semibold rounded-lg shadow-md hover:bg-orange-600 transition transform hover:scale-105">
+                        Get a Quote
+                    </button>
+                </div>
             </div>
 
             <!-- Right side (empty space to reveal background image) -->
@@ -714,7 +720,7 @@
                             <li>6061-T6 - Structural applications</li>
                             <li>7075-T6 - High strength aerospace</li>
                             <li>5083 - Marine grade aluminum</li>
-                            <li>2024-T3 - Aircraft grade</li>
+                            <li>2025-T3 - Aircraft grade</li>
                         </ul>
                     </div>
                 </div>
@@ -1025,10 +1031,10 @@
         <div class=" mx-auto w-full pb-24 lg:px-8 bg-gray-100 px-12">
 
             <!-- Header Section -->
-            <div class="text-center mb-16 bg-gray-100">
-                <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold text-blue-900 mb-8">
+            <div class="text-center my-8 bg-gray-100">
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-blue-900 mb-8">
                     Ready to Start Your Project?
-                </h1>
+                </h2>
 
                 <p class="text-orange-500 text-lg md:text-xl max-w-4xl mx-auto leading-relaxed">
                     Contact Fedele Autocore today for precision CNC machining solutions that meet the demanding
@@ -1106,7 +1112,7 @@
             </div>
 
             <div class="mt-12 flex justify-center">
-                <button onclick="window.location.href='contact.html'"
+                <button onclick="openQuoteModal()"
                     class="bg-orange-600 text-white px-6 py-3 rounded-lg shadow text-sm lg:text-base font-medium hover:bg-blue-900 transition-colors">
                     Request a Quote
                 </button>
@@ -1289,7 +1295,7 @@
         <div class="max-w-7xl mx-auto mt-10 pt-8 border-t border-gray-700">
             <div class="flex flex-col md:flex-row justify-center items-center">
                 <p class="text-sm text-gray-400 mb-4 md:mb-0">
-                    &copy; 2024 Fedele Autocore. All rights reserved.
+                    &copy; 2025 Fedele Autocore. All rights reserved.
                 </p>
                 <div class="flex flex-wrap justify-center gap-6">
                     <a href="#" class="text-sm text-blue-600 hover:text-white transition-colors duration-300"> Privacy
@@ -1306,6 +1312,94 @@
             </div>
         </div>
     </footer>
+       <div id="quoteModal" class="modal">
+        <div class="modal-content">
+            <div class="p-6">
+                <div class="flex justify-between items-center mb-4">
+                    <h2 class="text-2xl font-bold text-gray-800">Get Construction CNC Machining Quote</h2>
+                    <button onclick="closeQuoteModal()" class="text-gray-500 hover:text-gray-700 text-xl">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+
+                <form id="quoteForm" class="space-y-4">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-1">First Name *</label>
+                            <input type="text" name="firstName" required
+                                class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-1">Last Name *</label>
+                            <input type="text" name="lastName" required
+                                class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500">
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-1">Email *</label>
+                        <input type="email" name="email" required
+                            class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500">
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-1">Phone</label>
+                        <input type="tel" name="phone"
+                            class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500">
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-1">Company</label>
+                        <input type="text" name="company"
+                            class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500">
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-1">Location *</label>
+                        <select name="location" required
+                            class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500">
+                            <option value="">Select your city</option>
+                            <option value="melbourne">Melbourne</option>
+                            <option value="sydney">Sydney</option>
+                            <option value="perth">Perth</option>
+                            <option value="adelaide">Adelaide</option>
+                            <option value="brisbane">Brisbane</option>
+                            <option value="darwin">Darwin</option>
+                            <option value="other">Other Australian Location</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-1">Project Description *</label>
+                        <textarea name="description" required rows="3"
+                            class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500"
+                            placeholder="Describe your CNC machining requirements, materials, quantities, etc."></textarea>
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-1">Upload Files (Optional)</label>
+                        <input type="file" id="fileInput" multiple accept=".pdf,.dwg,.step,.stp,.igs,.iges,.jpg,.png"
+                            class="hidden" onchange="handleFileUpload(this)">
+
+                        <div id="uploadArea" class="upload-area" onclick="document.getElementById('fileInput').click()">
+                            <i class="fas fa-cloud-upload-alt text-3xl text-gray-400 mb-2"></i>
+                            <p class="text-gray-600 font-medium">Click to upload CAD files, drawings, or specifications
+                            </p>
+                            <p class="text-xs text-gray-500 mt-2">Supported: PDF, DWG, STEP, STP, IGS, IGES, JPG, PNG
+                                (Max 10MB each)</p>
+                        </div>
+                    </div>
+
+                    <div class="pt-4">
+                        <button type="submit"
+                            class="w-full bg-orange-600 text-white py-3 px-4 rounded-lg font-semibold hover:bg-orange-700 transition-colors">
+                            Submit Quote Request
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
     <script src="script.js"></script>
 </body>
 

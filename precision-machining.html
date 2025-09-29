@@ -279,7 +279,7 @@
             <!-- Action Buttons -->
             <div class="flex items-center space-x-2 sm:space-x-3">
                 <!-- Quote Button -->
-                <button onclick="window.location.href='contact.html'"
+                <button  onclick="openQuoteModal()"
                     class="hidden md:inline-block bg-orange-600 text-white px-3 py-1.5 lg:px-4 lg:py-2 rounded-lg shadow text-xs lg:text-sm font-medium hover:bg-blue-900 transition-colors whitespace-nowrap">
                     Get Quote
                 </button>
@@ -521,6 +521,11 @@
                 <p class="text-lg md:text-xl text-gray-200 max-w-xl leading-relaxed">
                     Advanced Manufacturing Solutions Across Australia
                 </p>
+               <div class="flex flex-col sm:flex-row gap-4 py-4">
+                    <button onclick="openQuoteModal()" class="px-6 py-3 bg-orange-500 text-white font-semibold rounded-lg shadow-md hover:bg-orange-600 transition transform hover:scale-105">
+                        Get a Quote
+                    </button>
+                </div>
             </div>
 
             <!-- Right side (empty space to reveal background image) -->
@@ -530,44 +535,61 @@
     </section>
 
     <!--About turning and manufacturing-->
-    <section class="bg-gray-50">
-        <div class=" mx-auto w-full px-12 py-8 lg:px-12 bg-gray-100">
+   <section class="bg-gray-50 py-16 px-6 lg:px-12 space-y-20">
+  <div class="max-w-7xl mx-auto space-y-20">
 
-            <!-- Header Section -->
-            <div class="mb-16 bg-gray-100">
-                <h1 class="text-2xl md:text-3xl lg:text-4xl font-bold text-blue-900 mb-8">
-                    <span class="border-l-4 border-orange-500 pl-4">Leading Precision Machining Services</span>
-                </h1>
+    <!-- First Section (Image Left, Text Right) -->
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      <!-- Image -->
+      <div>
+        <img src="Assets/precision-machining.jpg" 
+             alt="Precision Machining" 
+             class="w-full h-80 rounded-lg shadow-lg object-cover" />
+      </div>
+      <!-- Content -->
+      <div>
+        <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold text-blue-900 mb-8">
+          <span >Leading Precision Machining Services</span>
+        </h2>
+        <p class="text-lg text-gray-900 leading-relaxed mb-6">
+          Fedele Autocore stands as Australia's premier precision machining specialist, delivering exceptional
+          manufacturing solutions that combine cutting-edge technology with uncompromising quality standards.
+          Our comprehensive machining capabilities serve diverse industries across the continent, from
+          aerospace and medical devices to automotive and defense applications.
+        </p>
+        <p class="text-lg text-gray-900 leading-relaxed">
+          With state-of-the-art CNC equipment, skilled craftsmen, and rigorous quality control processes, we
+          transform raw materials into precision-engineered components that exceed expectations. Our
+          commitment to excellence, innovation, and customer satisfaction has established us as the trusted
+          partner for Australia's most demanding manufacturing requirements.
+        </p>
+      </div>
+    </div>
 
-                <p class="text-lg text-grey-900 leading-relaxed mb-6">
-                    Fedele Autocore stands as Australia's premier precision machining specialist, delivering exceptional
-                    manufacturing solutions that combine cutting-edge technology with uncompromising quality standards.
-                    Our comprehensive machining capabilities serve diverse industries across the continent, from
-                    aerospace and medical devices to automotive and defense applications.
-                </p>
-                <p class="text-lg text-grey-900 leading-relaxed mb-6">
-                    With state-of-the-art CNC equipment, skilled craftsmen, and rigorous quality control processes, we
-                    transform raw materials into precision-engineered components that exceed expectations. Our
-                    commitment to excellence, innovation, and customer satisfaction has established us as the trusted
-                    partner for Australia's most demanding manufacturing requirements.
-                </p>
-            </div>
+    <!-- Second Section (Text Left, Image Right) -->
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      <!-- Content -->
+      <div>
+        <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold text-blue-900 mb-8">
+          <span>Comprehensive Machining Services</span>
+        </h2>
+        <p class="text-lg text-gray-900 leading-relaxed">
+          Our advanced manufacturing facility offers a complete range of precision machining services,
+          utilizing the latest CNC technology and manufacturing techniques to deliver components with
+          exceptional accuracy, superior surface finishes, and reliable performance.
+        </p>
+      </div>
+      <!-- Image -->
+      <div>
+        <img src="Assets/cnc-machining-services.jpg" 
+             alt="Comprehensive Machining Services" 
+             class="w-full h-80 rounded-lg shadow-lg object-cover" />
+      </div>
+    </div>
 
+  </div>
+</section>
 
-            <div class="mb-2 bg-gray-100">
-                <h1 class="text-2xl md:text-3xl lg:text-4xl font-bold text-blue-900">
-                    <span class="border-l-4 border-orange-500 pl-4">Comprehensive Machining Services</span>
-                </h1>
-
-                <p class="py-8 text-lg text-grey-900 leading-relaxed mb-6">
-                    Our advanced manufacturing facility offers a complete range of precision machining services,
-                    utilizing the latest CNC technology and manufacturing techniques to deliver components with
-                    exceptional accuracy, superior surface finishes, and reliable performance.
-                </p>
-            </div>
-
-        </div>
-    </section>
 
     <!-- Our Custom Machining Capabilities -->
     <section class="p-12 bg-gray-50">
@@ -617,43 +639,59 @@
     <!-- Divider Line -->
     <hr class="border-t border-gray-300 w-full mx-auto">
 
-    <!-- Key Advantages Section -->
-    <section class="w-full bg-blue-950 text-white p-12">
-        <div class="max-w-6xl mx-auto">
-            <!-- Heading -->
-            <h2 class="text-3xl md:text-4xl font-extrabold mb-8 flex items-center">
-                <span class="border-l-4 border-orange-500 pl-4">Advanced Manufacturing Capabilities</span>
-            </h2>
+   <!-- Advanced Manufacturing Capabilities -->
+<section class="w-full bg-gray-500 text-white p-12 min-h-screen flex items-center">
+  <div class="w-full mx-auto">
+    <!-- Heading -->
+    <h2 class="text-3xl md:text-4xl font-extrabold mb-12 flex items-center">
+      <span class="border-l-4 border-orange-500 pl-4 drop-shadow-lg">
+        Advanced Manufacturing Capabilities
+      </span>
+    </h2>
 
-            <!-- List -->
-            <ul class="space-y-4 text-lg leading-relaxed">
-                <li>
-                    <span class="font-bold text-orange-500">Ultra-Precision Tolerances:</span>
-                    Achieving tolerances as tight as ±0.002mm with consistent repeatability across production runs
-                </li>
-                <li>
-                    <span class="font-bold text-orange-500">High-Speed Machining:</span>
-                    Rapid material removal with superior surface finishes for enhanced productivity and quality
-                </li>
-                <li>
-                    <span class="font-bold text-orange-500">Multi-Axis Processing:</span>
-                    Complex geometries machined in single setups using advanced 4 and 5-axis CNC centers
-                </li>
-                <li>
-                    <span class="font-bold text-orange-500">Material Versatility:</span>
-                    Expertise in machining metals, alloys, plastics, and exotic materials up to 65 HRC hardness
-                </li>
-                <li>
-                    <span class="font-bold text-orange-500">Rapid Prototyping:</span>
-                    Quick turnaround from concept to finished prototype for accelerated product development
-                </li>
-                <li>
-                    <span class="font-bold text-orange-500">Scalable Production:</span>
-                    Seamless transition from prototype quantities to high-volume manufacturing runs
-                </li>
-            </ul>
-        </div>
-    </section>
+    <!-- List -->
+    <div class="grid gap-6">
+      <div class="text-lg leading-relaxed flex items-start gap-3">
+        <span class="text-orange-400 text-2xl">🎯</span>
+        <span><span class="font-bold text-orange-400">Ultra-Precision Tolerances:</span>
+          Achieving tolerances as tight as ±0.002mm with consistent repeatability across production runs.</span>
+      </div>
+
+      <div class="text-lg leading-relaxed flex items-start gap-3">
+        <span class="text-orange-400 text-2xl">⚡</span>
+        <span><span class="font-bold text-orange-400">High-Speed Machining:</span>
+          Rapid material removal with superior surface finishes for enhanced productivity and quality.</span>
+      </div>
+
+      <div class="text-lg leading-relaxed flex items-start gap-3">
+        <span class="text-orange-400 text-2xl">🛠️</span>
+        <span><span class="font-bold text-orange-400">Multi-Axis Processing:</span>
+          Complex geometries machined in single setups using advanced 4 and 5-axis CNC centers.</span>
+      </div>
+
+      <div class="text-lg leading-relaxed flex items-start gap-3">
+        <span class="text-orange-400 text-2xl">🔬</span>
+        <span><span class="font-bold text-orange-400">Material Versatility:</span>
+          Expertise in machining metals, alloys, plastics, and exotic materials up to 65 HRC hardness.</span>
+      </div>
+
+      <div class="text-lg leading-relaxed flex items-start gap-3">
+        <span class="text-orange-400 text-2xl">🚀</span>
+        <span><span class="font-bold text-orange-400">Rapid Prototyping:</span>
+          Quick turnaround from concept to finished prototype for accelerated product development.</span>
+      </div>
+
+      <div class="text-lg leading-relaxed flex items-start gap-3">
+        <span class="text-orange-400 text-2xl">📈</span>
+        <span><span class="font-bold text-orange-400">Scalable Production:</span>
+          Seamless transition from prototype quantities to high-volume manufacturing runs.</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
 
     <!-- Divider Line -->
     <hr class="border-t border-gray-300 w-full mx-auto">
@@ -703,9 +741,9 @@
 
             <!-- Header Section -->
             <div class="mb-16 bg-gray-100">
-                <h1 class="text-2xl md:text-3xl lg:text-4xl font-bold text-blue-900 mb-8">
+                <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold text-blue-900 mb-8">
                     <span class="border-l-4 border-orange-500 pl-4">Industries We Serve</span>
-                </h1>
+                </h2>
 
                 <p class="text-lg text-grey-900 leading-relaxed mb-6">
                     Fedele Autocore's precision machining expertise supports critical manufacturing needs across
@@ -858,7 +896,7 @@
                     <div class="p-6 border-l-4 border-blue-500 h-full">
                         <h3 class="text-xl font-bold text-blue-900 mb-4">Aluminium Alloys</h3>
                         <p class="text-gray-600">
-                            6061, 7075, 2024, aerospace-grade alloys
+                            6061, 7075, 2025, aerospace-grade alloys
                         </p>
                     </div>
                 </div>
@@ -918,7 +956,7 @@
 
     <!---Local Expertise-->
     <section class="px-12 py-8">
-        <div class="max-w-7xl mx-auto">
+        <div class="w-full mx-auto">
             <!-- Header -->
             <div class="border-l-4 border-orange-500 pl-6 mb-12">
                 <h2 class="text-4xl font-bold text-blue-900 mb-4">Local Expertise, National Reach</h2>
@@ -1013,7 +1051,7 @@
 
     <!-- Quality Assurance Section -->
     <section class="bg-white px-12 py-16">
-        <div class="max-w-7xl mx-auto">
+        <div class="w-full mx-auto">
             <!-- Header -->
             <div class="border-l-4 border-orange-500 pl-6 mb-12">
                 <h2 class="text-4xl font-bold text-blue-900 mb-4">Quality Assurance Excellence</h2>
@@ -1101,7 +1139,7 @@
 
     <!-- Why Choose Fedele Autocore? -->
     <section class="w-full white text-blue-900 p-12">
-        <div class="max-w-6xl mx-auto">
+        <div class="mx-auto">
             <!-- Heading -->
             <h2 class="text-3xl md:text-4xl font-extrabold mb-8 flex items-center">
                 <span class="border-l-4 border-orange-500 pl-4">Why Choose Fedele Autocore?</span>
@@ -1161,7 +1199,7 @@
     <!--Design for Manufacturing (DFM) Services--->
 
     <section class="w-full bg-white p-12">
-        <div class="max-w-6xl mx-auto">
+        <div class="mx-auto">
             <!-- Heading -->
             <h2 class="text-3xl md:text-4xl font-extrabold text-blue-900 mb-6 flex items-center">
                 <span class="border-l-4 border-orange-500 pl-4">Design for Manufacturing (DFM) Services</span>
@@ -1209,8 +1247,8 @@
 
     <!----Quality Control & Inspection-->
 
-    <section class="bg-white px-12 py-16">
-        <div class="max-w-7xl mx-auto">
+    <section class="w-full bg-white px-12 py-16">
+        <div class="mx-auto">
             <!-- Header -->
             <div class="border-l-4 border-orange-500 pl-6 mb-12">
                 <h2 class="text-4xl font-bold text-blue-900 mb-4">Quality Control & Inspection</h2>
@@ -1274,7 +1312,7 @@
     <!--Surface Finishing & Secondary Operations--->
 
     <section class="w-full bg-white p-12">
-        <div class="max-w-6xl mx-auto">
+        <div class="w-full mx-auto">
             <!-- Heading -->
             <h2 class="text-3xl md:text-4xl font-extrabold text-blue-900 mb-6 flex items-center">
                 <span class="border-l-4 border-orange-500 pl-4">Surface Finishing & Secondary Operations</span>
@@ -1327,7 +1365,7 @@
     <!--Environmental Responsibility--->
 
     <section class="w-full bg-white p-12">
-        <div class="max-w-6xl mx-auto">
+        <div class="w-full mx-auto">
             <!-- Heading -->
             <h2 class="text-3xl md:text-4xl font-extrabold text-blue-900 mb-6 flex items-center">
                 <span class="border-l-4 border-orange-500 pl-4">Environmental Responsibility</span>
@@ -1374,7 +1412,7 @@
     <!--Customer Support & Service-->
 
     <section class="bg-white px-12 py-16">
-        <div class="max-w-7xl mx-auto">
+        <div class="w-full mx-auto">
             <!-- Header -->
             <div class="border-l-4 border-orange-500 pl-6 mb-12">
                 <h2 class="text-4xl font-bold text-blue-900 mb-4">Customer Support & Service</h2>
@@ -1642,7 +1680,7 @@
         <div class="max-w-7xl mx-auto mt-10 pt-8 border-t border-gray-700">
             <div class="flex flex-col md:flex-row justify-center items-center">
                 <p class="text-sm text-gray-400 mb-4 md:mb-0">
-                    &copy; 2024 Fedele Autocore. All rights reserved.
+                    &copy; 2025 Fedele Autocore. All rights reserved.
                 </p>
                 <div class="flex flex-wrap justify-center gap-6">
                     <a href="#" class="text-sm text-blue-600 hover:text-white transition-colors duration-300"> Privacy
@@ -1659,6 +1697,96 @@
             </div>
         </div>
     </footer>
+
+         <!-- Quote Modal -->
+    <div id="quoteModal" class="modal">
+        <div class="modal-content">
+            <div class="p-6">
+                <div class="flex justify-between items-center mb-4">
+                    <h2 class="text-2xl font-bold text-gray-800">Get a CNC Precision Machining Quote</h2>
+                    <button onclick="closeQuoteModal()" class="text-gray-500 hover:text-gray-700 text-xl">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+
+                <form id="quoteForm" class="space-y-4">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-1">First Name *</label>
+                            <input type="text" name="firstName" required
+                                class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-1">Last Name *</label>
+                            <input type="text" name="lastName" required
+                                class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500">
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-1">Email *</label>
+                        <input type="email" name="email" required
+                            class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500">
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-1">Phone</label>
+                        <input type="tel" name="phone"
+                            class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500">
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-1">Company</label>
+                        <input type="text" name="company"
+                            class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500">
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-1">Location *</label>
+                        <select name="location" required
+                            class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500">
+                            <option value="">Select your city</option>
+                            <option value="melbourne">Melbourne</option>
+                            <option value="sydney">Sydney</option>
+                            <option value="perth">Perth</option>
+                            <option value="adelaide">Adelaide</option>
+                            <option value="brisbane">Brisbane</option>
+                            <option value="darwin">Darwin</option>
+                            <option value="other">Other Australian Location</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-1">Project Description *</label>
+                        <textarea name="description" required rows="3"
+                            class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500"
+                            placeholder="Describe your CNC machining requirements, materials, quantities, etc."></textarea>
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-1">Upload Files (Optional)</label>
+                        <input type="file" id="fileInput" multiple accept=".pdf,.dwg,.step,.stp,.igs,.iges,.jpg,.png"
+                            class="hidden" onchange="handleFileUpload(this)">
+
+                        <div id="uploadArea" class="upload-area" onclick="document.getElementById('fileInput').click()">
+                            <i class="fas fa-cloud-upload-alt text-3xl text-gray-400 mb-2"></i>
+                            <p class="text-gray-600 font-medium">Click to upload CAD files, drawings, or specifications
+                            </p>
+                            <p class="text-xs text-gray-500 mt-2">Supported: PDF, DWG, STEP, STP, IGS, IGES, JPG, PNG
+                                (Max 10MB each)</p>
+                        </div>
+                    </div>
+
+                    <div class="pt-4">
+                        <button type="submit"
+                            class="w-full bg-orange-600 text-white py-3 px-4 rounded-lg font-semibold hover:bg-orange-700 transition-colors">
+                            Submit Quote Request
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
     <script src="script.js"></script>
 </body>
 

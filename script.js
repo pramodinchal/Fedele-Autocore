@@ -1,3 +1,267 @@
+   const globalStyle = document.createElement('style');
+globalStyle.textContent = `
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 10000;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+.modal.show {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+}
+.modal-content {
+    background: white;
+    border-radius: 12px;
+    max-width: 600px;
+    width: 95%;
+    max-height: 90vh;
+    overflow-y: auto;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    transform: scale(0.9);
+    transition: transform 0.3s ease;
+}
+.modal.show .modal-content {
+    transform: scale(1);
+}
+.upload-area {
+    border: 2px dashed #d1d5db;
+    border-radius: 8px;
+    padding: 2rem;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.upload-area:hover,
+.upload-area.dragover {
+    border-color: #ea580c;
+    background-color: #fef7f0;
+}
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
+.faq-answer.open {
+    max-height: 200px;
+}
+`;
+document.head.appendChild(globalStyle);
+
+
+
+   // Mobile Menu Functions
+    function toggleMobileMenu() {
+        const mobileMenu = document.getElementById('mobile-menu');
+        const overlay = document.getElementById('overlay');
+        
+        mobileMenu.classList.toggle('hidden');
+        overlay.classList.toggle('hidden');
+        
+        if (!mobileMenu.classList.contains('hidden')) {
+            mobileMenu.style.transform = 'translateX(0)';
+        } else {
+            mobileMenu.style.transform = 'translateX(100%)';
+        }
+    }
+
+    function closeMobileMenu() {
+        const mobileMenu = document.getElementById('mobile-menu');
+        const overlay = document.getElementById('overlay');
+        
+        mobileMenu.style.transform = 'translateX(100%)';
+        setTimeout(() => {
+            mobileMenu.classList.add('hidden');
+            overlay.classList.add('hidden');
+        }, 300);
+    }
+
+    function toggleDropdown(dropdownId) {
+        const dropdown = document.getElementById(dropdownId);
+        dropdown.classList.toggle('hidden');
+    }
+
+    // Quote Modal Functions
+    function openQuoteModal() {
+        const modal = document.getElementById('quoteModal');
+        modal.style.display = 'flex';
+        setTimeout(() => {
+            modal.classList.add('show');
+        }, 10);
+         document.body.classList.add('modal-open');
+    }
+
+    function closeQuoteModal() {
+        const modal = document.getElementById('quoteModal');
+        modal.classList.remove('show');
+        setTimeout(() => {
+            modal.style.display = 'none';
+           document.body.classList.remove('modal-open');
+        }, 300);
+        // Reset form
+        document.getElementById('quoteForm').reset();
+        resetFileUpload();
+    }
+
+    // File Upload Handling
+    function handleFileUpload(input) {
+        const files = input.files;
+        const uploadArea = document.getElementById('uploadArea');
+        
+        if (files.length > 0) {
+            let fileList = '<div class="mb-2"><i class="fas fa-check-circle text-green-600 text-2xl"></i></div>';
+            fileList += '<p class="text-green-600 font-semibold mb-2">' + files.length + ' file(s) selected</p>';
+            fileList += '<div class="text-xs text-gray-600 space-y-1">';
+            
+            for (let i = 0; i < Math.min(files.length, 3); i++) {
+                fileList += '<div>• ' + files[i].name + '</div>';
+            }
+            
+            if (files.length > 3) {
+                fileList += '<div>• ... and ' + (files.length - 3) + ' more files</div>';
+            }
+            
+            fileList += '</div>';
+            uploadArea.innerHTML = fileList;
+        }
+    }
+
+    function resetFileUpload() {
+        const uploadArea = document.getElementById('uploadArea');
+        uploadArea.innerHTML = `
+            <i class="fas fa-cloud-upload-alt text-3xl text-gray-400 mb-2"></i>
+            <p class="text-gray-600 font-medium">Click to upload CAD files, drawings, or specifications</p>
+            <p class="text-xs text-gray-500 mt-2">Supported: PDF, DWG, STEP, STP, IGS, IGES, JPG, PNG (Max 10MB each)</p>
+        `;
+    }
+
+    // FAQ Functions
+    document.addEventListener('DOMContentLoaded', function() {
+        // Initialize FAQ functionality
+        const faqQuestions = document.querySelectorAll('.faq-question');
+        faqQuestions.forEach((question, index) => {
+            question.addEventListener('click', function() {
+                const answer = this.nextElementSibling;
+                const icon = this.querySelector('.faq-icon i');
+                
+                // Toggle current FAQ
+                if (answer.style.maxHeight) {
+                    answer.style.maxHeight = null;
+                    icon.className = 'fas fa-plus';
+                } else {
+                    answer.style.maxHeight = answer.scrollHeight + 'px';
+                    icon.className = 'fas fa-minus';
+                }
+            });
+        });
+
+        // File upload drag and drop
+        const uploadArea = document.getElementById('uploadArea');
+        if (uploadArea) {
+            uploadArea.addEventListener('dragover', function(e) {
+                e.preventDefault();
+                uploadArea.classList.add('dragover');
+            });
+            
+            uploadArea.addEventListener('dragleave', function(e) {
+                e.preventDefault();
+                uploadArea.classList.remove('dragover');
+            });
+            
+            uploadArea.addEventListener('drop', function(e) {
+                e.preventDefault();
+                uploadArea.classList.remove('dragover');
+                const files = e.dataTransfer.files;
+                document.getElementById('fileInput').files = files;
+                handleFileUpload(document.getElementById('fileInput'));
+            });
+        }
+
+        // Form submission
+        const quoteForm = document.getElementById('quoteForm');
+        if (quoteForm) {
+            quoteForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                // Show success message
+                const formData = new FormData(this);
+                const firstName = formData.get('firstName');
+                
+                // Create success message
+                const successMessage = `
+                    <div class="text-center py-8">
+                        <div class="mb-4">
+                            <i class="fas fa-check-circle text-5xl text-green-600"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-800 mb-4">Quote Request Submitted!</h3>
+                        <p class="text-gray-600 mb-4">
+                            Thank you ${firstName}! We've received your CNC machining quote request. 
+                            Our team will review your requirements and contact you within 2-4 business hours 
+                            with a detailed quote.
+                        </p>
+                        <div class="bg-blue-50 p-4 rounded-lg mb-4">
+                            <p class="text-sm text-blue-800">
+                                <strong>Next Steps:</strong><br>
+                                • Technical review of your specifications<br>
+                                • Material and timeline assessment<br>
+                                • Detailed quote preparation<br>
+                                • Direct contact from our project manager
+                            </p>
+                        </div>
+                        <button onclick="closeQuoteModal()" class="bg-orange-600 text-white px-6 py-2 rounded-lg hover:bg-orange-700 transition-colors">
+                            Close
+                        </button>
+                    </div>
+                `;
+                
+                document.querySelector('.modal-content').innerHTML = successMessage;
+            });
+        }
+
+        // Close modal when clicking outside
+        const quoteModal = document.getElementById('quoteModal');
+        if (quoteModal) {
+            quoteModal.addEventListener('click', function(e) {
+                if (e.target === this) {
+                    closeQuoteModal();
+                }
+            });
+        }
+
+        // Close modal with escape key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                closeQuoteModal();
+            }
+        });
+
+        // Mobile menu toggle
+        const menuToggle = document.getElementById('menu-toggle');
+        if (menuToggle) {
+            menuToggle.addEventListener('click', toggleMobileMenu);
+        }
+
+        // Close mobile menu elements
+        const closeMobileMenuBtn = document.getElementById('close-mobile-menu');
+        const overlay = document.getElementById('overlay');
+        
+        if (closeMobileMenuBtn) {
+            closeMobileMenuBtn.addEventListener('click', closeMobileMenu);
+        }
+        
+        if (overlay) {
+            overlay.addEventListener('click', closeMobileMenu);
+        }
+    });
+
 function sendMail(e) {
     e.preventDefault(); // stop form reload
 

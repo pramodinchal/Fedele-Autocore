@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CNC Milling Services</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
 
@@ -535,31 +536,31 @@
 
     </section>
 
-    <!--About turning and manufacturing-->
- <section class="bg-gray-50">
+    <!--About milling and manufacturing-->
+<section class="bg-gray-100">
   <div class="mx-auto w-full p-12 lg:px-12 bg-gray-100 space-y-16">
 
     <!-- First Section (Image Left, Text Right) -->
-    <div class="grid lg:grid-cols-2 gap-8 items-center bg-gray-100">
+    <div class="grid lg:grid-cols-2 gap-8 items-start bg-gray-100">
       <!-- Image Left -->
-      <div>
+      <div class="flex items-center h-full">
         <img src="Assets/cnc-milling.jpg" alt="CNC Milling Machine"
-          class="rounded-lg shadow-md w-full object-cover h-80">
+          class="rounded-lg shadow-md w-full object-cover h-80 lg:h-96">
       </div>
 
       <!-- Text Right -->
-      <div>
-        <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold text-blue-900 mb-8">
+      <div class="flex flex-col justify-center">
+        <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold text-blue-900 mb-6">
           <span>Expert CNC Milling Manufacturing</span>
         </h2>
 
-        <p class="text-lg text-gray-900 leading-relaxed mb-6">
+        <p class="text-lg text-gray-900 leading-relaxed mb-4">
           Fedele Autocore stands at the forefront of precision CNC milling services throughout Australia,
           delivering exceptional machined components that meet the most stringent quality requirements. Our
           advanced milling capabilities combine cutting-edge technology with skilled craftsmanship to produce
           complex geometries, intricate features, and high-precision parts across diverse industries.
         </p>
-        <p class="text-lg text-gray-900 leading-relaxed mb-6">
+        <p class="text-lg text-gray-900 leading-relaxed">
           CNC milling is a versatile subtractive manufacturing process where computer-controlled rotating
           cutting tools remove material from stationary workpieces to create precise shapes, slots, holes, and
           complex three-dimensional features. This technology enables the production of both simple and highly
@@ -569,21 +570,21 @@
     </div>
 
     <!-- Second Section (Text Left, Image Right) -->
-    <div class="grid lg:grid-cols-2 gap-8 items-center bg-gray-100">
+    <div class="grid lg:grid-cols-2 gap-8 items-start bg-gray-100">
       <!-- Text Left -->
-      <div>
-        <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold text-blue-900 mb-8">
+      <div class="flex flex-col justify-center">
+        <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold text-blue-900 mb-6">
           <span>Understanding CNC Milling Technology</span>
         </h2>
 
-        <p class="text-lg text-gray-900 leading-relaxed mb-6">
+        <p class="text-lg text-gray-900 leading-relaxed mb-4">
           CNC milling operations utilize multi-axis machine tools where rotating cutters move along programmed
           tool paths to precisely remove material from workpieces. Unlike turning operations where the
           workpiece rotates, milling involves stationary parts while the cutting tools rotate and traverse
           multiple axes simultaneously. This approach enables the creation of flat surfaces, angular features,
           complex contours, pockets, and intricate three-dimensional geometries.
         </p>
-        <p class="text-lg text-gray-900 leading-relaxed mb-6">
+        <p class="text-lg text-gray-900 leading-relaxed">
           Modern CNC milling centers offer multi-axis capabilities including 3-axis, 4-axis, and 5-axis
           simultaneous machining, allowing for the production of complex parts in single setups while
           maintaining exceptional dimensional accuracy and surface finish quality.
@@ -591,9 +592,9 @@
       </div>
 
       <!-- Image Right -->
-      <div>
+      <div class="flex items-center h-full">
         <img src="Assets/cnc-technology.jpg" alt="CNC Milling Technology"
-          class="rounded-lg shadow-md w-full object-cover h-80">
+          class="rounded-lg shadow-md w-full object-cover h-80 lg:h-96">
       </div>
     </div>
 
@@ -603,7 +604,7 @@
 
 
     <!-- Our Custom Machining Capabilities -->
-    <section class="px-12 py-8 bg-gray-50">
+    <section class="px-12 py-8 bg-white">
         <div class="w-full mx-auto">
 
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -656,11 +657,10 @@
             </div>
         </div>
     </section>
-    <!-- Divider Line -->
-    <hr class="border-t border-gray-300 w-full mx-auto">
+
 
     <!-- Key Advantages Section -->
-   <section class="w-full cnc-background text-blue-900 p-12  flex items-center bg-gray-300">
+   <section class="w-full cnc-background text-white p-12  flex items-center bg-blue-950">
         <div class="w-full mx-auto content-overlay">
             <!-- Heading -->
             <h2 class="text-3xl md:text-4xl font-extrabold mb-12 flex items-center">
@@ -668,61 +668,81 @@
             </h2>
             
             <!-- List -->
-            <div class="grid gap-6">
-                <div class="advantage-item">
-                    <div class="text-lg leading-relaxed">
-                        <span class="precision-icon">⚡</span>
-                        <span class="font-bold text-orange-400">Exceptional Precision:</span>
-                        Achieve tolerances down to ±0.002mm with consistent repeatability across production runs.
-                    </div>
-                </div>
-                
-                <div class="advantage-item">
-                    <div class="text-lg leading-relaxed">
-                        <span class="precision-icon">🔧</span>
-                        <span class="font-bold text-orange-400">Complex Geometries:</span>
-                        Machine intricate 3D shapes, undercuts, and complex features impossible with conventional methods.
-                    </div>
-                </div>
-                
-                <div class="advantage-item">
-                    <div class="text-lg leading-relaxed">
-                        <span class="precision-icon">⚡</span>
-                        <span class="font-bold text-orange-400">Rapid Prototyping:</span>
-                        Quick turnaround from design to finished prototype for accelerated product development cycles.
-                    </div>
-                </div>
-                
-                <div class="advantage-item">
-                    <div class="text-lg leading-relaxed">
-                        <span class="precision-icon">🔬</span>
-                        <span class="font-bold text-orange-400">Material Versatility:</span>
-                        Machine virtually any material from soft plastics to hardened steels and exotic alloys.
-                    </div>
-                </div>
-                
-                <div class="advantage-item">
-                    <div class="text-lg leading-relaxed">
-                        <span class="precision-icon">✨</span>
-                        <span class="font-bold text-orange-400">Superior Finishes:</span>
-                        Achieve mirror-like surface finishes reducing or eliminating secondary operations.
-                    </div>
-                </div>
-                
-                <div class="advantage-item">
-                    <div class="text-lg leading-relaxed">
-                        <span class="precision-icon">📈</span>
-                        <span class="font-bold text-orange-400">Scalable Production:</span>
-                        Seamlessly transition from single prototypes to high-volume manufacturing runs.
-                    </div>
-                </div>
-            </div>
+     <!-- Advantages Section -->
+<div class="grid gap-6">
+  <!-- Precision -->
+  <div class="advantage-item flex items-start space-x-3">
+    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-orange-400 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+    </svg>
+    <div class="text-lg leading-relaxed">
+      <span class="font-bold text-orange-500">Exceptional Precision:</span>
+      Achieve tolerances down to ±0.002mm with consistent repeatability across production runs.
+    </div>
+  </div>
+
+  <!-- Complex Geometries -->
+  <div class="advantage-item flex items-start space-x-3">
+    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-orange-400 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h11M9 21V3m6 18V3m3 18h3" />
+    </svg>
+    <div class="text-lg leading-relaxed">
+      <span class="font-bold text-orange-500">Complex Geometries:</span>
+      Machine intricate 3D shapes, undercuts, and complex features impossible with conventional methods.
+    </div>
+  </div>
+
+  <!-- Rapid Prototyping -->
+  <div class="advantage-item flex items-start space-x-3">
+    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-orange-400 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+    </svg>
+    <div class="text-lg leading-relaxed">
+      <span class="font-bold text-orange-500">Rapid Prototyping:</span>
+      Quick turnaround from design to finished prototype for accelerated product development cycles.
+    </div>
+  </div>
+
+  <!-- Material Versatility -->
+  <div class="advantage-item flex items-start space-x-3">
+    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-orange-400 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c.637 0 1.247.125 1.8.35a3.001 3.001 0 013.2 3.2A3 3 0 0112 16a3 3 0 01-3-3c0-.637.125-1.247.35-1.8A3.001 3.001 0 0112 8z" />
+    </svg>
+    <div class="text-lg leading-relaxed">
+      <span class="font-bold text-orange-500">Material Versatility:</span>
+      Machine virtually any material from soft plastics to hardened steels and exotic alloys.
+    </div>
+  </div>
+
+  <!-- Superior Finishes -->
+  <div class="advantage-item flex items-start space-x-3">
+    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-orange-400 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2l4-4m1-4a9 9 0 11-6 16.32" />
+    </svg>
+    <div class="text-lg leading-relaxed">
+      <span class="font-bold text-orange-500">Superior Finishes:</span>
+      Achieve mirror-like surface finishes reducing or eliminating secondary operations.
+    </div>
+  </div>
+
+  <!-- Scalable Production -->
+  <div class="advantage-item flex items-start space-x-3">
+    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-orange-400 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3v18h18M7 13l3 3l7-7" />
+    </svg>
+    <div class="text-lg leading-relaxed">
+      <span class="font-bold text-orange-500">Scalable Production:</span>
+      Seamlessly transition from single prototypes to high-volume manufacturing runs.
+    </div>
+  </div>
+</div>
+
         </div>
     </section>
 
     <!---Comprehensive Milling Operations-->
 
-    <section class="bg-gray-50">
+    <section class="bg-gray-100">
         <div class=" mx-auto w-full lg:px-12 bg-gray-100 p-12">
 
             <!-- Header Section -->
@@ -826,17 +846,14 @@
         </div>
     </section>
 
-    <!-- Divider Line -->
-    <hr class="border-t border-gray-300 w-full mx-auto">
-
 
     <!---Industry Applications-->
 
-    <section class="bg-gray-50">
-        <div class=" mx-auto w-full lg:px-12 bg-gray-100 p-12">
+    <section class="bg-white">
+        <div class=" mx-auto w-full lg:px-12 p-12">
 
             <!-- Header Section -->
-            <div class="mb-16 bg-gray-100">
+            <div class="mb-16">
                 <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold text-blue-900 mb-8">
                     <span class="border-l-4 border-orange-500 pl-4"> Industry Applications</span>
                 </h2>
@@ -950,11 +967,9 @@
         </div>
     </section>
 
-    <!-- Divider Line -->
-    <hr class="border-t border-gray-300 w-full mx-auto">
 
     <!-- Manufacturing Process Section -->
-       <section class="w-full bg-gray-50 p-12">
+       <section class="w-full bg-gray-100 p-12">
         <div class="w-full mx-auto">
             <!-- Heading -->
             <h2 class="text-3xl md:text-4xl font-extrabold text-blue-900 mb-10 flex items-center">
@@ -1066,11 +1081,8 @@
         </div>
     </section>
 
-    <!-- Divider Line -->
-    <hr class="border-t border-gray-300 w-full mx-auto">
-
     <!-- Technical Specifications Section -->
-    <section class="w-full bg-gray-100 px-12 py-16">
+    <section class="w-full bg-white px-12 py-16">
         <div class="w-full mx-auto bg-white rounded-xl shadow-md p-10">
             <!-- Heading -->
             <h2 class="text-3xl md:text-4xl font-extrabold text-blue-900 mb-6 flex items-center">
@@ -1124,12 +1136,8 @@
         </div>
     </section>
 
-
-    <!-- Divider Line -->
-    <hr class="border-t border-gray-300 w-full mx-auto">
-
     <!-- Quality Assurance Excellence -->
-    <section class="w-full bg-white p-12">
+    <section class="w-full bg-gray-100 p-12">
         <div class="w-full mx-auto">
             <!-- Heading -->
             <h2 class="text-3xl md:text-4xl font-extrabold text-blue-900 mb-6 flex items-center">
@@ -1162,65 +1170,157 @@
         </div>
     </section>
 
-    <!-- Divider Line -->
-    <hr class="border-t border-gray-300 w-full mx-auto">
-
-
     <!-- Why Choose Fedele Autocore? -->
-    <section class="w-full white text-blue-900 p-12">
-        <div class="w-full mx-auto">
-            <!-- Heading -->
-            <h2 class="text-3xl md:text-4xl font-extrabold mb-8 flex items-center">
-                <span class="border-l-4 border-orange-500 pl-4">Why Choose Fedele Autocore for CNC Milling?</span>
-            </h2>
+ <section class="bg-white py-16 px-12 text-blue-900">
+  <div class="w-full mx-auto">
+    <!-- Heading -->
+    <div class="text-center mb-12">
+      <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-blue-900 mb-6">
+        Why Choose Fedele Autocore for CNC Milling?
+      </h2>
+    </div>
 
-            <!-- List -->
-            <ul class="space-y-4 text-lg leading-relaxed">
-                <li>
-                    <span class="font-bold text-orange-500">Advanced Technology:</span>
-                    State-of-the-art multi-axis CNC milling centers with the latest control systems
-                </li>
-                <li>
-                    <span class="font-bold text-orange-500">Expert Team:</span>
-                    Highly skilled machinists, programmers, and quality technicians with decades of experience
-                </li>
-                <li>
-                    <span class="font-bold text-orange-500">Australia-Wide Service:</span>
-                    Comprehensive coverage across all Australian states and territories
-                </li>
-                <li>
-                    <span class="font-bold text-orange-500">Competitive Pricing:</span>
-                    Efficient operations and strategic partnerships deliver exceptional value
-                </li>
-                <li>
-                    <span class="font-bold text-orange-500">Engineering Support:</span>
-                    Full technical assistance from concept through production
-                </li>
-                <li>
-                    <span class="font-bold text-orange-500">Rapid Turnaround:</span>
-                    Streamlined processes and efficient scheduling for fast delivery
-                </li>
-                <li>
-                    <span class="font-bold text-orange-500">Custom Solutions:</span>
-                    Tailored approaches for unique requirements and specialized applications
-                </li>
-                <li>
-                    <span class="font-bold text-orange-500">Inventory Management:</span>
-                    Stock holding and scheduled delivery programs available
-                </li>
-                <li>
-                    <span class="font-bold text-orange-500">Continuous Improvement:</span>
-                    Ongoing investment in technology and process optimization
-                </li>
-            </ul>
+    <!-- Feature Cards Grid -->
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <!-- Advanced Technology -->
+      <div class="shadow-2xl bg-white border border-white/20 rounded-xl p-6 hover:shadow-xl transition-all duration-300">
+        <div class="flex items-center mb-4">
+          <svg xmlns="http://www.w3.org/2000/svg" 
+               class="h-6 w-6 text-blue-900 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+                  d="M13 10V3L4 14h7v7l9-11h-7z" />
+          </svg>
+          <h3 class="text-lg font-semibold text-orange-500">Advanced Technology</h3>
         </div>
-    </section>
+        <p class="text-gray-800 text-sm leading-relaxed">
+          State-of-the-art multi-axis CNC milling centers with the latest control systems.
+        </p>
+      </div>
 
+      <!-- Expert Team -->
+      <div class="shadow-2xl bg-white border border-white/20 rounded-xl p-6 hover:shadow-xl transition-all duration-300">
+        <div class="flex items-center mb-4">
+          <svg xmlns="http://www.w3.org/2000/svg" 
+               class="h-6 w-6 text-blue-900 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+                  d="M5 13l4 4L19 7" />
+          </svg>
+          <h3 class="text-lg font-semibold text-orange-500">Expert Team</h3>
+        </div>
+        <p class="text-gray-800 text-sm leading-relaxed">
+          Highly skilled machinists, programmers, and quality technicians with decades of experience.
+        </p>
+      </div>
 
-    <!-- Divider Line -->
-    <hr class="border-t border-gray-300 w-full mx-auto">
+      <!-- Australia-Wide Service -->
+      <div class="shadow-2xl bg-white border border-white/20 rounded-xl p-6 hover:shadow-xl transition-all duration-300">
+        <div class="flex items-center mb-4">
+          <svg xmlns="http://www.w3.org/2000/svg" 
+               class="h-6 w-6 text-blue-900 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+                  d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z" />
+          </svg>
+          <h3 class="text-lg font-semibold text-orange-500">Australia-Wide Service</h3>
+        </div>
+        <p class="text-gray-800 text-sm leading-relaxed">
+          Comprehensive coverage across all Australian states and territories.
+        </p>
+      </div>
 
-    <section class="bg-white px-12 py-16">
+      <!-- Competitive Pricing -->
+      <div class="shadow-2xl bg-white border border-white/20 rounded-xl p-6 hover:shadow-xl transition-all duration-300">
+        <div class="flex items-center mb-4">
+          <svg xmlns="http://www.w3.org/2000/svg" 
+               class="h-6 w-6 text-blue-900 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+                  d="M12 8c-2.21 0-4 1.79-4 4 0 3.31 4 8 4 8s4-4.69 4-8c0-2.21-1.79-4-4-4z" />
+          </svg>
+          <h3 class="text-lg font-semibold text-orange-500">Competitive Pricing</h3>
+        </div>
+        <p class="text-gray-800 text-sm leading-relaxed">
+          Efficient operations and strategic partnerships deliver exceptional value.
+        </p>
+      </div>
+
+      <!-- Engineering Support -->
+      <div class="shadow-2xl bg-white border border-white/20 rounded-xl p-6 hover:shadow-xl transition-all duration-300">
+        <div class="flex items-center mb-4">
+          <svg xmlns="http://www.w3.org/2000/svg" 
+               class="h-6 w-6 text-blue-900 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+                  d="M3 10h11M9 21V3m6 18V3m3 18h3" />
+          </svg>
+          <h3 class="text-lg font-semibold text-orange-500">Engineering Support</h3>
+        </div>
+        <p class="text-gray-800 text-sm leading-relaxed">
+          Full technical assistance from concept through production.
+        </p>
+      </div>
+
+      <!-- Rapid Turnaround -->
+      <div class="shadow-2xl bg-white border border-white/20 rounded-xl p-6 hover:shadow-xl transition-all duration-300">
+        <div class="flex items-center mb-4">
+          <svg xmlns="http://www.w3.org/2000/svg" 
+               class="h-6 w-6 text-blue-900 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+                  d="M12 8v4l3 3m6-7a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+          <h3 class="text-lg font-semibold text-orange-500">Rapid Turnaround</h3>
+        </div>
+        <p class="text-gray-800 text-sm leading-relaxed">
+          Streamlined processes and efficient scheduling for fast delivery.
+        </p>
+      </div>
+
+      <!-- Custom Solutions -->
+      <div class="shadow-2xl bg-white border border-white/20 rounded-xl p-6 hover:shadow-xl transition-all duration-300">
+        <div class="flex items-center mb-4">
+          <svg xmlns="http://www.w3.org/2000/svg" 
+               class="h-6 w-6 text-blue-900 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+                  d="M3 3v18h18M7 13l3 3l7-7" />
+          </svg>
+          <h3 class="text-lg font-semibold text-orange-500">Custom Solutions</h3>
+        </div>
+        <p class="text-gray-800 text-sm leading-relaxed">
+          Tailored approaches for unique requirements and specialized applications.
+        </p>
+      </div>
+
+      <!-- Inventory Management -->
+      <div class="shadow-2xl bg-white border border-white/20 rounded-xl p-6 hover:shadow-xl transition-all duration-300">
+        <div class="flex items-center mb-4">
+          <svg xmlns="http://www.w3.org/2000/svg" 
+               class="h-6 w-6 text-blue-900 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+                  d="M5 6h14M5 12h14M5 18h14" />
+          </svg>
+          <h3 class="text-lg font-semibold text-orange-500">Inventory Management</h3>
+        </div>
+        <p class="text-gray-800 text-sm leading-relaxed">
+          Stock holding and scheduled delivery programs available.
+        </p>
+      </div>
+
+      <!-- Continuous Improvement -->
+      <div class="shadow-2xl bg-white border border-white/20 rounded-xl p-6 hover:shadow-xl transition-all duration-300">
+        <div class="flex items-center mb-4">
+          <svg xmlns="http://www.w3.org/2000/svg" 
+               class="h-6 w-6 text-blue-900 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+                  d="M9 17l3 3l7-7M4 4v6h6" />
+          </svg>
+          <h3 class="text-lg font-semibold text-orange-500">Continuous Improvement</h3>
+        </div>
+        <p class="text-gray-800 text-sm leading-relaxed">
+          Ongoing investment in technology and process optimization.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <section class="bg-gray-100 px-12 py-16">
         <div class="w-full mx-auto">
             <!-- Header -->
             <div class="border-l-4 border-orange-500 pl-6 mb-12">
@@ -1279,9 +1379,6 @@
             </div>
         </div>
     </section>
-
-    <!-- Divider Line -->
-    <hr class="border-t border-gray-300 w-full mx-auto">
 
    <!-- Surface Finishing Options -->
 <section class="w-full bg-white p-12">
@@ -1375,13 +1472,9 @@
 </section>
 
 
-    <!-- Divider Line -->
-    <hr class="border-t border-gray-300 w-full mx-auto">
-
-
     <!--Design for Manufacturing (DFM) Support--->
 
-    <section class="w-full bg-white p-12">
+    <section class="w-full bg-gray-100 p-12">
         <div class="w-full mx-auto">
             <!-- Heading -->
             <h2 class="text-3xl md:text-4xl font-extrabold text-blue-900 mb-6 flex items-center">
@@ -1424,9 +1517,6 @@
 
         </div>
     </section>
-
-    <!-- Divider Line -->
-    <hr class="border-t border-gray-300 w-full mx-auto">
 
 <!-- Industry Certifications & Standards -->
 <section class="bg-white w-full px-6 py-16">
@@ -1497,12 +1587,8 @@
 </section>
 
 
-    <!-- Divider Line -->
-    <hr class="border-t border-gray-300 w-full mx-auto">
-
-
     <!-- Call-to-Action Section -->
-    <section class="w-full bg-white px-12 p-12">
+    <section class="w-full bg-gray-100 px-12 p-12">
         <div class="w-full mx-auto text-center border border-gray-200 rounded-xl shadow-md p-10">
             <!-- Heading -->
             <h2 class="text-3xl md:text-4xl font-extrabold text-blue-900 mb-6 flex items-center justify-center">
@@ -1704,113 +1790,112 @@
         </div>
 
         <!-- Bottom Section -->
-        <div class="max-w-7xl mx-auto mt-10 pt-8 border-t border-gray-700">
+       <div class="max-w-7xl mx-auto mt-10 pt-8 border-t border-gray-700">
             <div class="flex flex-col md:flex-row justify-center items-center">
                 <p class="text-sm text-gray-400 mb-4 md:mb-0">
-                    &copy; 2025 Fedele Autocore. All rights reserved.
+                    &copy; 2025 Fedele Autocore. &nbsp All rights reserved.
                 </p>
                 <div class="flex flex-wrap justify-center gap-6">
-                    <a href="#" class="text-sm text-blue-600 hover:text-white transition-colors duration-300"> Privacy
+                    <a href="#" class="text-sm text-white hover:text-blue-600 transition-colors duration-300">&nbsp
+                        Privacy
                         Policy</a>
-                    <a href="#" class="text-sm text-blue-600 hover:text-white transition-colors duration-300">Terms of
+                    <a href="#" class="text-sm text-white hover:text-blue-600 transition-colors duration-300">Terms of
                         Service</a>
                     <a href="#"
-                        class="text-sm text-blue-600 hover:text-white transition-colors duration-300">Sitemap</a>
+                        class="text-sm text-white hover:text-blue-600 transition-colors duration-300">Sitemap</a>
                     <a href="#"
-                        class="text-sm text-blue-600 hover:text-white transition-colors duration-300">Careers</a>
-                    <a href="#" class="text-sm text-blue-600 hover:text-white transition-colors duration-300">Supplier
+                        class="text-sm text-white hover:text-blue-600 transition-colors duration-300">Careers</a>
+                    <a href="#" class="text-sm text-white hover:text-blue-600 transition-colors duration-300">Supplier
                         Portal</a>
                 </div>
             </div>
         </div>
     </footer>
-        <!-- Quote Modal -->
-<div id="quoteModal" class="modal">
-    <div class="modal-content">
-        <div class="p-6">
-            <div class="flex justify-between items-center mb-4">
-                <h2 class="text-2xl font-bold text-gray-800">Get a CNC Milling Quote</h2>
-                <button onclick="closeQuoteModal()" class="text-gray-500 hover:text-gray-700 text-xl">
-                    <i class="fas fa-times"></i>
-                </button>
+   <!-- Quote Modal -->
+    <section>
+        <div id="quoteModal" class="modal fixed inset-0 flex items-center justify-center bg-black/50 z-50">
+            <div class="modal-content max-w-xl w-full bg-white shadow-lg rounded-lg max-h-screen overflow-y-auto">
+                <div class="p-3 sm:p-4">
+                    <!-- Header -->
+                    <div class="flex justify-between items-center mb-2">
+                        <h2 class="text-lg sm:text-xl font-bold text-gray-800">
+                           CNC Milling Services
+                        </h2>
+                        <button onclick="closeQuoteModal()" class="text-gray-500 hover:text-gray-700 text-lg">
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </div>
+
+                    <!-- Form -->
+                    <form id="quoteForm" class="space-y-2.5">
+                        <!-- Names -->
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-2.5">
+                            <div>
+                                <label class="block text-xs font-medium text-gray-700 mb-0.5">First Name *</label>
+                                <input type="text" name="firstName" required
+                                    class="w-full px-2 py-1.5 border border-gray-300 rounded focus:ring-2 focus:ring-orange-500 text-sm">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-medium text-gray-700 mb-0.5">Last Name *</label>
+                                <input type="text" name="lastName" required
+                                    class="w-full px-2 py-1.5 border border-gray-300 rounded focus:ring-2 focus:ring-orange-500 text-sm">
+                            </div>
+                        </div>
+
+                        <!-- Email -->
+                        <div>
+                            <label class="block text-xs font-medium text-gray-700 mb-0.5">Email *</label>
+                            <input type="email" name="email" required
+                                class="w-full px-2 py-1.5 border border-gray-300 rounded focus:ring-2 focus:ring-orange-500 text-sm">
+                        </div>
+
+                        <!-- Phone -->
+                        <div>
+                            <label class="block text-xs font-medium text-gray-700 mb-0.5">Phone</label>
+                            <input type="tel" name="phone"
+                                class="w-full px-2 py-1.5 border border-gray-300 rounded focus:ring-2 focus:ring-orange-500 text-sm">
+                        </div>
+
+                        <!-- Location -->
+                        <div>
+                            <label class="block text-xs font-medium text-gray-700 mb-0.5">Location *</label>
+                            <select name="location" required
+                                class="w-full px-2 py-1.5 border border-gray-300 rounded focus:ring-2 focus:ring-orange-500 text-sm">
+                                <option value="">Select your city</option>
+                                <option value="melbourne">Melbourne</option>
+                                <option value="sydney">Sydney</option>
+                                <option value="perth">Perth</option>
+                                <option value="adelaide">Adelaide</option>
+                                <option value="brisbane">Brisbane</option>
+                                <option value="darwin">Darwin</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <!-- Description -->
+                        <div>
+                            <label class="block text-xs font-medium text-gray-700 mb-0.5">Project Description</label>
+                            <textarea name="description" rows="1"
+                                class="w-full px-2 py-1.5 border border-gray-300 rounded focus:ring-2 focus:ring-orange-500 text-sm"
+                                placeholder="Briefly describe requirements"></textarea>
+                        </div>
+
+                        <!-- Google reCAPTCHA -->
+                        <div class="g-recaptcha scale-90 transform origin-left"
+                            data-sitekey="6Ld47tsrAAAAAL_S7gMxdbOK6WZcloCIDLdlekox"></div>
+
+                        <!-- Submit -->
+                        <div class="pt-2">
+                            <button type="submit"
+                                class="w-full bg-orange-600 text-white py-2 rounded font-semibold text-sm hover:bg-orange-700 transition">
+                                Submit Quote
+                            </button>
+                        </div>
+                    </form>
+                </div>
             </div>
-            
-            <form id="quoteForm" class="space-y-4">
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <div>
-                        <label class="block text-sm font-medium text-gray-700 mb-1">First Name *</label>
-                        <input type="text" name="firstName" required 
-                               class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500">
-                    </div>
-                    <div>
-                        <label class="block text-sm font-medium text-gray-700 mb-1">Last Name *</label>
-                        <input type="text" name="lastName" required 
-                               class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500">
-                    </div>
-                </div>
-                
-                <div>
-                    <label class="block text-sm font-medium text-gray-700 mb-1">Email *</label>
-                    <input type="email" name="email" required 
-                           class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500">
-                </div>
-                
-                <div>
-                    <label class="block text-sm font-medium text-gray-700 mb-1">Phone</label>
-                    <input type="tel" name="phone" 
-                           class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500">
-                </div>
-                
-                <div>
-                    <label class="block text-sm font-medium text-gray-700 mb-1">Company</label>
-                    <input type="text" name="company" 
-                           class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500">
-                </div>
-                
-                <div>
-                    <label class="block text-sm font-medium text-gray-700 mb-1">Location *</label>
-                    <select name="location" required 
-                            class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500">
-                        <option value="">Select your city</option>
-                        <option value="melbourne">Melbourne</option>
-                        <option value="sydney">Sydney</option>
-                        <option value="perth">Perth</option>
-                        <option value="adelaide">Adelaide</option>
-                        <option value="brisbane">Brisbane</option>
-                        <option value="darwin">Darwin</option>
-                        <option value="other">Other Australian Location</option>
-                    </select>
-                </div>
-                
-                <div>
-                    <label class="block text-sm font-medium text-gray-700 mb-1">Project Description *</label>
-                    <textarea name="description" required rows="3" 
-                              class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500"
-                              placeholder="Describe your CNC machining requirements, materials, quantities, etc."></textarea>
-                </div>
-                
-                <div>
-                    <label class="block text-sm font-medium text-gray-700 mb-1">Upload Files (Optional)</label>
-                    <input type="file" id="fileInput" multiple accept=".pdf,.dwg,.step,.stp,.igs,.iges,.jpg,.png" 
-                           class="hidden" onchange="handleFileUpload(this)">
-                    
-                    <div id="uploadArea" class="upload-area" onclick="document.getElementById('fileInput').click()">
-                        <i class="fas fa-cloud-upload-alt text-3xl text-gray-400 mb-2"></i>
-                        <p class="text-gray-600 font-medium">Click to upload CAD files, drawings, or specifications</p>
-                        <p class="text-xs text-gray-500 mt-2">Supported: PDF, DWG, STEP, STP, IGS, IGES, JPG, PNG (Max 10MB each)</p>
-                    </div>
-                </div>
-                
-                <div class="pt-4">
-                    <button type="submit" 
-                            class="w-full bg-orange-600 text-white py-3 px-4 rounded-lg font-semibold hover:bg-orange-700 transition-colors">
-                        Submit Quote Request
-                    </button>
-                </div>
-            </form>
         </div>
-    </div>
-</div>
+    </section>
     <script src="script.js"></script>
 </body>
 

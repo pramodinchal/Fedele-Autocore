@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Service Page - Defence CNC Machining</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
 
 <body class="bg-gray-900 text-white">
@@ -278,7 +280,7 @@
             <!-- Action Buttons -->
             <div class="flex items-center space-x-2 sm:space-x-3">
                 <!-- Quote Button -->
-                <button  onclick="openQuoteModal()"
+                <button onclick="openQuoteModal()"
                     class="hidden md:inline-block bg-orange-600 text-white px-3 py-1.5 lg:px-4 lg:py-2 rounded-lg shadow text-xs lg:text-sm font-medium hover:bg-blue-900 transition-colors whitespace-nowrap">
                     Get Quote
                 </button>
@@ -512,13 +514,14 @@
             <!-- Left Content -->
             <div class="text-left w-full md:w-1/2 mt-24 md:mt-32">
                 <h1 class="text-3xl sm:text-4xl md:text-6xl font-bold mb-6 text-white">
-                    <span class="text-orange-500">Defence</span> CNC Machining 
+                    <span class="text-orange-500">Defence</span> CNC Machining
                 </h1>
                 <p class="text-base sm:text-lg md:text-xl text-gray-200 max-w-xl leading-relaxed">
                     Precision Manufacturing for Critical Defence Applications
                 </p>
-                   <div class="flex flex-col sm:flex-row gap-4 py-4">
-                    <button onclick="openQuoteModal()" class="px-6 py-3 bg-orange-500 text-white font-semibold rounded-lg shadow-md hover:bg-orange-600 transition transform hover:scale-105">
+                <div class="flex flex-col sm:flex-row gap-4 py-4">
+                    <button onclick="openQuoteModal()"
+                        class="px-6 py-3 bg-orange-500 text-white font-semibold rounded-lg shadow-md hover:bg-orange-600 transition transform hover:scale-105">
                         Get a Quote
                     </button>
                 </div>
@@ -534,112 +537,108 @@
 
 
     <!-- Main Content Section -->
-   <section class="py-12 px-12 bg-white">
-  <div class="w-full mx-auto">
-    <div class="mb-12 text-left">
-      <h2 class="text-4xl md:text-5xl font-bold text-gray-800 mb-2 tracking-wide">
-        DEFENCE CNC PARTS
-      </h2>
-      <h3 class="text-3xl md:text-4xl font-bold text-blue-900">
-        MANUFACTURING EXCELLENCE
-      </h3>
-    </div>
+    <section class="py-20 px-12 bg-gray-100 relative">
+        <div class="w-full mx-auto flex flex-col lg:flex-row items-start justify-between gap-12">
 
-    <div class="grid lg:grid-cols-2 gap-12 items-center">
-      <!-- Left Content -->
-      <div class="flex flex-col justify-center h-full">
-        <p class="text-gray-700 text-lg mb-8 leading-relaxed">
-          Fedele Autocore stands at the forefront of precision defence manufacturing, serving Adelaide
-          and surrounding regions with cutting-edge CNC machining capabilities. Our state-of-the-art
-          facility specializes in producing critical components for military, aerospace, and defence
-          applications where precision, reliability, and performance are non-negotiable.
-        </p>
+            <!-- Left Column (Heading + Text) -->
+            <div class="flex-1">
+                <div class="mb-8">
+                    <h2 class="text-4xl md:text-5xl font-bold text-gray-800 mb-2 tracking-wide">
+                        DEFENCE CNC PARTS
+                    </h2>
+                    <h3 class="text-3xl md:text-4xl font-bold text-blue-900">
+                        MANUFACTURING EXCELLENCE
+                    </h3>
+                </div>
 
-        <h4 class="text-2xl font-bold text-gray-800 mb-6">
-          Our Manufacturing Capabilities
-        </h4>
+                <p class="text-gray-700 text-lg mb-8 leading-relaxed">
+                    Fedele Autocore stands at the forefront of precision defence manufacturing, serving Adelaide
+                    and surrounding regions with cutting-edge CNC machining capabilities. Our state-of-the-art
+                    facility specializes in producing critical components for military, aerospace, and defence
+                    applications where precision, reliability, and performance are non-negotiable.
+                </p>
 
-        <div class="space-y-6">
-          <!-- Capability Item -->
-          <div class="flex items-start">
-           <span class="list-icon text-blue-900 mt-1 mr-3 animate-pulse-left"> 
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" 
-                        stroke="currentColor" stroke-width="2"> 
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" /> 
-                    </svg> 
-                </span>
-            <div>
-              <span class="font-bold text-blue-900">Multi-Axis CNC Machining:</span>
-              <span class="text-gray-700"> 3, 4, and 5-axis precision manufacturing for complex
-                geometries.</span>
+                <h4 class="text-2xl font-bold text-gray-800 mb-6">
+                    Our Manufacturing Capabilities
+                </h4>
+
+                <div class="space-y-6">
+                    <!-- Capability Item -->
+                    <div class="flex items-start">
+                        <span class="text-blue-900 mt-1 mr-3 animate-pulse-left">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+                            </svg>
+                        </span>
+                        <div>
+                            <span class="font-bold text-blue-900">Multi-Axis CNC Machining:</span>
+                            <span class="text-gray-700"> 3, 4, and 5-axis precision manufacturing for complex
+                                geometries.</span>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start">
+                        <span class="text-blue-900 mt-1 mr-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+                            </svg>
+                        </span>
+                        <div>
+                            <span class="font-bold text-blue-900">Advanced Material Processing:</span>
+                            <span class="text-gray-700"> Expertise in titanium, inconel, hardened steels, and
+                                aerospace alloys.</span>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start">
+                        <span class="text-blue-900 mt-1 mr-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+                            </svg>
+                        </span>
+                        <div>
+                            <span class="font-bold text-blue-900">Quality Assurance:</span>
+                            <span class="text-gray-700"> CMM inspection, optical measurement, and full traceability
+                                documentation.</span>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start">
+                        <span class="text-blue-900 mt-1 mr-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+                            </svg>
+                        </span>
+                        <div>
+                            <span class="font-bold text-blue-900">Rapid Prototyping:</span>
+                            <span class="text-gray-700"> Fast turnaround for defence project development
+                                phases.</span>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
 
-          <div class="flex items-start">
-            <span class="list-icon text-blue-900 mt-1 mr-3">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
-                stroke="currentColor" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
-              </svg>
-            </span>
-            <div>
-              <span class="font-bold text-blue-900">Advanced Material Processing:</span>
-              <span class="text-gray-700"> Expertise in titanium, inconel, hardened steels, and
-                aerospace alloys.</span>
+            <!-- Right Image aligned with heading -->
+            <div class="flex-1 flex justify-center lg:items-start mt-0">
+                <div class="bg-white rounded-2xl shadow-xl border border-gray-200 overflow-hidden w-[600px] h-[650px]">
+                    <img src="Assets/advance-cnc.webp" alt="Precision machined defence components"
+                        class="w-full h-full object-cover" />
+                    <p class="text-gray-700 text-md font-bold p-4 text-center bg-gray-50">
+                        Advanced CNC machining center producing precision defence components
+                    </p>
+                </div>
             </div>
-          </div>
 
-          <div class="flex items-start">
-            <span class="list-icon text-blue-900 mt-1 mr-3">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
-                stroke="currentColor" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
-              </svg>
-            </span>
-            <div>
-              <span class="font-bold text-blue-900">Quality Assurance:</span>
-              <span class="text-gray-700"> CMM inspection, optical measurement, and full traceability
-                documentation.</span>
-            </div>
-          </div>
-
-          <div class="flex items-start">
-            <span class="list-icon text-blue-900 mt-1 mr-3">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
-                stroke="currentColor" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
-              </svg>
-            </span>
-            <div>
-              <span class="font-bold text-blue-900">Rapid Prototyping:</span>
-              <span class="text-gray-700"> Fast turnaround for defence project development
-                phases.</span>
-            </div>
-          </div>
         </div>
-      </div>
+    </section>
 
-      <!-- Right Image Card -->
-      <div class="bg-white rounded-2xl shadow-xl border border-gray-200 overflow-hidden flex flex-col h-full">
-        <div class="flex-1">
-          <img src="Assets/advance-cnc.webp" alt="Precision machined defence components"
-            class="w-full h-full object-cover" />
-        </div>
-        <p class="text-gray-700 text-md font-bold p-4 text-center bg-gray-50">
-          Advanced CNC machining center producing precision defence components
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-
-    <!-- Divider Line -->
-    <hr class="border-t border-gray-300 w-full mx-auto">
 
     <!-- Specific Precision Parts Section -->
-    <section class="py-16 px-12 bg-gray-50">
+    <section class="py-16 px-12 bg-white">
         <div class="w-full mx-auto">
             <div class="text-center mb-16">
                 <h2 class="text-4xl md:text-5xl font-bold text-blue-900 mb-8">SPECIFIC PRECISION PARTS</h2>
@@ -723,12 +722,8 @@
         </div>
     </section>
 
-
-    <!-- Divider Line -->
-    <hr class="border-t border-gray-300 w-full mx-auto">
-
     <!-- Tolerance Levels Section -->
-    <section class="py-16 px-12 bg-white">
+    <section class="py-16 px-12 bg-gray-100">
         <div class="w-full mx-auto">
             <div class="text-center mb-16">
                 <h2 class="text-4xl md:text-5xl font-bold text-blue-900 mb-8">TOLERANCE LEVELS</h2>
@@ -792,12 +787,8 @@
         </div>
     </section>
 
-
-    <!-- Divider Line -->
-    <hr class="border-t border-gray-300 w-full mx-auto">
-
     <!-- Materials Used Section -->
-    <section class="py-16 px-12 bg-gray-50">
+    <section class="py-16 px-12 bg-white">
         <div class="w-full mx-auto">
             <!-- Section Title -->
             <div class="text-center mb-16">
@@ -895,12 +886,8 @@
         </div>
     </section>
 
-
-    <!-- Divider Line -->
-    <hr class="border-t border-gray-300 w-full mx-auto">
-
     <!-- FAQ Section -->
-    <section class="py-16 px-6 bg-white">
+    <section class="py-16 px-6 bg-gray-100">
         <div class="max-w-4xl mx-auto">
             <div class="text-center mb-16">
                 <h2 class="text-4xl md:text-5xl font-bold text-blue-900 mb-8">
@@ -1015,8 +1002,8 @@
     </section>
 
     <!-- CTA Section -->
-    <section class="bg-gray-600 py-16 px-12">
-        <div class="max-w-4xl mx-auto text-center text-white">
+    <section class="bg-white py-16 px-12">
+        <div class="max-w-4xl mx-auto text-center text-blue-900">
             <h2 class="text-4xl md:text-5xl font-bold mb-8 drop-shadow-lg">
                 Ready to Partner with Defence <span class="text-orange-500 drop-shadow-lg">CNC </span>Experts?
             </h2>
@@ -1026,17 +1013,9 @@
             </p>
 
             <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
-                <button
-                    class="toggle-btn bg-transparent text-white font-bold py-4 px-8 rounded-full border-2 border-white hover:bg-white hover:text-blue-900 transition-colors">
+                <button onclick="openQuoteModal()"
+                    class="toggle-btn bg-orange-500 text-white font-bold py-4 px-8 rounded-full  hover:bg-gray-300 hover:text-blue-900 transition-colors">
                     REQUEST QUOTE
-                </button>
-                <button
-                    class="toggle-btn bg-transparent text-white font-bold py-4 px-8 rounded-full border-2 border-white hover:bg-white hover:text-blue-900 transition-colors">
-                    SCHEDULE CONSULTATION
-                </button>
-                <button
-                    class="toggle-btn bg-transparent text-white font-bold py-4 px-8 rounded-full border-2 border-white hover:bg-white hover:text-blue-900 transition-colors">
-                    DOWNLOAD CAPABILITIES
                 </button>
             </div>
 
@@ -1215,112 +1194,110 @@
         <div class="max-w-7xl mx-auto mt-10 pt-8 border-t border-gray-700">
             <div class="flex flex-col md:flex-row justify-center items-center">
                 <p class="text-sm text-gray-400 mb-4 md:mb-0">
-                    &copy; 2025 Fedele Autocore. All rights reserved.
+                    &copy; 2025 Fedele Autocore. &nbsp All rights reserved.
                 </p>
                 <div class="flex flex-wrap justify-center gap-6">
-                    <a href="#" class="text-sm text-blue-600 hover:text-white transition-colors duration-300"> Privacy
+                    <a href="#" class="text-sm text-white hover:text-blue-600 transition-colors duration-300">&nbsp
+                        Privacy
                         Policy</a>
-                    <a href="#" class="text-sm text-blue-600 hover:text-white transition-colors duration-300">Terms of
+                    <a href="#" class="text-sm text-white hover:text-blue-600 transition-colors duration-300">Terms of
                         Service</a>
                     <a href="#"
-                        class="text-sm text-blue-600 hover:text-white transition-colors duration-300">Sitemap</a>
+                        class="text-sm text-white hover:text-blue-600 transition-colors duration-300">Sitemap</a>
                     <a href="#"
-                        class="text-sm text-blue-600 hover:text-white transition-colors duration-300">Careers</a>
-                    <a href="#" class="text-sm text-blue-600 hover:text-white transition-colors duration-300">Supplier
+                        class="text-sm text-white hover:text-blue-600 transition-colors duration-300">Careers</a>
+                    <a href="#" class="text-sm text-white hover:text-blue-600 transition-colors duration-300">Supplier
                         Portal</a>
                 </div>
             </div>
         </div>
     </footer>
 
-      <div id="quoteModal" class="modal">
-        <div class="modal-content">
-            <div class="p-6">
-                <div class="flex justify-between items-center mb-4">
-                    <h2 class="text-2xl font-bold text-gray-800">Get a Defence CNC Machining Quote</h2>
-                    <button onclick="closeQuoteModal()" class="text-gray-500 hover:text-gray-700 text-xl">
-                        <i class="fas fa-times"></i>
-                    </button>
-                </div>
-
-                <form id="quoteForm" class="space-y-4">
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                        <div>
-                            <label class="block text-sm font-medium text-gray-700 mb-1">First Name *</label>
-                            <input type="text" name="firstName" required
-                                class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500">
-                        </div>
-                        <div>
-                            <label class="block text-sm font-medium text-gray-700 mb-1">Last Name *</label>
-                            <input type="text" name="lastName" required
-                                class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500">
-                        </div>
-                    </div>
-
-                    <div>
-                        <label class="block text-sm font-medium text-gray-700 mb-1">Email *</label>
-                        <input type="email" name="email" required
-                            class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500">
-                    </div>
-
-                    <div>
-                        <label class="block text-sm font-medium text-gray-700 mb-1">Phone</label>
-                        <input type="tel" name="phone"
-                            class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500">
-                    </div>
-
-                    <div>
-                        <label class="block text-sm font-medium text-gray-700 mb-1">Company</label>
-                        <input type="text" name="company"
-                            class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500">
-                    </div>
-
-                    <div>
-                        <label class="block text-sm font-medium text-gray-700 mb-1">Location *</label>
-                        <select name="location" required
-                            class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500">
-                            <option value="">Select your city</option>
-                            <option value="melbourne">Melbourne</option>
-                            <option value="sydney">Sydney</option>
-                            <option value="perth">Perth</option>
-                            <option value="adelaide">Adelaide</option>
-                            <option value="brisbane">Brisbane</option>
-                            <option value="darwin">Darwin</option>
-                            <option value="other">Other Australian Location</option>
-                        </select>
-                    </div>
-
-                    <div>
-                        <label class="block text-sm font-medium text-gray-700 mb-1">Project Description *</label>
-                        <textarea name="description" required rows="3"
-                            class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500"
-                            placeholder="Describe your CNC machining requirements, materials, quantities, etc."></textarea>
-                    </div>
-
-                    <div>
-                        <label class="block text-sm font-medium text-gray-700 mb-1">Upload Files (Optional)</label>
-                        <input type="file" id="fileInput" multiple accept=".pdf,.dwg,.step,.stp,.igs,.iges,.jpg,.png"
-                            class="hidden" onchange="handleFileUpload(this)">
-
-                        <div id="uploadArea" class="upload-area" onclick="document.getElementById('fileInput').click()">
-                            <i class="fas fa-cloud-upload-alt text-3xl text-gray-400 mb-2"></i>
-                            <p class="text-gray-600 font-medium">Click to upload CAD files, drawings, or specifications
-                            </p>
-                            <p class="text-xs text-gray-500 mt-2">Supported: PDF, DWG, STEP, STP, IGS, IGES, JPG, PNG
-                                (Max 10MB each)</p>
-                        </div>
-                    </div>
-
-                    <div class="pt-4">
-                        <button type="submit"
-                            class="w-full bg-orange-600 text-white py-3 px-4 rounded-lg font-semibold hover:bg-orange-700 transition-colors">
-                            Submit Quote Request
+    <!-- Quote Modal -->
+    <section>
+        <div id="quoteModal" class="modal fixed inset-0 flex items-center justify-center bg-black/50 z-50">
+            <div class="modal-content max-w-xl w-full bg-white shadow-lg rounded-lg max-h-screen overflow-y-auto">
+                <div class="p-3 sm:p-4">
+                    <!-- Header -->
+                    <div class="flex justify-between items-center mb-2">
+                        <h2 class="text-lg sm:text-xl font-bold text-gray-800">
+                            Defence CNC Machining Services
+                        </h2>
+                        <button onclick="closeQuoteModal()" class="text-gray-500 hover:text-gray-700 text-lg">
+                            <i class="fas fa-times"></i>
                         </button>
                     </div>
-                </form>
+
+                    <!-- Form -->
+                    <form id="quoteForm" class="space-y-2.5">
+                        <!-- Names -->
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-2.5">
+                            <div>
+                                <label class="block text-xs font-medium text-gray-700 mb-0.5">First Name *</label>
+                                <input type="text" name="firstName" required
+                                    class="w-full px-2 py-1.5 border border-gray-300 rounded focus:ring-2 focus:ring-orange-500 text-sm">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-medium text-gray-700 mb-0.5">Last Name *</label>
+                                <input type="text" name="lastName" required
+                                    class="w-full px-2 py-1.5 border border-gray-300 rounded focus:ring-2 focus:ring-orange-500 text-sm">
+                            </div>
+                        </div>
+
+                        <!-- Email -->
+                        <div>
+                            <label class="block text-xs font-medium text-gray-700 mb-0.5">Email *</label>
+                            <input type="email" name="email" required
+                                class="w-full px-2 py-1.5 border border-gray-300 rounded focus:ring-2 focus:ring-orange-500 text-sm">
+                        </div>
+
+                        <!-- Phone -->
+                        <div>
+                            <label class="block text-xs font-medium text-gray-700 mb-0.5">Phone</label>
+                            <input type="tel" name="phone"
+                                class="w-full px-2 py-1.5 border border-gray-300 rounded focus:ring-2 focus:ring-orange-500 text-sm">
+                        </div>
+
+                        <!-- Location -->
+                        <div>
+                            <label class="block text-xs font-medium text-gray-700 mb-0.5">Location *</label>
+                            <select name="location" required
+                                class="w-full px-2 py-1.5 border border-gray-300 rounded focus:ring-2 focus:ring-orange-500 text-sm">
+                                <option value="">Select your city</option>
+                                <option value="melbourne">Melbourne</option>
+                                <option value="sydney">Sydney</option>
+                                <option value="perth">Perth</option>
+                                <option value="adelaide">Adelaide</option>
+                                <option value="brisbane">Brisbane</option>
+                                <option value="darwin">Darwin</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <!-- Description -->
+                        <div>
+                            <label class="block text-xs font-medium text-gray-700 mb-0.5">Project Description</label>
+                            <textarea name="description" rows="1"
+                                class="w-full px-2 py-1.5 border border-gray-300 rounded focus:ring-2 focus:ring-orange-500 text-sm"
+                                placeholder="Briefly describe requirements"></textarea>
+                        </div>
+
+                        <!-- Google reCAPTCHA -->
+                        <div class="g-recaptcha scale-90 transform origin-left"
+                            data-sitekey="6Ld47tsrAAAAAL_S7gMxdbOK6WZcloCIDLdlekox"></div>
+
+                        <!-- Submit -->
+                        <div class="pt-2">
+                            <button type="submit"
+                                class="w-full bg-orange-600 text-white py-2 rounded font-semibold text-sm hover:bg-orange-700 transition">
+                                Submit Quote
+                            </button>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
-    </div>
+    </section>
 
     <script src="script.js"></script>
 </body>

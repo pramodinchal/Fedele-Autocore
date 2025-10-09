@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Precision CNC Tractor Components</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
 
 <body class="bg-white text-gray-900">
@@ -280,7 +282,7 @@
             <!-- Action Buttons -->
             <div class="flex items-center space-x-2 sm:space-x-3">
                 <!-- Quote Button -->
-                <button onclick="window.location.href='contact.html'"
+                <button onclick="openQuoteModal()"
                     class="hidden md:inline-block bg-orange-600 text-white px-3 py-1.5 lg:px-4 lg:py-2 rounded-lg shadow text-xs lg:text-sm font-medium hover:bg-blue-900 transition-colors whitespace-nowrap">
                     Get Quote
                 </button>
@@ -522,7 +524,7 @@
                 </p>
                 <!-- CTA buttons -->
                 <div class="flex flex-col sm:flex-row gap-4 pt-4">
-                    <button onclick="window.location.href='contact.html'"
+                    <button onclick="openQuoteModal()"
                         class="px-6 py-3 bg-orange-500 text-white font-semibold rounded-lg shadow-md hover:bg-orange-600 transition">
                         Get Quote Today
                     </button>
@@ -535,166 +537,203 @@
 
     </section>
 
+    <!-- About Section -->
+    <section class="py-8 px-12 bg-gray-100">
+        <div class="w-full mx-auto flex flex-col md:flex-row items-start justify-between gap-12">
 
-    <!-- Divider Line -->
-    <hr class="border-t border-gray-300 my-8 w-full">
+            <!-- Left Content -->
+            <div class="md:w-1/2">
+                <h2 class="text-4xl font-bold text-blue-900 mb-6">
+                    <span class="border-l-4 border-orange-500 pl-4">Precision CNC Tractor Component Manufacturing</span>
+                </h2>
 
-<!-- About Section -->
-<section class="bg-white px-12 py-2">
-  <div class="max-w-6xl mx-auto">
-    <!-- Heading -->
-    <h2 class="text-3xl md:text-4xl font-extrabold text-blue-900 mb-4">
-      <span class="border-l-4 border-orange-500 pl-4">Reliable CNC Tractor Components for Agricultural Excellence</span>
-    </h2>
+                <p class="text-gray-700 mb-6">
+                    Fedele Autocore specializes in the production of high-precision CNC tractor components engineered
+                    for
+                    durability and reliability. From transmission housings to engine mounts and axle parts, our
+                    components
+                    ensure superior performance in agricultural and heavy-duty field operations.
+                </p>
 
-    <!-- Content -->
-    <p class="text-lg text-gray-700 leading-relaxed">
-      Fedele Autocore manufactures durable tractor components designed to withstand the rigorous demands of agricultural
-      operations. Our precision-machined components ensure reliable performance, reduced downtime, and extended equipment
-      life for farming operations worldwide.
-    </p>
-  </div>
-</section>
+                <p class="text-gray-700 mb-8">
+                    Our advanced machining infrastructure supports mass customization and tight-tolerance manufacturing
+                    of components for leading tractor OEMs. We adhere to strict quality standards, ensuring every part
+                    performs consistently even under high stress and continuous use.
+                </p>
 
-<!-- Divider Line -->
-<hr class="border-t border-gray-300 my-8 w-full">
+                <!-- Stats Section -->
+                <div class="grid grid-cols-2 gap-4 mt-8">
+                    <div class="bg-white p-4 rounded-lg shadow-sm text-center">
+                        <h3 class="text-2xl font-bold text-orange-500">±0.005mm</h3>
+                        <p class="text-sm text-blue-900 uppercase mt-1">Dimensional Accuracy</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow-sm text-center">
+                        <h3 class="text-2xl font-bold text-orange-500">ISO 9001</h3>
+                        <p class="text-sm text-blue-900 uppercase mt-1">Certified Quality</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow-sm text-center">
+                        <h3 class="text-2xl font-bold text-orange-500">24/7</h3>
+                        <p class="text-sm text-blue-900 uppercase mt-1">Production Operations</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow-sm text-center">
+                        <h3 class="text-2xl font-bold text-orange-500">100%</h3>
+                        <p class="text-sm text-blue-900 uppercase mt-1">Performance Tested</p>
+                    </div>
+                </div>
+            </div>
 
-<!-- Tractor Component Manufacturing Section -->
-<section class="bg-white px-12 py-2">
-  <div class="max-w-7xl mx-auto">
-    <!-- Heading -->
-    <h2 class="text-3xl md:text-4xl font-extrabold text-blue-900 mb-8">
-      <span class="border-l-4 border-orange-500 pl-4">Tractor Component Manufacturing</span>
-    </h2>
-
-    <!-- Grid -->
-    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-
-      <div class="bg-white text-blue-900 rounded-lg shadow-md p-6 border-l-4 border-orange-500 hover:shadow-xl transition">
-        <h3 class="font-semibold text-lg mb-2">Transmission Housings & Gear Sets</h3>
-        <p class="text-sm">Reliable power transfer for continuous performance.</p>
-      </div>
-
-      <div class="bg-white text-blue-900 rounded-lg shadow-md p-6 border-l-4 border-orange-500 hover:shadow-xl transition">
-        <h3 class="font-semibold text-lg mb-2">Hydraulic System Components</h3>
-        <p class="text-sm">Ensuring precise implement control in the field.</p>
-      </div>
-
-      <div class="bg-white text-blue-900 rounded-lg shadow-md p-6 border-l-4 border-orange-500 hover:shadow-xl transition">
-        <h3 class="font-semibold text-lg mb-2">Engine Components</h3>
-        <p class="text-sm">Optimized for demanding agricultural duty cycles.</p>
-      </div>
-
-      <div class="bg-white text-blue-900 rounded-lg shadow-md p-6 border-l-4 border-orange-500 hover:shadow-xl transition">
-        <h3 class="font-semibold text-lg mb-2">PTO Assemblies</h3>
-        <p class="text-sm">Power Take-Off drive components for versatile operations.</p>
-      </div>
-
-      <div class="bg-white text-blue-900 rounded-lg shadow-md p-6 border-l-4 border-orange-500 hover:shadow-xl transition">
-        <h3 class="font-semibold text-lg mb-2">Three-Point Hitch Components</h3>
-        <p class="text-sm">Hydraulic lift systems for equipment handling.</p>
-      </div>
-
-      <div class="bg-white text-blue-900 rounded-lg shadow-md p-6 border-l-4 border-orange-500 hover:shadow-xl transition">
-        <h3 class="font-semibold text-lg mb-2">Axle Assemblies & Differentials</h3>
-        <p class="text-sm">Durable drivetrain components for tough conditions.</p>
-      </div>
-
-      <div class="bg-white text-blue-900 rounded-lg shadow-md p-6 border-l-4 border-orange-500 hover:shadow-xl transition">
-        <h3 class="font-semibold text-lg mb-2">Cooling System Components</h3>
-        <p class="text-sm">Designed for harsh environments and heavy workloads.</p>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- Divider Line -->
-<hr class="border-t border-gray-300 my-8 w-full">
-
-<!-- Durability Engineering Section -->
-<section class="bg-white px-12 py-2">
-  <div class="max-w-7xl mx-auto">
-    <!-- Heading -->
-    <h2 class="text-3xl md:text-4xl font-extrabold text-blue-900 mb-8">
-      <span class="border-l-4 border-orange-500 pl-4">Durability Engineering</span>
-    </h2>
-
-    <!-- Content -->
-    <p class="text-lg text-gray-700 leading-relaxed">
-      Agricultural equipment operates in demanding conditions with exposure to dirt, debris, moisture, and extreme
-      loads. Our tractor components are engineered with appropriate material selections, protective coatings, and robust
-      designs to ensure long service life and minimal maintenance requirements.
-    </p>
-  </div>
-</section>
-
-<!-- Divider Line -->
-<hr class="border-t border-gray-300 my-8 w-full">
-
-<!-- Manufacturing Standards Section -->
-<section class="bg-white px-12 py-2">
-  <div class="max-w-7xl mx-auto">
-    <!-- Heading -->
-    <h2 class="text-3xl md:text-4xl font-extrabold text-blue-900 mb-8">
-      <span class="border-l-4 border-orange-500 pl-4">Manufacturing Standards</span>
-    </h2>
-
-    <!-- Content -->
-    <p class="text-lg text-gray-700 leading-relaxed">
-      We adhere to agricultural industry standards and OEM specifications, ensuring proper fit, function, and
-      interchangeability. Our quality systems include environmental testing, load testing, and endurance validation to
-      verify component performance under field conditions.
-    </p>
-  </div>
-</section>
-
-<!-- Divider Line -->
-<hr class="border-t border-gray-300 my-8 w-full">
-
-<!-- Agricultural Applications Section -->
-<section class="bg-white px-12 py-4">
-  <div class="max-w-7xl mx-auto">
-    <!-- Heading -->
-    <h2 class="text-3xl md:text-4xl font-extrabold text-blue-900 mb-4">
-      <span class="border-l-4 border-orange-500 pl-4">Agricultural Applications</span>
-    </h2>
-
-    <!-- Applications Grid -->
-    <div class="bg-blue-900 bg-opacity-5 rounded-lg p-8">
-      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 text-center">
-
-        <div class="bg-white text-blue-900 font-semibold py-4 px-6 rounded-lg shadow-md border-b-4 border-orange-500 hover:shadow-lg transition">
-          Row Crop Tractors
+            <!-- Right Image -->
+            <div class="md:w-1/2 flex justify-center items-start">
+                <img src="https://images.unsplash.com/photo-1615485290345-0e9b3e6a8973?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+                    alt="Precision CNC Tractor Components"
+                    class="rounded-2xl shadow-2xl w-full max-w-[550px] h-[400px] object-cover">
+            </div>
         </div>
+    </section>
 
-        <div class="bg-white text-blue-900 font-semibold py-4 px-6 rounded-lg shadow-md border-b-4 border-orange-500 hover:shadow-lg transition">
-          Utility & Compact Tractors
+
+    <!-- Tractor Component Manufacturing Section -->
+    <section class="bg-white px-12 py-8">
+        <div class="max-w-7xl mx-auto">
+            <!-- Heading -->
+            <h2 class="text-3xl md:text-4xl font-extrabold text-blue-900 mb-8">
+                <span class="border-l-4 border-orange-500 pl-4">Tractor Component Manufacturing</span>
+            </h2>
+
+            <!-- Grid -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                <div
+                    class="bg-white text-blue-900 rounded-lg shadow-md p-6 border-l-4 border-orange-500 hover:shadow-xl transition">
+                    <h3 class="font-semibold text-lg mb-2">Transmission Housings & Gear Sets</h3>
+                    <p class="text-sm">Reliable power transfer for continuous performance.</p>
+                </div>
+
+                <div
+                    class="bg-white text-blue-900 rounded-lg shadow-md p-6 border-l-4 border-orange-500 hover:shadow-xl transition">
+                    <h3 class="font-semibold text-lg mb-2">Hydraulic System Components</h3>
+                    <p class="text-sm">Ensuring precise implement control in the field.</p>
+                </div>
+
+                <div
+                    class="bg-white text-blue-900 rounded-lg shadow-md p-6 border-l-4 border-orange-500 hover:shadow-xl transition">
+                    <h3 class="font-semibold text-lg mb-2">Engine Components</h3>
+                    <p class="text-sm">Optimized for demanding agricultural duty cycles.</p>
+                </div>
+
+                <div
+                    class="bg-white text-blue-900 rounded-lg shadow-md p-6 border-l-4 border-orange-500 hover:shadow-xl transition">
+                    <h3 class="font-semibold text-lg mb-2">PTO Assemblies</h3>
+                    <p class="text-sm">Power Take-Off drive components for versatile operations.</p>
+                </div>
+
+                <div
+                    class="bg-white text-blue-900 rounded-lg shadow-md p-6 border-l-4 border-orange-500 hover:shadow-xl transition">
+                    <h3 class="font-semibold text-lg mb-2">Three-Point Hitch Components</h3>
+                    <p class="text-sm">Hydraulic lift systems for equipment handling.</p>
+                </div>
+
+                <div
+                    class="bg-white text-blue-900 rounded-lg shadow-md p-6 border-l-4 border-orange-500 hover:shadow-xl transition">
+                    <h3 class="font-semibold text-lg mb-2">Axle Assemblies & Differentials</h3>
+                    <p class="text-sm">Durable drivetrain components for tough conditions.</p>
+                </div>
+
+                <div
+                    class="bg-white text-blue-900 rounded-lg shadow-md p-6 border-l-4 border-orange-500 hover:shadow-xl transition">
+                    <h3 class="font-semibold text-lg mb-2">Cooling System Components</h3>
+                    <p class="text-sm">Designed for harsh environments and heavy workloads.</p>
+                </div>
+
+            </div>
         </div>
+    </section>
 
-        <div class="bg-white text-blue-900 font-semibold py-4 px-6 rounded-lg shadow-md border-b-4 border-orange-500 hover:shadow-lg transition">
-          Specialty Agricultural Equipment
+    <!-- Durability Engineering Section -->
+    <section class="bg-gray-100 px-12 py-8">
+        <div class="max-w-7xl mx-auto">
+            <!-- Heading -->
+            <h2 class="text-3xl md:text-4xl font-extrabold text-blue-900 mb-8">
+                <span class="border-l-4 border-orange-500 pl-4">Durability Engineering</span>
+            </h2>
+
+            <!-- Content -->
+            <p class="text-lg text-gray-700 leading-relaxed">
+                Agricultural equipment operates in demanding conditions with exposure to dirt, debris, moisture, and
+                extreme
+                loads. Our tractor components are engineered with appropriate material selections, protective coatings,
+                and robust
+                designs to ensure long service life and minimal maintenance requirements.
+            </p>
         </div>
+    </section>
 
-        <div class="bg-white text-blue-900 font-semibold py-4 px-6 rounded-lg shadow-md border-b-4 border-orange-500 hover:shadow-lg transition">
-          Harvesting Machinery
+
+    <!-- Manufacturing Standards Section -->
+    <section class="bg-white px-12 py-8">
+        <div class="max-w-7xl mx-auto">
+            <!-- Heading -->
+            <h2 class="text-3xl md:text-4xl font-extrabold text-blue-900 mb-8">
+                <span class="border-l-4 border-orange-500 pl-4">Manufacturing Standards</span>
+            </h2>
+
+            <!-- Content -->
+            <p class="text-lg text-gray-700 leading-relaxed">
+                We adhere to agricultural industry standards and OEM specifications, ensuring proper fit, function, and
+                interchangeability. Our quality systems include environmental testing, load testing, and endurance
+                validation to
+                verify component performance under field conditions.
+            </p>
         </div>
+    </section>
 
-        <div class="bg-white text-blue-900 font-semibold py-4 px-6 rounded-lg shadow-md border-b-4 border-orange-500 hover:shadow-lg transition">
-          Tillage & Planting Equipment
+
+    <!-- Agricultural Applications Section -->
+    <section class="bg-gray-100 px-12 py-8">
+        <div class="max-w-7xl mx-auto">
+            <!-- Heading -->
+            <h2 class="text-3xl md:text-4xl font-extrabold text-blue-900 mb-4">
+                <span class="border-l-4 border-orange-500 pl-4">Agricultural Applications</span>
+            </h2>
+
+            <!-- Applications Grid -->
+            <div class="bg-blue-900 bg-opacity-5 rounded-lg p-8">
+                <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 text-center">
+
+                    <div
+                        class="bg-white text-blue-900 font-semibold py-4 px-6 rounded-lg shadow-md border-b-4 border-orange-500 hover:shadow-lg transition">
+                        Row Crop Tractors
+                    </div>
+
+                    <div
+                        class="bg-white text-blue-900 font-semibold py-4 px-6 rounded-lg shadow-md border-b-4 border-orange-500 hover:shadow-lg transition">
+                        Utility & Compact Tractors
+                    </div>
+
+                    <div
+                        class="bg-white text-blue-900 font-semibold py-4 px-6 rounded-lg shadow-md border-b-4 border-orange-500 hover:shadow-lg transition">
+                        Specialty Agricultural Equipment
+                    </div>
+
+                    <div
+                        class="bg-white text-blue-900 font-semibold py-4 px-6 rounded-lg shadow-md border-b-4 border-orange-500 hover:shadow-lg transition">
+                        Harvesting Machinery
+                    </div>
+
+                    <div
+                        class="bg-white text-blue-900 font-semibold py-4 px-6 rounded-lg shadow-md border-b-4 border-orange-500 hover:shadow-lg transition">
+                        Tillage & Planting Equipment
+                    </div>
+
+                    <div
+                        class="bg-white text-blue-900 font-semibold py-4 px-6 rounded-lg shadow-md border-b-4 border-orange-500 hover:shadow-lg transition">
+                        Hay & Forage Equipment
+                    </div>
+
+                </div>
+            </div>
         </div>
-
-        <div class="bg-white text-blue-900 font-semibold py-4 px-6 rounded-lg shadow-md border-b-4 border-orange-500 hover:shadow-lg transition">
-          Hay & Forage Equipment
-        </div>
-
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Divider Line -->
-<hr class="border-t border-gray-300 my-8 w-full">
+    </section>
 
 
     <!-- Footer -->
@@ -870,23 +909,110 @@
         <div class="max-w-7xl mx-auto mt-10 pt-8 border-t border-gray-700">
             <div class="flex flex-col md:flex-row justify-center items-center">
                 <p class="text-sm text-gray-400 mb-4 md:mb-0">
-                    &copy; 2025 Fedele Autocore. All rights reserved.
+                    &copy; 2025 Fedele Autocore. &nbsp All rights reserved.
                 </p>
                 <div class="flex flex-wrap justify-center gap-6">
-                    <a href="#" class="text-sm text-blue-600 hover:text-white transition-colors duration-300"> Privacy
+                    <a href="#" class="text-sm text-white hover:text-blue-600 transition-colors duration-300">&nbsp
+                        Privacy
                         Policy</a>
-                    <a href="#" class="text-sm text-blue-600 hover:text-white transition-colors duration-300">Terms of
+                    <a href="#" class="text-sm text-white hover:text-blue-600 transition-colors duration-300">Terms of
                         Service</a>
                     <a href="#"
-                        class="text-sm text-blue-600 hover:text-white transition-colors duration-300">Sitemap</a>
+                        class="text-sm text-white hover:text-blue-600 transition-colors duration-300">Sitemap</a>
                     <a href="#"
-                        class="text-sm text-blue-600 hover:text-white transition-colors duration-300">Careers</a>
-                    <a href="#" class="text-sm text-blue-600 hover:text-white transition-colors duration-300">Supplier
+                        class="text-sm text-white hover:text-blue-600 transition-colors duration-300">Careers</a>
+                    <a href="#" class="text-sm text-white hover:text-blue-600 transition-colors duration-300">Supplier
                         Portal</a>
                 </div>
             </div>
         </div>
     </footer>
+
+    <!-- Quote Modal -->
+    <section>
+        <div id="quoteModal" class="modal fixed inset-0 flex items-center justify-center bg-black/50 z-50">
+            <div class="modal-content max-w-xl w-full bg-white shadow-lg rounded-lg max-h-screen overflow-y-auto">
+                <div class="p-3 sm:p-4">
+                    <!-- Header -->
+                    <div class="flex justify-between items-center mb-2">
+                        <h2 class="text-lg sm:text-xl font-bold text-gray-800">
+                            Precision CNC Tractor Components Services
+                        </h2>
+                        <button onclick="closeQuoteModal()" class="text-gray-500 hover:text-gray-700 text-lg">
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </div>
+
+                    <!-- Form -->
+                    <form id="quoteForm" class="space-y-2.5">
+                        <!-- Names -->
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-2.5">
+                            <div>
+                                <label class="block text-xs font-medium text-gray-700 mb-0.5">First Name *</label>
+                                <input type="text" name="firstName" required
+                                    class="w-full px-2 py-1.5 border border-gray-300 rounded focus:ring-2 focus:ring-orange-500 text-sm">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-medium text-gray-700 mb-0.5">Last Name *</label>
+                                <input type="text" name="lastName" required
+                                    class="w-full px-2 py-1.5 border border-gray-300 rounded focus:ring-2 focus:ring-orange-500 text-sm">
+                            </div>
+                        </div>
+
+                        <!-- Email -->
+                        <div>
+                            <label class="block text-xs font-medium text-gray-700 mb-0.5">Email *</label>
+                            <input type="email" name="email" required
+                                class="w-full px-2 py-1.5 border border-gray-300 rounded focus:ring-2 focus:ring-orange-500 text-sm">
+                        </div>
+
+                        <!-- Phone -->
+                        <div>
+                            <label class="block text-xs font-medium text-gray-700 mb-0.5">Phone</label>
+                            <input type="tel" name="phone"
+                                class="w-full px-2 py-1.5 border border-gray-300 rounded focus:ring-2 focus:ring-orange-500 text-sm">
+                        </div>
+
+                        <!-- Location -->
+                        <div>
+                            <label class="block text-xs font-medium text-gray-700 mb-0.5">Location *</label>
+                            <select name="location" required
+                                class="w-full px-2 py-1.5 border border-gray-300 rounded focus:ring-2 focus:ring-orange-500 text-sm">
+                                <option value="">Select your city</option>
+                                <option value="melbourne">Melbourne</option>
+                                <option value="sydney">Sydney</option>
+                                <option value="perth">Perth</option>
+                                <option value="adelaide">Adelaide</option>
+                                <option value="brisbane">Brisbane</option>
+                                <option value="darwin">Darwin</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <!-- Description -->
+                        <div>
+                            <label class="block text-xs font-medium text-gray-700 mb-0.5">Project Description</label>
+                            <textarea name="description" rows="1"
+                                class="w-full px-2 py-1.5 border border-gray-300 rounded focus:ring-2 focus:ring-orange-500 text-sm"
+                                placeholder="Briefly describe requirements"></textarea>
+                        </div>
+
+                        <!-- Google reCAPTCHA -->
+                        <div class="g-recaptcha scale-90 transform origin-left"
+                            data-sitekey="6Ld47tsrAAAAAL_S7gMxdbOK6WZcloCIDLdlekox"></div>
+
+                        <!-- Submit -->
+                        <div class="pt-2">
+                            <button type="submit"
+                                class="w-full bg-orange-600 text-white py-2 rounded font-semibold text-sm hover:bg-orange-700 transition">
+                                Submit Quote
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
     <script src="script.js"></script>
 </body>
 

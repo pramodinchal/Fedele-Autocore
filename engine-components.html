@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Advanced CNC Engine Components</title>
     <script src="https://cdn.tailwindcss.com"></script>
+        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
 
 <body class="bg-white text-gray-900">
@@ -279,7 +281,7 @@
             <!-- Action Buttons -->
             <div class="flex items-center space-x-2 sm:space-x-3">
                 <!-- Quote Button -->
-                <button onclick="window.location.href='contact.html'"
+                <button onclick="openQuoteModal()"
                     class="hidden md:inline-block bg-orange-600 text-white px-3 py-1.5 lg:px-4 lg:py-2 rounded-lg shadow text-xs lg:text-sm font-medium hover:bg-blue-900 transition-colors whitespace-nowrap">
                     Get Quote
                 </button>
@@ -521,7 +523,7 @@
                 </p>
                 <!-- CTA buttons -->
                 <div class="flex flex-col sm:flex-row gap-4 pt-4">
-                    <button onclick="window.location.href='contact.html'"
+                    <button onclick="openQuoteModal()"
                         class="px-6 py-3 bg-orange-500 text-white font-semibold rounded-lg shadow-md hover:bg-orange-600 transition">
                         Get Quote Today
                     </button>
@@ -535,34 +537,62 @@
     </section>
 
 
-    <!-- Divider Line -->
-    <hr class="border-t border-gray-300 my-8 w-full">
-
 <!-- About Section -->
-<section class="bg-white px-12 py-2">
-  <div class="max-w-6xl mx-auto">
-    <!-- Heading -->
-    <h2 class="text-3xl md:text-4xl font-extrabold text-blue-900 mb-4">
-      <span class="border-l-4 border-orange-500 pl-4">
-        Advanced CNC Engine Components for Peak Performance
-      </span>
-    </h2>
+<section class="py-8 px-12 bg-gray-100">
+  <div class="w-full mx-auto flex flex-col md:flex-row items-start justify-between gap-12">
 
-    <!-- Content -->
-    <p class="text-lg text-gray-700 leading-relaxed">
-      Fedele Autocore delivers precision-engineered engine components that power performance across
-      automotive, marine, aerospace, and industrial applications. Our advanced CNC machining centers
-      and skilled technicians produce components that meet the strictest tolerances and quality standards
-      demanded by today's high-performance engines.
-    </p>
+    <!-- Left Content -->
+    <div class="md:w-1/2">
+      <h2 class="text-4xl font-bold text-blue-900 mb-6">
+        <span class="border-l-4 border-orange-500 pl-4">Precision CNC Engine Component Manufacturing</span>
+      </h2>
+
+      <p class="text-gray-700 mb-6">
+        Fedele Autocore excels in producing high-performance CNC machined engine components with uncompromising
+        accuracy and durability. Our expertise spans across automotive, motorsport, and industrial powertrain
+        applications — ensuring every part performs flawlessly under extreme conditions.
+      </p>
+
+      <p class="text-gray-700 mb-8">
+        Utilizing advanced multi-axis CNC machining centers, precision metrology systems, and material certification
+        protocols, we deliver engine components that meet or exceed OEM and racing specifications. Each piece is crafted
+        to achieve superior strength, minimal friction, and consistent performance at scale.
+      </p>
+
+      <!-- Stats Section -->
+      <div class="grid grid-cols-2 gap-4 mt-8">
+        <div class="bg-white p-4 rounded-lg shadow-sm text-center">
+          <h3 class="text-2xl font-bold text-orange-500">±0.001mm</h3>
+          <p class="text-sm text-blue-900 uppercase mt-1">Machining Accuracy</p>
+        </div>
+        <div class="bg-white p-4 rounded-lg shadow-sm text-center">
+          <h3 class="text-2xl font-bold text-orange-500">500+</h3>
+          <p class="text-sm text-blue-900 uppercase mt-1">Engine Parts Designed</p>
+        </div>
+        <div class="bg-white p-4 rounded-lg shadow-sm text-center">
+          <h3 class="text-2xl font-bold text-orange-500">ISO 9001</h3>
+          <p class="text-sm text-blue-900 uppercase mt-1">Certified Quality</p>
+        </div>
+        <div class="bg-white p-4 rounded-lg shadow-sm text-center">
+          <h3 class="text-2xl font-bold text-orange-500">99.9%</h3>
+          <p class="text-sm text-blue-900 uppercase mt-1">Dimensional Accuracy</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right Image -->
+    <div class="md:w-1/2 flex justify-center items-start">
+      <img
+        src="https://images.unsplash.com/photo-1603386329225-868f9b1ee6c7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+        alt="Precision CNC Engine Components"
+        class="rounded-2xl shadow-2xl w-full max-w-[550px] h-[400px] object-cover"
+      >
+    </div>
   </div>
 </section>
 
-<!-- Divider Line -->
-<hr class="border-t border-gray-300 my-8 w-full">
-
 <!-- Core Engine Component Manufacturing Section -->
-<section class="bg-white px-12 py-2">
+<section class="bg-white px-12 py-8">
   <div class="max-w-7xl mx-auto">
     <!-- Heading -->
     <h2 class="text-3xl md:text-4xl font-extrabold text-blue-900 mb-8">
@@ -609,11 +639,8 @@
   </div>
 </section>
 
-<!-- Divider Line -->
-<hr class="border-t border-gray-300 my-8 w-full">
-
 <!-- Advanced Materials & Processes -->
-<section class="bg-white px-12 py-2">
+<section class="bg-gray-100 px-12 py-8">
   <div class="max-w-7xl mx-auto">
     <h2 class="text-3xl md:text-4xl font-extrabold text-blue-900 mb-8">
       <span class="border-l-4 border-orange-500 pl-4">Advanced Materials & Processes</span>
@@ -627,11 +654,8 @@
   </div>
 </section>
 
-<!-- Divider Line -->
-<hr class="border-t border-gray-300 my-8 w-full">
-
 <!-- Quality Assurance -->
-<section class="bg-white px-12 py-2">
+<section class="bg-white px-12 py-8">
   <div class="max-w-7xl mx-auto">
     <h2 class="text-3xl md:text-4xl font-extrabold text-blue-900 mb-8">
       <span class="border-l-4 border-orange-500 pl-4">Quality Assurance</span>
@@ -645,11 +669,8 @@
   </div>
 </section>
 
-<!-- Divider Line -->
-<hr class="border-t border-gray-300 my-8 w-full">
-
 <!-- Applications Section -->
-<section class="bg-white px-12 py-4">
+<section class="bg-gray-100 px-12 py-8">
   <div class="max-w-7xl mx-auto">
     <!-- Heading -->
     <h2 class="text-3xl md:text-4xl font-extrabold text-blue-900 mb-4">
@@ -684,11 +705,6 @@
     </div>
   </div>
 </section>
-
-
-
-    <!-- Divider Line -->
-    <hr class="border-t border-gray-300 my-8 w-full">
 
 
     <!-- Footer -->
@@ -860,27 +876,114 @@
 
         </div>
 
-        <!-- Bottom Section -->
+          <!-- Bottom Section -->
         <div class="max-w-7xl mx-auto mt-10 pt-8 border-t border-gray-700">
             <div class="flex flex-col md:flex-row justify-center items-center">
                 <p class="text-sm text-gray-400 mb-4 md:mb-0">
-                    &copy; 2025 Fedele Autocore. All rights reserved.
+                    &copy; 2025 Fedele Autocore. &nbsp All rights reserved.
                 </p>
                 <div class="flex flex-wrap justify-center gap-6">
-                    <a href="#" class="text-sm text-blue-600 hover:text-white transition-colors duration-300"> Privacy
+                    <a href="#" class="text-sm text-white hover:text-blue-600 transition-colors duration-300">&nbsp
+                        Privacy
                         Policy</a>
-                    <a href="#" class="text-sm text-blue-600 hover:text-white transition-colors duration-300">Terms of
+                    <a href="#" class="text-sm text-white hover:text-blue-600 transition-colors duration-300">Terms of
                         Service</a>
                     <a href="#"
-                        class="text-sm text-blue-600 hover:text-white transition-colors duration-300">Sitemap</a>
+                        class="text-sm text-white hover:text-blue-600 transition-colors duration-300">Sitemap</a>
                     <a href="#"
-                        class="text-sm text-blue-600 hover:text-white transition-colors duration-300">Careers</a>
-                    <a href="#" class="text-sm text-blue-600 hover:text-white transition-colors duration-300">Supplier
+                        class="text-sm text-white hover:text-blue-600 transition-colors duration-300">Careers</a>
+                    <a href="#" class="text-sm text-white hover:text-blue-600 transition-colors duration-300">Supplier
                         Portal</a>
                 </div>
             </div>
         </div>
     </footer>
+
+    <!-- Quote Modal -->
+    <section>
+        <div id="quoteModal" class="modal fixed inset-0 flex items-center justify-center bg-black/50 z-50">
+            <div class="modal-content max-w-xl w-full bg-white shadow-lg rounded-lg max-h-screen overflow-y-auto">
+                <div class="p-3 sm:p-4">
+                    <!-- Header -->
+                    <div class="flex justify-between items-center mb-2">
+                        <h2 class="text-lg sm:text-xl font-bold text-gray-800">
+                           Precision CNC Engine Components Services
+                        </h2>
+                        <button onclick="closeQuoteModal()" class="text-gray-500 hover:text-gray-700 text-lg">
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </div>
+
+                    <!-- Form -->
+                    <form id="quoteForm" class="space-y-2.5">
+                        <!-- Names -->
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-2.5">
+                            <div>
+                                <label class="block text-xs font-medium text-gray-700 mb-0.5">First Name *</label>
+                                <input type="text" name="firstName" required
+                                    class="w-full px-2 py-1.5 border border-gray-300 rounded focus:ring-2 focus:ring-orange-500 text-sm">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-medium text-gray-700 mb-0.5">Last Name *</label>
+                                <input type="text" name="lastName" required
+                                    class="w-full px-2 py-1.5 border border-gray-300 rounded focus:ring-2 focus:ring-orange-500 text-sm">
+                            </div>
+                        </div>
+
+                        <!-- Email -->
+                        <div>
+                            <label class="block text-xs font-medium text-gray-700 mb-0.5">Email *</label>
+                            <input type="email" name="email" required
+                                class="w-full px-2 py-1.5 border border-gray-300 rounded focus:ring-2 focus:ring-orange-500 text-sm">
+                        </div>
+
+                        <!-- Phone -->
+                        <div>
+                            <label class="block text-xs font-medium text-gray-700 mb-0.5">Phone</label>
+                            <input type="tel" name="phone"
+                                class="w-full px-2 py-1.5 border border-gray-300 rounded focus:ring-2 focus:ring-orange-500 text-sm">
+                        </div>
+
+                        <!-- Location -->
+                        <div>
+                            <label class="block text-xs font-medium text-gray-700 mb-0.5">Location *</label>
+                            <select name="location" required
+                                class="w-full px-2 py-1.5 border border-gray-300 rounded focus:ring-2 focus:ring-orange-500 text-sm">
+                                <option value="">Select your city</option>
+                                <option value="melbourne">Melbourne</option>
+                                <option value="sydney">Sydney</option>
+                                <option value="perth">Perth</option>
+                                <option value="adelaide">Adelaide</option>
+                                <option value="brisbane">Brisbane</option>
+                                <option value="darwin">Darwin</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <!-- Description -->
+                        <div>
+                            <label class="block text-xs font-medium text-gray-700 mb-0.5">Project Description</label>
+                            <textarea name="description" rows="1"
+                                class="w-full px-2 py-1.5 border border-gray-300 rounded focus:ring-2 focus:ring-orange-500 text-sm"
+                                placeholder="Briefly describe requirements"></textarea>
+                        </div>
+
+                        <!-- Google reCAPTCHA -->
+                        <div class="g-recaptcha scale-90 transform origin-left"
+                            data-sitekey="6Ld47tsrAAAAAL_S7gMxdbOK6WZcloCIDLdlekox"></div>
+
+                        <!-- Submit -->
+                        <div class="pt-2">
+                            <button type="submit"
+                                class="w-full bg-orange-600 text-white py-2 rounded font-semibold text-sm hover:bg-orange-700 transition">
+                                Submit Quote
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
     <script src="script.js"></script>
 </body>
 

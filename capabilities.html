@@ -6,13 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Capabilities</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script type="text/javascript">
-        (function () {
-            emailjs.init({
-                publicKey: "Xe_Mw3aGiwlJhrnTU",
-            });
-        })();
-    </script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
 
 <body class="bg-gray-50 w-full">
@@ -285,7 +280,7 @@
             <!-- Action Buttons -->
             <div class="flex items-center space-x-2 sm:space-x-3">
                 <!-- Quote Button -->
-                <button onclick="window.location.href='contact.html'"
+                <button onclick="openQuoteModal()"
                     class="hidden md:inline-block bg-orange-600 text-white px-3 py-1.5 lg:px-4 lg:py-2 rounded-lg shadow text-xs lg:text-sm font-medium hover:bg-blue-900 transition-colors whitespace-nowrap">
                     Get Quote
                 </button>
@@ -520,11 +515,18 @@
             <!-- Left Content -->
             <div class="text-left w-full md:w-1/2 mt-24 md:mt-32">
                 <h1 class="text-4xl md:text-6xl font-bold mb-6 text-white">
-                  Complete <span class="text-orange-500">Metal</span> Manufacturing Solutions
+                    Complete <span class="text-orange-500">Metal</span> Manufacturing Solutions
                 </h1>
                 <p class="text-lg md:text-xl text-gray-200 max-w-xl leading-relaxed">
-                    From precision machining to castings, forging, and custom fasteners - serving Australia with the shortest turnaround time
+                    From precision machining to castings, forging, and custom fasteners - serving Australia with the
+                    shortest turnaround time
                 </p>
+                <div class="flex flex-col sm:flex-row gap-4 py-4">
+                    <button onclick="openQuoteModal()"
+                        class="px-6 py-3 bg-orange-500 text-white font-semibold rounded-lg shadow-md hover:bg-orange-600 transition transform hover:scale-105">
+                        Get a Quote
+                    </button>
+                </div>
             </div>
 
             <!-- Right side (empty space to reveal background image) -->
@@ -533,134 +535,139 @@
 
     </section>
 
-    <!-- Divider Line -->
-    <hr class="border-t border-gray-300 w-full mx-auto">
-
-
     <!--   Featured Capabilities-->
-    <section class="py-16 px-12 bg-gray-50">
+    <section class="py-8 px-12 bg-gray-100">
+        <div class="w-full mx-auto flex flex-col md:flex-row items-start justify-between gap-12">
+
+            <!-- Left Content -->
+            <div class="md:w-1/2">
+                <h2 class="text-4xl font-bold text-blue-900 mb-6">
+                    <span class="border-l-4 border-orange-500 pl-4">Our CNC Machining Capabilities</span>
+                </h2>
+                <p class="text-gray-700 mb-6">
+                    At Fedele Autocore, our CNC machining capabilities are built to handle the most complex geometries
+                    and tightest tolerances.
+                    We combine advanced technology, high-speed tooling, and skilled craftsmanship to deliver
+                    precision-engineered parts
+                    for automotive, aerospace, medical, and defense industries.
+                </p>
+                <p class="text-gray-700 mb-8">
+                    Our modern facility is equipped with state-of-the-art 3-axis, 4-axis, and 5-axis CNC machining
+                    centers, as well as high-speed
+                    milling and precision turning machines. Every part we produce undergoes rigorous quality inspections
+                    to ensure
+                    consistent performance and reliability under demanding conditions.
+                </p>
+
+                <!-- Stats -->
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="bg-white p-4 rounded-lg shadow-sm text-center">
+                        <h3 class="text-2xl font-bold text-orange-500">3–5 Axis</h3>
+                        <p class="text-sm text-blue-900 uppercase mt-1">Machining Centers</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow-sm text-center">
+                        <h3 class="text-2xl font-bold text-orange-500">0.002mm</h3>
+                        <p class="text-sm text-blue-900 uppercase mt-1">Precision Tolerance</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow-sm text-center">
+                        <h3 class="text-2xl font-bold text-orange-500">24/7</h3>
+                        <p class="text-sm text-blue-900 uppercase mt-1">High-Speed Machining</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow-sm text-center">
+                        <h3 class="text-2xl font-bold text-orange-500">ISO 9001</h3>
+                        <p class="text-sm text-blue-900 uppercase mt-1">Certified Quality</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Image -->
+            <div class="md:w-1/2 flex justify-center items-start">
+                <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+                    alt="CNC Machining Capabilities"
+                    class="rounded-2xl shadow-2xl w-full max-w-[550px] h-[370px] object-cover">
+            </div>
+
+        </div>
+    </section>
+
+    <!---Complete Manufacturing Capabilities-->
+
+    <section class="py-8 sm:py-8 px-12 bg-white">
         <div class="w-full mx-auto">
-            <h2 class="text-3xl font-bold text-blue-900 text-center mb-4">
-                Featured Capabilities
-            </h2>
-            <div class="w-24 h-1 bg-orange-500 mx-auto mb-2"></div>
+            <!-- Heading -->
+            <div class="text-center mb-4 sm:mb-8">
+                <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-blue-900 mb-1 sm:mb-3">
+                    Complete Manufacturing Capabilities
+                </h2>
+                <div class="w-24 h-1 bg-orange-500 mx-auto "></div>
+                <p class="text-gray-600 max-w-2xl mx-auto mt-2">
+                    Comprehensive metal manufacturing services under one roof, delivering quality components with
+                    Australia's shortest turnaround time.
+                </p>
+            </div>
 
-            <!-- Grid -->
-            <div class="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-8">
+            <!-- Cards Grid -->
+            <div class="grid grid-cols-4 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
 
-                <!-- Cold Heading -->
-                <div
-                    class="bg-white rounded-lg border border-gray-200 overflow-hidden hover:shadow-xl transition-shadow">
-                    <img src="Assets/" alt="Cold Heading" class="w-full h-40 object-cover">
-                    <div class="p-6 border-l-4 border-blue-900">
-                        <h3 class="text-xl font-bold text-blue-900 mb-4">Cold Heading</h3>
-                        <p class="text-gray-700 text-left">
-                            Advanced cold forming technology for high-volume fastener production with superior strength and precision. Our cold heading capabilities deliver exceptional dimensional accuracy and material efficiency for critical applications across all industries.
-                        </p>
-                    </div>
+                <!-- Castings -->
+                <div class="bg-gray-50 rounded-2xl p-6 sm:p-8 shadow-sm border border-gray-200">
+                    <img src="Assets/castings-icon.png" alt="Castings" class="h-12 w-12 mb-4">
+                    <h3 class="text-xl sm:text-2xl font-bold text-blue-900 mb-4">Castings</h3>
+                    <ul class="space-y-2 text-gray-700 text-sm sm:text-base list-disc list-inside">
+                        <li>Aluminium Die Casting</li>
+                        <li>Die Casting</li>
+                        <li>Investment Casting</li>
+                        <li>Rapid Prototype Casting</li>
+                        <li>Sand Casting</li>
+                    </ul>
                 </div>
 
-                <!-- Custom Fasteners -->
-                <div
-                    class="bg-white rounded-lg border border-gray-200 overflow-hidden hover:shadow-xl transition-shadow">
-                    <img src="Assets/" alt="Custom Fasteners" class="w-full h-40 object-cover">
-                    <div class="p-6 border-l-4 border-blue-900">
-                        <h3 class="text-xl font-bold text-blue-900 mb-4">Custom Fasteners</h3>
-                        <p class="text-gray-700 text-left">
-                           Engineered fastening solutions tailored to your exact specifications. From standard modifications to completely custom designs, we manufacture fasteners that meet the most demanding performance requirements.
-                        </p>
-                    </div>
+                <!-- Fabrication -->
+                <div class="bg-gray-50 rounded-2xl p-6 sm:p-8 shadow-sm border border-gray-200">
+                    <img src="Assets/fabrication-icon.png" alt="Fabrication" class="h-12 w-12 mb-4">
+                    <h3 class="text-xl sm:text-2xl font-bold text-blue-900 mb-4">Fabrication</h3>
+                    <ul class="space-y-2 text-gray-700 text-sm sm:text-base list-disc list-inside">
+                        <li>Aluminium Fabrication</li>
+                        <li>Metal Fabrication</li>
+                        <li>Metal Stamping</li>
+                        <li>Sheet Metal Fabrication</li>
+                        <li>Steel Fabrication</li>
+                    </ul>
                 </div>
 
+                <!-- Forging -->
+                <div class="bg-gray-50 rounded-2xl p-6 sm:p-8 shadow-sm border border-gray-200">
+                    <img src="Assets/forging-icon.png" alt="Forging" class="h-12 w-12 mb-4">
+                    <h3 class="text-xl sm:text-2xl font-bold text-blue-900 mb-4">Forging</h3>
+                    <ul class="space-y-2 text-gray-700 text-sm sm:text-base list-disc list-inside">
+                        <li>Cold Forging</li>
+                        <li>Hot Forging</li>
+                        <li>Metal Forging</li>
+                        <li>Precision Forging</li>
+                        <li>Custom Forged Parts</li>
+                    </ul>
+                </div>
+
+                <!-- Precision Machining -->
+                <div class="bg-gray-50 rounded-2xl p-6 sm:p-8 shadow-sm border border-gray-200">
+                    <img src="Assets/machining-icon.png" alt="Precision Machining" class="h-12 w-12 mb-4">
+                    <h3 class="text-xl sm:text-2xl font-bold text-blue-900 mb-4">Precision Machining</h3>
+                    <ul class="space-y-2 text-gray-700 text-sm sm:text-base list-disc list-inside">
+                        <li>CNC Machining</li>
+                        <li>CNC Prototyping</li>
+                        <li>Precision CNC Machining</li>
+                        <li>Screw Machining</li>
+                        <li>Multi-Axis Machining</li>
+                    </ul>
+                </div>
 
             </div>
         </div>
     </section>
 
-    <!-- Divider Line -->
-    <hr class="border-t border-gray-300 w-full mx-auto">
-
-    <!---Complete Manufacturing Capabilities-->
-
-    <section class="py-12 sm:py-16 px-12 bg-white">
-  <div class="w-full mx-auto">
-    <!-- Heading -->
-    <div class="text-center mb-4 sm:mb-8">
-      <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-blue-900 mb-4 sm:mb-8">
-        Complete Manufacturing Capabilities
-      </h2>
-      <p class="text-gray-600 max-w-2xl mx-auto">
-        Comprehensive metal manufacturing services under one roof, delivering quality components with Australia's shortest turnaround time.
-      </p>
-      <div class="w-24 h-1 bg-orange-500 mx-auto mt-4"></div>
-    </div>
-
-    <!-- Cards Grid -->
-    <div class="grid grid-cols-4 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
-      
-      <!-- Castings -->
-      <div class="bg-gray-50 rounded-2xl p-6 sm:p-8 shadow-sm border border-gray-200">
-        <img src="Assets/castings-icon.png" alt="Castings" class="h-12 w-12 mb-4">
-        <h3 class="text-xl sm:text-2xl font-bold text-blue-900 mb-4">Castings</h3>
-        <ul class="space-y-2 text-gray-700 text-sm sm:text-base list-disc list-inside">
-          <li>Aluminium Die Casting</li>
-          <li>Die Casting</li>
-          <li>Investment Casting</li>
-          <li>Rapid Prototype Casting</li>
-          <li>Sand Casting</li>
-        </ul>
-      </div>
-
-      <!-- Fabrication -->
-      <div class="bg-gray-50 rounded-2xl p-6 sm:p-8 shadow-sm border border-gray-200">
-        <img src="Assets/fabrication-icon.png" alt="Fabrication" class="h-12 w-12 mb-4">
-        <h3 class="text-xl sm:text-2xl font-bold text-blue-900 mb-4">Fabrication</h3>
-        <ul class="space-y-2 text-gray-700 text-sm sm:text-base list-disc list-inside">
-          <li>Aluminium Fabrication</li>
-          <li>Metal Fabrication</li>
-          <li>Metal Stamping</li>
-          <li>Sheet Metal Fabrication</li>
-          <li>Steel Fabrication</li>
-        </ul>
-      </div>
-
-      <!-- Forging -->
-      <div class="bg-gray-50 rounded-2xl p-6 sm:p-8 shadow-sm border border-gray-200">
-        <img src="Assets/forging-icon.png" alt="Forging" class="h-12 w-12 mb-4">
-        <h3 class="text-xl sm:text-2xl font-bold text-blue-900 mb-4">Forging</h3>
-        <ul class="space-y-2 text-gray-700 text-sm sm:text-base list-disc list-inside">
-          <li>Cold Forging</li>
-          <li>Hot Forging</li>
-          <li>Metal Forging</li>
-          <li>Precision Forging</li>
-          <li>Custom Forged Parts</li>
-        </ul>
-      </div>
-
-      <!-- Precision Machining -->
-      <div class="bg-gray-50 rounded-2xl p-6 sm:p-8 shadow-sm border border-gray-200">
-        <img src="Assets/machining-icon.png" alt="Precision Machining" class="h-12 w-12 mb-4">
-        <h3 class="text-xl sm:text-2xl font-bold text-blue-900 mb-4">Precision Machining</h3>
-        <ul class="space-y-2 text-gray-700 text-sm sm:text-base list-disc list-inside">
-          <li>CNC Machining</li>
-          <li>CNC Prototyping</li>
-          <li>Precision CNC Machining</li>
-          <li>Screw Machining</li>
-          <li>Multi-Axis Machining</li>
-        </ul>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-
-     <!-- Divider Line -->
-    <hr class="border-t border-gray-300 w-full mx-auto">
-
 
     <!-- Industry We serve-->
-    <section class="py-20 px-12 bg-gray-50">
+    <section class="py-20 px-12 bg-gray-100">
         <div class="w-full mx-auto text-center">
             <!-- Heading -->
             <h2 class="text-3xl md:text-4xl font-extrabold text-blue-900 mb-4">
@@ -680,10 +687,9 @@
                     </p>
                 </div>
 
-                    <!-- Aerospace -->
+                <!-- Aerospace -->
                 <div class="bg-white rounded-2xl shadow-lg hover:shadow-xl flex flex-col items-center transition">
-                    <img src="Assets/aerospace.webp" alt="Aerospace"
-                        class="w-full h-40 object-cover rounded-lg mb-4">
+                    <img src="Assets/aerospace.webp" alt="Aerospace" class="w-full h-40 object-cover rounded-lg mb-4">
                     <h3 class="font-semibold text-lg text-gray-800 mb-2">Aerospace</h3>
                     <p class="text-gray-600 text-sm mb-4">
                         Ultra-precision parts for commercial and military aircraft applications
@@ -692,21 +698,19 @@
 
                 <!-- Oil & Gas -->
                 <div class="bg-white rounded-2xl shadow-lg hover:shadow-xl flex flex-col items-center transition">
-                    <img src="Assets/gas&oil.jpg" alt="Oil & Gas"
-                        class="w-full h-40 object-cover rounded-lg mb-4">
+                    <img src="Assets/gas&oil.jpg" alt="Oil & Gas" class="w-full h-40 object-cover rounded-lg mb-4">
                     <h3 class="font-semibold text-lg text-gray-800 mb-2">Oil & Gas</h3>
                     <p class="text-gray-600 text-sm mb-4">
-                       Robust components designed for extreme operational conditions
+                        Robust components designed for extreme operational conditions
                     </p>
                 </div>
 
                 <!-- Automotive -->
                 <div class="bg-white rounded-2xl shadow-lg hover:shadow-xl flex flex-col items-center transition">
-                    <img src="Assets/automotive.jpeg" alt="Automotive"
-                        class="w-full h-40 object-cover rounded-lg mb-4">
+                    <img src="Assets/automotive.jpeg" alt="Automotive" class="w-full h-40 object-cover rounded-lg mb-4">
                     <h3 class="font-semibold text-lg text-gray-800 mb-2">Automotive</h3>
                     <p class="text-gray-600 text-sm mb-4">
-                       High-performance components for traditional and electric vehicles
+                        High-performance components for traditional and electric vehicles
                     </p>
                 </div>
 
@@ -716,17 +720,16 @@
                         class="w-full h-40 object-cover rounded-lg mb-4">
                     <h3 class="font-semibold text-lg text-gray-800 mb-2">Manufacturing</h3>
                     <p class="text-gray-600 text-sm mb-4">
-                       Custom solutions supporting diverse industrial applications
+                        Custom solutions supporting diverse industrial applications
                     </p>
                 </div>
 
                 <!-- Medical -->
                 <div class="bg-white rounded-2xl shadow-lg hover:shadow-xl flex flex-col items-center transition">
-                    <img src="Assets/" alt="Medical"
-                        class="w-full h-40 object-cover rounded-lg mb-4">
+                    <img src="Assets/" alt="Medical" class="w-full h-40 object-cover rounded-lg mb-4">
                     <h3 class="font-semibold text-lg text-gray-800 mb-2">Medical</h3>
                     <p class="text-gray-600 text-sm mb-4">
-                       Bio-compatible components meeting strict health regulations
+                        Bio-compatible components meeting strict health regulations
                     </p>
                 </div>
 
@@ -734,60 +737,57 @@
         </div>
     </section>
 
+    <!-- Solutions Section -->
+    <section class="py-8 bg-white">
+        <div class="max-w-6xl mx-auto px-6 text-center">
+            <!-- Heading -->
+            <h2 class="text-blue-900 text-3xl md:text-4xl font-extrabold mb-4">
+                Complete Manufacturing <br> Solutions
+            </h2>
+            <p class="text-gray-700 max-w-2xl mx-auto mb-8">
+                From concept to completion – experience the full spectrum of metal manufacturing with Australia's
+                shortest turnaround time.
+            </p>
 
-    <!-- Divider Line -->
-    <hr class="border-t border-gray-300 w-full mx-auto">
+            <!-- Button -->
+            <button onclick="openQuoteModal()"
+                class="inline-block bg-orange-500 text-white font-semibold px-6 py-3 rounded-full shadow-md hover:bg-orange-600 transition">
+                Get Your Quote Today
+            </button>
 
-   <!-- Solutions Section -->
-  <section class="py-16">
-    <div class="max-w-6xl mx-auto px-6 text-center">
-      <!-- Heading -->
-      <h2 class="text-blue-900 text-3xl md:text-4xl font-extrabold mb-4">
-        Complete Manufacturing <br> Solutions
-      </h2>
-      <p class="text-gray-700 max-w-2xl mx-auto mb-8">
-        From concept to completion – experience the full spectrum of metal manufacturing with Australia's shortest turnaround time.
-      </p>
+            <!-- Features -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-12 max-w-3xl mx-auto">
 
-      <!-- Button -->
-      <a href="#quote"
-        class="inline-block bg-orange-500 text-white font-semibold px-6 py-3 rounded-full shadow-md hover:bg-orange-600 transition">
-        Get Your Quote Today
-      </a>
+                <!-- Feature 1 -->
+                <div class="rounded-lg p-6 shadow-md flex flex-col items-center">
+                    <img src="Assets/australia-service.png" alt="Australia Wide Service" class="w-10 h-10 mb-3">
+                    <h3 class="text-blue-900 font-bold text-lg mb-2">Australia Wide Service</h3>
+                    <p class="text-gray-700 text-sm">
+                        Comprehensive coverage from Perth to Brisbane, Melbourne to Darwin
+                    </p>
+                </div>
 
-      <!-- Features -->
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-12 max-w-3xl mx-auto">
+                <!-- Feature 2 -->
+                <div class="rounded-lg p-6 shadow-md flex flex-col items-center">
+                    <img src="Assets/fast-time.png" alt="Shortest TAT" class="w-10 h-10 mb-3">
+                    <h3 class="text-blue-900 font-bold text-lg mb-2">Shortest TAT</h3>
+                    <p class="text-gray-700 text-sm">
+                        Industry-leading turnaround times without compromising quality
+                    </p>
+                </div>
 
-        <!-- Feature 1 -->
-        <div class="rounded-lg p-6 shadow-md flex flex-col items-center">
-          <img src="Assets/australia-service.png" alt="Australia Wide Service" class="w-10 h-10 mb-3">
-          <h3 class="text-blue-900 font-bold text-lg mb-2">Australia Wide Service</h3>
-          <p class="text-gray-700 text-sm">
-            Comprehensive coverage from Perth to Brisbane, Melbourne to Darwin
-          </p>
+                <!-- Feature 3 -->
+                <div class="rounded-lg p-6 shadow-md flex flex-col items-center md:col-span-2">
+                    <img src="Assets/one-stop.png" alt="One-Stop Solution" class="w-10 h-10 mb-3">
+                    <h3 class="text-blue-900 font-bold text-lg mb-2">One-Stop Solution</h3>
+                    <p class="text-gray-700 text-sm">
+                        Complete manufacturing services under one roof for maximum efficiency
+                    </p>
+                </div>
+
+            </div>
         </div>
-
-        <!-- Feature 2 -->
-        <div class="rounded-lg p-6 shadow-md flex flex-col items-center">
-          <img src="Assets/fast-time.png" alt="Shortest TAT" class="w-10 h-10 mb-3">
-          <h3 class="text-blue-900 font-bold text-lg mb-2">Shortest TAT</h3>
-          <p class="text-gray-700 text-sm">
-            Industry-leading turnaround times without compromising quality
-          </p>
-        </div>
-
-        <!-- Feature 3 -->
-        <div class="rounded-lg p-6 shadow-md flex flex-col items-center md:col-span-2">
-          <img src="Assets/one-stop.png" alt="One-Stop Solution" class="w-10 h-10 mb-3">
-          <h3 class="text-blue-900 font-bold text-lg mb-2">One-Stop Solution</h3>
-          <p class="text-gray-700 text-sm">
-            Complete manufacturing services under one roof for maximum efficiency
-          </p>
-        </div>
-
-      </div>
-    </div>
-  </section>
+    </section>
 
     <!-- Footer -->
     <footer class="bg-gray-800 text-gray-300 py-12 px-12 sm:px-8 lg:px-12">
@@ -961,23 +961,110 @@
         <div class="max-w-7xl mx-auto mt-10 pt-8 border-t border-gray-700">
             <div class="flex flex-col md:flex-row justify-center items-center">
                 <p class="text-sm text-gray-400 mb-4 md:mb-0">
-                    &copy; 2024 Fedele Autocore. All rights reserved.
+                    &copy; 2025 Fedele Autocore. &nbsp All rights reserved.
                 </p>
                 <div class="flex flex-wrap justify-center gap-6">
-                    <a href="#" class="text-sm text-blue-600 hover:text-white transition-colors duration-300"> Privacy
+                    <a href="#" class="text-sm text-white hover:text-blue-600 transition-colors duration-300">&nbsp
+                        Privacy
                         Policy</a>
-                    <a href="#" class="text-sm text-blue-600 hover:text-white transition-colors duration-300">Terms of
+                    <a href="#" class="text-sm text-white hover:text-blue-600 transition-colors duration-300">Terms of
                         Service</a>
                     <a href="#"
-                        class="text-sm text-blue-600 hover:text-white transition-colors duration-300">Sitemap</a>
+                        class="text-sm text-white hover:text-blue-600 transition-colors duration-300">Sitemap</a>
                     <a href="#"
-                        class="text-sm text-blue-600 hover:text-white transition-colors duration-300">Careers</a>
-                    <a href="#" class="text-sm text-blue-600 hover:text-white transition-colors duration-300">Supplier
+                        class="text-sm text-white hover:text-blue-600 transition-colors duration-300">Careers</a>
+                    <a href="#" class="text-sm text-white hover:text-blue-600 transition-colors duration-300">Supplier
                         Portal</a>
                 </div>
             </div>
         </div>
     </footer>
+
+    <!-- Quote Modal -->
+    <section>
+        <div id="quoteModal" class="modal fixed inset-0 flex items-center justify-center bg-black/50 z-50">
+            <div class="modal-content max-w-xl w-full bg-white shadow-lg rounded-lg max-h-screen overflow-y-auto">
+                <div class="p-3 sm:p-4">
+                    <!-- Header -->
+                    <div class="flex justify-between items-center mb-2">
+                        <h2 class="text-lg sm:text-xl font-bold text-gray-800">
+                            CNC Machining Services
+                        </h2>
+                        <button onclick="closeQuoteModal()" class="text-gray-500 hover:text-gray-700 text-lg">
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </div>
+
+                    <!-- Form -->
+                    <form id="quoteForm" class="space-y-2.5">
+                        <!-- Names -->
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-2.5">
+                            <div>
+                                <label class="block text-xs font-medium text-gray-700 mb-0.5">First Name *</label>
+                                <input type="text" name="firstName" required
+                                    class="w-full px-2 py-1.5 border border-gray-300 rounded focus:ring-2 focus:ring-orange-500 text-sm">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-medium text-gray-700 mb-0.5">Last Name *</label>
+                                <input type="text" name="lastName" required
+                                    class="w-full px-2 py-1.5 border border-gray-300 rounded focus:ring-2 focus:ring-orange-500 text-sm">
+                            </div>
+                        </div>
+
+                        <!-- Email -->
+                        <div>
+                            <label class="block text-xs font-medium text-gray-700 mb-0.5">Email *</label>
+                            <input type="email" name="email" required
+                                class="w-full px-2 py-1.5 border border-gray-300 rounded focus:ring-2 focus:ring-orange-500 text-sm">
+                        </div>
+
+                        <!-- Phone -->
+                        <div>
+                            <label class="block text-xs font-medium text-gray-700 mb-0.5">Phone</label>
+                            <input type="tel" name="phone"
+                                class="w-full px-2 py-1.5 border border-gray-300 rounded focus:ring-2 focus:ring-orange-500 text-sm">
+                        </div>
+
+                        <!-- Location -->
+                        <div>
+                            <label class="block text-xs font-medium text-gray-700 mb-0.5">Location *</label>
+                            <select name="location" required
+                                class="w-full px-2 py-1.5 border border-gray-300 rounded focus:ring-2 focus:ring-orange-500 text-sm">
+                                <option value="">Select your city</option>
+                                <option value="melbourne">Melbourne</option>
+                                <option value="sydney">Sydney</option>
+                                <option value="perth">Perth</option>
+                                <option value="adelaide">Adelaide</option>
+                                <option value="brisbane">Brisbane</option>
+                                <option value="darwin">Darwin</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <!-- Description -->
+                        <div>
+                            <label class="block text-xs font-medium text-gray-700 mb-0.5">Project Description</label>
+                            <textarea name="description" rows="1"
+                                class="w-full px-2 py-1.5 border border-gray-300 rounded focus:ring-2 focus:ring-orange-500 text-sm"
+                                placeholder="Briefly describe requirements"></textarea>
+                        </div>
+
+                        <!-- Google reCAPTCHA -->
+                        <div class="g-recaptcha scale-90 transform origin-left"
+                            data-sitekey="6Ld47tsrAAAAAL_S7gMxdbOK6WZcloCIDLdlekox"></div>
+
+                        <!-- Submit -->
+                        <div class="pt-2">
+                            <button type="submit"
+                                class="w-full bg-orange-600 text-white py-2 rounded font-semibold text-sm hover:bg-orange-700 transition">
+                                Submit Quote
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
     <script src="script.js"></script>
 </body>
 

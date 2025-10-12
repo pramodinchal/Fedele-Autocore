@@ -2,15 +2,18 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Precision Aerospace CNC Machining</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fedele Autocore - Precision CNC Machining Solutions Across Australia</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-</head>
 
-<body class="bg-gray-50 w-full">
+</head>
+<html class="w-full h-full">
+
+<body class="m-0 p-0 w-full overflow-x-hidden min-h-screen font-sans text-gray-800">
+
     <!-- Header -->
     <header class="fixed top-0 left-0 w-full bg-white shadow-md z-50">
         <div class="max-w-7xl mx-auto flex items-center justify-between h-16 md:h-20 px-12 sm:px-8 lg:px-12">
@@ -41,13 +44,13 @@
                                 <li><a href="turning.html"
                                         class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">CNC
                                         Turning</a></li>
-                                <li><a href="#"
+                                <li><a href="5-axis-machining.html"
                                         class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">5-Axis
                                         Machining</a></li>
                                 <li><a href="precision-machining.html"
                                         class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">Precision
                                         Machining</a></li>
-                                <li><a href="#"
+                                <li><a href="prototyping.html"
                                         class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">CNC
                                         Prototyping</a></li>
                                 <li><a href="custom-machining.html"
@@ -226,16 +229,31 @@
                         <div class="bg-white shadow-xl rounded-lg min-w-44 border">
                             <ul class="py-2">
                                 <li><a href="about-us.html"
-                                        class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">About
+                                        class="block px-3 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">About
                                         Us</a></li>
                                 <li><a href="#"
-                                        class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">Blog</a>
+                                        class="block px-3 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">Blog</a>
+                                </li>
+                                <li><a href="capabilities.html"
+                                        class="block px-3 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">Capabilities</a>
+                                </li>
+                                <li><a href="certifications.html"
+                                        class="block px-3 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">Certifications</a>
+                                </li>
+                                <li>
+                                    <a href="infrastructure.html"
+                                        class="block px-3 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">Infrastructure</a>
+                                </li>
+                                <li><a href="small-batch-production.html"
+                                        class="block px-3 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">Small
+                                        Batch Production</a>
+                                </li>
+                                <li><a href="large-scale-production.html"
+                                        class="block px-3 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">Large
+                                        Scale Production</a>
                                 </li>
                                 <li><a href="#"
-                                        class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">Capabilities</a>
-                                </li>
-                                <li><a href="#"
-                                        class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">Quality
+                                        class="block px-3 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">Quality
                                         Standards</a></li>
                             </ul>
                         </div>
@@ -280,7 +298,7 @@
             <!-- Action Buttons -->
             <div class="flex items-center space-x-2 sm:space-x-3">
                 <!-- Quote Button -->
-                <button onclick="window.location.href='contact.html'"
+                <button onclick="openQuoteModal()"
                     class="hidden md:inline-block bg-orange-600 text-white px-3 py-1.5 lg:px-4 lg:py-2 rounded-lg shadow text-xs lg:text-sm font-medium hover:bg-blue-900 transition-colors whitespace-nowrap">
                     Get Quote
                 </button>
@@ -345,7 +363,11 @@
                     <ul id="companyDropdown" class="hidden pl-4 space-y-2">
                         <li><a href="about-us.html">About Us</a></li>
                         <li><a href="#">Blog</a></li>
-                        <li><a href="#">Capabilities</a></li>
+                        <li><a href="capabilities.html">Capabilities</a></li>
+                        <li><a href="certifications.html">Certifications</a></li>
+                        <li><a href="infrastructure.html">Infrastructure</a></li>
+                        <li><a href="small-batch-production.html">Small Batch Production</a> </li>
+                        <li><a href="large-scale-production.html">Large Scale Production</a> </li>
                         <li><a href="#">Quality Standards</a></li>
                     </ul>
                 </li>
@@ -497,507 +519,558 @@
     </header>
 
 
-    <!-- Hero Section -->
-    <section class="relative min-h-screen flex items-center bg-cover bg-center bg-no-repeat w-full">
-        <!-- Background Image -->
-        <div class="absolute inset-0 z-0">
-            <img src="Assets/aerospace-banner.jpg" alt="aerospace banner"
-                class="w-full h-full object-cover brightness-140" />
 
-            <!-- Gradient Overlay -->
-            <div class="absolute inset-0 bg-gradient-to-r from-black via-black/70 to-transparent"></div>
-        </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative min-h-screen flex items-center bg-cover bg-center bg-no-repeat w-full"
+        style="background-image: url('Assets/feed-rate-and-cutting-speed.jpg');">
+
+        <!-- Overlay: darker on left, brighter on right -->
+        <div class="absolute inset-0 bg-gradient-to-r from-black/70 via-black/40 to-transparent"></div>
 
         <!-- Content -->
-        <!-- aerospace Components Block -->
         <div class="relative z-10 w-full px-12 md:px-12 flex flex-col md:flex-row items-center md:items-start">
 
             <!-- Left Content -->
             <div class="text-left w-full md:w-1/2 mt-24 md:mt-32">
-                <h1 class="text-4xl md:text-6xl font-bold mb-6 text-white">
-                    Precision<span class="text-orange-500"> Aerospace</span> CNC Machining
+                <h1 class="text-4xl md:text-5xl font-extrabold text-white leading-tight mb-6">
+                    Advanced <span class="text-orange-500"> CNC Machining Services</span>
                 </h1>
-                <p class="text-lg md:text-xl text-gray-200 max-w-xl leading-relaxed">
-                    Advanced manufacturing solutions serving Australia's aerospace industry with uncompromising
-                    precision and quality
+
+                <p class="text-lg md:text-xl text-white mb-8 max-w-xl leading-relaxed">
+                    Delivering exceptional precision manufacturing solutions across Australia's major industrial
+                    centers.
+                    From prototypes to high-volume production runs, we combine cutting-edge technology with decades of
+                    engineering expertise to create components that exceed industry standards
                 </p>
-                <div class="flex flex-col sm:flex-row gap-4 py-4">
+
+                <!-- CTA buttons -->
+                <div class="flex flex-col sm:flex-row gap-4">
                     <button onclick="openQuoteModal()"
                         class="px-6 py-3 bg-orange-500 text-white font-semibold rounded-lg shadow-md hover:bg-orange-600 transition transform hover:scale-105">
                         Get a Quote
                     </button>
                 </div>
+
+
+                <!-- Certification -->
+                <div class="mt-6 flex items-center text-gray-300 text-sm">
+                    <h2>CNC Machining Services</h2>
+                </div>
             </div>
 
-            <!-- Right side (empty space to reveal background image) -->
+            <!-- Right side (just empty space to reveal background image) -->
             <div class="hidden md:block md:w-1/2"></div>
         </div>
-
     </section>
 
-    <!--About Aerospace-->
-    <section class="py-16 px-12 bg-gray-100">
-        <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-start justify-between gap-12">
 
-            <!-- Left Content -->
-            <div class="md:w-1/2">
-                <h2 class="text-4xl font-bold text-blue-900 mb-6">
-                    <span class="border-l-4 border-orange-500 pl-4">About Aerospace Industry</span>
-                </h2>
-                <p class="text-gray-700 mb-6">
-                    Fedele Autocore brings uncompromising precision and quality to aerospace component manufacturing.
-                    We understand that aerospace applications demand the highest levels of accuracy, traceability, and
-                    material integrity. Our capabilities include manufacturing structural components, landing gear
-                    parts,
-                    engine accessories, and flight control system elements that meet stringent aerospace specifications.
-                    Every component undergoes rigorous inspection protocols to ensure absolute conformance to design
-                    requirements and safety standards.
-                </p>
-                <p class="text-gray-700 mb-8">
-                    Working with aerospace-grade materials including titanium alloys, aluminum 7075, stainless steel
-                    series, and Inconel, our state-of-the-art CNC machining centers deliver components that perform
-                    reliably under extreme temperatures, vibration, and stress conditions. We maintain full material
-                    traceability and documentation, support AS9100 quality management systems, and implement advanced
-                    inspection techniques including CMM verification to ensure every part meets the exacting standards
-                    required for aviation and space applications.
-                </p>
-
-                <!-- Stats -->
-                <div class="grid grid-cols-2 gap-4">
-                    <div class="bg-gray-100 p-2 rounded-lg text-center">
-                        <h3 class="text-2xl font-bold text-orange-500">25+</h3>
-                        <p class="text-sm text-blue-900 uppercase mt-1">Years Experience</p>
-                    </div>
-                    <div class="bg-gray-100 p-2 rounded-lg text-center">
-                        <h3 class="text-2xl font-bold text-orange-500">AS9100</h3>
-                        <p class="text-sm text-blue-900 uppercase mt-1">Quality Standards</p>
-                    </div>
-                    <div class="bg-gray-100 p-2 rounded-lg text-center">
-                        <h3 class="text-2xl font-bold text-orange-500">100%</h3>
-                        <p class="text-sm text-blue-900 uppercase mt-1">Material Traceability</p>
-                    </div>
-                    <div class="bg-gray-100 p-2 rounded-lg text-center">
-                        <h3 class="text-2xl font-bold text-orange-500">±0.002mm</h3>
-                        <p class="text-sm text-blue-900 uppercase mt-1">Precision Tolerance</p>
-                    </div>
-                </div>
+    <!-- Cities Section -->
+    <section id="locations" class="py-8 px-12 bg-white">
+        <div class="w-full mx-auto">
+            <div class="text-center mb-10">
+                <h2 class="text-blue-900 text-3xl font-bold">Serving Major Australian Cities</h2>
             </div>
-
-            <!-- Right Image -->
-            <div class="md:w-1/2 flex justify-center items-start">
-                <img src="Assets/aerospace-components.webp" alt="Aerospace Industry Components"
-                    class="rounded-2xl shadow-2xl w-[550px] h-[370px] object-cover">
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4 text-center">
+                <button class="py-3 bg-gray-100 rounded-lg shadow hover:bg-blue-100 transition">Melbourne</button>
+                <button class="py-3 bg-gray-100 rounded-lg shadow hover:bg-blue-100 transition">Sydney</button>
+                <button class="py-3 bg-gray-100 rounded-lg shadow hover:bg-blue-100 transition">Perth</button>
+                <button class="py-3 bg-gray-100 rounded-lg shadow hover:bg-blue-100 transition">Adelaide</button>
+                <button class="py-3 bg-gray-100 rounded-lg shadow hover:bg-blue-100 transition">Canberra</button>
             </div>
         </div>
     </section>
 
 
-
-    <!--   Precision CNC Components for Aerospace-->
-    <section class="py-16 px-12 bg-white">
-        <div class="w-full mx-auto">
-            <h2 class="text-3xl font-bold text-blue-900 text-center mb-4">
-                Precision CNC Components for Aerospace
-            </h2>
-            <div class="w-24 h-1 bg-orange-500 mx-auto mb-2"></div>
-            <p class="text-gray-600 text-center max-w-3xl mx-auto mb-12">
-                Our extensive range of precision-engineered components powers Australia's aerospace industry
-            </p>
-
-            <!-- Grid -->
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-
-                <!-- Engine Components -->
-                <div
-                    class="bg-white rounded-lg border border-gray-200 overflow-hidden hover:shadow-xl transition-shadow">
-                    <img src="Assets/engine-components.jpg" alt="Engine Components" class="w-full h-40 object-cover">
-                    <div class="p-6 border-l-4 border-blue-900">
-                        <h3 class="text-xl font-bold text-blue-900 mb-4">Engine Components</h3>
-                        <p class="text-gray-700 text-left">
-                            Turbine blades, compressor discs, fuel injectors, and combustion chamber parts machined to
-                            exact specifications with superior surface finishes and dimensional accuracy.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- Landing Gear Systems -->
-                <div
-                    class="bg-white rounded-lg border border-gray-200 overflow-hidden hover:shadow-xl transition-shadow">
-                    <img src="Assets/landing-gear.jpg" alt="Landing Gear Systems" class="w-full h-40 object-cover">
-                    <div class="p-6 border-l-4 border-blue-900">
-                        <h3 class="text-xl font-bold text-blue-900 mb-4">Landing Gear Systems</h3>
-                        <p class="text-gray-700 text-left">
-                            Hydraulic cylinders, actuator housings, shock strut components, and wheel assemblies
-                            manufactured with exceptional strength and fatigue resistance.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- Structural Airframe Parts -->
-                <div
-                    class="bg-white rounded-lg border border-gray-200 overflow-hidden hover:shadow-xl transition-shadow">
-                    <img src="Assets/airframe-parts.jpg" alt="Structural Airframe Parts"
-                        class="w-full h-40 object-cover">
-                    <div class="p-6 border-l-4 border-blue-900">
-                        <h3 class="text-xl font-bold text-blue-900 mb-4">Structural Airframe Parts</h3>
-                        <p class="text-gray-700 text-left">
-                            Wing ribs, fuselage frames, bulkheads, and joint fittings crafted from lightweight alloys
-                            while maintaining structural integrity and aerospace standards.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- Flight Control Components -->
-                <div
-                    class="bg-white rounded-lg border border-gray-200 overflow-hidden hover:shadow-xl transition-shadow">
-                    <img src="Assets/flight-control.jpg" alt="Flight Control Components"
-                        class="w-full h-40 object-cover">
-                    <div class="p-6 border-l-4 border-blue-900">
-                        <h3 class="text-xl font-bold text-blue-900 mb-4">Flight Control Components</h3>
-                        <p class="text-gray-700 text-left">
-                            Actuator bodies, servo housings, control surface fittings, and precision linkages ensuring
-                            reliable aircraft control system performance.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- Avionics Housings -->
-                <div
-                    class="bg-white rounded-lg border border-gray-200 overflow-hidden hover:shadow-xl transition-shadow">
-                    <img src="Assets/avionics-housings.jpg" alt="Avionics Housings" class="w-full h-40 object-cover">
-                    <div class="p-6 border-l-4 border-blue-900">
-                        <h3 class="text-xl font-bold text-blue-900 mb-4">Avionics Housings</h3>
-                        <p class="text-gray-700 text-left">
-                            EMI/RFI shielded enclosures, heat sinks, and mounting brackets protecting sensitive
-                            electronic systems in harsh aerospace environments.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- Propeller & Rotor Systems -->
-                <div
-                    class="bg-white rounded-lg border border-gray-200 overflow-hidden hover:shadow-xl transition-shadow">
-                    <img src="Assets/propeller-rotor.jpg" alt="Propeller & Rotor Systems"
-                        class="w-full h-40 object-cover">
-                    <div class="p-6 border-l-4 border-blue-900">
-                        <h3 class="text-xl font-bold text-blue-900 mb-4">Propeller & Rotor Systems</h3>
-                        <p class="text-gray-700 text-left">
-                            Hub assemblies, blade attachments, pitch control mechanisms, and transmission components for
-                            both fixed-wing and rotorcraft applications.
-                        </p>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-
-    <!-- Premium Materials for Aerospace CNC Components -->
-    <section class="py-16 px-12 bg-gray-100">
-        <div class="w-full mx-auto">
-            <!-- Section Title -->
-            <div class="text-center mb-16">
-                <h2 class="text-4xl md:text-5xl font-bold text-blue-900 mb-4">Premium Aerospace Materials</h2>
-                <div class="w-24 h-1 bg-orange-500 mx-auto mb-2"></div>
-                <p class="text-gray-600 max-w-4xl mx-auto">
-                    Our expertise spans the complete range of aerospace-grade materials, each selected for specific
-                    performance characteristics and application requirements.
-                </p>
-            </div>
-
-            <!-- Cards Grid -->
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-
-                <!-- Titanium Alloys -->
-                <div
-                    class="bg-white rounded-lg border border-gray-200 overflow-hidden hover:shadow-xl transition-shadow">
-                    <img src="Assets/titanium-alloys.jpg" alt="Titanium Alloys" class="w-full h-48 object-cover">
-                    <div class="p-6 border-l-4 border-blue-500 h-full">
-                        <h3 class="text-xl font-bold text-blue-900 mb-4">Titanium Alloys</h3>
-                        <p class="text-gray-600">
-                            Ti-6Al-4V, Ti-6Al-2Sn-4Zr-2Mo for high-strength, lightweight applications with excellent
-                            corrosion resistance
-                        </p>
-                    </div>
-                </div>
-
-                <!-- Aluminum Alloys -->
-                <div
-                    class="bg-white rounded-lg border border-gray-200 overflow-hidden hover:shadow-xl transition-shadow">
-                    <img src="Assets/aluminum-alloys.jpg" alt="Aluminum Alloys" class="w-full h-48 object-cover">
-                    <div class="p-6 border-l-4 border-blue-500 h-full">
-                        <h3 class="text-xl font-bold text-blue-900 mb-4">Aluminum Alloys</h3>
-                        <p class="text-gray-600">
-                            7075-T6, 2025-T3, 6061-T6 providing optimal strength-to-weight ratios for structural
-                            components
-                        </p>
-                    </div>
-                </div>
-
-                <!-- Nickel-Based Superalloys -->
-                <div
-                    class="bg-white rounded-lg border border-gray-200 overflow-hidden hover:shadow-xl transition-shadow">
-                    <img src="Assets/superalloys.jpg" alt="Nickel-Based Superalloys" class="w-full h-48 object-cover">
-                    <div class="p-6 border-l-4 border-blue-500 h-full">
-                        <h3 class="text-xl font-bold text-blue-900 mb-4">Nickel-Based Superalloys</h3>
-                        <p class="text-gray-600">
-                            Inconel 718, Waspaloy, Hastelloy X for extreme temperature and pressure applications in
-                            engines
-                        </p>
-                    </div>
-                </div>
-
-                <!-- Stainless Steel Grades -->
-                <div
-                    class="bg-white rounded-lg border border-gray-200 overflow-hidden hover:shadow-xl transition-shadow">
-                    <img src="Assets/stainless-steel.jpg" alt="Stainless Steel Grades" class="w-full h-48 object-cover">
-                    <div class="p-6 border-l-4 border-blue-500 h-full">
-                        <h3 class="text-xl font-bold text-blue-900 mb-4">Stainless Steel Grades</h3>
-                        <p class="text-gray-600">
-                            17-4 PH, 15-5 PH, 316L for components requiring superior corrosion resistance and durability
-                        </p>
-                    </div>
-                </div>
-
-                <!-- Tool & Alloy Steels -->
-                <div
-                    class="bg-white rounded-lg border border-gray-200 overflow-hidden hover:shadow-xl transition-shadow">
-                    <img src="Assets/tool-steels.jpg" alt="Tool & Alloy Steels" class="w-full h-48 object-cover">
-                    <div class="p-6 border-l-4 border-blue-500 h-full">
-                        <h3 class="text-xl font-bold text-blue-900 mb-4">Tool & Alloy Steels</h3>
-                        <p class="text-gray-600">
-                            4340, 300M, Maraging Steel for high-stress applications requiring exceptional toughness
-                        </p>
-                    </div>
-                </div>
-
-                <!-- Exotic Materials -->
-                <div
-                    class="bg-white rounded-lg border border-gray-200 overflow-hidden hover:shadow-xl transition-shadow">
-                    <img src="Assets/exotic-materials.jpg" alt="Exotic Materials" class="w-full h-48 object-cover">
-                    <div class="p-6 border-l-4 border-blue-500 h-full">
-                        <h3 class="text-xl font-bold text-blue-900 mb-4">Exotic Materials</h3>
-                        <p class="text-gray-600">
-                            Cobalt-Chrome alloys, Beryllium Copper, and specialized composites for unique aerospace
-                            applications
-                        </p>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-
-    <!-- Quality Assurance & Standards Section -->
-    <section class="py-12 sm:py-16 px-12 bg-white">
-        <div class="w-full mx-auto">
-            <div class="text-center mb-4 sm:mb-8">
-                <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-blue-900 mb-4 sm:mb-8">Quality
-                    Assurance & Standards</h2>
+    <!-- Component Section -->
+    <section class="py-8 px-12 bg-gray-100">
+        <div class="container mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-blue-900 mb-4">Precision CNC Components We Manufacture</h2>
                 <div class="w-24 h-1 bg-orange-500 mx-auto"></div>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
-                <!-- Aerospace Certifications Card -->
-                <div class="bg-gray-50 rounded-2xl p-6 sm:p-8 shadow-sm border border-gray-200">
-                    <h3 class="text-xl sm:text-2xl font-bold text-blue-900 mb-6 text-center">Aerospace Certifications
-                    </h3>
-                    <div class="space-y-4">
-                        <div class="flex justify-between items-center border-b border-gray-200 pb-2">
-                            <span class="text-gray-700 text-sm sm:text-base">Quality Management</span>
-                            <span class="text-orange-500 font-semibold text-sm sm:text-base">AS9100</span>
-                        </div>
-                        <div class="flex justify-between items-center border-b border-gray-200 pb-2">
-                            <span class="text-gray-700 text-sm sm:text-base">NADCAP</span>
-                            <span class="text-orange-500 font-semibold text-sm sm:text-base">Accreditation</span>
-                        </div>
-                        <div class="flex justify-between items-center border-b border-gray-200 pb-2">
-                            <span class="text-gray-700 text-sm sm:text-base">ISO Standard</span>
-                            <span class="text-orange-500 font-semibold text-sm sm:text-base">9001:2015</span>
-                        </div>
-                        <div class="flex justify-between items-center border-b border-gray-200 pb-2">
-                            <span class="text-gray-700 text-sm sm:text-base">CASA (Australia)</span>
-                            <span class="text-orange-500 font-semibold text-sm sm:text-base">Compliance</span>
-                        </div>
-                        <div class="flex justify-between items-center">
-                            <span class="text-gray-700 text-sm sm:text-base">FAA/EASA</span>
-                            <span class="text-orange-500 font-semibold text-sm sm:text-base">Approved</span>
-                        </div>
-                    </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Aerospace Components -->
+                <div class="bg-white rounded-lg p-6 border-l-4 border-blue-900 shadow-lg">
+                    <h3 class="text-xl font-bold text-blue-900 mb-4">Aerospace Components</h3>
+                    <ul class="space-y-2 text-gray-700">
+                        <li class="flex items-start"><i class="fas fa-check text-green-600 mt-1 mr-2"></i> Aircraft
+                            structural brackets</li>
+                        <li class="flex items-start"><i class="fas fa-check text-green-600 mt-1 mr-2"></i> Turbine
+                            housing components</li>
+                        <li class="flex items-start"><i class="fas fa-check text-green-600 mt-1 mr-2"></i> Landing gear
+                            parts</li>
+                        <li class="flex items-start"><i class="fas fa-check text-green-600 mt-1 mr-2"></i> Precision
+                            valve bodies</li>
+                        <li class="flex items-start"><i class="fas fa-check text-green-600 mt-1 mr-2"></i> Engine mount
+                            assemblies</li>
+                        <li class="flex items-start"><i class="fas fa-check text-green-600 mt-1 mr-2"></i> Flight
+                            control mechanisms</li>
+                    </ul>
                 </div>
 
-                <!-- Precision Capabilities Card -->
-                <div class="bg-gray-50 rounded-2xl p-6 sm:p-8 shadow-sm border-2 border-gray-200">
-                    <h3 class="text-xl sm:text-2xl font-bold text-blue-900 mb-6 text-center">Precision Capabilities</h3>
-                    <div class="space-y-4">
-                        <div class="flex justify-between items-center border-b border-gray-200 pb-2">
-                            <span class="text-gray-700 text-sm sm:text-base">Tolerances</span>
-                            <span class="text-orange-500 font-semibold text-sm sm:text-base">±0.0001"</span>
-                        </div>
-                        <div class="flex justify-between items-center border-b border-gray-200 pb-2">
-                            <span class="text-gray-700 text-sm sm:text-base">Surface Finish</span>
-                            <span class="text-orange-500 font-semibold text-sm sm:text-base">4 Ra µin</span>
-                        </div>
-                        <div class="flex justify-between items-center border-b border-gray-200 pb-2">
-                            <span class="text-gray-700 text-sm sm:text-base">Machining</span>
-                            <span class="text-orange-500 font-semibold text-sm sm:text-base">5-axis</span>
-                        </div>
-                        <div class="flex justify-between items-center border-b border-gray-200 pb-2">
-                            <span class="text-gray-700 text-sm sm:text-base">Inspection</span>
-                            <span class="text-orange-500 font-semibold text-sm sm:text-base">CMM & Reports</span>
-                        </div>
-                        <div class="flex justify-between items-center">
-                            <span class="text-gray-700 text-sm sm:text-base">First Article</span>
-                            <span class="text-orange-500 font-semibold text-sm sm:text-base">FAI</span>
-                        </div>
-                    </div>
+                <!-- Automotive Parts -->
+                <div class="bg-white rounded-lg p-6 border-l-4 border-blue-900 shadow-lg">
+                    <h3 class="text-xl font-bold text-blue-900 mb-4">Automotive Parts</h3>
+                    <ul class="space-y-2 text-gray-700">
+                        <li class="flex items-start"><i class="fas fa-check text-green-600 mt-1 mr-2"></i> Engine blocks
+                            and heads</li>
+                        <li class="flex items-start"><i class="fas fa-check text-green-600 mt-1 mr-2"></i> Transmission
+                            housings</li>
+                        <li class="flex items-start"><i class="fas fa-check text-green-600 mt-1 mr-2"></i> Brake system
+                            components</li>
+                        <li class="flex items-start"><i class="fas fa-check text-green-600 mt-1 mr-2"></i> Suspension
+                            parts</li>
+                        <li class="flex items-start"><i class="fas fa-check text-green-600 mt-1 mr-2"></i> Fuel
+                            injection components</li>
+                        <li class="flex items-start"><i class="fas fa-check text-green-600 mt-1 mr-2"></i> Custom racing
+                            parts</li>
+                    </ul>
                 </div>
 
-                <!-- Quality Control Card -->
-                <div class="bg-gray-50 rounded-2xl p-6 sm:p-8 shadow-sm border border-gray-200">
-                    <h3 class="text-xl sm:text-2xl font-bold text-blue-900 mb-6 text-center">Quality Control</h3>
-                    <div class="space-y-4">
-                        <div class="flex justify-between items-center border-b border-gray-200 pb-2">
-                            <span class="text-gray-700 text-sm sm:text-base">Inspection</span>
-                            <span class="text-orange-500 font-semibold text-sm sm:text-base">100%</span>
-                        </div>
-                        <div class="flex justify-between items-center border-b border-gray-200 pb-2">
-                            <span class="text-gray-700 text-sm sm:text-base">Material Traceability</span>
-                            <span class="text-orange-500 font-semibold text-sm sm:text-base">Certified</span>
-                        </div>
-                        <div class="flex justify-between items-center border-b border-gray-200 pb-2">
-                            <span class="text-gray-700 text-sm sm:text-base">Testing</span>
-                            <span class="text-orange-500 font-semibold text-sm sm:text-base">NDT</span>
-                        </div>
-                        <div class="flex justify-between items-center border-b border-gray-200 pb-2">
-                            <span class="text-gray-700 text-sm sm:text-base">Process Control</span>
-                            <span class="text-orange-500 font-semibold text-sm sm:text-base">Statistical</span>
-                        </div>
-                        <div class="flex justify-between items-center">
-                            <span class="text-gray-700 text-sm sm:text-base">Certificate</span>
-                            <span class="text-orange-500 font-semibold text-sm sm:text-base">Conformance</span>
-                        </div>
-                    </div>
+                <!-- Medical Device Components -->
+                <div class="bg-white rounded-lg p-6 border-l-4 border-blue-900 shadow-lg">
+                    <h3 class="text-xl font-bold text-blue-900 mb-4">Medical Device Components</h3>
+                    <ul class="space-y-2 text-gray-700">
+                        <li class="flex items-start"><i class="fas fa-check text-green-600 mt-1 mr-2"></i> Surgical
+                            instrument parts</li>
+                        <li class="flex items-start"><i class="fas fa-check text-green-600 mt-1 mr-2"></i> Implant
+                            components</li>
+                        <li class="flex items-start"><i class="fas fa-check text-green-600 mt-1 mr-2"></i> Diagnostic
+                            equipment housings</li>
+                        <li class="flex items-start"><i class="fas fa-check text-green-600 mt-1 mr-2"></i> Prosthetic
+                            components</li>
+                        <li class="flex items-start"><i class="fas fa-check text-green-600 mt-1 mr-2"></i> Laboratory
+                            equipment parts</li>
+                        <li class="flex items-start"><i class="fas fa-check text-green-600 mt-1 mr-2"></i> Precision
+                            measurement tools</li>
+                    </ul>
+                </div>
+
+                <!-- Industrial Equipment -->
+                <div class="bg-white rounded-lg p-6 border-l-4 border-blue-900 shadow-lg">
+                    <h3 class="text-xl font-bold text-blue-900 mb-4">Industrial Equipment</h3>
+                    <ul class="space-y-2 text-gray-700">
+                        <li class="flex items-start"><i class="fas fa-check text-green-600 mt-1 mr-2"></i> Hydraulic
+                            cylinder components</li>
+                        <li class="flex items-start"><i class="fas fa-check text-green-600 mt-1 mr-2"></i> Pump housings
+                            and impellers</li>
+                        <li class="flex items-start"><i class="fas fa-check text-green-600 mt-1 mr-2"></i> Gear boxes
+                            and reducers</li>
+                        <li class="flex items-start"><i class="fas fa-check text-green-600 mt-1 mr-2"></i> Valve bodies
+                            and stems</li>
+                        <li class="flex items-start"><i class="fas fa-check text-green-600 mt-1 mr-2"></i> Bearing
+                            housings</li>
+                        <li class="flex items-start"><i class="fas fa-check text-green-600 mt-1 mr-2"></i> Custom
+                            tooling and fixtures</li>
+                    </ul>
+                </div>
+
+                <!-- Electronics & Telecommunications -->
+                <div class="bg-white rounded-lg p-6 border-l-4 border-blue-900 shadow-lg">
+                    <h3 class="text-xl font-bold text-blue-900 mb-4">Electronics & Telecommunications</h3>
+                    <ul class="space-y-2 text-gray-700">
+                        <li class="flex items-start"><i class="fas fa-check text-green-600 mt-1 mr-2"></i> Heat sinks
+                            and thermal management</li>
+                        <li class="flex items-start"><i class="fas fa-check text-green-600 mt-1 mr-2"></i> Antenna
+                            mounting brackets</li>
+                        <li class="flex items-start"><i class="fas fa-check text-green-600 mt-1 mr-2"></i> Equipment
+                            enclosures</li>
+                        <li class="flex items-start"><i class="fas fa-check text-green-600 mt-1 mr-2"></i> Connector
+                            housings</li>
+                        <li class="flex items-start"><i class="fas fa-check text-green-600 mt-1 mr-2"></i> Precision
+                            waveguides</li>
+                        <li class="flex items-start"><i class="fas fa-check text-green-600 mt-1 mr-2"></i> RF shielding
+                            components</li>
+                    </ul>
+                </div>
+
+                <!-- Oil & Gas Components -->
+                <div class="bg-white rounded-lg p-6 border-l-4 border-blue-900 shadow-lg">
+                    <h3 class="text-xl font-bold text-blue-900 mb-4">Oil & Gas Components</h3>
+                    <ul class="space-y-2 text-gray-700">
+                        <li class="flex items-start"><i class="fas fa-check text-green-600 mt-1 mr-2"></i> Wellhead
+                            equipment parts</li>
+                        <li class="flex items-start"><i class="fas fa-check text-green-600 mt-1 mr-2"></i> Pipeline
+                            fittings</li>
+                        <li class="flex items-start"><i class="fas fa-check text-green-600 mt-1 mr-2"></i> Pressure
+                            vessel components</li>
+                        <li class="flex items-start"><i class="fas fa-check text-green-600 mt-1 mr-2"></i> Drilling
+                            equipment parts</li>
+                        <li class="flex items-start"><i class="fas fa-check text-green-600 mt-1 mr-2"></i> Refinery
+                            valve components</li>
+                        <li class="flex items-start"><i class="fas fa-check text-green-600 mt-1 mr-2"></i>
+                            Corrosion-resistant fittings</li>
+                    </ul>
                 </div>
             </div>
         </div>
     </section>
 
-    <!---- FAQ Section -->
-    <section class="py-16 px-6 bg-gray-100">
-        <div class="max-w-4xl mx-auto">
-            <div class="text-center mb-4">
-                <h2 class="text-4xl md:text-5xl font-bold text-blue-900"> FREQUENTLY ASKED QUESTIONS </h2>
+    <!-- Precision Tolerances We Achieve -->
+    <section class="py-8 px-12 bg-white">
+        <div class="container mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-blue-900 mb-4">Precision Tolerances We Achieve</h2>
+                <div class="w-24 h-1 bg-orange-500 mx-auto mb-6"></div>
+                <p class="text-gray-600">Our state-of-the-art CNC equipment and quality control systems ensure
+                    consistent, repeatable precision across all manufacturing processes.</p>
             </div>
-            <div class="w-24 h-1 bg-orange-500 mx-auto mb-6"></div>
-            <div class="space-y-4">
-                <!-- FAQ Item -->
-                <div class="faq-item rounded-lg border border-blue-900 overflow-hidden">
-                    <button type="button"
-                        class="faq-question w-full text-left p-6 flex justify-between items-center text-blue-900 font-medium bg-gray-100 hover:bg-gray-200 transition-colors">
-                        What makes aerospace CNC machining different from standard machining?
-                        <span class="faq-icon text-2xl transition-transform duration-300">+</span>
-                    </button>
-                    <div class="faq-answer max-h-0 overflow-hidden transition-all duration-300 bg-white px-6">
-                        <p class="text-gray-800 pb-5">
-                            Aerospace CNC machining requires extraordinary precision, specialized materials, and strict
-                            quality control. Components must withstand extreme temperatures, pressures, and vibrations
-                            while maintaining critical tolerances. Our processes include rigorous material traceability,
-                            advanced inspection techniques, and compliance with aerospace-specific standards like
-                            AS9100.</p>
+
+            <div class="overflow-x-auto">
+                <table class="w-full bg-white shadow-lg rounded-lg overflow-hidden">
+                    <thead class="bg-blue-900 text-white">
+                        <tr>
+                            <th class="py-4 px-6 text-left">Dimension Category</th>
+                            <th class="py-4 px-6 text-left">Standard Tolerance</th>
+                            <th class="py-4 px-6 text-left">Precision Tolerance</th>
+                            <th class="py-4 px-6 text-left">Ultra-Precision Tolerance</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-gray-200">
+                        <tr class="hover:bg-gray-50">
+                            <td class="py-4 px-6">Linear Dimensions</td>
+                            <td class="py-4 px-6">±0.05mm (±0.002")</td>
+                            <td class="py-4 px-6">±0.025mm (±0.001")</td>
+                            <td class="py-4 px-6">±0.0127mm (±0.0005")</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="py-4 px-6">Hole Diameters</td>
+                            <td class="py-4 px-6">±0.025mm (±0.001")</td>
+                            <td class="py-4 px-6">±0.0127mm (±0.0005")</td>
+                            <td class="py-4 px-6">±0.0063mm (±0.00025")</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="py-4 px-6">Angular Tolerances</td>
+                            <td class="py-4 px-6">±0.5°</td>
+                            <td class="py-4 px-6">±0.25°</td>
+                            <td class="py-4 px-6">±0.1°</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="py-4 px-6">Surface Flatness</td>
+                            <td class="py-4 px-6">0.05mm (0.002")</td>
+                            <td class="py-4 px-6">0.025mm (0.001")</td>
+                            <td class="py-4 px-6">0.0127mm (0.0005")</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="py-4 px-6">Roundness/Cylindricity</td>
+                            <td class="py-4 px-6">0.025mm (0.001")</td>
+                            <td class="py-4 px-6">0.0127mm (0.0005")</td>
+                            <td class="py-4 px-6">0.0063mm (0.00025")</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="py-4 px-6">Surface Finish (Ra)</td>
+                            <td class="py-4 px-6">1.6µm (63µin)</td>
+                            <td class="py-4 px-6">0.8µm (32µin)</td>
+                            <td class="py-4 px-6">0.2µm (8µin)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Supported CNC Materials Section -->
+    <section class="py-8 px-12 bg-gray-100">
+        <div class="w-full mx-auto text-center">
+            <h2 class="text-3xl md:text-4xl font-extrabold text-blue-900 mb-4">
+                Supported CNC Materials
+            </h2>
+            <p class="text-gray-500 text-lg mb-12">
+                Comprehensive range of materials for diverse Australian industrial applications
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+                <div
+                    class="bg-white rounded-lg border border-gray-200 overflow-hidden hover:shadow-xl transition-shadow">
+                    <img src="Assets/Aluminium.jpg" alt="Aluminum Alloys" class="w-full h-48 object-cover">
+                    <div class="p-6 border-l-4 border-blue-500 h-full">
+                        <h3 class="text-xl font-bold text-blue-900 mb-4">Aluminum Alloys</h3>
+                        <p class="text-gray-600">
+                            Grades like **6061-T6, 7075-T6, 2024-T3**, offering excellent strength, corrosion
+                            resistance, and machinability.
+                        </p>
                     </div>
                 </div>
-
-                <!-- FAQ 2 -->
-                <div class="faq-item rounded-lg border border-blue-900 overflow-hidden">
-                    <button
-                        class="faq-question w-full text-left p-6 flex justify-between items-center text-blue-900 font-medium bg-gray-100 hover:bg-gray-200 transition-colors">
-                        How do you ensure quality for Australian aerospace projects?
-                        <span class="faq-icon text-2xl transition-transform duration-300">+</span>
-                    </button>
-                    <div class="faq-answer max-h-0 overflow-hidden transition-all duration-300 bg-white px-6">
-                        <p class="text-gray-800 pb-5">
-                            We maintain AS9100 certification and follow CASA regulations for Australian aerospace
-                            compliance. Every component undergoes comprehensive inspection using coordinate measuring
-                            machines (CMM), with full documentation and certificates of conformance. Our quality system
-                            ensures traceability from raw material to final delivery.
+                <div
+                    class="bg-white rounded-lg border border-gray-200 overflow-hidden hover:shadow-xl transition-shadow">
+                    <img src="Assets/steel.jpeg" alt="Stainless Steel" class="w-full h-48 object-cover">
+                    <div class="p-6 border-l-4 border-blue-500 h-full">
+                        <h3 class="text-xl font-bold text-blue-900 mb-4">Stainless Steel</h3>
+                        <p class="text-gray-600">
+                            Grades like **304, 316L, 17-4 PH**, providing superior corrosion, heat resistance, and
+                            weldability.
                         </p>
                     </div>
                 </div>
 
-                <!-- FAQ 3 -->
-                <div class="faq-item rounded-lg border border-blue-900 overflow-hidden">
-                    <button
-                        class="faq-question w-full text-left p-6 flex justify-between items-center text-blue-900 font-medium bg-gray-100 hover:bg-gray-200 transition-colors">
-                        What tolerances can you achieve for aerospace components?
-                        <span class="faq-icon text-2xl transition-transform duration-300">+</span>
-                    </button>
-                    <div class="faq-answer max-h-0 overflow-hidden transition-all duration-300 bg-white px-6">
-                        <p class="text-gray-800 pb-5">
-                            Our precision capabilities extend to tolerances as tight as ±0.0001" (±0.0025mm) with
-                            surface finishes down to 4 Ra microinches. We utilize advanced 5-axis CNC machines,
-                            precision tooling, and climate-controlled environments to maintain these exacting standards
-                            throughout production. </p>
+                <div
+                    class="bg-white rounded-lg border border-gray-200 overflow-hidden hover:shadow-xl transition-shadow">
+                    <img src="Assets/carbon-steel.jpeg" alt="Carbon Steel" class="w-full h-48 object-cover">
+                    <div class="p-6 border-l-4 border-blue-500 h-full">
+                        <h3 class="text-xl font-bold text-blue-900 mb-4">Carbon Steel</h3>
+                        <p class="text-gray-600">
+                            Includes **1018, 1045, 4140, 4340**, known for high strength and toughness for structural
+                            and machine components.
+                        </p>
                     </div>
                 </div>
 
-                <!-- FAQ 4 -->
-                <div class="faq-item rounded-lg border border-blue-900 overflow-hidden">
-                    <button
-                        class="faq-question w-full text-left p-6 flex justify-between items-center text-blue-900 font-medium bg-gray-100 hover:bg-gray-200 transition-colors">
-                        Can you handle both prototype and production quantities?
-                        <span class="faq-icon text-2xl transition-transform duration-300">+</span>
-                    </button>
-                    <div class="faq-answer max-h-0 overflow-hidden transition-all duration-300 bg-white px-6">
-                        <p class="text-gray-800 pb-5">
-                            Absolutely. We support Australian aerospace companies from initial prototyping through
-                            full-scale production. Our flexible manufacturing approach accommodates single prototypes
-                            for R&D as well as large production runs, always maintaining the same rigorous quality
-                            standards regardless of quantity. </p>
+                <div
+                    class="bg-white rounded-lg border border-gray-200 overflow-hidden hover:shadow-xl transition-shadow">
+                    <img src="Assets/tool-steel.jpg" alt="Tool Steels" class="w-full h-48 object-cover">
+                    <div class="p-6 border-l-4 border-blue-500 h-full">
+                        <h3 class="text-xl font-bold text-blue-900 mb-4">Tool Steels</h3>
+                        <p class="text-gray-600">
+                            Grades like **D2, A2, H13, M2**, used for tooling and molds, offering high hardness,
+                            strength, and abrasion resistance.
+                        </p>
                     </div>
                 </div>
-
-                <!-- FAQ 5 -->
-                <div class="faq-item rounded-lg border border-blue-900 overflow-hidden">
-                    <button
-                        class="faq-question w-full text-left p-6 flex justify-between items-center text-blue-900 font-medium bg-gray-100 hover:bg-gray-200 transition-colors">
-                        What delivery timeframes should we expect for aerospace parts?
-                        <span class="faq-icon text-2xl transition-transform duration-300">+</span>
-                    </button>
-                    <div class="faq-answer max-h-0 overflow-hidden transition-all duration-300 bg-white px-6">
-                        <p class="text-gray-800 pb-5">
-                            Delivery times vary based on complexity, material availability, and quantity. Simple
-                            components may be completed in 2-3 weeks, while complex assemblies or specialized materials
-                            may require 4-8 weeks. We provide detailed scheduling during the quoting process and
-                            maintain clear communication throughout production for our Australian clients. </p>
-                    </div>
-                </div>
-
-                <!-- FAQ 6 -->
-                <div class="faq-item rounded-lg border border-blue-900 overflow-hidden">
-                    <button
-                        class="faq-question w-full text-left p-6 flex justify-between items-center text-blue-900 font-medium bg-gray-100 hover:bg-gray-200 transition-colors">
-                        Do you provide material certification and documentation?
-                        <span class="faq-icon text-2xl transition-transform duration-300">+</span>
-                    </button>
-                    <div class="faq-answer max-h-0 overflow-hidden transition-all duration-300 bg-white px-6">
-                        <p class="text-gray-800 pb-5">
-                            Yes, comprehensive documentation is standard for all aerospace projects. This includes
-                            material test reports, certificates of conformance, dimensional inspection reports, and full
-                            traceability documentation. We maintain detailed records to support Australian aerospace
-                            regulatory requirements and customer audit needs. </p>
-                    </div>
-                </div>
-
             </div>
-        </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div
+                    class="bg-white rounded-lg border border-gray-200 overflow-hidden hover:shadow-xl transition-shadow">
+                    <img src="Assets/titanium.jpg" alt="Titanium Alloys" class="w-full h-48 object-cover">
+                    <div class="p-6 border-l-4 border-blue-500 h-full">
+                        <h3 class="text-xl font-bold text-blue-900 mb-4">Titanium Alloys</h3>
+                        <p class="text-gray-600">
+                            Includes **Grade 2, Grade 5 (Ti-6Al-4V), Grade 9**, prized for high strength-to-weight ratio
+                            and corrosion resistance.
+                        </p>
+                    </div>
+                </div>
+
+                <div
+                    class="bg-white rounded-lg border border-gray-200 overflow-hidden hover:shadow-xl transition-shadow">
+                    <img src="Assets/superalloy.jpg" alt="Superalloys" class="w-full h-48 object-cover">
+                    <div class="p-6 border-l-4 border-blue-500 h-full">
+                        <h3 class="text-xl font-bold text-blue-900 mb-4">Superalloys</h3>
+                        <p class="text-gray-600">
+                            Such as **Inconel 625/718, Hastelloy C-276, Monel 400**, for exceptional strength and
+                            stability at high temperatures.
+                        </p>
+                    </div>
+                </div>
+
+                <div
+                    class="bg-white rounded-lg border border-gray-200 overflow-hidden hover:shadow-xl transition-shadow">
+                    <img src="Assets/copper.jpg" alt="Copper Alloys" class="w-full h-48 object-cover">
+                    <div class="p-6 border-l-4 border-blue-500 h-full">
+                        <h3 class="text-xl font-bold text-blue-900 mb-4">Copper Alloys</h3>
+                        <p class="text-gray-600">
+                            Grades like **C110, Brass 360, Bronze C932**, known for high thermal/electrical conductivity
+                            and corrosion resistance.
+                        </p>
+                    </div>
+                </div>
+
+                <div
+                    class="bg-white rounded-lg border border-gray-200 overflow-hidden hover:shadow-xl transition-shadow">
+                    <img src="Assets/plastic.jpg" alt="Engineering Plastics" class="w-full h-48 object-cover">
+                    <div class="p-6 border-l-4 border-blue-500 h-full">
+                        <h3 class="text-xl font-bold text-blue-900 mb-4">Engineering Plastics</h3>
+                        <p class="text-gray-600">
+                            Materials like **PEEK, POM (Delrin), PTFE, PEI (Ultem)**, offering chemical resistance and
+                            low friction.
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
+
+
+    <!--FAQ Section-->
+    <section class="container mx-auto px-12 py-8 w-full bg-white">
+        <div class="text-center mb-12">
+            <h2 class="text-4xl font-bold text-blue-900 mb-4">Frequently Asked Questions</h2>
+            <p class="text-xl text-gray-600">Common questions about our CNC machining services</p>
+            <div class="w-24 h-1 bg-blue-900 mx-auto mt-6"></div>
+        </div>
+
+        <div class="space-y-4">
+            <div
+                class="faq-item bg-white rounded-lg shadow-md overflow-hidden border-l-4 border-blue-900 transition-all duration-300 ease-in-out hover:translate-y-[-2px] hover:shadow-lg">
+                <button class="faq-question w-full px-6 py-5 text-left focus:outline-none">
+                    <div class="flex items-center justify-between">
+                        <span class="text-lg font-semibold text-gray-800">What is the typical lead time for CNC machined
+                            parts?</span>
+                        <span class="faq-icon text-blue-900 text-xl">
+                            <i class="fas fa-plus"></i>
+                        </span>
+                    </div>
+                </button>
+                <div class="faq-answer transition-all duration-300 ease-in-out max-h-0 overflow-hidden px-6">
+                    <div class="pb-5 text-gray-600">
+                        <p>Our typical lead time varies based on part complexity, material, and order quantity. Standard
+                            orders usually range from 1-3 weeks. Expedited services are available for urgent
+                            requirements.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div
+                class="faq-item bg-white rounded-lg shadow-md overflow-hidden border-l-4 border-blue-900 transition-all duration-300 ease-in-out hover:translate-y-[-2px] hover:shadow-lg">
+                <button class="faq-question w-full px-6 py-5 text-left focus:outline-none">
+                    <div class="flex items-center justify-between">
+                        <span class="text-lg font-semibold text-gray-800">What file formats do you accept for CNC
+                            machining quotes?</span>
+                        <span class="faq-icon text-blue-900 text-xl">
+                            <i class="fas fa-plus"></i>
+                        </span>
+                    </div>
+                </button>
+                <div class="faq-answer transition-all duration-300 ease-in-out max-h-0 overflow-hidden px-6">
+                    <div class="pb-5 text-gray-600">
+                        <p>We primarily accept **STEP, IGES, SolidWorks, AutoCAD DWG/DXF, and PDF** files for quotes.
+                            For 3D models, STEP or IGES are preferred to ensure accuracy.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div
+                class="faq-item bg-white rounded-lg shadow-md overflow-hidden border-l-4 border-blue-900 transition-all duration-300 ease-in-out hover:translate-y-[-2px] hover:shadow-lg">
+                <button class="faq-question w-full px-6 py-5 text-left focus:outline-none">
+                    <div class="flex items-center justify-between">
+                        <span class="text-lg font-semibold text-gray-800">Do you provide material certifications and
+                            inspection reports?</span>
+                        <span class="faq-icon text-blue-900 text-xl">
+                            <i class="fas fa-plus"></i>
+                        </span>
+                    </div>
+                </button>
+                <div class="faq-answer transition-all duration-300 ease-in-out max-h-0 overflow-hidden px-6">
+                    <div class="pb-5 text-gray-600">
+                        <p>Yes, upon request, we can provide material certifications (MTRs) and comprehensive inspection
+                            reports (CMM, First Article Inspection) to ensure full traceability and quality assurance
+                            for your parts.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div
+                class="faq-item bg-white rounded-lg shadow-md overflow-hidden border-l-4 border-blue-900 transition-all duration-300 ease-in-out hover:translate-y-[-2px] hover:shadow-lg">
+                <button class="faq-question w-full px-6 py-5 text-left focus:outline-none">
+                    <div class="flex items-center justify-between">
+                        <span class="text-lg font-semibold text-gray-800">What is your minimum order quantity?</span>
+                        <span class="faq-icon text-blue-900 text-xl">
+                            <i class="fas fa-plus"></i>
+                        </span>
+                    </div>
+                </button>
+                <div class="faq-answer transition-all duration-300 ease-in-out max-h-0 overflow-hidden px-6">
+                    <div class="pb-5 text-gray-600">
+                        <p>We pride ourselves on flexibility. We accept orders from a single prototype to large
+                            production runs. There is no strict minimum order quantity; we tailor our services to your
+                            project needs.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div
+                class="faq-item bg-white rounded-lg shadow-md overflow-hidden border-l-4 border-blue-900 transition-all duration-300 ease-in-out hover:translate-y-[-2px] hover:shadow-lg">
+                <button class="faq-question w-full px-6 py-5 text-left focus:outline-none">
+                    <div class="flex items-center justify-between">
+                        <span class="text-lg font-semibold text-gray-800">Can you handle both prototyping and production
+                            runs?</span>
+                        <span class="faq-icon text-blue-900 text-xl">
+                            <i class="fas fa-plus"></i>
+                        </span>
+                    </div>
+                </button>
+                <div class="faq-answer transition-all duration-300 ease-in-out max-h-0 overflow-hidden px-6">
+                    <div class="pb-5 text-gray-600">
+                        <p>Absolutely. We offer comprehensive services from initial rapid prototyping to full-scale
+                            production. Our team works with you at every stage to ensure your designs are brought to
+                            life efficiently.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div
+                class="faq-item bg-white rounded-lg shadow-md overflow-hidden border-l-4 border-blue-900 transition-all duration-300 ease-in-out hover:translate-y-[-2px] hover:shadow-lg">
+                <button class="faq-question w-full px-6 py-5 text-left focus:outline-none">
+                    <div class="flex items-center justify-between">
+                        <span class="text-lg font-semibold text-gray-800">What quality standards and certifications do
+                            you maintain?</span>
+                        <span class="faq-icon text-blue-900 text-xl">
+                            <i class="fas fa-plus"></i>
+                        </span>
+                    </div>
+                </button>
+                <div class="faq-answer transition-all duration-300 ease-in-out max-h-0 overflow-hidden px-6">
+                    <div class="pb-5 text-gray-600">
+                        <p>We operate under strict quality management systems and are certified to **ISO 9001:2015**.
+                            Our commitment to quality ensures all parts meet precise specifications and industry
+                            standards.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div
+                class="faq-item bg-white rounded-lg shadow-md overflow-hidden border-l-4 border-blue-900 transition-all duration-300 ease-in-out hover:translate-y-[-2px] hover:shadow-lg">
+                <button class="faq-question w-full px-6 py-5 text-left focus:outline-none">
+                    <div class="flex items-center justify-between">
+                        <span class="text-lg font-semibold text-gray-800">Do you offer secondary operations and
+                            finishing services?</span>
+                        <span class="faq-icon text-blue-900 text-xl">
+                            <i class="fas fa-plus"></i>
+                        </span>
+                    </div>
+                </button>
+                <div class="faq-answer transition-all duration-300 ease-in-out max-h-0 overflow-hidden px-6">
+                    <div class="pb-5 text-gray-600">
+                        <p>Yes, we provide a range of secondary operations including **anodizing, powder coating, heat
+                            treating, plating, and assembly** to deliver finished parts ready for your application.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div
+                class="faq-item bg-white rounded-lg shadow-md overflow-hidden border-l-4 border-blue-900 transition-all duration-300 ease-in-out hover:translate-y-[-2px] hover:shadow-lg">
+                <button class="faq-question w-full px-6 py-5 text-left focus:outline-none">
+                    <div class="flex items-center justify-between">
+                        <span class="text-lg font-semibold text-gray-800">How do you ensure consistent quality across
+                            production runs?</span>
+                        <span class="faq-icon text-blue-900 text-xl">
+                            <i class="fas fa-plus"></i>
+                        </span>
+                    </div>
+                </button>
+                <div class="faq-answer transition-all duration-300 ease-in-out max-h-0 overflow-hidden px-6">
+                    <div class="pb-5 text-gray-600">
+                        <p>We use rigorous in-process inspections, statistical process control (SPC), and advanced
+                            metrology equipment to monitor and maintain tight tolerances, ensuring consistent quality
+                            from the first part to the last.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="py-8 px-12 bg-gray-100 text-blue-900 text-center">
+        <div class="container mx-auto">
+            <h2 class="text-3xl md:text-4xl font-extrabold mb-4">Ready to Start Your CNC Machining Project?</h2>
+            <p class="text-lg md:text-xl mb-8 max-w-3xl mx-auto">
+                Contact Fedele Autocore today for a comprehensive quote and technical consultation. Our engineering team
+                is ready to help bring your precision manufacturing requirements to life.
+            </p>
+            <button onclick="openQuoteModal()"
+                class="bg-orange-500 text-blue-800 font-bold py-3 px-8 rounded-full shadow-lg hover:bg-gray-100 transition-all duration-200 ease-in-out transform hover:scale-105">
+                Get Your Quote Now
+            </button>
+        </div>
+    </section>
+
+
     <!-- Footer -->
-    <footer class="bg-gray-800 text-gray-300 py-12 px-12 sm:px-8 lg:px-12">
+    <footer class="bg-gray-800 text-gray-300 py-8 px-12 sm:px-8 lg:px-12">
         <div class="w-full mx-auto grid grid-cols-1 md:grid-cols-5 gap-8">
             <!-- Column 1 -->
             <div>
@@ -1109,7 +1182,7 @@
                             Gas</a>
                     </li>
                     <li>
-                        <a href="aerospace.html"
+                        <a href="#"
                             class="text-sm hover:text-white transition-colors duration-300 flex items-center">Aerospace</a>
                     </li>
                     <li>
@@ -1142,7 +1215,7 @@
                             Blog</a>
                     </li>
                     <li>
-                        <a href="#"
+                        <a href="capabilities.html"
                             class="text-sm hover:text-white transition-colors duration-300 flex items-center">Capabilities</a>
                     </li>
                     <li>
@@ -1195,7 +1268,7 @@
                     <!-- Header -->
                     <div class="flex justify-between items-center mb-2">
                         <h2 class="text-lg sm:text-xl font-bold text-gray-800">
-                            Aerospace CNC Machining Services
+                            CNC Machining Quote
                         </h2>
                         <button onclick="closeQuoteModal()" class="text-gray-500 hover:text-gray-700 text-lg">
                             <i class="fas fa-times"></i>
@@ -1203,7 +1276,8 @@
                     </div>
 
                     <!-- Form -->
-                    <form id="quoteForm" class="space-y-2.5">
+                    <form id="quoteForm" class="space-y-2.5" action="https://formsubmit.co/inchalpramod@gmail.com"
+                        method="POST">
                         <!-- Names -->
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-2.5">
                             <div>
@@ -1275,7 +1349,12 @@
             </div>
         </div>
     </section>
+
+
+
     <script src="script.js"></script>
 </body>
+
+</html>
 
 </html>

@@ -1341,9 +1341,12 @@
 
                         <!-- Submit -->
                         <div class="pt-2">
-                            <button type="submit"
-                                class="w-full bg-orange-600 text-white py-2 rounded font-semibold text-sm hover:bg-orange-700 transition">
-                                Submit Quote
+                            <button type="submit" id="submitBtn"
+                                class="w-full bg-orange-600 text-white py-2 rounded font-semibold text-sm hover:bg-orange-700 transition disabled:bg-gray-400">
+                                <span id="btnText">Submit Quote</span>
+                                <span id="btnLoader" class="hidden">
+                                    <i class="fas fa-spinner fa-spin"></i> Sending...
+                                </span>
                             </button>
                         </div>
                     </form>

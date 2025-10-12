@@ -374,127 +374,87 @@
                     </ul>
                 </li>
 
-                <!-- Locations -->
-                <div class="relative group">
-                    <a href="location.html"
-                        class="text-sm 2xl:text-base font-medium text-gray-700 hover:text-orange-600 transition-colors whitespace-nowrap">
-                        Locations
-                    </a>
+            
+                <!-- Locations - Mobile Menu Version -->
+<li>
+    <button class="w-full text-left font-bold text-gray-700 hover:text-orange-600 flex justify-between items-center"
+        onclick="toggleDropdown('locationsDropdown')">
+        Locations <span id="locationsArrow">+</span>
+    </button>
+    <ul id="locationsDropdown" class="hidden pl-4 space-y-2">
+        
+        <!-- Melbourne -->
+        <li>
+            <button class="w-full text-left text-gray-700 hover:text-orange-600 flex justify-between items-center"
+                onclick="toggleDropdown('melbourneDropdown')">
+                Melbourne <span>+</span>
+            </button>
+            <ul id="melbourneDropdown" class="hidden pl-4 space-y-2">
+                <li><a href="melbourne-cnc.html" class="block py-1 hover:text-orange-600 transition-colors">CNC Machining</a></li>
+                <li><a href="melbourne-precision.html" class="block py-1 hover:text-orange-600 transition-colors">Precision Machining</a></li>
+                <li><a href="melbourne-5-axis-machining.html" class="block py-1 hover:text-orange-600 transition-colors">5-Axis Machining</a></li>
+            </ul>
+        </li>
 
-                    <!-- First dropdown -->
-                    <div
-                        class="absolute left-0 top-full mt-1 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
-                        <div class="bg-white shadow-xl rounded-lg min-w-40 border">
-                            <ul class="py-2">
+        <!-- Sydney -->
+        <li>
+            <button class="w-full text-left text-gray-700 hover:text-orange-600 flex justify-between items-center"
+                onclick="toggleDropdown('sydneyDropdown')">
+                Sydney <span>+</span>
+            </button>
+            <ul id="sydneyDropdown" class="hidden pl-4 space-y-2">
+                <li><a href="sydney-cnc.html" class="block py-1 hover:text-orange-600 transition-colors">CNC Machining</a></li>
+                <li><a href="sydney-precision.html" class="block py-1 hover:text-orange-600 transition-colors">Precision Machining</a></li>
+            </ul>
+        </li>
 
-                                <!-- Melbourne -->
-                                <li class="relative group/sub">
-                                    <a href="melbourne-cnc.html"
-                                        class="flex justify-between items-center px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">
-                                        Melbourne
-                                        <span class="ml-2">></span>
-                                    </a>
-                                    <!-- Submenu -->
-                                    <ul
-                                        class="absolute left-full top-0 ml-1 bg-white shadow-lg rounded-lg border min-w-40 py-2 opacity-0 invisible group-hover/sub:opacity-100 group-hover/sub:visible transition-all duration-200">
-                                        <li><a href="melbourne-cnc.html"
-                                                class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600">CNC
-                                                Machining</a></li>
-                                        <li><a href="melbourne-precision.html"
-                                                class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600">Precision
-                                                Machining</a></li>
-                                        <li><a href="melbourne-5-axis-machining.html"
-                                                class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600">5-Axis
-                                                Machining </a></li>
-                                    </ul>
-                                </li>
+        <!-- Perth -->
+        <li>
+            <button class="w-full text-left text-gray-700 hover:text-orange-600 flex justify-between items-center"
+                onclick="toggleDropdown('perthDropdown')">
+                Perth <span>+</span>
+            </button>
+            <ul id="perthDropdown" class="hidden pl-4 space-y-2">
+                <li><a href="perth-cnc.html" class="block py-1 hover:text-orange-600 transition-colors">CNC Machining</a></li>
+                <li><a href="perth-precision.html" class="block py-1 hover:text-orange-600 transition-colors">Precision Machining</a></li>
+            </ul>
+        </li>
 
-                                <!-- Sydney -->
-                                <li class="relative group/sub">
-                                    <a href="sydney-cnc.html"
-                                        class="flex justify-between items-center px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600">
-                                        Sydney
-                                        <span class="ml-2">></span>
-                                    </a>
-                                    <ul
-                                        class="absolute left-full top-0 ml-1 bg-white shadow-lg rounded-lg border min-w-40 py-2 opacity-0 invisible group-hover/sub:opacity-100 group-hover/sub:visible transition-all duration-200">
-                                        <li><a href="sydney-cnc.html"
-                                                class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600">CNC
-                                                Machining</a></li>
-                                        <li><a href="sydney-precision.html"
-                                                class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600">Precision
-                                                Machining</a></li>
-                                    </ul>
-                                </li>
+        <!-- Adelaide -->
+        <li>
+            <button class="w-full text-left text-gray-700 hover:text-orange-600 flex justify-between items-center"
+                onclick="toggleDropdown('adelaideDropdown')">
+                Adelaide <span>+</span>
+            </button>
+            <ul id="adelaideDropdown" class="hidden pl-4 space-y-2">
+                <li><a href="adelaide-cnc.html" class="block py-1 hover:text-orange-600 transition-colors">CNC Machining</a></li>
+            </ul>
+        </li>
 
-                                <!-- Perth -->
-                                <li class="relative group/sub">
-                                    <a href="perth-cnc.html"
-                                        class="flex justify-between items-center px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600">
-                                        Perth
-                                        <span class="ml-2">></span>
-                                    </a>
-                                    <ul
-                                        class="absolute left-full top-0 ml-1 bg-white shadow-lg rounded-lg border min-w-40 py-2 opacity-0 invisible group-hover/sub:opacity-100 group-hover/sub:visible transition-all duration-200">
-                                        <li><a href="perth-cnc.html"
-                                                class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600">CNC
-                                                Machining</a></li>
-                                        <li><a href="perth-precision.html"
-                                                class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600">Precision
-                                                Machining</a></li>
-                                    </ul>
-                                </li>
+        <!-- Brisbane -->
+        <li>
+            <button class="w-full text-left text-gray-700 hover:text-orange-600 flex justify-between items-center"
+                onclick="toggleDropdown('brisbaneDropdown')">
+                Brisbane <span>+</span>
+            </button>
+            <ul id="brisbaneDropdown" class="hidden pl-4 space-y-2">
+                <li><a href="brisbane-cnc.html" class="block py-1 hover:text-orange-600 transition-colors">CNC Machining</a></li>
+            </ul>
+        </li>
 
-                                <!-- Add Adelaide, Brisbane, Darwin similarly -->
+        <!-- Darwin -->
+        <li>
+            <button class="w-full text-left text-gray-700 hover:text-orange-600 flex justify-between items-center"
+                onclick="toggleDropdown('darwinDropdown')">
+                Darwin <span>+</span>
+            </button>
+            <ul id="darwinDropdown" class="hidden pl-4 space-y-2">
+                <li><a href="darwin-cnc.html" class="block py-1 hover:text-orange-600 transition-colors">CNC Machining</a></li>
+            </ul>
+        </li>
 
-                                <li class="relative group/sub">
-                                    <a href="adelaide-cnc.html"
-                                        class="flex justify-between items-center px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600">
-                                        Adelaide
-                                        <span class="ml-2">></span>
-                                    </a>
-                                    <ul
-                                        class="absolute left-full top-0 ml-1 bg-white shadow-lg rounded-lg border min-w-40 py-2 opacity-0 invisible group-hover/sub:opacity-100 group-hover/sub:visible transition-all duration-200">
-                                        <li><a href="adelaide-cnc.html"
-                                                class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600">CNC
-                                                Machining</a></li>
-                                    </ul>
-                                </li>
-                                <!---Brisbane-->
-                                <li class="relative group/sub">
-                                    <a href="brisbane-cnc.html"
-                                        class="flex justify-between items-center px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600">
-                                        Brisbane
-                                        <span class="ml-2">></span>
-                                    </a>
-                                    <ul
-                                        class="absolute left-full top-0 ml-1 bg-white shadow-lg rounded-lg border min-w-40 py-2 opacity-0 invisible group-hover/sub:opacity-100 group-hover/sub:visible transition-all duration-200">
-                                        <li><a href="brisbane-cnc.html"
-                                                class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600">CNC
-                                                Machining</a></li>
-                                    </ul>
-                                </li>
-
-                                <!----Darwin-->
-
-                                <li class="relative group/sub">
-                                    <a href="darwin-cnc.html"
-                                        class="flex justify-between items-center px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600">
-                                        Darwin
-                                        <span class="ml-2">></span>
-                                    </a>
-                                    <ul
-                                        class="absolute left-full top-0 ml-1 bg-white shadow-lg rounded-lg border min-w-40 py-2 opacity-0 invisible group-hover/sub:opacity-100 group-hover/sub:visible transition-all duration-200">
-                                        <li><a href="darwin-cnc.html"
-                                                class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600">CNC
-                                                Machining</a></li>
-                                    </ul>
-                                </li>
-
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+    </ul>
+</li>
                 <li><a href="contact.html" class="font-bold text-gray-700 hover:text-orange-600">Contact</a></li>
             </ul>
         </nav>
@@ -630,9 +590,12 @@
 
                     <!-- Submit -->
                     <div class="pt-2">
-                        <button type="submit"
-                            class="w-full bg-orange-600 text-white py-2 rounded font-semibold text-sm hover:bg-orange-700 transition">
-                            Submit
+                        <button type="submit" id="submitBtn"
+                            class="w-full bg-orange-600 text-white py-2 rounded font-semibold text-sm hover:bg-orange-700 transition disabled:bg-gray-400">
+                            <span id="btnText">Submit Quote</span>
+                            <span id="btnLoader" class="hidden">
+                                <i class="fas fa-spinner fa-spin"></i> Sending...
+                            </span>
                         </button>
                     </div>
                 </form>

@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Precision CNC Automotive Components</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+
+<body class="m-0 p-0 w-full overflow-x-hidden min-h-screen font-sans text-gray-800">
+    <!-- Header -->
+    <header-component class="fixed top-0 left-0 w-full bg-white shadow-md z-50">
+    </header-component>
+
+
+
+    <!-- Hero Section -->
+    <section class="relative min-h-screen flex items-center bg-cover bg-center bg-no-repeat w-full">
+        <!-- Background Image -->
+        <div class="absolute inset-0 -z-10">
+            <img src="/Assets/automotive.jpeg" alt="automotive-precision component"
+                class="w-full h-full object-cover [object-position:20%_50%] brightness-125 top-0 left-0" />
+
+            <!-- Overlay -->
+            <div class="absolute inset-0 bg-gradient-to-r from-black via-black/70 to-transparent"></div>
+        </div>
+
+        <!-- Content -->
+        <div class="relative z-10 w-full px-12 md:px-12 flex flex-col md:flex-row items-center md:items-start">
+
+            <!-- Left Content -->
+            <div class="text-left w-full md:w-1/2 mt-24 md:mt-32">
+                <h1 class="text-4xl md:text-6xl font-bold mb-6 text-white max-w-2xl">
+                    Precision CNC <span class="text-orange-500">Automotive</span> Components
+                </h1>
+                <p class="text-lg md:text-xl text-gray-200 max-w-xl leading-relaxed">
+                    We've been crafting high-precision automotive parts for demanding applications
+                    since 1999. Serving clients across Australia with competitive pricing and uncompromising quality.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 py-4">
+                    <button onclick="openQuoteModal()"
+                        class="px-6 py-3 bg-orange-500 text-white font-semibold rounded-lg shadow-md hover:bg-orange-600 transition transform hover:scale-105">
+                        Get a Quote
+                    </button>
+                </div>
+            </div>
+
+            <!-- Right side (empty space to reveal background image) -->
+            <div class="hidden md:block md:w-1/2"></div>
+        </div>
+    </section>
+
+    <!--About Fedele Autocare-->
+    <section class="py-16 px-12 bg-gray-100">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-start justify-between gap-12">
+
+            <!-- Left Content -->
+            <div class="md:w-1/2">
+                <h2 class="text-4xl font-bold text-blue-900 mb-6">
+                    <span class="border-l-4 border-orange-500 pl-4">About Automotive Industry</span>
+                </h2>
+                <p class="text-gray-700 mb-6">
+                    Starting as a specialized machine shop, Fedele Autocore has grown into one of the most trusted names
+                    in precision automotive component manufacturing. Our founder, Giuseppe Fedele, brought traditional
+                    Italian craftsmanship to the automotive industry, combining old-world attention to detail with
+                    cutting-edge CNC technology.
+                </p>
+                <p class="text-gray-700 mb-8">
+                    Today, our team of skilled machinists and engineers work with multi-axis CNC centers that can hold
+                    tolerances most shops can only dream of. We serve clients across Australia with competitive pricing,
+                    supplying components for everything from weekend track cars to professional racing teams.
+                </p>
+
+                <!-- Stats -->
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="bg-gray-100 p-2 rounded-lg text-center">
+                        <h3 class="text-2xl font-bold text-orange-500">25+</h3>
+                        <p class="text-sm text-blue-900 uppercase mt-1">Years Experience</p>
+                    </div>
+                    <div class="bg-gray-100 p-2 rounded-lg text-center">
+                        <h3 class="text-2xl font-bold text-orange-500">±0.002mm</h3>
+                        <p class="text-sm text-blue-900 uppercase mt-1">Precision Tolerance</p>
+                    </div>
+                    <div class="bg-gray-100 p-2 rounded-lg text-center">
+                        <h3 class="text-2xl font-bold text-orange-500">500+</h3>
+                        <p class="text-sm text-blue-900 uppercase mt-1">Components Designed</p>
+                    </div>
+                    <div class="bg-gray-100 p-2 rounded-lg text-center">
+                        <h3 class="text-2xl font-bold text-orange-500">ISO 9001</h3>
+                        <p class="text-sm text-blue-900 uppercase mt-1">Certified Quality</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Image -->
+            <div class="md:w-1/2 flex justify-center items-start">
+                <img src="/Assets/about-fedele.webp" alt="Automotive Components"
+                    class="rounded-2xl shadow-2xl w-[550px] h-[370px] object-cover">
+            </div>
+        </div>
+    </section>
+
+
+    <!--  What We Machine-->
+    <section class="py-16 px-12 bg-white">
+        <div class="w-full mx-auto">
+            <h2 class="text-3xl font-bold text-blue-900 text-center mb-4">
+                What We Machine
+            </h2>
+            <p class="text-gray-600 text-center max-w-2xl mx-auto mb-12">
+                From prototype to production, we machine the components that
+                keep vehicles running strong across Australia
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <!-- Engine Components -->
+                <div
+                    class="bg-white rounded-lg border border-gray-200 overflow-hidden hover:shadow-xl transition-shadow">
+                    <img src="/Assets/engine-comp.jpg" alt="Engine Components" class="w-full h-48 object-cover">
+                    <div class="p-6 border-l-4 border-blue-500">
+                        <h3 class="text-xl font-bold text-blue-900 mb-4">Engine Components</h3>
+                        <p class="text-gray-600">
+                            We machine everything from cylinder heads to valve guides with the kind of precision that
+                            keeps engines
+                            running smooth for years. Our crankshaft work has powered some seriously fast builds.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Transmission Components -->
+                <div
+                    class="bg-white rounded-lg border border-gray-200 overflow-hidden hover:shadow-xl transition-shadow">
+                    <img src="/Assets/transmission-comp.webp" alt="Transmission Component"
+                        class="w-full h-48 object-cover">
+                    <div class="p-6 border-l-4 border-blue-500">
+                        <h3 class="text-xl font-bold text-blue-900 mb-4">Transmission Components</h3>
+                        <p class="text-gray-600">
+                            Gear sets, input shafts, and transmission cases that handle serious torque. Whether it's a
+                            street car or race
+                            application, our transmission work delivers the reliability you need.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Suspension Parts -->
+                <div
+                    class="bg-white rounded-lg border border-gray-200 overflow-hidden hover:shadow-xl transition-shadow">
+                    <img src="/Assets/suspension-comp.jpg" alt="Suspension Components" class="w-full h-48 object-cover">
+                    <div class="p-6 border-l-4 border-blue-500">
+                        <h3 class="text-xl font-bold text-blue-900 mb-4">Suspension Parts</h3>
+                        <p class="text-gray-600">
+                            Control arms and mounting hardware that actually improve how your car handles. We've done
+                            custom suspension work for hill
+                            climbs, track days, and everything in between.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Brake Components -->
+                <div
+                    class="bg-white rounded-lg border border-gray-200 overflow-hidden hover:shadow-xl transition-shadow">
+                    <img src="/Assets/brake-comp.jpg" alt="Brake Components" class="w-full h-48 object-cover">
+                    <div class="p-6 border-l-4 border-blue-500">
+                        <h3 class="text-xl font-bold text-blue-900 mb-4">Brake Components</h3>
+                        <p class="text-gray-600">
+                            When it comes to brakes, there's no room for compromise. Our rotors, calipers, and mounting
+                            hardware are machined
+                            to handle the heat and stress of serious braking applications.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Fuel System Parts -->
+                <div
+                    class="bg-white rounded-lg border border-gray-200 overflow-hidden hover:shadow-xl transition-shadow">
+                    <img src="/Assets/fuel-system-parts.jpg" alt="Fuel system parts" class="w-full h-48 object-cover">
+                    <div class="p-6 border-l-4 border-blue-500">
+                        <h3 class="text-xl font-bold text-blue-900 mb-4">Fuel System Parts</h3>
+                        <p class="text-gray-600">
+                            Fuel rail components, injector housings, and pump parts that deliver consistent fuel flow.
+                            Clean machining and proper
+                            material selection make all the difference in fuel system reliability.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Exhaust Components -->
+                <div
+                    class="bg-white rounded-lg border border-gray-200 overflow-hidden hover:shadow-xl transition-shadow">
+                    <img src="/Assets/exhaust-comp.png" alt="Exhaust component" class="w-full h-48 object-cover">
+                    <div class="p-6 border-l-4 border-blue-500">
+                        <h3 class="text-xl font-bold text-blue-900 mb-4">Exhaust Components</h3>
+                        <p class="text-gray-600">
+                            Manifold flanges and exhaust hardware that won't warp or crack under heat. We use the right
+                            materials and machine them
+                            to last in high-temperature applications.
+                        </p>
+                    </div>
+                </div>
+
+                <!--Turbo Components-->
+                <div
+                    class="bg-white rounded-lg border border-gray-200 overflow-hidden hover:shadow-xl transition-shadow">
+                    <img src="/Assets/turbo-comp.webp" alt="Turbo Component" class="w-full h-48 object-cover">
+                    <div class="p-6 border-l-4 border-blue-500">
+                        <h3 class="text-xl font-bold text-blue-900 mb-4">Turbo Components</h3>
+                        <p class="text-gray-600">
+                            Turbo housings and compressor components machined to aerospace
+                            tolerances. When you're pushing boost, every thousandth of an inch matters for performance
+                            and reliability.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Differential Parts -->
+                <div
+                    class="bg-white rounded-lg border border-gray-200 overflow-hidden hover:shadow-xl transition-shadow">
+                    <img src="/Assets/differentials-parts.jpg" alt="Differential Parts"
+                        class="w-full h-48 object-cover">
+                    <div class="p-6 border-l-4 border-blue-500">
+                        <h3 class="text-xl font-bold text-blue-900 mb-4">Differential Parts</h3>
+                        <p class="text-gray-600">
+                            Diff cases, gear carriers, and related hardware built to handle
+                            serious power. From street strip cars to dedicated race builds, our differential work stands
+                            up to abuse.
+
+
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Steering Components -->
+                <div
+                    class="bg-white rounded-lg border border-gray-200 overflow-hidden hover:shadow-xl transition-shadow">
+                    <img src="/Assets/steering-comp.png" alt="Steering Components" class="w-full h-48 object-cover">
+                    <div class="p-6 border-l-4 border-blue-500">
+                        <h3 class="text-xl font-bold text-blue-900 mb-4">Steering Components</h3>
+                        <p class="text-gray-600">
+                            Steering racks, pinion gears, and mounting components that give you the precise feel you
+                            want. No slop,
+                            no play – just clean, responsive steering.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Cooling System Parts -->
+                <div
+                    class="bg-white rounded-lg border border-gray-200 overflow-hidden hover:shadow-xl transition-shadow">
+                    <img src="/Assets/cooling-system.jpg" alt="Cooling system" class="w-full h-48 object-cover">
+                    <div class="p-6 border-l-4 border-blue-500">
+                        <h3 class="text-xl font-bold text-blue-900 mb-4">Cooling System Parts</h3>
+                        <p class="text-gray-600">
+                            Radiator end tanks, water pump housings, and thermostat components that keep things cool
+                            when the
+                            heat is on. Proper coolant flow starts with precision machining.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Performance Parts -->
+                <div
+                    class="bg-white rounded-lg border border-gray-200 overflow-hidden hover:shadow-xl transition-shadow">
+                    <img src="/Assets/performance-part.jpg" alt="Performance Parts" class="w-full h-48 object-cover">
+                    <div class="p-6 border-l-4 border-blue-500">
+                        <h3 class="text-xl font-bold text-blue-900 mb-4">Performance Parts</h3>
+                        <p class="text-gray-600">
+                            Custom cam profiles, intake manifolds, and one-off performance
+                            pieces. When off-the-shelf won't cut it, we machine the parts that make the difference on
+                            track.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Motorsport Components -->
+                <div
+                    class="bg-white rounded-lg border border-gray-200 overflow-hidden hover:shadow-xl transition-shadow">
+                    <img src="/Assets/motosport-comp.jpeg" alt="Motorsport Components" class="w-full h-48 object-cover">
+                    <div class="p-6 border-l-4 border-blue-500">
+                        <h3 class="text-xl font-bold text-blue-900 mb-4">Motorsport Components</h3>
+                        <p class="text-gray-600">
+                            Race-proven parts for teams that can't afford failures. From club racing to professional
+                            motorsport,
+                            our components deliver results with pricing that works for any racing budget.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Specifications Section -->
+    <section class="py-12 sm:py-16 px-12 bg-gray-100">
+        <div class="w-full mx-auto">
+            <div class="text-center mb-12 sm:mb-16">
+                <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-blue-900 mb-6 sm:mb-8">Technical
+                    Specifications</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+                <!-- Precision Tolerances Card -->
+                <div class="bg-gray-50 rounded-2xl p-6 sm:p-8 shadow-sm border border-gray-200">
+                    <h3 class="text-xl sm:text-2xl font-bold text-blue-900 mb-6 text-center">Precision Tolerances</h3>
+                    <div class="space-y-4">
+                        <div class="flex justify-between items-center border-b border-gray-200 pb-2">
+                            <span class="text-gray-700 text-sm sm:text-base">Standard Tolerance</span>
+                            <span class="text-orange-500 font-semibold text-sm sm:text-base">±0.01mm</span>
+                        </div>
+                        <div class="flex justify-between items-center border-b border-gray-200 pb-2">
+                            <span class="text-gray-700 text-sm sm:text-base">Precision Tolerance</span>
+                            <span class="text-orange-500 font-semibold text-sm sm:text-base">±0.005mm</span>
+                        </div>
+                        <div class="flex justify-between items-center border-b border-gray-200 pb-2">
+                            <span class="text-gray-700 text-sm sm:text-base">Ultra-Precision</span>
+                            <span class="text-orange-500 font-semibold text-sm sm:text-base">±0.002mm</span>
+                        </div>
+                        <div class="flex justify-between items-center border-b border-gray-200 pb-2">
+                            <span class="text-gray-700 text-sm sm:text-base">Surface Finish</span>
+                            <span class="text-orange-500 font-semibold text-sm sm:text-base">Ra 0.1-3.2μm</span>
+                        </div>
+                        <div class="flex justify-between items-center border-b border-gray-200 pb-2">
+                            <span class="text-gray-700 text-sm sm:text-base">Geometric Tolerance</span>
+                            <span class="text-orange-500 font-semibold text-sm sm:text-base">±0.005mm</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-700 text-sm sm:text-base">Roundness</span>
+                            <span class="text-orange-500 font-semibold text-sm sm:text-base">0.002mm</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Materials Expertise Card -->
+                <div class="bg-gray-50 rounded-2xl p-6 sm:p-8 shadow-sm border-2 border-gray-200">
+                    <h3 class="text-xl sm:text-2xl font-bold text-blue-900 mb-6 text-center">Materials Expertise</h3>
+                    <div class="space-y-4">
+                        <div class="flex justify-between items-center border-b border-gray-200 pb-2">
+                            <span class="text-gray-700 text-sm sm:text-base">Aluminum Alloys</span>
+                            <span class="text-orange-500 font-semibold text-sm sm:text-base">6061, 7075</span>
+                        </div>
+                        <div class="flex justify-between items-center border-b border-gray-200 pb-2">
+                            <span class="text-gray-700 text-sm sm:text-base">Steel Grades</span>
+                            <span class="text-orange-500 font-semibold text-sm sm:text-base">4140, 4340</span>
+                        </div>
+                        <div class="flex justify-between items-center border-b border-gray-200 pb-2">
+                            <span class="text-gray-700 text-sm sm:text-base">Stainless Steel</span>
+                            <span class="text-orange-500 font-semibold text-sm sm:text-base">316, 17-4 PH</span>
+                        </div>
+                        <div class="flex justify-between items-center border-b border-gray-200 pb-2">
+                            <span class="text-gray-700 text-sm sm:text-base">Titanium</span>
+                            <span class="text-orange-500 font-semibold text-sm sm:text-base">Ti-6Al-4V</span>
+                        </div>
+                        <div class="flex justify-between items-center border-b border-gray-200 pb-2">
+                            <span class="text-gray-700 text-sm sm:text-base">Cast Iron</span>
+                            <span class="text-orange-500 font-semibold text-sm sm:text-base">Gray & Ductile</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-700 text-sm sm:text-base">Specialty Alloys</span>
+                            <span class="text-orange-500 font-semibold text-sm sm:text-base">Inconel, Hastelloy</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Manufacturing Capabilities Card -->
+                <div class="bg-gray-50 rounded-2xl p-6 sm:p-8 shadow-sm border border-gray-200">
+                    <h3 class="text-xl sm:text-2xl font-bold text-blue-900 mb-6 text-center">Manufacturing Capabilities
+                    </h3>
+                    <div class="space-y-4">
+                        <div class="flex justify-between items-center border-b border-gray-200 pb-2">
+                            <span class="text-gray-700 text-sm sm:text-base">Max Workpiece</span>
+                            <span class="text-orange-500 font-semibold text-sm sm:text-base">1500mm x 800mm</span>
+                        </div>
+                        <div class="flex justify-between items-center border-b border-gray-200 pb-2">
+                            <span class="text-gray-700 text-sm sm:text-base">Min Feature Size</span>
+                            <span class="text-orange-500 font-semibold text-sm sm:text-base">0.1mm</span>
+                        </div>
+                        <div class="flex justify-between items-center border-b border-gray-200 pb-2">
+                            <span class="text-gray-700 text-sm sm:text-base">Production Volume</span>
+                            <span class="text-orange-500 font-semibold text-sm sm:text-base">1-10,000 units</span>
+                        </div>
+                        <div class="flex justify-between items-center border-b border-gray-200 pb-2">
+                            <span class="text-gray-700 text-sm sm:text-base">Lead Time</span>
+                            <span class="text-orange-500 font-semibold text-sm sm:text-base">5-15 days</span>
+                        </div>
+                        <div class="flex justify-between items-center border-b border-gray-200 pb-2">
+                            <span class="text-gray-700 text-sm sm:text-base">Quality Standard</span>
+                            <span class="text-orange-500 font-semibold text-sm sm:text-base">ISO 9001:2015</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-700 text-sm sm:text-base">Inspection</span>
+                            <span class="text-orange-500 font-semibold text-sm sm:text-base">CMM & Optical</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-16 px-6 bg-white">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-blue-900 mb-8">
+                    FREQUENTLY ASKED QUESTIONS
+                </h2>
+            </div>
+
+            <div class="space-y-4">
+                <!-- FAQ Item -->
+                <div class="faq-item rounded-lg border border-blue-900 overflow-hidden">
+                    <button
+                        class="faq-question w-full text-left p-6 flex justify-between items-center text-blue-900 font-medium bg-gray-100 hover:bg-gray-200 transition-colors">
+                        What tolerances can you achieve with your CNC machining?
+                        <span class="faq-icon text-2xl transition-transform duration-300">+</span>
+                    </button>
+                    <div class="faq-answer max-h-0 overflow-hidden transition-all duration-300 bg-white px-6">
+                        <p class="text-gray-800 pb-5">
+                            We hit standard tolerances of ±0.01mm on most jobs, but when
+                            you need tighter work, we can get down to ±0.002mm. Our Mazak
+                            and Haas machines are calibrated weekly, and we check everything
+                            with our CMM before it leaves the shop.
+                        </p>
+                    </div>
+                </div>
+
+
+                <!-- FAQ Item 2 -->
+                <div class="faq-item rounded-lg border border-blue-900 overflow-hidden">
+                    <button
+                        class="faq-question w-full text-left p-6 flex justify-between items-center text-blue-900 font-medium bg-gray-100 hover:bg-gray-200 transition-colors">
+                        What materials do you work with for automotive components?
+                        <span class="faq-icon text-2xl transition-transform duration-300">+</span>
+                    </button>
+                    <div class="faq-answer max-h-0 overflow-hidden transition-all duration-300 bg-white px-6">
+                        <p class="text-gray-800 pb-5">
+                            We work with all the common automotive materials - 6061 and 7075 aluminum,
+                            4140 and 4340 steel, plus stainless grades like 316 and 17-4 PH. For the high-end
+                            stuff, we machine titanium and exotic alloys like Inconel. Just depends on what your
+                            application needs.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="faq-item rounded-lg border border-blue-900 overflow-hidden">
+                    <button
+                        class="faq-question w-full text-left p-6 flex justify-between items-center text-blue-900 font-medium bg-gray-100 hover:bg-gray-200 transition-colors">
+                        How quickly can you turn around custom parts?
+                        <span class="faq-icon text-2xl transition-transform duration-300">+</span>
+                    </button>
+                    <div class="faq-answer max-h-0 overflow-hidden transition-all duration-300 bg-white px-6">
+                        <p class="text-gray-800 pb-5">
+                            Normal turnaround is 5-15 days depending on complexity. If you're in a bind,
+                            we can usually squeeze rush jobs into 2-3 days. Race teams get priority during
+                            competition season - we know what it's like when you need parts yesterday.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 4 -->
+                <div class="faq-item rounded-lg border border-blue-900 overflow-hidden">
+                    <button
+                        class="faq-question w-full text-left p-6 flex justify-between items-center text-blue-900 font-medium bg-gray-100 hover:bg-gray-200 transition-colors">
+                        Do you provide inspection reports and certifications?
+                        <span class="faq-icon text-2xl transition-transform duration-300">+</span>
+                    </button>
+                    <div class="faq-answer max-h-0 overflow-hidden transition-all duration-300 bg-white px-6">
+                        <p class="text-gray-800 pb-5">
+                            Absolutely. Every job comes with a full inspection report showing actual measurements
+                            versus your specs. We're ISO 9001 certified and can provide material certs if you need
+                            them for traceability.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 5 -->
+                <div class="faq-item rounded-lg border border-blue-900 overflow-hidden">
+                    <button
+                        class="faq-question w-full text-left p-6 flex justify-between items-center text-blue-900 font-medium bg-gray-100 hover:bg-gray-200 transition-colors">
+                        Can you handle both one-off prototypes and production runs?
+                        <span class="faq-icon text-2xl transition-transform duration-300">+</span>
+                    </button>
+                    <div class="faq-answer max-h-0 overflow-hidden transition-all duration-300 bg-white px-6">
+                        <p class="text-gray-800 pb-5">
+                            We do everything from single prototype pieces to runs of several thousand. Small
+                            batches are our bread and butter, but we've got the capacity for larger production
+                            work too. Each job gets the same attention to detail.
+
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 6 -->
+                <div class="faq-item rounded-lg border border-blue-900 overflow-hidden">
+                    <button
+                        class="faq-question w-full text-left p-6 flex justify-between items-center text-blue-900 font-medium bg-gray-100 hover:bg-gray-200 transition-colors">
+                        What file formats do you accept for drawings?
+                        <span class="faq-icon text-2xl transition-transform duration-300">+</span>
+                    </button>
+                    <div class="faq-answer max-h-0 overflow-hidden transition-all duration-300 bg-white px-6">
+                        <p class="text-gray-800 pb-5">
+                            Send us whatever you've got - SolidWorks files, AutoCAD drawings, STEP files, or even
+                            hand-sketched prints. Our programmers can work with anything. We'll often suggest
+                            improvements
+                            to make parts easier to machine without compromising function.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!--------Testimonials--------->
+
+    <section class="py-16 px-12 bg-gray-100">
+        <div class="w-full mx-auto text-center">
+            <h2 class="text-4xl font-bold text-blue-900 mb-4">What Our Clients Say</h2>
+
+            <div class="grid gap-8 md:grid-cols-3 sm:grid-cols-1 lg:grid-cols-3">
+
+                <!-- Testimonial 1 -->
+                <div class="bg-white rounded-xl shadow-2xl p-6 text-left flex flex-col items-start">
+                    <div class="flex items-center mb-4">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Mike Patterson"
+                            class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h3 class="font-semibold text-blue-900">Mike Patterson</h3>
+                            <p class="text-sm text-gray-500">Patterson Motorsport</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 italic">
+                        Giuseppe and his team really know their stuff. We needed custom transmission
+                        cases for our touring car build, and they nailed the tolerances perfectly.
+                        Great pricing too, especially for the quality you get.
+                    </p>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="bg-white rounded-xl shadow-2xl p-6 text-left flex flex-col items-start">
+                    <div class="flex items-center mb-4">
+                        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Lisa Chen"
+                            class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h3 class="font-semibold text-blue-900">Lisa Chen</h3>
+                            <p class="text-sm text-gray-500">Velocity Racing Team</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 italic">
+                        I've been bringing my brake rotor work to Fedele for three years now.
+                        They understand that when you're doing 200+ km/h down the back straight,
+                        brake components can't have any margin for error. Fair pricing for precision work.
+                    </p>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="bg-white rounded-xl shadow-2xl p-6 text-left flex flex-col items-start">
+                    <div class="flex items-center mb-4">
+                        <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="David Kim"
+                            class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h3 class="font-semibold text-blue-900">David Kim</h3>
+                            <p class="text-sm text-gray-500">Boost Dynamics</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 italic">
+                        From club racing to professional motorsport, our components have crossed finish
+                        lines nationwide. We ship Australia-wide with competitive pricing that won't break
+                        your build budget.
+                    </p>
+                </div>
+
+                <!-- Testimonial 4 -->
+                <div class="bg-white rounded-xl shadow-2xl p-6 text-left flex flex-col items-start">
+                    <div class="flex items-center mb-4">
+                        <img src="https://randomuser.me/api/portraits/women/55.jpg" alt="Sarah Williams"
+                            class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h3 class="font-semibold text-blue-900">Sarah Williams</h3>
+                            <p class="text-sm text-gray-500">Williams Engine Development</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 italic">
+                        The cylinder head work they did for our V8 project was absolutely spot on.
+                        Giuseppe even suggested a small design change that improved the flow characteristics.
+                        Quality work at a fair price.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer-component></footer-component>
+
+    <!-- Quote Modal -->
+    <section>
+        <div id="quoteModal" class="modal fixed inset-0 flex items-center justify-center bg-black/50 z-50">
+            <div class="modal-content max-w-xl w-full bg-white shadow-lg rounded-lg max-h-screen overflow-y-auto">
+                <div class="p-3 sm:p-4">
+                    <!-- Header -->
+                    <div class="flex justify-between items-center mb-2">
+                        <h2 class="text-lg sm:text-xl font-bold text-gray-800">
+                            Precision CNC Automotive Components Services
+                        </h2>
+                        <button onclick="closeQuoteModal()" class="text-gray-500 hover:text-gray-700 text-lg">
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </div>
+
+                    <!-- Form -->
+                    <form id="quoteForm" class="space-y-2.5">
+                        <!-- Names -->
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-2.5">
+                            <div>
+                                <label class="block text-xs font-medium text-gray-700 mb-0.5">First Name *</label>
+                                <input type="text" name="firstName" required
+                                    class="w-full px-2 py-1.5 border border-gray-300 rounded focus:ring-2 focus:ring-orange-500 text-sm">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-medium text-gray-700 mb-0.5">Last Name *</label>
+                                <input type="text" name="lastName" required
+                                    class="w-full px-2 py-1.5 border border-gray-300 rounded focus:ring-2 focus:ring-orange-500 text-sm">
+                            </div>
+                        </div>
+
+                        <!-- Email -->
+                        <div>
+                            <label class="block text-xs font-medium text-gray-700 mb-0.5">Email *</label>
+                            <input type="email" name="email" required
+                                class="w-full px-2 py-1.5 border border-gray-300 rounded focus:ring-2 focus:ring-orange-500 text-sm">
+                        </div>
+
+                        <!-- Phone -->
+                        <div>
+                            <label class="block text-xs font-medium text-gray-700 mb-0.5">Phone</label>
+                            <input type="tel" name="phone"
+                                class="w-full px-2 py-1.5 border border-gray-300 rounded focus:ring-2 focus:ring-orange-500 text-sm">
+                        </div>
+
+                        <!-- Location -->
+                        <div>
+                            <label class="block text-xs font-medium text-gray-700 mb-0.5">Location *</label>
+                            <select name="location" required
+                                class="w-full px-2 py-1.5 border border-gray-300 rounded focus:ring-2 focus:ring-orange-500 text-sm">
+                                <option value="">Select your city</option>
+                                <option value="melbourne">Melbourne</option>
+                                <option value="sydney">Sydney</option>
+                                <option value="perth">Perth</option>
+                                <option value="adelaide">Adelaide</option>
+                                <option value="brisbane">Brisbane</option>
+                                <option value="darwin">Darwin</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <!-- Description -->
+                        <div>
+                            <label class="block text-xs font-medium text-gray-700 mb-0.5">Project Description</label>
+                            <textarea name="description" rows="1"
+                                class="w-full px-2 py-1.5 border border-gray-300 rounded focus:ring-2 focus:ring-orange-500 text-sm"
+                                placeholder="Briefly describe requirements"></textarea>
+                        </div>
+
+                        <!-- Google reCAPTCHA -->
+                        <div class="g-recaptcha scale-90 transform origin-left"
+                            data-sitekey="6Ld47tsrAAAAAL_S7gMxdbOK6WZcloCIDLdlekox"></div>
+
+                        <!-- Submit -->
+                        <div class="pt-2">
+                            <button type="submit" id="submitBtn"
+                                class="w-full bg-orange-600 text-white py-2 rounded font-semibold text-sm hover:bg-orange-700 transition disabled:bg-gray-400">
+                                <span id="btnText">Submit Quote</span>
+                                <span id="btnLoader" class="hidden">
+                                    <i class="fas fa-spinner fa-spin"></i> Sending...
+                                </span>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="/script.js"></script>
+</body>
+
+
+</html>

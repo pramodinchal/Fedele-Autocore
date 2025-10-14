@@ -873,12 +873,26 @@ function closeQuoteModal() {
     const modal = document.getElementById("quoteModal");
     if (!modal) return;
     modal.classList.remove("show");
+    
+    // Release body scroll lock immediately
+    document.body.style.overflow = '';
+    document.body.style.position = '';
+    document.body.style.width = '';
+    document.body.classList.remove("modal-open");
+    
     setTimeout(() => {
         modal.style.display = "none";
-        document.body.classList.remove("modal-open");
+        modal.classList.add("hidden");
     }, 300);
+    
     const form = document.getElementById("quoteForm");
-    if (form) form.reset();
+    if (form) {
+        form.reset();
+        // Reset reCAPTCHA if it exists
+        if (typeof grecaptcha !== 'undefined') {
+            grecaptcha.reset();
+        }
+    }
     resetFileUpload();
 }
 

@@ -17,285 +17,18 @@
 <body class="m-0 p-0 w-full overflow-x-hidden min-h-screen font-sans text-gray-800">
 
     <!-- Header -->
-    <header class="fixed top-0 left-0 w-full bg-white shadow-md z-50">
+    <header-component class="fixed top-0 left-0 w-full bg-white shadow-md z-50">
         <div class="max-w-7xl mx-auto flex items-center justify-between h-16 md:h-20 px-12 sm:px-8 lg:px-12">
 
             <!-- Logo -->
             <div class="flex items-center flex-shrink-0">
-                <img src="./Assets/fedele-logo-png.png" alt="Fedele Autocore Logo"
+                <img src="/Assets/fedele-logo-png.png" alt="Fedele Autocore Logo"
                     class="h-10 sm:h-12 md:h-14 lg:h-16 w-auto object-contain" />
             </div>
 
-            <!-- Nav Links (Desktop) -->
-            <nav class="hidden lg:flex items-center space-x-6 xl:space-x-5 2xl:space-x-6">
-                <a href="index.html"
-                    class="text-sm 2xl:text-base font-medium text-gray-700 hover:text-orange-600 transition-colors whitespace-nowrap">Home</a>
 
-                <!-- CNC Services -->
-                <div class="relative group">
-                    <a href="advanced-cnc-machining-services.html"
-                        class="text-sm 2xl:text-base font-medium text-gray-700 hover:text-orange-600 transition-colors whitespace-nowrap">CNC
-                        Services</a>
-                    <div
-                        class="absolute left-0 top-full mt-1 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
-                        <div class="bg-white shadow-xl rounded-lg min-w-48 border">
-                            <ul class="py-2">
-                                <li><a href="milling.html"
-                                        class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">CNC
-                                        Milling</a></li>
-                                <li><a href="turning.html"
-                                        class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">CNC
-                                        Turning</a></li>
-                                <li><a href="5-axis-machining.html"
-                                        class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">5-Axis
-                                        Machining</a></li>
-                                <li><a href="precision-machining.html"
-                                        class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">Precision
-                                        Machining</a></li>
-                                <li><a href="prototyping.html"
-                                        class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">CNC
-                                        Prototyping</a></li>
-                                <li><a href="custom-machining.html"
-                                        class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">Custom
-                                        Machining</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+            <!-- includes/navigation.html -->
 
-                <!-- Industries -->
-                <div class="relative group">
-                    <a href="#"
-                        class="text-sm 2xl:text-base font-medium text-gray-700 hover:text-orange-600 transition-colors whitespace-nowrap">Industries</a>
-                    <div
-                        class="absolute left-0 top-full mt-1 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
-                        <div class="bg-white shadow-xl rounded-lg min-w-56 border">
-                            <ul class="py-2">
-                                <li><a href="defence.html"
-                                        class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">Defence
-                                        Industry</a></li>
-                                <li><a href="oil&gas.html"
-                                        class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">Oil
-                                        & Gas Industry</a></li>
-                                <li><a href="automotive.html"
-                                        class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">Automotive
-                                        Industry</a></li>
-                                <li><a href="construction.html"
-                                        class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">Construction
-                                        Industry</a></li>
-                                <li><a href="energy.html"
-                                        class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">Energy
-                                        Solutions</a></li>
-                                <li><a href="hydraulic.html"
-                                        class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">Hydraulic
-                                        Power</a></li>
-                                <li><a href="agriculture.html"
-                                        class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">Agricultural
-                                        / Tractor</a></li>
-                                <li><a href="aerospace.html"
-                                        class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">Aerospace
-                                        Industry</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Locations -->
-                <div class="relative group">
-                    <a href="location.html"
-                        class="text-sm 2xl:text-base font-medium text-gray-700 hover:text-orange-600 transition-colors whitespace-nowrap">
-                        Locations
-                    </a>
-
-                    <!-- First dropdown -->
-                    <div
-                        class="absolute left-0 top-full mt-1 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
-                        <div class="bg-white shadow-xl rounded-lg min-w-40 border">
-                            <ul class="py-2">
-
-                                <!-- Melbourne -->
-                                <li class="relative group/sub">
-                                    <a href="melbourne-cnc.html"
-                                        class="flex justify-between items-center px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">
-                                        Melbourne
-                                        <span class="ml-2">></span>
-                                    </a>
-                                    <!-- Submenu -->
-                                    <ul
-                                        class="absolute left-full top-0 ml-1 bg-white shadow-lg rounded-lg border min-w-40 py-2 opacity-0 invisible group-hover/sub:opacity-100 group-hover/sub:visible transition-all duration-200">
-                                        <li><a href="melbourne-cnc.html"
-                                                class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600">CNC
-                                                Machining</a></li>
-                                        <li><a href="melbourne-precision.html"
-                                                class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600">Precision
-                                                Machining</a></li>
-                                        <li><a href="melbourne-5-axis-machining.html"
-                                                class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600">5-Axis
-                                                Machining </a></li>
-                                    </ul>
-                                </li>
-
-                                <!-- Sydney -->
-                                <li class="relative group/sub">
-                                    <a href="sydney-cnc.html"
-                                        class="flex justify-between items-center px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600">
-                                        Sydney
-                                        <span class="ml-2">></span>
-                                    </a>
-                                    <ul
-                                        class="absolute left-full top-0 ml-1 bg-white shadow-lg rounded-lg border min-w-40 py-2 opacity-0 invisible group-hover/sub:opacity-100 group-hover/sub:visible transition-all duration-200">
-                                        <li><a href="sydney-cnc.html"
-                                                class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600">CNC
-                                                Machining</a></li>
-                                        <li><a href="sydney-precision.html"
-                                                class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600">Precision
-                                                Machining</a></li>
-                                    </ul>
-                                </li>
-
-                                <!-- Perth -->
-                                <li class="relative group/sub">
-                                    <a href="perth-cnc.html"
-                                        class="flex justify-between items-center px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600">
-                                        Perth
-                                        <span class="ml-2">></span>
-                                    </a>
-                                    <ul
-                                        class="absolute left-full top-0 ml-1 bg-white shadow-lg rounded-lg border min-w-40 py-2 opacity-0 invisible group-hover/sub:opacity-100 group-hover/sub:visible transition-all duration-200">
-                                        <li><a href="perth-cnc.html"
-                                                class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600">CNC
-                                                Machining</a></li>
-                                        <li><a href="perth-precision.html"
-                                                class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600">Precision
-                                                Machining</a></li>
-                                    </ul>
-                                </li>
-
-                                <!-- Adelaide -->
-
-                                <li class="relative group/sub">
-                                    <a href="adelaide-cnc.html"
-                                        class="flex justify-between items-center px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600">
-                                        Adelaide
-                                        <span class="ml-2">></span>
-                                    </a>
-                                    <ul
-                                        class="absolute left-full top-0 ml-1 bg-white shadow-lg rounded-lg border min-w-40 py-2 opacity-0 invisible group-hover/sub:opacity-100 group-hover/sub:visible transition-all duration-200">
-                                        <li><a href="adelaide-cnc.html"
-                                                class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600">CNC
-                                                Machining</a></li>
-                                    </ul>
-                                </li>
-                                <!---Brisbane-->
-                                <li class="relative group/sub">
-                                    <a href="brisbane-cnc.html"
-                                        class="flex justify-between items-center px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600">
-                                        Brisbane
-                                        <span class="ml-2">></span>
-                                    </a>
-                                    <ul
-                                        class="absolute left-full top-0 ml-1 bg-white shadow-lg rounded-lg border min-w-40 py-2 opacity-0 invisible group-hover/sub:opacity-100 group-hover/sub:visible transition-all duration-200">
-                                        <li><a href="brisbane-cnc.html"
-                                                class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600">CNC
-                                                Machining</a></li>
-                                    </ul>
-                                </li>
-
-                                <!----Darwin-->
-
-                                <li class="relative group/sub">
-                                    <a href="darwin-cnc.html"
-                                        class="flex justify-between items-center px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600">
-                                        Darwin
-                                        <span class="ml-2">></span>
-                                    </a>
-                                    <ul
-                                        class="absolute left-full top-0 ml-1 bg-white shadow-lg rounded-lg border min-w-40 py-2 opacity-0 invisible group-hover/sub:opacity-100 group-hover/sub:visible transition-all duration-200">
-                                        <li><a href="darwin-cnc.html"
-                                                class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600">CNC
-                                                Machining</a></li>
-                                    </ul>
-                                </li>
-
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Company -->
-                <div class="relative group">
-                    <a href="#company"
-                        class="text-sm 2xl:text-base font-medium text-gray-700 hover:text-orange-600 transition-colors whitespace-nowrap">Company</a>
-                    <div
-                        class="absolute left-0 top-full mt-1 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
-                        <div class="bg-white shadow-xl rounded-lg min-w-44 border">
-                            <ul class="py-2">
-                                <li><a href="about-us.html"
-                                        class="block px-3 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">About
-                                        Us</a></li>
-                                <li><a href="#"
-                                        class="block px-3 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">Blog</a>
-                                </li>
-                                <li><a href="capabilities.html"
-                                        class="block px-3 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">Capabilities</a>
-                                </li>
-                                <li><a href="certifications.html"
-                                        class="block px-3 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">Certifications</a>
-                                </li>
-                                <li>
-                                    <a href="infrastructure.html"
-                                        class="block px-3 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">Infrastructure</a>
-                                </li>
-                                <li><a href="small-batch-production.html"
-                                        class="block px-3 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">Small
-                                        Batch Production</a>
-                                </li>
-                                <li><a href="large-scale-production.html"
-                                        class="block px-3 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">Large
-                                        Scale Production</a>
-                                </li>
-                                <li><a href="#"
-                                        class="block px-3 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">Quality
-                                        Standards</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Components -->
-                <div class="relative group">
-                    <a href="#components"
-                        class="text-sm 2xl:text-base font-medium text-gray-700 hover:text-orange-600 transition-colors whitespace-nowrap">Components</a>
-                    <div
-                        class="absolute left-0 top-full mt-1 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
-                        <div class="bg-white shadow-xl rounded-lg min-w-52 border">
-                            <ul class="py-2">
-                                <li><a href="drilling-components.html"
-                                        class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">Drilling
-                                        Components</a></li>
-                                <li><a href="engine-components.html"
-                                        class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">Engine
-                                        Components</a></li>
-                                <li><a href="hydraulic-components.html"
-                                        class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">Hydraulic
-                                        Components</a></li>
-                                <li><a href="turbine-components.html"
-                                        class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">Turbine
-                                        Components</a></li>
-                                <li><a href="tractor-components.html"
-                                        class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">Tractor
-                                        Components</a></li>
-                                <li><a href="military-components.html"
-                                        class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">Military
-                                        Components</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <a href="contact.html"
-                    class="text-sm 2xl:text-base font-medium text-gray-700 hover:text-orange-600 transition-colors whitespace-nowrap">Contact</a>
-            </nav>
 
             <!-- Action Buttons -->
             <div class="flex items-center space-x-2 sm:space-x-3">
@@ -518,14 +251,14 @@
 
         <!-- Dark Overlay -->
         <div id="overlay" class="hidden fixed inset-0 bg-black/50 z-40"></div>
-    </header>
+    </header-component>
 
 
 
 
     <!-- Hero Section -->
     <section id="home" class="relative min-h-screen flex items-center bg-cover bg-center bg-no-repeat w-full"
-        style="background-image: url('Assets/feed-rate-and-cutting-speed.jpg');">
+        style="background-image: url('/Assets/feed-rate-and-cutting-speed.jpg');">
 
         <!-- Overlay: darker on left, brighter on right -->
         <div class="absolute inset-0 bg-gradient-to-r from-black/70 via-black/40 to-transparent"></div>
@@ -688,7 +421,7 @@
 
                 <!-- Defence -->
                 <div class="bg-white rounded-2xl shadow-lg hover:shadow-xl flex flex-col items-center transition">
-                    <img src="Assets/defence.jpg" alt="Defence Industry"
+                    <img src="/Assets/defence.jpg" alt="Defence Industry"
                         class="w-full h-40 object-cover rounded-lg mb-4">
                     <h3 class="font-semibold text-lg text-gray-800 mb-2">Defence Industry</h3>
                     <p class="text-gray-600 text-sm mb-4 px-4">
@@ -707,7 +440,7 @@
 
                 <!-- Oil & Gas -->
                 <div class="bg-white rounded-2xl shadow-lg hover:shadow-xl flex flex-col items-center transition">
-                    <img src="Assets/gas&oil.jpg" alt="Oil & Gas Industry"
+                    <img src="/Assets/gas&oil.jpg" alt="Oil & Gas Industry"
                         class="w-full h-40 object-cover rounded-lg mb-4">
                     <h3 class="font-semibold text-lg text-gray-800 mb-2">Oil & Gas Industry</h3>
                     <p class="text-gray-600 text-sm mb-4 px-4">
@@ -722,7 +455,7 @@
 
                 <!-- Automotive -->
                 <div class="bg-white rounded-2xl shadow-lg hover:shadow-xl flex flex-col items-center transition">
-                    <img src="Assets/automotive.jpeg" alt="Automotive Industry"
+                    <img src="/Assets/automotive.jpeg" alt="Automotive Industry"
                         class="w-full h-40 object-cover rounded-lg mb-4">
                     <h3 class="font-semibold text-lg text-gray-800 mb-2">Automotive Industry</h3>
                     <p class="text-gray-600 text-sm mb-4 px-4">
@@ -738,7 +471,7 @@
 
                 <!-- Construction -->
                 <div class="bg-white rounded-2xl shadow-lg hover:shadow-xl flex flex-col items-center transition">
-                    <img src="Assets/construction.jpg" alt="Construction Industry"
+                    <img src="/Assets/construction.jpg" alt="Construction Industry"
                         class="w-full h-40 object-cover rounded-lg mb-4">
                     <h3 class="font-semibold text-lg text-gray-800 mb-2">Construction Industry</h3>
                     <p class="text-gray-600 text-sm mb-4 px-4">
@@ -754,7 +487,7 @@
 
                 <!-- Energy -->
                 <div class="bg-white rounded-2xl shadow-lg hover:shadow-xl flex flex-col items-center transition">
-                    <img src="Assets/energy-solution.avif" alt="Energy Solutions"
+                    <img src="/Assets/energy-solution.avif" alt="Energy Solutions"
                         class="w-full h-40 object-cover rounded-lg mb-4">
                     <h3 class="font-semibold text-lg text-gray-800 mb-2">Energy Solutions</h3>
                     <p class="text-gray-600 text-sm mb-4 px-4">
@@ -769,7 +502,7 @@
 
                 <!-- Hydraulic -->
                 <div class="bg-white rounded-2xl shadow-lg hover:shadow-xl flex flex-col items-center transition">
-                    <img src="Assets/hydraulic.jpeg" alt="Hydraulic Power"
+                    <img src="/Assets/hydraulic.jpeg" alt="Hydraulic Power"
                         class="w-full h-40 object-cover rounded-lg mb-4">
                     <h3 class="font-semibold text-lg text-gray-800 mb-2">Hydraulic Power</h3>
                     <p class="text-gray-600 text-sm mb-4 px-4">
@@ -784,7 +517,7 @@
 
                 <!-- Agricultural -->
                 <div class="bg-white rounded-2xl shadow-lg hover:shadow-xl flex flex-col items-center transition">
-                    <img src="Assets/agri&tractor.webp" alt="Agricultural Industry"
+                    <img src="/Assets/agri&tractor.webp" alt="Agricultural Industry"
                         class="w-full h-40 object-cover rounded-lg mb-4">
                     <h3 class="font-semibold text-lg text-gray-800 mb-2">Agricultural / Tractor</h3>
                     <p class="text-gray-600 text-sm mb-4 px-4">
@@ -799,7 +532,7 @@
 
                 <!-- Aerospace -->
                 <div class="bg-white rounded-2xl shadow-lg hover:shadow-xl flex flex-col items-center transition">
-                    <img src="Assets/aerospace.webp" alt="Aerospace Industry"
+                    <img src="/Assets/aerospace.webp" alt="Aerospace Industry"
                         class="w-full h-40 object-cover rounded-lg mb-4">
                     <h3 class="font-semibold text-lg text-gray-800 mb-2">Aerospace Industry</h3>
                     <p class="text-gray-600 text-sm mb-4 px-4">
@@ -833,7 +566,7 @@
                 <!-- Card 1 -->
                 <div
                     class="bg-white rounded-lg border border-gray-200 overflow-hidden hover:shadow-xl transition-shadow">
-                    <img src="Assets/cnc-milling.jpeg" alt="milling" class="w-full h-48 object-cover">
+                    <img src="/Assets/cnc-milling.jpeg" alt="milling" class="w-full h-48 object-cover">
                     <div class="p-6 border-l-4 border-blue-500 h-full">
                         <h3 class="text-xl font-bold text-blue-900 mb-4">CNC Milling</h3>
                         <p class="text-gray-600">
@@ -846,7 +579,7 @@
                 <!-- Card 2 -->
                 <div
                     class="bg-white rounded-lg border border-gray-200 overflow-hidden hover:shadow-xl transition-shadow">
-                    <img src="Assets/turning-cnc.webp" alt="turning" class="w-full h-48 object-cover">
+                    <img src="/Assets/turning-cnc.webp" alt="turning" class="w-full h-48 object-cover">
                     <div class="p-6 border-l-4 border-blue-500 h-full">
                         <h3 class="text-xl font-bold text-blue-900 mb-4">CNC Turning</h3>
                         <p class="text-gray-600">
@@ -859,7 +592,7 @@
                 <!-- Card 3 -->
                 <div
                     class="bg-white rounded-lg border border-gray-200 overflow-hidden hover:shadow-xl transition-shadow">
-                    <img src="Assets/5axis-machining.webp" alt="5axis-machining" class="w-full h-48 object-cover">
+                    <img src="/Assets/5axis-machining.webp" alt="5axis-machining" class="w-full h-48 object-cover">
                     <div class="p-6 border-l-4 border-blue-500 h-full">
                         <h3 class="text-xl font-bold text-blue-900 mb-4">5-Axis Machining</h3>
                         <p class="text-gray-600">
@@ -872,7 +605,7 @@
                 <!-- Card 4 -->
                 <div
                     class="bg-white rounded-lg border border-gray-200 overflow-hidden hover:shadow-xl transition-shadow">
-                    <img src="Assets/precision-machining.jpeg" alt="precision-machining"
+                    <img src="/Assets/precision-machining.jpeg" alt="precision-machining"
                         class="w-full h-48 object-cover">
                     <div class="p-6 border-l-4 border-blue-500 h-full">
                         <h3 class="text-xl font-bold text-blue-900 mb-4">Precision Machining</h3>
@@ -902,7 +635,7 @@
                 <!-- Aluminum Alloys -->
                 <div
                     class="bg-white rounded-lg border border-gray-200 overflow-hidden hover:shadow-xl transition-shadow">
-                    <img src="Assets/Aluminium.jpg" alt="Aluminum Alloys" class="w-full h-48 object-cover">
+                    <img src="/Assets/Aluminium.jpg" alt="Aluminum Alloys" class="w-full h-48 object-cover">
                     <div class="p-6 border-l-4 border-blue-500 h-full">
                         <h3 class="text-xl font-bold text-blue-900 mb-4">Aluminium Alloys</h3>
                         <p class="text-gray-600">
@@ -913,7 +646,7 @@
                 <!-- Card 2 -->
                 <div
                     class="bg-white rounded-lg border border-gray-200 overflow-hidden hover:shadow-xl transition-shadow">
-                    <img src="Assets/steel.jpeg" alt="Aluminum Alloys" class="w-full h-48 object-cover">
+                    <img src="/Assets/steel.jpeg" alt="Aluminum Alloys" class="w-full h-48 object-cover">
                     <div class="p-6 border-l-4 border-blue-500 h-full">
                         <h3 class="text-xl font-bold text-blue-900 mb-4">Stainless Steel</h3>
                         <p class="text-gray-600">
@@ -925,7 +658,7 @@
                 <!-- Card 3 -->
                 <div
                     class="bg-white rounded-lg border border-gray-200 overflow-hidden hover:shadow-xl transition-shadow">
-                    <img src="Assets/carbon-steel.jpeg" alt="Aluminum Alloys" class="w-full h-48 object-cover">
+                    <img src="/Assets/carbon-steel.jpeg" alt="Aluminum Alloys" class="w-full h-48 object-cover">
                     <div class="p-6 border-l-4 border-blue-500 h-full">
                         <h3 class="text-xl font-bold text-blue-900 mb-4">Carbon Steel</h3>
                         <p class="text-gray-600">
@@ -937,7 +670,7 @@
                 <!-- Card 4 -->
                 <div
                     class="bg-white rounded-lg border border-gray-200 overflow-hidden hover:shadow-xl transition-shadow">
-                    <img src="Assets/brass.jpg" alt="Aluminum Alloys" class="w-full h-48 object-cover">
+                    <img src="/Assets/brass.jpg" alt="Aluminum Alloys" class="w-full h-48 object-cover">
                     <div class="p-6 border-l-4 border-blue-500 h-full">
                         <h3 class="text-xl font-bold text-blue-900 mb-4">Brass</h3>
                         <p class="text-gray-600">
@@ -1010,7 +743,7 @@
 
                 <div class="flex justify-center">
                     <div class="w-100 h-80 rounded-lg overflow-hidden shadow-lg">
-                        <img src="Assets/cnc-machining.jpg" alt="Advanced CNC Machining Center"
+                        <img src="/Assets/cnc-machining.jpg" alt="Advanced CNC Machining Center"
                             class="w-full h-full object-cover" />
                     </div>
                 </div>
@@ -1024,7 +757,7 @@
             <div class="grid lg:grid-cols-2 gap-12 items-center">
                 <div class="flex justify-center lg:order-1">
                     <div class="w-100 h-80 rounded-lg overflow-hidden shadow-lg">
-                        <img src="./Assets/quality-assurance.png" alt="Quality Control Laboratory"
+                        <img src="/Assets/quality-assurance.png" alt="Quality Control Laboratory"
                             class="w-full h-full object-cover" />
                     </div>
                 </div>
@@ -1155,7 +888,7 @@
 
                 <div class="flex justify-center">
                     <div class="w-100 h-80 rounded-lg overflow-hidden shadow-lg">
-                        <img src="Assets/rapidPrototyping.jpg" alt="Rapid Prototyping & Australian Manufacturing"
+                        <img src="/Assets/rapidPrototyping.jpg" alt="Rapid Prototyping & Australian Manufacturing"
                             class="w-full h-full object-cover" />
                     </div>
                 </div>
@@ -1606,7 +1339,7 @@
                 <div class="bg-white rounded-xl p-4 w-80 h-auto flex flex-col items-center 
                     shadow-lg hover:shadow-2xl transform hover:-translate-y-2 
                     transition-all duration-300 ease-in-out border border-gray-100">
-                    <img src="Assets/certificate1.webp" alt="AS 9100D:2016 Certificate"
+                    <img src="/Assets/certificate1.webp" alt="AS 9100D:2016 Certificate"
                         class="w-full h-96 object-contain rounded-lg" />
                 </div>
 
@@ -1614,7 +1347,7 @@
                 <div class="bg-white rounded-xl p-4 w-80 h-auto flex flex-col items-center 
                     shadow-lg hover:shadow-2xl transform hover:-translate-y-2 
                     transition-all duration-300 ease-in-out border border-gray-100">
-                    <img src="Assets/certificate2.png" alt="ISO 9001:2015 Certificate"
+                    <img src="/Assets/certificate2.png" alt="ISO 9001:2015 Certificate"
                         class="w-full h-96 object-contain rounded-lg" />
                 </div>
             </div>
@@ -1625,7 +1358,7 @@
                 <div class="bg-white rounded-xl p-4 w-80 h-auto flex flex-col items-center 
                     shadow-lg hover:shadow-2xl transform hover:-translate-y-2 
                     transition-all duration-300 ease-in-out border border-gray-100">
-                    <img src="Assets/certificate3.png" alt="ISO 45001:2018 Certificate"
+                    <img src="/Assets/certificate3.png" alt="ISO 45001:2018 Certificate"
                         class="w-full h-96 object-contain rounded-lg" />
                 </div>
 
@@ -1633,7 +1366,7 @@
                 <div class="bg-white rounded-xl p-4 w-80 h-auto flex flex-col items-center 
                     shadow-lg hover:shadow-2xl transform hover:-translate-y-2 
                     transition-all duration-300 ease-in-out border border-gray-100">
-                    <img src="Assets/certificate4.jpg" alt="ISO 50001:2018 Certificate"
+                    <img src="/Assets/certificate4.jpg" alt="ISO 50001:2018 Certificate"
                         class="w-full h-96 object-contain rounded-lg" />
                 </div>
 
@@ -1641,7 +1374,7 @@
                 <div class="bg-white rounded-xl p-4 w-80 h-auto flex flex-col items-center 
                     shadow-lg hover:shadow-2xl transform hover:-translate-y-2 
                     transition-all duration-300 ease-in-out border border-gray-100">
-                    <img src="Assets/certificate5.png" alt="ISO 14001:2015 Certificate"
+                    <img src="/Assets/certificate5.png" alt="ISO 14001:2015 Certificate"
                         class="w-full h-96 object-contain rounded-lg" />
                 </div>
             </div>
@@ -1650,195 +1383,7 @@
 
 
     <!-- Footer -->
-    <footer class="bg-gray-800 text-gray-300 py-8 px-12 sm:px-8 lg:px-12">
-        <div class="w-full mx-auto grid grid-cols-1 md:grid-cols-5 gap-8">
-            <!-- Column 1 -->
-            <div>
-                <h3 class="text-orange-600 font-bold text-lg mb-4">Fedele Autocore</h3>
-                <p class="text-sm mb-4">
-                    Australia's leading CNC machining specialists serving major industries
-                    across Melbourne, Sydney, Perth, Adelaide, Brisbane and Darwin.
-                </p>
-                <div class="space-y-2">
-                    <p class="text-sm flex items-start">
-                        <span class="font-semibold mr-2">Phone:</span> 1300 CNC TECH
-                    </p>
-                    <p class="text-sm flex items-start">
-                        <span class="font-semibold mr-2">Email:</span>
-                        info@fedeleautocore.com.au
-                    </p>
-                    <p class="text-sm flex items-start">
-                        <span class="font-semibold mr-2">ABN:</span> 12 345 678 901
-                    </p>
-                </div>
-            </div>
-
-            <!-- Column 2 -->
-            <div>
-                <h3 class="text-orange-600 font-bold text-lg mb-4">CNC Services</h3>
-                <ul class="space-y-3">
-                    <li>
-                        <a href="turning.html"
-                            class="text-sm hover:text-white transition-colors duration-300 flex items-center">CNC
-                            Turning</a>
-                    </li>
-                    <li>
-                        <a href="milling.html"
-                            class="text-sm hover:text-white transition-colors duration-300 flex items-center">CNC
-                            Milling</a>
-                    </li>
-                    <li>
-                        <a href="5-axis-machining.html"
-                            class="text-sm hover:text-white transition-colors duration-300 flex items-center">5-Axis
-                            Machining</a>
-                    </li>
-                    <li>
-                        <a href="precision-machining.html"
-                            class="text-sm hover:text-white transition-colors duration-300 flex items-center">Precision
-                            Machining</a>
-                    </li>
-                    <li>
-                        <a href="prototyping.html"
-                            class="text-sm hover:text-white transition-colors duration-300 flex items-center">CNC
-                            Prototyping</a>
-                    </li>
-                    <li>
-                        <a href="custom-machining.html"
-                            class="text-sm hover:text-white transition-colors duration-300 flex items-center">Custom
-                            Machining</a>
-                    </li>
-                </ul>
-            </div>
-
-            <!-- Column 3 -->
-            <div>
-                <h3 class="text-orange-600 font-bold text-lg mb-4">Australian Locations</h3>
-                <ul class="space-y-3">
-                    <li>
-                        <a href="melbourne-cnc.html"
-                            class="text-sm hover:text-white transition-colors duration-300 flex items-center">Melbourne
-                            CNC</a>
-                    </li>
-                    <li>
-                        <a href="sydney-cnc.html"
-                            class="text-sm hover:text-white transition-colors duration-300 flex items-center">Sydney
-                            CNC</a>
-                    </li>
-                    <li>
-                        <a href="perth-cnc.html"
-                            class="text-sm hover:text-white transition-colors duration-300 flex items-center">Perth
-                            CNC</a>
-                    </li>
-                    <li>
-                        <a href="adelaide-cnc.html"
-                            class="text-sm hover:text-white transition-colors duration-300 flex items-center">Adelaide
-                            CNC</a>
-                    </li>
-                    <li>
-                        <a href="brisbane-cnc.html"
-                            class="text-sm hover:text-white transition-colors duration-300 flex items-center">Brisbane
-                            CNC</a>
-                    </li>
-                    <li>
-                        <a href="darwin-cnc.html"
-                            class="text-sm hover:text-white transition-colors duration-300 flex items-center">Darwin
-                            CNC</a>
-                    </li>
-                </ul>
-            </div>
-
-            <!-- Column 4 -->
-            <div>
-                <h3 class="text-orange-600 font-bold text-lg mb-4">Industries Served</h3>
-                <ul class="space-y-3">
-                    <li>
-                        <a href="defence.html"
-                            class="text-sm hover:text-white transition-colors duration-300 flex items-center">Defence</a>
-                    </li>
-                    <li>
-                        <a href="oil&gas.html"
-                            class="text-sm hover:text-white transition-colors duration-300 flex items-center">Oil
-                            &
-                            Gas</a>
-                    </li>
-                    <li>
-                        <a href="#"
-                            class="text-sm hover:text-white transition-colors duration-300 flex items-center">Aerospace</a>
-                    </li>
-                    <li>
-                        <a href="automotive.html"
-                            class="text-sm hover:text-white transition-colors duration-300 flex items-center">Automotive</a>
-                    </li>
-                    <li>
-                        <a href="#"
-                            class="text-sm hover:text-white transition-colors duration-300 flex items-center">Manufacturing</a>
-                    </li>
-                    <li>
-                        <a href="#"
-                            class="text-sm hover:text-white transition-colors duration-300 flex items-center">Medical</a>
-                    </li>
-                </ul>
-            </div>
-
-            <!-- Column 5 -->
-            <div>
-                <h3 class="text-orange-600 font-bold text-lg mb-4">Company</h3>
-                <ul class="space-y-3">
-                    <li>
-                        <a href="about-us.html"
-                            class="text-sm hover:text-white transition-colors duration-300 flex items-center">About
-                            Us</a>
-                    </li>
-                    <li>
-                        <a href="#"
-                            class="text-sm hover:text-white transition-colors duration-300 flex items-center">Industry
-                            Blog</a>
-                    </li>
-                    <li>
-                        <a href="capabilities.html"
-                            class="text-sm hover:text-white transition-colors duration-300 flex items-center">Capabilities</a>
-                    </li>
-                    <li>
-                        <a href="#"
-                            class="text-sm hover:text-white transition-colors duration-300 flex items-center">Quality
-                            Standards</a>
-                    </li>
-                    <li>
-                        <a href="#"
-                            class="text-sm hover:text-white transition-colors duration-300 flex items-center">Emerging
-                            Services</a>
-                    </li>
-                    <li>
-                        <a href="contact.html"
-                            class="text-sm hover:text-white transition-colors duration-300 flex items-center">Contact
-                            Us</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-
-        <!-- Bottom Section -->
-        <div class="max-w-7xl mx-auto mt-10 pt-8 border-t border-gray-700">
-            <div class="flex flex-col md:flex-row justify-center items-center">
-                <p class="text-sm text-gray-400 mb-4 md:mb-0">
-                    &copy; 2025 Fedele Autocore. &nbsp All rights reserved.
-                </p>
-                <div class="flex flex-wrap justify-center gap-6">
-                    <a href="#" class="text-sm text-white hover:text-blue-600 transition-colors duration-300">&nbsp
-                        Privacy
-                        Policy</a>
-                    <a href="#" class="text-sm text-white hover:text-blue-600 transition-colors duration-300">Terms of
-                        Service</a>
-                    <a href="#"
-                        class="text-sm text-white hover:text-blue-600 transition-colors duration-300">Sitemap</a>
-                    <a href="#"
-                        class="text-sm text-white hover:text-blue-600 transition-colors duration-300">Careers</a>
-                    <a href="#" class="text-sm text-white hover:text-blue-600 transition-colors duration-300">Supplier
-                        Portal</a>
-                </div>
-            </div>
-        </div>
-    </footer>
+    <footer-component></footer-component>
 
     <!-- Quote Modal -->
 
@@ -1946,7 +1491,7 @@
 
 
 
-    <script src="script.js">
+    <script src="/script.js">
     </script>
 
 

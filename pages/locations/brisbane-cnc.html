@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CNC Machining Brisbane</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-white text-gray-900">
+
+  <!-- Header -->
+  <header-component class="fixed top-0 left-0 w-full bg-white shadow-md z-50">
+  </header-component>
+
+
+  <!--Hero Section-->
+  <section class="relative min-h-screen flex items-center bg-cover bg-center bg-no-repeat w-full">
+    <!-- Background Image -->
+    <div class="absolute inset-0 -z-10">
+      <img src="/Assets/location-hero.png" alt="automotive-precision component"
+        class="w-full h-full object-cover [object-position:20%_50%] brightness-125 absolute inset-0" />
+
+      <!-- Overlay -->
+      <div class="absolute inset-0 bg-gradient-to-r from-black via-black/70 to-transparent"></div>
+    </div>
+
+    <!-- Content -->
+
+    <div class="relative z-10 w-full px-12 md:px-12 flex flex-col md:flex-row items-center md:items-start">
+
+      <!-- Left Content -->
+      <div class="text-left w-full md:w-1/2 mt-24 md:mt-32">
+        <h1 class="text-4xl md:text-6xl font-bold mb-6 text-white max-w-2xl">
+          CNC Machining <span class="text-orange-500">Brisbane</span>
+        </h1>
+        <p class="text-lg md:text-xl text-gray-200 max-w-xl leading-relaxed">
+          Precision CNC Machining Services in Brisbane
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 py-4">
+          <button onclick="openQuoteModal()"
+            class="px-6 py-3 bg-orange-500 text-white font-semibold rounded-lg shadow-md hover:bg-orange-600 transition transform hover:scale-105">
+            Get a Quote
+          </button>
+        </div>
+      </div>
+
+      <!-- Right side (empty space to reveal background image) -->
+      <div class="hidden md:block md:w-1/2"></div>
+    </div>
+
+  </section>
+
+  <!-- About Section -->
+  <section class="py-8 px-12 bg-gray-100">
+    <div class="w-full mx-auto flex flex-col md:flex-row items-start justify-between gap-12">
+
+      <!-- Left Content -->
+      <div class="md:w-1/2">
+        <h2 class="text-4xl font-bold text-blue-900 mb-6">
+          <span class="border-l-4 border-orange-500 pl-4">Tropical-Climate CNC Machining Excellence in Brisbane</span>
+        </h2>
+        <p class="text-gray-700 mb-6">
+          Brisbane's subtropical environment and diverse economy create unique requirements for precision manufacturing.
+          Our CNC machining services are specifically adapted for Queensland's climate while serving the aerospace,
+          mining, marine, and agriculture industries with components built to last.
+        </p>
+        <p class="text-gray-700 mb-8">
+          Engineered for Queensland's unique conditions, our Brisbane facility specializes in components
+          that withstand high humidity, temperature fluctuations, and coastal corrosion. We serve
+          Queensland's thriving aerospace sector with precision components, support the state's mining
+          industry with robust equipment parts, provide marine-grade solutions for Brisbane's ports and
+          maritime industry, and deliver agricultural machinery components designed for tropical conditions.
+          Our climate-controlled manufacturing environment ensures consistent precision regardless of
+          Brisbane's weather extremes.
+        </p>
+
+        <!-- Stats -->
+        <div class="grid grid-cols-2 gap-4">
+          <div class="bg-gray-100 p-4 rounded-lg shadow-sm text-center">
+            <h3 class="text-2xl font-bold text-orange-500">95% RH</h3>
+            <p class="text-sm text-blue-900 uppercase mt-1">Humidity Rated</p>
+          </div>
+          <div class="bg-gray-100 p-4 rounded-lg shadow-sm text-center">
+            <h3 class="text-2xl font-bold text-orange-500">Marine</h3>
+            <p class="text-sm text-blue-900 uppercase mt-1">Grade</p>
+          </div>
+          <div class="bg-gray-100 p-4 rounded-lg shadow-sm text-center">
+            <h3 class="text-2xl font-bold text-orange-500">QLD</h3>
+            <p class="text-sm text-blue-900 uppercase mt-1">Local</p>
+          </div>
+          <div class="bg-gray-100 p-4 rounded-lg shadow-sm text-center">
+            <h3 class="text-2xl font-bold text-orange-500">Aerospace</h3>
+            <p class="text-sm text-blue-900 uppercase mt-1">Certified</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Image -->
+      <div class="md:w-1/2 flex justify-center items-start">
+        <img
+          src="https://images.unsplash.com/photo-1581092580617-a52da7851a69?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+          alt="Brisbane CNC Machining for Tropical Conditions"
+          class="rounded-2xl shadow-2xl w-full max-w-[550px] h-[370px] object-cover">
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Key Benefits -->
+  <section class="w-full bg-white py-8 px-12">
+    <h2 class="text-3xl font-extrabold text-blue-900 mb-6 border-l-4 border-orange-500 pl-4">Key Benefits</h2>
+    <ul class="grid md:grid-cols-2 gap-6">
+      <li class="p-6 border-l-4 border-orange-500 bg-gray-50 shadow">
+        <strong>Climate-Adapted Manufacturing:</strong> Optimized for subtropical conditions
+      </li>
+      <li class="p-6 border-l-4 border-orange-500 bg-gray-50 shadow">
+        <strong>Aerospace Industry Support:</strong> AS9100 certified for aviation components
+      </li>
+      <li class="p-6 border-l-4 border-orange-500 bg-gray-50 shadow">
+        <strong>Mining Equipment Specialization:</strong> Wear-resistant materials and treatments
+      </li>
+      <li class="p-6 border-l-4 border-orange-500 bg-gray-50 shadow">
+        <strong>Agricultural Innovation:</strong> Precision components for modern farming
+      </li>
+    </ul>
+  </section>
+
+  <!-- Main Content -->
+  <section class="w-full bg-gray-100 text-gray-900 py-8 px-12">
+    <h2 class="text-3xl text-blue-900 font-extrabold mb-6 border-l-4 border-orange-500 pl-4">Climate-Smart Precision
+      Manufacturing</h2>
+    <p class="mb-4">
+      Brisbane's role as Queensland's industrial center requires manufacturing services that understand both the
+      opportunities and challenges of operating in a subtropical climate. Our CNC machining processes are optimized
+      for environmental conditions while meeting diverse industry needs.
+    </p>
+    <p>
+      Queensland's humidity and temperature variations require special consideration in precision manufacturing.
+      Our climate-controlled facility maintains optimal conditions for machining and inspection, ensuring consistent
+      quality regardless of external weather.
+    </p>
+  </section>
+
+
+  <!-- Industries We Serve -->
+  <section class="bg-white">
+    <div class="mx-auto w-full lg:px-12  p-12">
+      <!-- Header Section -->
+      <div class="mb-16 ">
+        <h1 class="text-2xl md:text-3xl lg:text-4xl font-bold text-blue-900 mb-8">
+          <span class="border-l-4 border-orange-500 pl-4"> Industries We Serve in Brisbane</span>
+        </h1>
+        <p class="text-lg text-gray-900 leading-relaxed mb-6">
+          Our CNC machining services support Queensland's most critical industries with
+          advanced manufacturing capabilities and specialized expertise.
+        </p>
+      </div>
+
+      <div class="w-full mx-auto text-center">
+        <!-- Grid -->
+        <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+          <!-- Aerospace -->
+          <div class="bg-white rounded-2xl shadow-lg hover:shadow-xl flex flex-col items-center transition">
+            <img src="/Assets/aerospace.jpg" alt="Aerospace Industry" class="w-full h-40 object-cover rounded-lg mb-4">
+            <h3 class="font-semibold text-lg text-gray-800 mb-2">Aerospace</h3>
+            <p class="text-gray-600 text-sm mb-4 px-4">
+              Maintenance facilities for commercial and military aircraft.
+            </p>
+          </div>
+
+          <!-- Mining -->
+          <div class="bg-white rounded-2xl shadow-lg hover:shadow-xl flex flex-col items-center transition">
+            <img src="/Assets/mining.jpg" alt="Mining Industry" class="w-full h-40 object-cover rounded-lg mb-4">
+            <h3 class="font-semibold text-lg text-gray-800 mb-2">Mining</h3>
+            <p class="text-gray-600 text-sm mb-4 px-4">
+              Coal and mineral processing equipment.
+            </p>
+          </div>
+
+          <!-- Agriculture -->
+          <div class="bg-white rounded-2xl shadow-lg hover:shadow-xl flex flex-col items-center transition">
+            <img src="/Assets/agriculture.jpg" alt="Agriculture Industry"
+              class="w-full h-40 object-cover rounded-lg mb-4">
+            <h3 class="font-semibold text-lg text-gray-800 mb-2">Agriculture</h3>
+            <p class="text-gray-600 text-sm mb-4 px-4">
+              Advanced farming and processing machinery.
+            </p>
+          </div>
+
+          <!-- Marine -->
+          <div class="bg-white rounded-2xl shadow-lg hover:shadow-xl flex flex-col items-center transition">
+            <img src="/Assets/marine.jpg" alt="Marine Industry" class="w-full h-40 object-cover rounded-lg mb-4">
+            <h3 class="font-semibold text-lg text-gray-800 mb-2">Marine</h3>
+            <p class="text-gray-600 text-sm mb-4 px-4">
+              Port operations and recreational marine industry.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Technical Capabilities -->
+  <section class="bg-gray-100 py-8 px-12 text-blue-900">
+    <div class="w-full mx-auto">
+      <!-- Heading -->
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-blue-900 mb-6">
+          Specialized Capabilities
+        </h2>
+      </div>
+
+      <!-- Feature Cards Grid -->
+      <div class="grid md:grid-cols-2 lg:grid-cols-2 gap-6">
+        <!-- Climate-controlled precision manufacturing -->
+        <div
+          class="shadow-2xl bg-white border border-white/20 rounded-xl p-6 hover:shadow-xl transition-all duration-300">
+          <div class="flex items-center mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-900 mr-3" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+            </svg>
+            <h3 class="text-lg font-semibold text-orange-500">Climate-Controlled Precision Manufacturing</h3>
+          </div>
+          <p class="text-gray-800 text-sm leading-relaxed">
+            Advanced climate-controlled manufacturing environments maintaining consistent temperature and humidity
+            levels to ensure dimensional stability and superior quality in precision components.
+          </p>
+        </div>
+
+        <!-- Corrosion-resistant materials -->
+        <div
+          class="shadow-2xl bg-white border border-white/20 rounded-xl p-6 hover:shadow-xl transition-all duration-300">
+          <div class="flex items-center mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-900 mr-3" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
+            </svg>
+            <h3 class="text-lg font-semibold text-orange-500">Corrosion-Resistant Materials</h3>
+          </div>
+          <p class="text-gray-800 text-sm leading-relaxed">
+            Expertise in corrosion-resistant alloys and advanced protective coatings including zinc plating, powder
+            coating, and specialized polymer finishes for harsh environmental conditions.
+          </p>
+        </div>
+
+        <!-- Large-scale agricultural components -->
+        <div
+          class="shadow-2xl bg-white border border-white/20 rounded-xl p-6 hover:shadow-xl transition-all duration-300">
+          <div class="flex items-center mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-900 mr-3" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9v-9m0-9v9m0 9c-5 0-9-4-9-9s4-9 9-9" />
+            </svg>
+            <h3 class="text-lg font-semibold text-orange-500">Large-Scale Agricultural Components</h3>
+          </div>
+          <p class="text-gray-800 text-sm leading-relaxed">
+            Specialized manufacturing of large-scale components for modern farming equipment including tractor parts,
+            harvesting machinery, irrigation systems, and precision agriculture technology.
+          </p>
+        </div>
+
+        <!-- Marine-grade alloys -->
+        <div
+          class="shadow-2xl bg-white border border-white/20 rounded-xl p-6 hover:shadow-xl transition-all duration-300">
+          <div class="flex items-center mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-900 mr-3" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z" />
+            </svg>
+            <h3 class="text-lg font-semibold text-orange-500">Marine-Grade Alloys</h3>
+          </div>
+          <p class="text-gray-800 text-sm leading-relaxed">
+            Specialized expertise in marine-grade aluminum alloys, stainless steels, and bronze alloys with advanced
+            treatments for saltwater corrosion resistance and marine environment durability.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- FAQ -->
+  <section id="faq" class="py-8 px-4 bg-white">
+    <div class="max-w-4xl mx-auto">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl md:text-5xl font-bold text-blue-900 mb-8">
+          FAQs for Brisbane
+        </h2>
+      </div>
+
+      <div class="space-y-4">
+        <!-- FAQ 1 -->
+        <div class="faq-item rounded-lg border border-blue-900 overflow-hidden">
+          <button
+            class="faq-question w-full text-left p-6 flex justify-between items-center text-blue-900 font-medium bg-gray-100 hover:bg-gray-200 transition-colors">
+            How do you handle Brisbane's humidity for precision work?
+            <span class="faq-icon text-2xl">+</span>
+          </button>
+          <div class="faq-answer overflow-hidden transition-all duration-300 ease-in-out bg-white px-6"
+            style="max-height: 0;">
+            <div class="py-5">
+              <p class="text-gray-800">
+                Our facility is fully climate-controlled with dehumidification systems that maintain optimal conditions
+                for precision machining and measurement.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ 2 -->
+        <div class="faq-item rounded-lg border border-blue-900 overflow-hidden">
+          <button
+            class="faq-question w-full text-left p-6 flex justify-between items-center text-blue-900 font-medium bg-gray-100 hover:bg-gray-200 transition-colors">
+            Do you work with aerospace companies in Brisbane?
+            <span class="faq-icon text-2xl">+</span>
+          </button>
+          <div class="faq-answer overflow-hidden transition-all duration-300 ease-in-out bg-white px-6"
+            style="max-height: 0;">
+            <div class="py-5">
+              <p class="text-gray-800">
+                Yes, we're AS9100 certified and work with both commercial aviation maintenance facilities and military
+                aerospace applications.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ 3 -->
+        <div class="faq-item rounded-lg border border-blue-900 overflow-hidden">
+          <button
+            class="faq-question w-full text-left p-6 flex justify-between items-center text-blue-900 font-medium bg-gray-100 hover:bg-gray-200 transition-colors">
+            Can you handle agricultural equipment manufacturing?
+            <span class="faq-icon text-2xl">+</span>
+          </button>
+          <div class="faq-answer overflow-hidden transition-all duration-300 ease-in-out bg-white px-6"
+            style="max-height: 0;">
+            <div class="py-5">
+              <p class="text-gray-800">
+                Absolutely. We specialize in precision components for modern agricultural equipment, including
+                irrigation systems and harvesting machinery.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ 4 -->
+        <div class="faq-item rounded-lg border border-blue-900 overflow-hidden">
+          <button
+            class="faq-question w-full text-left p-6 flex justify-between items-center text-blue-900 font-medium bg-gray-100 hover:bg-gray-200 transition-colors">
+            What about marine applications in Brisbane?
+            <span class="faq-icon text-2xl">+</span>
+          </button>
+          <div class="faq-answer overflow-hidden transition-all duration-300 ease-in-out bg-white px-6"
+            style="max-height: 0;">
+            <div class="py-5">
+              <p class="text-gray-800">
+                We have extensive experience with marine-grade materials and protective coatings for both commercial
+                port equipment and recreational marine applications.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ 5 -->
+        <div class="faq-item rounded-lg border border-blue-900 overflow-hidden">
+          <button
+            class="faq-question w-full text-left p-6 flex justify-between items-center text-blue-900 font-medium bg-gray-100 hover:bg-gray-200 transition-colors">
+            Do you offer expedited services during mining season?
+            <span class="faq-icon text-2xl">+</span>
+          </button>
+          <div class="faq-answer overflow-hidden transition-all duration-300 ease-in-out bg-white px-6"
+            style="max-height: 0;">
+            <div class="py-5">
+              <p class="text-gray-800">
+                Yes, we understand Queensland's seasonal mining demands and offer priority scheduling and expedited
+                services during peak periods.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Footer -->
+  <footer-component></footer-component>
+
+  <!-- Quote Modal -->
+  <section>
+    <div id="quoteModal" class="modal fixed inset-0 flex items-center justify-center bg-black/50 z-50">
+      <div class="modal-content max-w-xl w-full bg-white shadow-lg rounded-lg max-h-screen overflow-y-auto">
+        <div class="p-3 sm:p-4">
+          <!-- Header -->
+          <div class="flex justify-between items-center mb-2">
+            <h2 class="text-lg sm:text-xl font-bold text-gray-800">
+              CNC Machining Brisbane Services
+            </h2>
+            <button onclick="closeQuoteModal()" class="text-gray-500 hover:text-gray-700 text-lg">
+              <i class="fas fa-times"></i>
+            </button>
+          </div>
+
+          <!-- Form -->
+          <form id="quoteForm" class="space-y-2.5">
+            <!-- Names -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-2.5">
+              <div>
+                <label class="block text-xs font-medium text-gray-700 mb-0.5">First Name *</label>
+                <input type="text" name="firstName" required
+                  class="w-full px-2 py-1.5 border border-gray-300 rounded focus:ring-2 focus:ring-orange-500 text-sm">
+              </div>
+              <div>
+                <label class="block text-xs font-medium text-gray-700 mb-0.5">Last Name *</label>
+                <input type="text" name="lastName" required
+                  class="w-full px-2 py-1.5 border border-gray-300 rounded focus:ring-2 focus:ring-orange-500 text-sm">
+              </div>
+            </div>
+
+            <!-- Email -->
+            <div>
+              <label class="block text-xs font-medium text-gray-700 mb-0.5">Email *</label>
+              <input type="email" name="email" required
+                class="w-full px-2 py-1.5 border border-gray-300 rounded focus:ring-2 focus:ring-orange-500 text-sm">
+            </div>
+
+            <!-- Phone -->
+            <div>
+              <label class="block text-xs font-medium text-gray-700 mb-0.5">Phone</label>
+              <input type="tel" name="phone"
+                class="w-full px-2 py-1.5 border border-gray-300 rounded focus:ring-2 focus:ring-orange-500 text-sm">
+            </div>
+
+            <!-- Location -->
+            <div>
+              <label class="block text-xs font-medium text-gray-700 mb-0.5">Location *</label>
+              <select name="location" required
+                class="w-full px-2 py-1.5 border border-gray-300 rounded focus:ring-2 focus:ring-orange-500 text-sm">
+                <option value="">Select your city</option>
+                <option value="melbourne">Melbourne</option>
+                <option value="sydney">Sydney</option>
+                <option value="perth">Perth</option>
+                <option value="adelaide">Adelaide</option>
+                <option value="brisbane">Brisbane</option>
+                <option value="darwin">Darwin</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+
+            <!-- Description -->
+            <div>
+              <label class="block text-xs font-medium text-gray-700 mb-0.5">Project Description</label>
+              <textarea name="description" rows="1"
+                class="w-full px-2 py-1.5 border border-gray-300 rounded focus:ring-2 focus:ring-orange-500 text-sm"
+                placeholder="Briefly describe requirements"></textarea>
+            </div>
+
+            <!-- Google reCAPTCHA -->
+            <div class="g-recaptcha scale-90 transform origin-left"
+              data-sitekey="6Ld47tsrAAAAAL_S7gMxdbOK6WZcloCIDLdlekox"></div>
+
+            <!-- Submit -->
+            <div class="pt-2">
+              <button type="submit" id="submitBtn"
+                class="w-full bg-orange-600 text-white py-2 rounded font-semibold text-sm hover:bg-orange-700 transition disabled:bg-gray-400">
+                <span id="btnText">Submit Quote</span>
+                <span id="btnLoader" class="hidden">
+                  <i class="fas fa-spinner fa-spin"></i> Sending...
+                </span>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="/script.js"></script>
+</body>
+
+</html>

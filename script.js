@@ -830,6 +830,7 @@ document.head.appendChild(globalStyle);
 // GLOBAL CONSTANTS
 // ======================================================
 const WEB3FORMS_ACCESS_KEY = "8c3d69c7-33b9-4688-8fcf-15355c00f7a6";
+const RECAPTCHA_SITE_KEY = "6Ld16OorAAAAAIuqaxHdsusOxSuYPbckoqHB-iYC";
 
 // ======================================================
 // MOBILE MENU FUNCTIONS
@@ -1072,3 +1073,26 @@ Description: ${formData.get("description")}
 });
 
 console.log("✅ All components initialized successfully");
+
+// CAPTCHA feature
+
+document.addEventListener("DOMContentLoaded", () => {
+  // Automatically attach reCAPTCHA to any element with data-recaptcha="true"
+  const captchaContainers = document.querySelectorAll('[data-recaptcha="true"]');
+
+  captchaContainers.forEach(container => {
+    const captchaDiv = document.createElement("div");
+    captchaDiv.className = "g-recaptcha scale-90 transform origin-left";
+    captchaDiv.setAttribute("data-sitekey", RECAPTCHA_SITE_KEY);
+    container.appendChild(captchaDiv);
+  });
+
+  // Ensure Google reCAPTCHA script is loaded once
+  if (!document.querySelector('script[src*="recaptcha/api.js"]')) {
+    const recaptchaScript = document.createElement("script");
+    recaptchaScript.src = "https://www.google.com/recaptcha/api.js";
+    recaptchaScript.async = true;
+    recaptchaScript.defer = true;
+    document.body.appendChild(recaptchaScript);
+  }
+});

@@ -37,10 +37,10 @@
         </p>
 
         <!-- Button -->
-        <a href="contact.html"
-          class="inline-block bg-orange-500 hover:bg-orange-600 hover:scale-105 transform transition duration-300 ease-in-out text-white font-semibold px-8 py-3 rounded-md shadow-lg">
-          GET FREE QUOTE
-        </a>
+        <button onclick="openQuoteModal()"
+                        class="px-6 py-3 bg-orange-500 text-white font-semibold rounded-lg shadow-md hover:bg-orange-600 transition transform hover:scale-105">
+                        Get a Quote
+                    </button>
       </div>
 
       <!-- Right side (empty space to reveal background image) -->
@@ -521,6 +521,94 @@
 
   <!-- Footer -->
   <footer-component></footer-component>
+
+      <!-- Quote Modal -->
+    <section>
+        <div id="quoteModal" class="modal fixed inset-0 flex items-center justify-center bg-black/50 z-50">
+            <div class="modal-content max-w-xl w-full bg-white shadow-lg rounded-lg max-h-screen overflow-y-auto">
+                <div class="p-3 sm:p-4">
+                    <!-- Header -->
+                    <div class="flex justify-between items-center mb-2">
+                        <h2 class="text-lg sm:text-xl font-bold text-gray-800">
+                            CNC Machining Melbourne Services
+                        </h2>
+                        <button onclick="closeQuoteModal()" class="text-gray-500 hover:text-gray-700 text-lg">
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </div>
+
+                    <!-- Form -->
+                    <form id="quoteForm" class="space-y-2.5">
+                        <!-- Names -->
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-2.5">
+                            <div>
+                                <label class="block text-xs font-medium text-gray-700 mb-0.5">First Name *</label>
+                                <input type="text" name="firstName" required
+                                    class="w-full px-2 py-1.5 border border-gray-300 rounded focus:ring-2 focus:ring-orange-500 text-sm">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-medium text-gray-700 mb-0.5">Last Name *</label>
+                                <input type="text" name="lastName" required
+                                    class="w-full px-2 py-1.5 border border-gray-300 rounded focus:ring-2 focus:ring-orange-500 text-sm">
+                            </div>
+                        </div>
+
+                        <!-- Email -->
+                        <div>
+                            <label class="block text-xs font-medium text-gray-700 mb-0.5">Email *</label>
+                            <input type="email" name="email" required
+                                class="w-full px-2 py-1.5 border border-gray-300 rounded focus:ring-2 focus:ring-orange-500 text-sm">
+                        </div>
+
+                        <!-- Phone -->
+                        <div>
+                            <label class="block text-xs font-medium text-gray-700 mb-0.5">Phone</label>
+                            <input type="tel" name="phone"
+                                class="w-full px-2 py-1.5 border border-gray-300 rounded focus:ring-2 focus:ring-orange-500 text-sm">
+                        </div>
+
+                        <!-- Location -->
+                        <div>
+                            <label class="block text-xs font-medium text-gray-700 mb-0.5">Location *</label>
+                            <select name="location" required
+                                class="w-full px-2 py-1.5 border border-gray-300 rounded focus:ring-2 focus:ring-orange-500 text-sm">
+                                <option value="">Select your city</option>
+                                <option value="melbourne">Melbourne</option>
+                                <option value="sydney">Sydney</option>
+                                <option value="perth">Perth</option>
+                                <option value="adelaide">Adelaide</option>
+                                <option value="brisbane">Brisbane</option>
+                                <option value="darwin">Darwin</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <!-- Description -->
+                        <div>
+                            <label class="block text-xs font-medium text-gray-700 mb-0.5">Project Description</label>
+                            <textarea name="description" rows="1"
+                                class="w-full px-2 py-1.5 border border-gray-300 rounded focus:ring-2 focus:ring-orange-500 text-sm"
+                                placeholder="Briefly describe requirements"></textarea>
+                        </div>
+
+                        <!-- Google reCAPTCHA -->
+                       <div data-recaptcha="true"></div>
+
+                        <!-- Submit -->
+                        <div class="pt-2">
+                            <button type="submit" id="submitBtn"
+                                class="w-full bg-orange-600 text-white py-2 rounded font-semibold text-sm hover:bg-orange-700 transition disabled:bg-gray-400">
+                                <span id="btnText">Submit Quote</span>
+                                <span id="btnLoader" class="hidden">
+                                    <i class="fas fa-spinner fa-spin"></i> Sending...
+                                </span>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
   <script src="/script.js"></script>
 </body>
 

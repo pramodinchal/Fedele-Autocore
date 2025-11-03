@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Small batch production</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://www.google.com/recaptcha/api.js?render=explicit" async defer></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-50 w-full">
+    <!-- Header -->
+    <header-component class="fixed top-0 left-0 w-full bg-white shadow-md z-50">
+    </header-component>
+
+
+    <!-- Hero Section -->
+    <section class="relative min-h-screen flex items-center bg-cover bg-center bg-no-repeat w-full">
+        <!-- Background Image -->
+        <div class="absolute inset-0 z-0">
+            <img src="/Assets/small-batch-production-cnc-banner.jpg" alt="small-batch-prod banner"
+                class="w-full h-full object-cover brightness-140" />
+
+            <!-- Gradient Overlay -->
+            <div class="absolute inset-0 bg-gradient-to-r from-black via-black/70 to-transparent"></div>
+        </div>
+
+        <!-- Content -->
+        <div class="relative z-10 w-full px-12 md:px-12 flex flex-col md:flex-row items-center md:items-start">
+
+            <!-- Left Content -->
+            <div class="text-left w-full md:w-1/2 mt-24 md:mt-32">
+                <h1 class="text-4xl md:text-6xl font-bold mb-6 text-white">
+                    <span class="text-orange-500">Small Batch Production </span>
+                </h1>
+                <p class="text-lg md:text-xl text-gray-200 max-w-xl leading-relaxed">Available For All CNC Capabilities
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 py-4">
+                    <button onclick="openQuoteModal()"
+                        class="px-6 py-3 bg-orange-500 text-white font-semibold rounded-lg shadow-md hover:bg-orange-600 transition transform hover:scale-105">
+                        Get a Quote
+                    </button>
+                </div>
+            </div>
+
+            <!-- Right side (empty space to reveal background image) -->
+            <div class="hidden md:block md:w-1/2"></div>
+        </div>
+
+    </section>
+
+    <section class="py-8 px-12 bg-gray-100">
+        <div class="w-full mx-auto flex flex-col md:flex-row items-start justify-between gap-12">
+
+            <!-- Left Content -->
+            <div class="md:w-1/2">
+                <h2 class="text-4xl font-bold text-blue-900 mb-6">
+                    <span class="border-l-4 border-orange-500 pl-4">Small Batch Production Expertise</span>
+                </h2>
+
+                <p class="text-gray-700 mb-6">
+                    At Fedele Autocore, we specialize in small batch CNC production — delivering high precision,
+                    quick turnaround, and cost-effective manufacturing for limited-run components. Whether you
+                    need prototypes, pilot builds, or low-volume production, our flexible processes ensure each
+                    part meets your exact specifications.
+                </p>
+
+                <p class="text-gray-700 mb-8">
+                    Our skilled team combines advanced CNC technology with meticulous craftsmanship, allowing us
+                    to maintain consistent quality and performance even across small production runs. We
+                    prioritize speed, accuracy, and adaptability — making us a trusted partner for R&D and
+                    custom engineering projects.
+                </p>
+
+                <!-- Stats Section -->
+                <div class="grid grid-cols-2 gap-4 mt-8">
+                    <div class="bg-white p-4 rounded-lg shadow-sm text-center">
+                        <h3 class="text-2xl font-bold text-orange-500">1–500</h3>
+                        <p class="text-sm text-blue-900 uppercase mt-1">Batch Size Range</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow-sm text-center">
+                        <h3 class="text-2xl font-bold text-orange-500">3 Days</h3>
+                        <p class="text-sm text-blue-900 uppercase mt-1">Average Turnaround</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow-sm text-center">
+                        <h3 class="text-2xl font-bold text-orange-500">99.8%</h3>
+                        <p class="text-sm text-blue-900 uppercase mt-1">Dimensional Accuracy</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow-sm text-center">
+                        <h3 class="text-2xl font-bold text-orange-500">100%</h3>
+                        <p class="text-sm text-blue-900 uppercase mt-1">Customizable Orders</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Image -->
+            <div class="md:w-1/2 flex justify-center items-start">
+                <img src="https://images.unsplash.com/photo-1605902711622-cfb43c4437b5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+                    alt="Small Batch CNC Production"
+                    class="rounded-2xl shadow-2xl w-full max-w-[550px] h-[380px] object-cover">
+            </div>
+        </div>
+    </section>
+
+
+
+    <!--   Precision CNC Components for Construction-->
+    <section class="py-16 px-12 bg-white">
+        <div class="w-full mx-auto">
+            <h2 class="text-3xl font-bold text-blue-900 text-center mb-4">
+                Precision CNC Components for Construction
+            </h2>
+            <div class="w-24 h-1 bg-orange-500 mx-auto mb-6"></div>
+
+
+            <!-- Grid Layout -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+
+                <!-- Small Batch Production-->
+                <div
+                    class="bg-white rounded-lg border border-gray-200 overflow-hidden hover:shadow-xl transition-shadow">
+                    <img src="/Assets/structural.jpg" alt="Small Batch Production" class="w-full h-48 object-cover">
+                    <div class="p-6 border-l-4 border-blue-500">
+                        <h3 class="text-xl font-bold text-blue-900 mb-4">Small Batch Production</h3>
+                        <p class="pb-6">At Fedele Autocore, we understand that not every project requires large-scale
+                            production. Our small batch manufacturing capabilities provide the perfect solution for:</p>
+                        <ul class="space-y-2 text-gray-700">
+                            <li>✔ Prototype development and testing</li>
+                            <li>✔ Custom one-off components</li>
+                            <li>✔ Limited production runs</li>
+                            <li>✔ Specialized automotive parts</li>
+                            <li>✔ Quick turnaround projects</li>
+                            <li>✔ Cost-effective low-volume production</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- CNC Excellence -->
+                <div
+                    class="bg-white rounded-lg border border-gray-200 overflow-hidden hover:shadow-xl transition-shadow">
+                    <img src="/Assets/architectural.jpg" alt="CNC Excellence" class="w-full h-48 object-cover">
+                    <div class="p-6 border-l-4 border-blue-500">
+                        <h3 class="text-xl font-bold text-blue-900 mb-4">CNC Excellence</h3>
+                        <p class="pb-6">Our state-of-the-art CNC machininsg capabilities ensure precision and quality in
+                            every component we manufacture. From simple parts to complex geometries, we deliver:</p>
+                        <ul class="space-y-2 text-gray-700">
+                            <li>✔ Tight tolerance machining (±0.001")</li>
+                            <li>✔ Multi-axis CNC operations</li>
+                            <li>✔ Advanced tooling and fixturing</li>
+                            <li>✔ Quality inspection and certification</li>
+                            <li>✔ Rapid prototyping services</li>
+                            <li>✔ Material expertise across metals and alloys</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-8 px-12 bg-gray-100">
+        <div class="w-full mx-auto">
+            <div class="text-center mb-10">
+                <h2 class="text-blue-900 text-3xl font-bold">Comprehensive CNC Machining Services</h2>
+                <p class="text-gray-600 mt-2">
+                    Advanced manufacturing capabilities from prototype to production across Australia's
+                    major industrial centres
+                </p>
+            </div>
+
+            <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-8">
+                <!-- Service Card -->
+                <div class="bg-white rounded-lg shadow hover:shadow-lg transition text-center">
+                    <div class="w-full mb-4 rounded-lg">
+                        <img src="/Assets/" alt="Small Batch CNC Milling"
+                            class="w-full h-full object-cover rounded-lg" />
+                    </div>
+                    <h3 class="text-blue-900 text-xl font-semibold mb-2">Small Batch CNC Milling</h3>
+                    <p class="text-gray-600 px-4 py-2">Precision milling operations for small quantities with the same
+                        attention to detail as large production runs. Perfect for prototypes and specialized components.
+                    </p>
+                </div>
+
+                <div class="bg-white rounded-lg shadow hover:shadow-lg transition text-center">
+                    <div class="w-full mb-4 rounded-lg">
+                        <img src="/Assets/" alt="CNC Turning" class="w-full h-full object-cover rounded-lg" />
+                    </div>
+                    <h3 class="text-blue-900 text-xl font-semibold mb-2">CNC Turning</h3>
+                    <p class="text-gray-600 px-4 py-2">High-precision turning operations for cylindrical components,
+                        shafts, and complex rotational parts with superior surface finishes.</p>
+                </div>
+
+                <div class="bg-white rounded-lg shadow hover:shadow-lg transition text-center">
+                    <div class="w-full mb-4 rounded-lg">
+                        <img src="/Assets/" alt="Small Batch Multi-Axis Machining"
+                            class="w-full h-full object-cover rounded-lg" />
+                    </div>
+                    <h3 class="text-blue-900 text-xl font-semibold mb-2">Small Batch Multi-Axis Machining</h3>
+                    <p class="text-gray-600 px-4 py-2">Complex 4 and 5-axis machining capabilities available for small
+                        production runs, enabling intricate geometries and reduced setup times.</p>
+                </div>
+
+                <div class="bg-white rounded-lg shadow hover:shadow-lg transition text-center">
+                    <div class="w-full mb-4 rounded-lg">
+                        <img src="/Assets/" alt="Swiss Screw Machining" class="w-full h-100% object-cover rounded-lg" />
+                    </div>
+                    <h3 class="text-blue-900 text-xl font-semibold mb-2">Swiss Screw Machining</h3>
+                    <p class="text-gray-600 px-4 py-2">High-precision, high-speed production of small, complex parts
+                        with exceptional accuracy and repeatability.</p>
+                </div>
+
+                <div class="bg-white rounded-lg shadow hover:shadow-lg transition text-center">
+                    <div class="w-full mb-4 rounded-lg">
+                        <img src="/Assets/" alt="Small Batch Wire EDM" class="w-full h-full object-cover rounded-lg" />
+                    </div>
+                    <h3 class="text-blue-900 text-xl font-semibold mb-2">Small Batch Wire EDM</h3>
+                    <p class="text-gray-600 px-4 py-2">Electrical discharge machining for precise cutting of complex
+                        shapes and tight tolerances, perfect for tooling and specialized components.</p>
+                </div>
+
+                <div class="bg-white rounded-lg shadow hover:shadow-lg transition text-center">
+                    <div class="w-full mb-4 rounded-lg">
+                        <img src="/Assets/" alt="Surface Grinding" class="w-full h-full object-cover rounded-lg" />
+                    </div>
+                    <h3 class="text-blue-900 text-xl font-semibold mb-2">Surface Grinding</h3>
+                    <p class="text-gray-600 px-4 py-2">Precision surface grinding operations to achieve superior
+                        flatness, parallelism, and surface finish requirements.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Call-to-Action Section -->
+    <section class="w-full bg-white px-12 p-12">
+        <div class="w-full mx-auto text-center border border-gray-200 rounded-xl shadow-md p-10">
+            <!-- Heading -->
+            <h2 class="text-3xl md:text-4xl font-extrabold text-blue-900 mb-6 flex items-center justify-center">
+                <span>Ready to Start Your Small Batch Project?</span>
+            </h2>
+
+            <!-- Description -->
+            <p class="text-gray-700 leading-relaxed mb-8">
+                Whether you need one prototype or a hundred production parts, Fedele Autocore has the expertise and
+                equipment to deliver quality results on time and within budget.
+            </p>
+
+            <!-- Button -->
+            <button onclick="openQuoteModal()"
+                class="inline-block bg-orange-500 hover:bg-orange-600 transform hover:scale-105 transition duration-300 ease-in-out text-white font-semibold px-8 py-3 rounded-full shadow-md">
+                Get Quote
+            </button>
+        </div>
+    </section>
+
+
+
+    <!-- Footer -->
+    <footer-component></footer-component>
+
+
+    <!-- Quote Modal -->
+    <section>
+        <div id="quoteModal" class="modal fixed inset-0 flex items-center justify-center bg-black/50 z-50">
+            <div class="modal-content max-w-xl w-full bg-white shadow-lg rounded-lg max-h-screen overflow-y-auto">
+                <div class="p-3 sm:p-4">
+                    <!-- Header -->
+                    <div class="flex justify-between items-center mb-2">
+                        <h2 class="text-lg sm:text-xl font-bold text-gray-800">
+                            CNC Machining Services
+                        </h2>
+                        <button onclick="closeQuoteModal()" class="text-gray-500 hover:text-gray-700 text-lg">
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </div>
+
+                    <!-- Form -->
+                    <form id="quoteForm" class="space-y-2.5">
+                        <!-- Names -->
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-2.5">
+                            <div>
+                                <label class="block text-xs font-medium text-gray-700 mb-0.5">First Name *</label>
+                                <input type="text" name="firstName" required
+                                    class="w-full px-2 py-1.5 border border-gray-300 rounded focus:ring-2 focus:ring-orange-500 text-sm">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-medium text-gray-700 mb-0.5">Last Name *</label>
+                                <input type="text" name="lastName" required
+                                    class="w-full px-2 py-1.5 border border-gray-300 rounded focus:ring-2 focus:ring-orange-500 text-sm">
+                            </div>
+                        </div>
+
+                        <!-- Email -->
+                        <div>
+                            <label class="block text-xs font-medium text-gray-700 mb-0.5">Email *</label>
+                            <input type="email" name="email" required
+                                class="w-full px-2 py-1.5 border border-gray-300 rounded focus:ring-2 focus:ring-orange-500 text-sm">
+                        </div>
+
+                        <!-- Phone -->
+                        <div>
+                            <label class="block text-xs font-medium text-gray-700 mb-0.5">Phone</label>
+                            <input type="tel" name="phone"
+                                class="w-full px-2 py-1.5 border border-gray-300 rounded focus:ring-2 focus:ring-orange-500 text-sm">
+                        </div>
+
+                        <!-- Location -->
+                        <div>
+                            <label class="block text-xs font-medium text-gray-700 mb-0.5">Location *</label>
+                            <select name="location" required
+                                class="w-full px-2 py-1.5 border border-gray-300 rounded focus:ring-2 focus:ring-orange-500 text-sm">
+                                <option value="">Select your city</option>
+                                <option value="melbourne">Melbourne</option>
+                                <option value="sydney">Sydney</option>
+                                <option value="perth">Perth</option>
+                                <option value="adelaide">Adelaide</option>
+                                <option value="brisbane">Brisbane</option>
+                                <option value="darwin">Darwin</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <!-- Description -->
+                        <div>
+                            <label class="block text-xs font-medium text-gray-700 mb-0.5">Project
+                                Description</label>
+                            <textarea name="description" rows="1"
+                                class="w-full px-2 py-1.5 border border-gray-300 rounded focus:ring-2 focus:ring-orange-500 text-sm"
+                                placeholder="Briefly describe requirements"></textarea>
+                        </div>
+
+                        <!-- Google reCAPTCHA -->
+                        <div class="g-recaptcha"></div>
+
+                        <!-- Submit -->
+                        <div class="pt-2">
+                            <button type="submit" id="submitBtn"
+                                class="w-full bg-orange-600 text-white py-2 rounded font-semibold text-sm hover:bg-orange-700 transition disabled:bg-gray-400">
+                                <span id="btnText">Submit Quote</span>
+                                <span id="btnLoader" class="hidden">
+                                    <i class="fas fa-spinner fa-spin"></i> Sending...
+                                </span>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="/script.js"></script>
+</body>
+
+</html>

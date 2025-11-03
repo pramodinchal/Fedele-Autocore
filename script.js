@@ -1448,7 +1448,6 @@ function closeQuoteModal() {
   resetFileUpload();
 >>>>>>> b9f1cd2 (all files modified and fixed for captcha changes)
 }
-
 // ======================================================
 // FILE UPLOAD
 // ======================================================

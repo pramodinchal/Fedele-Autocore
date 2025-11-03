@@ -1452,6 +1452,7 @@ function closeQuoteModal() {
 // ======================================================
 // FILE UPLOAD
 // ======================================================
+
 function handleFileUpload(input) {
 <<<<<<< HEAD
     const files = input.files;

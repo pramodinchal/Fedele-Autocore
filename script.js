@@ -3,18 +3,24 @@
 // ======================================================
 class HeaderComponent extends HTMLElement {
 <<<<<<< HEAD
+<<<<<<< HEAD
     connectedCallback() {
         // Calculate the base path dynamically based on current page location
         const basePath = this.getBasePath();
 
         this.innerHTML = `
 =======
+=======
+>>>>>>> d14e303 (all captcha fixes)
   connectedCallback() {
     // Calculate the base path dynamically based on current page location
     const basePath = this.getBasePath();
 
     this.innerHTML = `
+<<<<<<< HEAD
 >>>>>>> b9f1cd2 (all files modified and fixed for captcha changes)
+=======
+>>>>>>> d14e303 (all captcha fixes)
       <div class="max-w-7xl mx-auto flex items-center justify-between h-16 md:h-20 px-4 sm:px-6 lg:px-8 xl:px-12">
 
         <!-- Logo -->
@@ -32,15 +38,20 @@ class HeaderComponent extends HTMLElement {
           <!-- CNC Services -->
           <div class="relative group">
 <<<<<<< HEAD
+<<<<<<< HEAD
             <a href="${basePath}pages/services/advanced-cnc-machining-services.html" class="text-sm lg:text-base font-medium text-gray-700 hover:text-orange-600 transition-colors whitespace-nowrap flex items-center">
 =======
             <a href="${basePath}services/advanced-cnc-machining-services.html" class="text-sm lg:text-base font-medium text-gray-700 hover:text-orange-600 transition-colors whitespace-nowrap flex items-center">
 >>>>>>> b9f1cd2 (all files modified and fixed for captcha changes)
+=======
+            <a href="${basePath}services/advanced-cnc-machining-services.html" class="text-sm lg:text-base font-medium text-gray-700 hover:text-orange-600 transition-colors whitespace-nowrap flex items-center">
+>>>>>>> d14e303 (all captcha fixes)
               CNC Services
             </a>
             <div class="absolute left-0 top-full mt-1 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
               <div class="bg-white shadow-xl rounded-lg min-w-48 border">
                 <ul class="py-2">
+<<<<<<< HEAD
 <<<<<<< HEAD
                   <li><a href="${basePath}pages/services/milling.html" class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">CNC Milling</a></li>
                   <li><a href="${basePath}pages/services/turning.html" class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">CNC Turning</a></li>
@@ -49,13 +60,18 @@ class HeaderComponent extends HTMLElement {
                   <li><a href="${basePath}pages/services/prototyping.html" class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">CNC Prototyping</a></li>
                   <li><a href="${basePath}pages/services/custom-machining.html" class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">Custom Machining</a></li>
 =======
+=======
+>>>>>>> d14e303 (all captcha fixes)
                   <li><a href="${basePath}services/cnc-milling.html" class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">CNC Milling</a></li>
                   <li><a href="${basePath}services/cnc-turning.html" class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">CNC Turning</a></li>
                   <li><a href="${basePath}services/5-axis-machining.html" class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">5-Axis Machining</a></li>
                   <li><a href="${basePath}services/precision-machining.html" class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">Precision Machining</a></li>
                   <li><a href="${basePath}services/cnc-prototyping.html" class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">CNC Prototyping</a></li>
                   <li><a href="${basePath}services/custom-cnc-machining.html" class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">Custom Machining</a></li>
+<<<<<<< HEAD
 >>>>>>> b9f1cd2 (all files modified and fixed for captcha changes)
+=======
+>>>>>>> d14e303 (all captcha fixes)
                 </ul>
               </div>
             </div>
@@ -70,6 +86,7 @@ class HeaderComponent extends HTMLElement {
               <div class="bg-white shadow-xl rounded-lg min-w-56 border">
                 <ul class="py-2">
 <<<<<<< HEAD
+<<<<<<< HEAD
                   <li><a href="${basePath}pages/industries/defence.html" class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">Defence Industry</a></li>
                   <li><a href="${basePath}pages/industries/oil&gas.html" class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">Oil & Gas Industry</a></li>
                   <li><a href="${basePath}pages/industries/automotive.html" class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">Automotive Industry</a></li>
@@ -79,6 +96,8 @@ class HeaderComponent extends HTMLElement {
                   <li><a href="${basePath}pages/industries/agriculture.html" class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">Agricultural / Tractor</a></li>
                   <li><a href="${basePath}pages/industries/aerospace.html" class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">Aerospace Industry</a></li>
 =======
+=======
+>>>>>>> d14e303 (all captcha fixes)
                   <li><a href="${basePath}industries/defence-cnc.html" class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">Defence Industry</a></li>
                   <li><a href="${basePath}industries/oil-gas-cnc.html" class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">Oil & Gas Industry</a></li>
                   <li><a href="${basePath}industries/automotive-cnc.html" class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">Automotive Industry</a></li>
@@ -87,7 +106,10 @@ class HeaderComponent extends HTMLElement {
                   <li><a href="${basePath}industries/hydraulic-cnc.html" class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">Hydraulic Power</a></li>
                   <li><a href="${basePath}industries/agriculture-cnc.html" class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">Agricultural / Tractor</a></li>
                   <li><a href="${basePath}industries/aerospace-cnc.html" class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">Aerospace Industry</a></li>
+<<<<<<< HEAD
 >>>>>>> b9f1cd2 (all files modified and fixed for captcha changes)
+=======
+>>>>>>> d14e303 (all captcha fixes)
                 </ul>
               </div>
             </div>
@@ -96,10 +118,14 @@ class HeaderComponent extends HTMLElement {
           <!-- Locations -->
           <div class="relative group">
 <<<<<<< HEAD
+<<<<<<< HEAD
             <a href="${basePath}pages/locations/location.html" class="text-sm lg:text-base font-medium text-gray-700 hover:text-orange-600 transition-colors whitespace-nowrap">
 =======
             <a href="${basePath}locations/location.html" class="text-sm lg:text-base font-medium text-gray-700 hover:text-orange-600 transition-colors whitespace-nowrap">
 >>>>>>> b9f1cd2 (all files modified and fixed for captcha changes)
+=======
+            <a href="${basePath}locations/location.html" class="text-sm lg:text-base font-medium text-gray-700 hover:text-orange-600 transition-colors whitespace-nowrap">
+>>>>>>> d14e303 (all captcha fixes)
               Locations
             </a>
             <div class="absolute left-0 top-full mt-1 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
@@ -108,14 +134,19 @@ class HeaderComponent extends HTMLElement {
                   <!-- Melbourne -->
                   <li class="relative group/sub">
 <<<<<<< HEAD
+<<<<<<< HEAD
                     <a href="${basePath}pages/locations/melbourne-cnc.html" class="flex justify-between items-center px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">
 =======
                     <a href="${basePath}locations/melbourne-cnc-machining.html" class="flex justify-between items-center px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">
 >>>>>>> b9f1cd2 (all files modified and fixed for captcha changes)
+=======
+                    <a href="${basePath}locations/melbourne-cnc-machining.html" class="flex justify-between items-center px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">
+>>>>>>> d14e303 (all captcha fixes)
                       Melbourne
                       <span class="ml-2">></span>
                     </a>
                     <ul class="absolute left-full top-0 ml-1 bg-white shadow-lg rounded-lg border min-w-40 py-2 opacity-0 invisible group-hover/sub:opacity-100 group-hover/sub:visible transition-all duration-200">
+<<<<<<< HEAD
 <<<<<<< HEAD
                       <li><a href="${basePath}pages/locations/melbourne-cnc.html" class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600">CNC Machining</a></li>
                       <li><a href="${basePath}pages/locations/melbourne-precision.html" class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600">Precision Machining</a></li>
@@ -125,20 +156,30 @@ class HeaderComponent extends HTMLElement {
                       <li><a href="${basePath}locations/melbourne-precision-machining.html" class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600">Precision Machining</a></li>
                       <li><a href="${basePath}locations/melbourne-5-axis-machining.html" class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600">5-Axis Machining</a></li>
 >>>>>>> b9f1cd2 (all files modified and fixed for captcha changes)
+=======
+                      <li><a href="${basePath}locations/melbourne-cnc-machining.html" class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600">CNC Machining</a></li>
+                      <li><a href="${basePath}locations/melbourne-precision-machining.html" class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600">Precision Machining</a></li>
+                      <li><a href="${basePath}locations/melbourne-5-axis-machining.html" class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600">5-Axis Machining</a></li>
+>>>>>>> d14e303 (all captcha fixes)
                     </ul>
                   </li>
 
                   <!-- Sydney -->
                   <li class="relative group/sub">
 <<<<<<< HEAD
+<<<<<<< HEAD
                     <a href="${basePath}pages/locations/sydney-cnc.html" class="flex justify-between items-center px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600">
 =======
                     <a href="${basePath}locations/sydney-cnc-machining.html" class="flex justify-between items-center px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600">
 >>>>>>> b9f1cd2 (all files modified and fixed for captcha changes)
+=======
+                    <a href="${basePath}locations/sydney-cnc-machining.html" class="flex justify-between items-center px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600">
+>>>>>>> d14e303 (all captcha fixes)
                       Sydney
                       <span class="ml-2">></span>
                     </a>
                     <ul class="absolute left-full top-0 ml-1 bg-white shadow-lg rounded-lg border min-w-40 py-2 opacity-0 invisible group-hover/sub:opacity-100 group-hover/sub:visible transition-all duration-200">
+<<<<<<< HEAD
 <<<<<<< HEAD
                       <li><a href="${basePath}pages/locations/sydney-cnc.html" class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600">CNC Machining</a></li>
                       <li><a href="${basePath}pages/locations/sydney-precision.html" class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600">Precision Machining</a></li>
@@ -146,20 +187,29 @@ class HeaderComponent extends HTMLElement {
                       <li><a href="${basePath}locations/sydney-cnc-machining.html" class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600">CNC Machining</a></li>
                       <li><a href="${basePath}locations/sydney-precision-machining.html" class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600">Precision Machining</a></li>
 >>>>>>> b9f1cd2 (all files modified and fixed for captcha changes)
+=======
+                      <li><a href="${basePath}locations/sydney-cnc-machining.html" class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600">CNC Machining</a></li>
+                      <li><a href="${basePath}locations/sydney-precision-machining.html" class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600">Precision Machining</a></li>
+>>>>>>> d14e303 (all captcha fixes)
                     </ul>
                   </li>
 
                   <!-- Perth -->
                   <li class="relative group/sub">
 <<<<<<< HEAD
+<<<<<<< HEAD
                     <a href="${basePath}pages/locations/perth-cnc.html" class="flex justify-between items-center px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600">
 =======
                     <a href="${basePath}locations/perth-cnc-machining.html" class="flex justify-between items-center px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600">
 >>>>>>> b9f1cd2 (all files modified and fixed for captcha changes)
+=======
+                    <a href="${basePath}locations/perth-cnc-machining.html" class="flex justify-between items-center px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600">
+>>>>>>> d14e303 (all captcha fixes)
                       Perth
                       <span class="ml-2">></span>
                     </a>
                     <ul class="absolute left-full top-0 ml-1 bg-white shadow-lg rounded-lg border min-w-40 py-2 opacity-0 invisible group-hover/sub:opacity-100 group-hover/sub:visible transition-all duration-200">
+<<<<<<< HEAD
 <<<<<<< HEAD
                       <li><a href="${basePath}pages/locations/perth-cnc.html" class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600">CNC Machining</a></li>
                       <li><a href="${basePath}pages/locations/perth-precision.html" class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600">Precision Machining</a></li>
@@ -167,63 +217,91 @@ class HeaderComponent extends HTMLElement {
                       <li><a href="${basePath}locations/perth-cnc-machining.html" class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600">CNC Machining</a></li>
                       <li><a href="${basePath}locations/perth-precision-machining.html" class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600">Precision Machining</a></li>
 >>>>>>> b9f1cd2 (all files modified and fixed for captcha changes)
+=======
+                      <li><a href="${basePath}locations/perth-cnc-machining.html" class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600">CNC Machining</a></li>
+                      <li><a href="${basePath}locations/perth-precision-machining.html" class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600">Precision Machining</a></li>
+>>>>>>> d14e303 (all captcha fixes)
                     </ul>
                   </li>
 
                   <!-- Adelaide -->
                   <li class="relative group/sub">
 <<<<<<< HEAD
+<<<<<<< HEAD
                     <a href="${basePath}pages/locations/adelaide-cnc.html" class="flex justify-between items-center px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600">
 =======
                     <a href="${basePath}locations/adelaide-cnc-machining.html" class="flex justify-between items-center px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600">
 >>>>>>> b9f1cd2 (all files modified and fixed for captcha changes)
+=======
+                    <a href="${basePath}locations/adelaide-cnc-machining.html" class="flex justify-between items-center px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600">
+>>>>>>> d14e303 (all captcha fixes)
                       Adelaide
                       <span class="ml-2">></span>
                     </a>
                     <ul class="absolute left-full top-0 ml-1 bg-white shadow-lg rounded-lg border min-w-40 py-2 opacity-0 invisible group-hover/sub:opacity-100 group-hover/sub:visible transition-all duration-200">
 <<<<<<< HEAD
+<<<<<<< HEAD
                       <li><a href="${basePath}pages/locations/adelaide-cnc.html" class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600">CNC Machining</a></li>
 =======
                       <li><a href="${basePath}locations/adelaide-cnc-machining.html" class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600">CNC Machining</a></li>
 >>>>>>> b9f1cd2 (all files modified and fixed for captcha changes)
+=======
+                      <li><a href="${basePath}locations/adelaide-cnc-machining.html" class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600">CNC Machining</a></li>
+>>>>>>> d14e303 (all captcha fixes)
                     </ul>
                   </li>
 
                   <!-- Brisbane -->
                   <li class="relative group/sub">
 <<<<<<< HEAD
+<<<<<<< HEAD
                     <a href="${basePath}pages/locations/brisbane-cnc.html" class="flex justify-between items-center px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600">
 =======
                     <a href="${basePath}locations/brisbane-cnc-machining.html" class="flex justify-between items-center px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600">
 >>>>>>> b9f1cd2 (all files modified and fixed for captcha changes)
+=======
+                    <a href="${basePath}locations/brisbane-cnc-machining.html" class="flex justify-between items-center px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600">
+>>>>>>> d14e303 (all captcha fixes)
                       Brisbane
                       <span class="ml-2">></span>
                     </a>
                     <ul class="absolute left-full top-0 ml-1 bg-white shadow-lg rounded-lg border min-w-40 py-2 opacity-0 invisible group-hover/sub:opacity-100 group-hover/sub:visible transition-all duration-200">
 <<<<<<< HEAD
+<<<<<<< HEAD
                       <li><a href="${basePath}pages/locations/brisbane-cnc.html" class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600">CNC Machining</a></li>
 =======
                       <li><a href="${basePath}locations/brisbane-cnc-machining.html" class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600">CNC Machining</a></li>
 >>>>>>> b9f1cd2 (all files modified and fixed for captcha changes)
+=======
+                      <li><a href="${basePath}locations/brisbane-cnc-machining.html" class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600">CNC Machining</a></li>
+>>>>>>> d14e303 (all captcha fixes)
                     </ul>
                   </li>
 
                   <!-- Darwin -->
                   <li class="relative group/sub">
 <<<<<<< HEAD
+<<<<<<< HEAD
                     <a href="${basePath}pages/locations/darwin-cnc.html" class="flex justify-between items-center px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600">
 =======
                     <a href="${basePath}locations/darwin-cnc-machining.html" class="flex justify-between items-center px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600">
 >>>>>>> b9f1cd2 (all files modified and fixed for captcha changes)
+=======
+                    <a href="${basePath}locations/darwin-cnc-machining.html" class="flex justify-between items-center px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600">
+>>>>>>> d14e303 (all captcha fixes)
                       Darwin
                       <span class="ml-2">></span>
                     </a>
                     <ul class="absolute left-full top-0 ml-1 bg-white shadow-lg rounded-lg border min-w-40 py-2 opacity-0 invisible group-hover/sub:opacity-100 group-hover/sub:visible transition-all duration-200">
 <<<<<<< HEAD
+<<<<<<< HEAD
                       <li><a href="${basePath}pages/locations/darwin-cnc.html" class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600">CNC Machining</a></li>
 =======
                       <li><a href="${basePath}locations/darwin-cnc-machining.html" class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600">CNC Machining</a></li>
 >>>>>>> b9f1cd2 (all files modified and fixed for captcha changes)
+=======
+                      <li><a href="${basePath}locations/darwin-cnc-machining.html" class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600">CNC Machining</a></li>
+>>>>>>> d14e303 (all captcha fixes)
                     </ul>
                   </li>
                 </ul>
@@ -240,6 +318,7 @@ class HeaderComponent extends HTMLElement {
               <div class="bg-white shadow-xl rounded-lg min-w-44 border">
                 <ul class="py-2">
 <<<<<<< HEAD
+<<<<<<< HEAD
                   <li><a href="${basePath}pages/company/about-us.html" class="block px-3 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">About Us</a></li>
                   <li><a href="#" class="block px-3 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">Blog</a></li>
                   <li><a href="${basePath}pages/company/capabilities.html" class="block px-3 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">Capabilities</a></li>
@@ -248,6 +327,8 @@ class HeaderComponent extends HTMLElement {
                   <li><a href="${basePath}pages/company/small-batch-production.html" class="block px-3 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">Small Batch Production</a></li>
                   <li><a href="${basePath}pages/company/large-scale-production.html" class="block px-3 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">Large Scale Production</a></li>
 =======
+=======
+>>>>>>> d14e303 (all captcha fixes)
                   <li><a href="${basePath}company/about-us.html" class="block px-3 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">About Us</a></li>
                   <li><a href="#" class="block px-3 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">Blog</a></li>
                   <li><a href="${basePath}company/capabilities.html" class="block px-3 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">Capabilities</a></li>
@@ -255,7 +336,10 @@ class HeaderComponent extends HTMLElement {
                   <li><a href="${basePath}company/infrastructure.html" class="block px-3 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">Infrastructure</a></li>
                   <li><a href="${basePath}company/small-batch-production.html" class="block px-3 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">Small Batch Production</a></li>
                   <li><a href="${basePath}company/large-scale-production.html" class="block px-3 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">Large Scale Production</a></li>
+<<<<<<< HEAD
 >>>>>>> b9f1cd2 (all files modified and fixed for captcha changes)
+=======
+>>>>>>> d14e303 (all captcha fixes)
                 </ul>
               </div>
             </div>
@@ -270,6 +354,7 @@ class HeaderComponent extends HTMLElement {
               <div class="bg-white shadow-xl rounded-lg min-w-52 border">
                 <ul class="py-2">
 <<<<<<< HEAD
+<<<<<<< HEAD
                   <li><a href="${basePath}pages/components/drilling-components.html" class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">Drilling Components</a></li>
                   <li><a href="${basePath}pages/components/engine-components.html" class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">Engine Components</a></li>
                   <li><a href="${basePath}pages/components/hydraulic-components.html" class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">Hydraulic Components</a></li>
@@ -277,23 +362,32 @@ class HeaderComponent extends HTMLElement {
                   <li><a href="${basePath}pages/components/tractor-components.html" class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">Tractor Components</a></li>
                   <li><a href="${basePath}pages/components/military-components.html" class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">Military Components</a></li>
 =======
+=======
+>>>>>>> d14e303 (all captcha fixes)
                   <li><a href="${basePath}components/drilling-components.html" class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">Drilling Components</a></li>
                   <li><a href="${basePath}components/engine-components.html" class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">Engine Components</a></li>
                   <li><a href="${basePath}components/hydraulic-components.html" class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">Hydraulic Components</a></li>
                   <li><a href="${basePath}components/turbine-components.html" class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">Turbine Components</a></li>
                   <li><a href="${basePath}components/tractor-components.html" class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">Tractor Components</a></li>
                   <li><a href="${basePath}components/military-components.html" class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">Military Components</a></li>
+<<<<<<< HEAD
 >>>>>>> b9f1cd2 (all files modified and fixed for captcha changes)
+=======
+>>>>>>> d14e303 (all captcha fixes)
                 </ul>
               </div>
             </div>
           </div>
 
 <<<<<<< HEAD
+<<<<<<< HEAD
           <a href="${basePath}/contact.html" class="text-sm lg:text-base font-medium text-gray-700 hover:text-orange-600 transition-colors whitespace-nowrap">Contact</a>
 =======
           <a href="${basePath}contact.html" class="text-sm lg:text-base font-medium text-gray-700 hover:text-orange-600 transition-colors whitespace-nowrap">Contact</a>
 >>>>>>> b9f1cd2 (all files modified and fixed for captcha changes)
+=======
+          <a href="${basePath}contact.html" class="text-sm lg:text-base font-medium text-gray-700 hover:text-orange-600 transition-colors whitespace-nowrap">Contact</a>
+>>>>>>> d14e303 (all captcha fixes)
         </nav>
 
         <!-- Action Buttons -->
@@ -301,10 +395,14 @@ class HeaderComponent extends HTMLElement {
           <button onclick="openQuoteModal()"
                   class="bg-orange-600 text-white px-3 py-2 sm:px-4 sm:py-2 md:px-5 md:py-2.5 lg:px-6 lg:py-3 rounded-lg shadow hover:bg-orange-700 transition-all duration-200 whitespace-nowrap text-xs sm:text-sm md:text-base font-semibold flex items-center justify-center min-w-[100px] sm:min-w-[120px]">
 <<<<<<< HEAD
+<<<<<<< HEAD
             <span class="hidden sm:inline">Get</span> Quote
 =======
             <span class="sm:inline">Get Quote</span>
 >>>>>>> b9f1cd2 (all files modified and fixed for captcha changes)
+=======
+            <span class="sm:inline">Get Quote</span>
+>>>>>>> d14e303 (all captcha fixes)
           </button>
 
           <button id="menu-toggle"
@@ -337,6 +435,7 @@ class HeaderComponent extends HTMLElement {
               </button>
               <ul id="mobile-servicesDropdown" class="hidden bg-gray-50">
 <<<<<<< HEAD
+<<<<<<< HEAD
                 <li><a href="${basePath}pages/services/milling.html" class="block px-8 sm:px-12 py-2 sm:py-3 text-gray-600 hover:bg-orange-50 hover:text-orange-600 transition-colors text-xs sm:text-sm">CNC Milling</a></li>
                 <li><a href="${basePath}pages/services/turning.html" class="block px-8 sm:px-12 py-2 sm:py-3 text-gray-600 hover:bg-orange-50 hover:text-orange-600 transition-colors text-xs sm:text-sm">CNC Turning</a></li>
                 <li><a href="${basePath}pages/services/5-axis-machining.html" class="block px-8 sm:px-12 py-2 sm:py-3 text-gray-600 hover:bg-orange-50 hover:text-orange-600 transition-colors text-xs sm:text-sm">5-Axis Machining</a></li>
@@ -344,13 +443,18 @@ class HeaderComponent extends HTMLElement {
                 <li><a href="${basePath}pages/services/prototyping.html" class="block px-8 sm:px-12 py-2 sm:py-3 text-gray-600 hover:bg-orange-50 hover:text-orange-600 transition-colors text-xs sm:text-sm">CNC Prototyping</a></li>
                 <li><a href="${basePath}pages/services/custom-machining.html" class="block px-8 sm:px-12 py-2 sm:py-3 text-gray-600 hover:bg-orange-50 hover:text-orange-600 transition-colors text-xs sm:text-sm">Custom Machining</a></li>
 =======
+=======
+>>>>>>> d14e303 (all captcha fixes)
                 <li><a href="${basePath}services/milling.html" class="block px-8 sm:px-12 py-2 sm:py-3 text-gray-600 hover:bg-orange-50 hover:text-orange-600 transition-colors text-xs sm:text-sm">CNC Milling</a></li>
                 <li><a href="${basePath}services/turning.html" class="block px-8 sm:px-12 py-2 sm:py-3 text-gray-600 hover:bg-orange-50 hover:text-orange-600 transition-colors text-xs sm:text-sm">CNC Turning</a></li>
                 <li><a href="${basePath}services/5-axis-machining.html" class="block px-8 sm:px-12 py-2 sm:py-3 text-gray-600 hover:bg-orange-50 hover:text-orange-600 transition-colors text-xs sm:text-sm">5-Axis Machining</a></li>
                 <li><a href="${basePath}services/precision-machining.html" class="block px-8 sm:px-12 py-2 sm:py-3 text-gray-600 hover:bg-orange-50 hover:text-orange-600 transition-colors text-xs sm:text-sm">Precision Machining</a></li>
                 <li><a href="${basePath}services/prototyping.html" class="block px-8 sm:px-12 py-2 sm:py-3 text-gray-600 hover:bg-orange-50 hover:text-orange-600 transition-colors text-xs sm:text-sm">CNC Prototyping</a></li>
                 <li><a href="${basePath}services/custom-machining.html" class="block px-8 sm:px-12 py-2 sm:py-3 text-gray-600 hover:bg-orange-50 hover:text-orange-600 transition-colors text-xs sm:text-sm">Custom Machining</a></li>
+<<<<<<< HEAD
 >>>>>>> b9f1cd2 (all files modified and fixed for captcha changes)
+=======
+>>>>>>> d14e303 (all captcha fixes)
               </ul>
             </li>
 
@@ -363,6 +467,7 @@ class HeaderComponent extends HTMLElement {
               </button>
               <ul id="mobile-industriesDropdown" class="hidden bg-gray-50">
 <<<<<<< HEAD
+<<<<<<< HEAD
                 <li><a href="${basePath}pages/industries/defence.html" class="block px-8 sm:px-12 py-2 sm:py-3 text-gray-600 hover:bg-orange-50 hover:text-orange-600 transition-colors text-xs sm:text-sm">Defence Industry</a></li>
                 <li><a href="${basePath}pages/industries/oil&gas.html" class="block px-8 sm:px-12 py-2 sm:py-3 text-gray-600 hover:bg-orange-50 hover:text-orange-600 transition-colors text-xs sm:text-sm">Oil & Gas Industry</a></li>
                 <li><a href="${basePath}pages/industries/automotive.html" class="block px-8 sm:px-12 py-2 sm:py-3 text-gray-600 hover:bg-orange-50 hover:text-orange-600 transition-colors text-xs sm:text-sm">Automotive Industry</a></li>
@@ -372,6 +477,8 @@ class HeaderComponent extends HTMLElement {
                 <li><a href="${basePath}pages/industries/agriculture.html" class="block px-8 sm:px-12 py-2 sm:py-3 text-gray-600 hover:bg-orange-50 hover:text-orange-600 transition-colors text-xs sm:text-sm">Agricultural / Tractor</a></li>
                 <li><a href="${basePath}pages/industries/aerospace.html" class="block px-8 sm:px-12 py-2 sm:py-3 text-gray-600 hover:bg-orange-50 hover:text-orange-600 transition-colors text-xs sm:text-sm">Aerospace Industry</a></li>
 =======
+=======
+>>>>>>> d14e303 (all captcha fixes)
                 <li><a href="${basePath}industries/defence-cnc.html" class="block px-8 sm:px-12 py-2 sm:py-3 text-gray-600 hover:bg-orange-50 hover:text-orange-600 transition-colors text-xs sm:text-sm">Defence Industry</a></li>
                 <li><a href="${basePath}industries/oil-gas-cnc.html" class="block px-8 sm:px-12 py-2 sm:py-3 text-gray-600 hover:bg-orange-50 hover:text-orange-600 transition-colors text-xs sm:text-sm">Oil & Gas Industry</a></li>
                 <li><a href="${basePath}industries/automotive-cnc.html" class="block px-8 sm:px-12 py-2 sm:py-3 text-gray-600 hover:bg-orange-50 hover:text-orange-600 transition-colors text-xs sm:text-sm">Automotive Industry</a></li>
@@ -380,7 +487,10 @@ class HeaderComponent extends HTMLElement {
                 <li><a href="${basePath}industries/hydraulic-cnc.html" class="block px-8 sm:px-12 py-2 sm:py-3 text-gray-600 hover:bg-orange-50 hover:text-orange-600 transition-colors text-xs sm:text-sm">Hydraulic Power</a></li>
                 <li><a href="${basePath}industries/agriculture-cnc.html" class="block px-8 sm:px-12 py-2 sm:py-3 text-gray-600 hover:bg-orange-50 hover:text-orange-600 transition-colors text-xs sm:text-sm">Agricultural / Tractor</a></li>
                 <li><a href="${basePath}industries/aerospace-cnc.html" class="block px-8 sm:px-12 py-2 sm:py-3 text-gray-600 hover:bg-orange-50 hover:text-orange-600 transition-colors text-xs sm:text-sm">Aerospace Industry</a></li>
+<<<<<<< HEAD
 >>>>>>> b9f1cd2 (all files modified and fixed for captcha changes)
+=======
+>>>>>>> d14e303 (all captcha fixes)
               </ul>
             </li>
 
@@ -401,6 +511,7 @@ class HeaderComponent extends HTMLElement {
                   </button>
                   <ul id="mobile-melbourneDropdown" class="hidden bg-gray-100">
 <<<<<<< HEAD
+<<<<<<< HEAD
                     <li><a href="${basePath}pages/locations/melbourne-cnc.html" class="block px-12 sm:px-16 py-2 text-gray-600 hover:bg-orange-50 hover:text-orange-600 transition-colors text-xs">CNC Machining</a></li>
                     <li><a href="${basePath}pages/locations/melbourne-precision.html" class="block px-12 sm:px-16 py-2 text-gray-600 hover:bg-orange-50 hover:text-orange-600 transition-colors text-xs">Precision Machining</a></li>
                     <li><a href="${basePath}pages/locations/melbourne-5-axis-machining.html" class="block px-12 sm:px-16 py-2 text-gray-600 hover:bg-orange-50 hover:text-orange-600 transition-colors text-xs">5-Axis Machining</a></li>
@@ -409,6 +520,11 @@ class HeaderComponent extends HTMLElement {
                     <li><a href="${basePath}locations/melbourne-precision-machining.html" class="block px-12 sm:px-16 py-2 text-gray-600 hover:bg-orange-50 hover:text-orange-600 transition-colors text-xs">Precision Machining</a></li>
                     <li><a href="${basePath}locations/melbourne-5-axis-machining.html" class="block px-12 sm:px-16 py-2 text-gray-600 hover:bg-orange-50 hover:text-orange-600 transition-colors text-xs">5-Axis Machining</a></li>
 >>>>>>> b9f1cd2 (all files modified and fixed for captcha changes)
+=======
+                    <li><a href="${basePath}locations/melbourne-cnc-machining.html" class="block px-12 sm:px-16 py-2 text-gray-600 hover:bg-orange-50 hover:text-orange-600 transition-colors text-xs">CNC Machining</a></li>
+                    <li><a href="${basePath}locations/melbourne-precision-machining.html" class="block px-12 sm:px-16 py-2 text-gray-600 hover:bg-orange-50 hover:text-orange-600 transition-colors text-xs">Precision Machining</a></li>
+                    <li><a href="${basePath}locations/melbourne-5-axis-machining.html" class="block px-12 sm:px-16 py-2 text-gray-600 hover:bg-orange-50 hover:text-orange-600 transition-colors text-xs">5-Axis Machining</a></li>
+>>>>>>> d14e303 (all captcha fixes)
                   </ul>
                 </li>
 
@@ -421,12 +537,17 @@ class HeaderComponent extends HTMLElement {
                   </button>
                   <ul id="mobile-sydneyDropdown" class="hidden bg-gray-100">
 <<<<<<< HEAD
+<<<<<<< HEAD
                     <li><a href="${basePath}pages/locations/sydney-cnc.html" class="block px-12 sm:px-16 py-2 text-gray-600 hover:bg-orange-50 hover:text-orange-600 transition-colors text-xs">CNC Machining</a></li>
                     <li><a href="${basePath}pages/locations/sydney-precision.html" class="block px-12 sm:px-16 py-2 text-gray-600 hover:bg-orange-50 hover:text-orange-600 transition-colors text-xs">Precision Machining</a></li>
 =======
                     <li><a href="${basePath}locations/sydney-cnc-machining.html" class="block px-12 sm:px-16 py-2 text-gray-600 hover:bg-orange-50 hover:text-orange-600 transition-colors text-xs">CNC Machining</a></li>
                     <li><a href="${basePath}locations/sydney-precision-machining.html" class="block px-12 sm:px-16 py-2 text-gray-600 hover:bg-orange-50 hover:text-orange-600 transition-colors text-xs">Precision Machining</a></li>
 >>>>>>> b9f1cd2 (all files modified and fixed for captcha changes)
+=======
+                    <li><a href="${basePath}locations/sydney-cnc-machining.html" class="block px-12 sm:px-16 py-2 text-gray-600 hover:bg-orange-50 hover:text-orange-600 transition-colors text-xs">CNC Machining</a></li>
+                    <li><a href="${basePath}locations/sydney-precision-machining.html" class="block px-12 sm:px-16 py-2 text-gray-600 hover:bg-orange-50 hover:text-orange-600 transition-colors text-xs">Precision Machining</a></li>
+>>>>>>> d14e303 (all captcha fixes)
                   </ul>
                 </li>
 
@@ -439,40 +560,57 @@ class HeaderComponent extends HTMLElement {
                   </button>
                   <ul id="mobile-perthDropdown" class="hidden bg-gray-100">
 <<<<<<< HEAD
+<<<<<<< HEAD
                     <li><a href="${basePath}pages/locations/perth-cnc.html" class="block px-12 sm:px-16 py-2 text-gray-600 hover:bg-orange-50 hover:text-orange-600 transition-colors text-xs">CNC Machining</a></li>
                     <li><a href="${basePath}pages/locations/perth-precision.html" class="block px-12 sm:px-16 py-2 text-gray-600 hover:bg-orange-50 hover:text-orange-600 transition-colors text-xs">Precision Machining</a></li>
 =======
                     <li><a href="${basePath}locations/perth-cnc-machining.html" class="block px-12 sm:px-16 py-2 text-gray-600 hover:bg-orange-50 hover:text-orange-600 transition-colors text-xs">CNC Machining</a></li>
                     <li><a href="${basePath}locations/perth-precision-machining.html" class="block px-12 sm:px-16 py-2 text-gray-600 hover:bg-orange-50 hover:text-orange-600 transition-colors text-xs">Precision Machining</a></li>
 >>>>>>> b9f1cd2 (all files modified and fixed for captcha changes)
+=======
+                    <li><a href="${basePath}locations/perth-cnc-machining.html" class="block px-12 sm:px-16 py-2 text-gray-600 hover:bg-orange-50 hover:text-orange-600 transition-colors text-xs">CNC Machining</a></li>
+                    <li><a href="${basePath}locations/perth-precision-machining.html" class="block px-12 sm:px-16 py-2 text-gray-600 hover:bg-orange-50 hover:text-orange-600 transition-colors text-xs">Precision Machining</a></li>
+>>>>>>> d14e303 (all captcha fixes)
                   </ul>
                 </li>
 
                 <!-- Adelaide -->
                 <li class="border-b border-gray-50">
 <<<<<<< HEAD
+<<<<<<< HEAD
                   <a href="${basePath}pages/locations/adelaide-cnc.html" class="block px-8 sm:px-12 py-2 sm:py-3 text-gray-600 hover:bg-orange-50 hover:text-orange-600 transition-colors text-xs sm:text-sm">Adelaide</a>
 =======
                   <a href="${basePath}locations/adelaide-cnc-machining.html" class="block px-8 sm:px-12 py-2 sm:py-3 text-gray-600 hover:bg-orange-50 hover:text-orange-600 transition-colors text-xs sm:text-sm">Adelaide</a>
 >>>>>>> b9f1cd2 (all files modified and fixed for captcha changes)
+=======
+                  <a href="${basePath}locations/adelaide-cnc-machining.html" class="block px-8 sm:px-12 py-2 sm:py-3 text-gray-600 hover:bg-orange-50 hover:text-orange-600 transition-colors text-xs sm:text-sm">Adelaide</a>
+>>>>>>> d14e303 (all captcha fixes)
                 </li>
 
                 <!-- Brisbane -->
                 <li class="border-b border-gray-50">
 <<<<<<< HEAD
+<<<<<<< HEAD
                   <a href="${basePath}pages/locations/brisbane-cnc.html" class="block px-8 sm:px-12 py-2 sm:py-3 text-gray-600 hover:bg-orange-50 hover:text-orange-600 transition-colors text-xs sm:text-sm">Brisbane</a>
 =======
                   <a href="${basePath}locations/brisbane-cnc-machining.html" class="block px-8 sm:px-12 py-2 sm:py-3 text-gray-600 hover:bg-orange-50 hover:text-orange-600 transition-colors text-xs sm:text-sm">Brisbane</a>
 >>>>>>> b9f1cd2 (all files modified and fixed for captcha changes)
+=======
+                  <a href="${basePath}locations/brisbane-cnc-machining.html" class="block px-8 sm:px-12 py-2 sm:py-3 text-gray-600 hover:bg-orange-50 hover:text-orange-600 transition-colors text-xs sm:text-sm">Brisbane</a>
+>>>>>>> d14e303 (all captcha fixes)
                 </li>
 
                 <!-- Darwin -->
                 <li>
 <<<<<<< HEAD
+<<<<<<< HEAD
                   <a href="${basePath}pages/locations/darwin-cnc.html" class="block px-8 sm:px-12 py-2 sm:py-3 text-gray-600 hover:bg-orange-50 hover:text-orange-600 transition-colors text-xs sm:text-sm">Darwin</a>
 =======
                   <a href="${basePath}locations/darwin-cnc-machining.html" class="block px-8 sm:px-12 py-2 sm:py-3 text-gray-600 hover:bg-orange-50 hover:text-orange-600 transition-colors text-xs sm:text-sm">Darwin</a>
 >>>>>>> b9f1cd2 (all files modified and fixed for captcha changes)
+=======
+                  <a href="${basePath}locations/darwin-cnc-machining.html" class="block px-8 sm:px-12 py-2 sm:py-3 text-gray-600 hover:bg-orange-50 hover:text-orange-600 transition-colors text-xs sm:text-sm">Darwin</a>
+>>>>>>> d14e303 (all captcha fixes)
                 </li>
               </ul>
             </li>
@@ -486,6 +624,7 @@ class HeaderComponent extends HTMLElement {
               </button>
               <ul id="mobile-companyDropdown" class="hidden bg-gray-50">
 <<<<<<< HEAD
+<<<<<<< HEAD
                 <li><a href="${basePath}pages/company/about-us.html" class="block px-8 sm:px-12 py-2 sm:py-3 text-gray-600 hover:bg-orange-50 hover:text-orange-600 transition-colors text-xs sm:text-sm">About Us</a></li>
                 <li><a href="#" class="block px-8 sm:px-12 py-2 sm:py-3 text-gray-600 hover:bg-orange-50 hover:text-orange-600 transition-colors text-xs sm:text-sm">Blog</a></li>
                 <li><a href="${basePath}pages/company/capabilities.html" class="block px-8 sm:px-12 py-2 sm:py-3 text-gray-600 hover:bg-orange-50 hover:text-orange-600 transition-colors text-xs sm:text-sm">Capabilities</a></li>
@@ -494,6 +633,8 @@ class HeaderComponent extends HTMLElement {
                 <li><a href="${basePath}pages/company/small-batch-production.html" class="block px-8 sm:px-12 py-2 sm:py-3 text-gray-600 hover:bg-orange-50 hover:text-orange-600 transition-colors text-xs sm:text-sm">Small Batch Production</a></li>
                 <li><a href="${basePath}pages/company/large-scale-production.html" class="block px-8 sm:px-12 py-2 sm:py-3 text-gray-600 hover:bg-orange-50 hover:text-orange-600 transition-colors text-xs sm:text-sm">Large Scale Production</a></li>
 =======
+=======
+>>>>>>> d14e303 (all captcha fixes)
                 <li><a href="${basePath}company/about-us.html" class="block px-8 sm:px-12 py-2 sm:py-3 text-gray-600 hover:bg-orange-50 hover:text-orange-600 transition-colors text-xs sm:text-sm">About Us</a></li>
                 <li><a href="#" class="block px-8 sm:px-12 py-2 sm:py-3 text-gray-600 hover:bg-orange-50 hover:text-orange-600 transition-colors text-xs sm:text-sm">Blog</a></li>
                 <li><a href="${basePath}company/capabilities.html" class="block px-8 sm:px-12 py-2 sm:py-3 text-gray-600 hover:bg-orange-50 hover:text-orange-600 transition-colors text-xs sm:text-sm">Capabilities</a></li>
@@ -501,7 +642,10 @@ class HeaderComponent extends HTMLElement {
                 <li><a href="${basePath}company/infrastructure.html" class="block px-8 sm:px-12 py-2 sm:py-3 text-gray-600 hover:bg-orange-50 hover:text-orange-600 transition-colors text-xs sm:text-sm">Infrastructure</a></li>
                 <li><a href="${basePath}company/small-batch-production.html" class="block px-8 sm:px-12 py-2 sm:py-3 text-gray-600 hover:bg-orange-50 hover:text-orange-600 transition-colors text-xs sm:text-sm">Small Batch Production</a></li>
                 <li><a href="${basePath}company/large-scale-production.html" class="block px-8 sm:px-12 py-2 sm:py-3 text-gray-600 hover:bg-orange-50 hover:text-orange-600 transition-colors text-xs sm:text-sm">Large Scale Production</a></li>
+<<<<<<< HEAD
 >>>>>>> b9f1cd2 (all files modified and fixed for captcha changes)
+=======
+>>>>>>> d14e303 (all captcha fixes)
               </ul>
             </li>
 
@@ -514,6 +658,7 @@ class HeaderComponent extends HTMLElement {
               </button>
               <ul id="mobile-componentsDropdown" class="hidden bg-gray-50">
 <<<<<<< HEAD
+<<<<<<< HEAD
                 <li><a href="${basePath}pages/components/drilling-components.html" class="block px-8 sm:px-12 py-2 sm:py-3 text-gray-600 hover:bg-orange-50 hover:text-orange-600 transition-colors text-xs sm:text-sm">Drilling Components</a></li>
                 <li><a href="${basePath}pages/components/engine-components.html" class="block px-8 sm:px-12 py-2 sm:py-3 text-gray-600 hover:bg-orange-50 hover:text-orange-600 transition-colors text-xs sm:text-sm">Engine Components</a></li>
                 <li><a href="${basePath}pages/components/hydraulic-components.html" class="block px-8 sm:px-12 py-2 sm:py-3 text-gray-600 hover:bg-orange-50 hover:text-orange-600 transition-colors text-xs sm:text-sm">Hydraulic Components</a></li>
@@ -525,6 +670,8 @@ class HeaderComponent extends HTMLElement {
 
             <li><a href="${basePath}pages/contact.html" class="flex items-center px-4 sm:px-6 py-3 sm:py-4 text-gray-800 hover:bg-orange-50 hover:text-orange-600 transition-colors border-l-4 border-transparent hover:border-orange-500 text-sm sm:text-base">
 =======
+=======
+>>>>>>> d14e303 (all captcha fixes)
                 <li><a href="${basePath}components/drilling-components.html" class="block px-8 sm:px-12 py-2 sm:py-3 text-gray-600 hover:bg-orange-50 hover:text-orange-600 transition-colors text-xs sm:text-sm">Drilling Components</a></li>
                 <li><a href="${basePath}components/engine-components.html" class="block px-8 sm:px-12 py-2 sm:py-3 text-gray-600 hover:bg-orange-50 hover:text-orange-600 transition-colors text-xs sm:text-sm">Engine Components</a></li>
                 <li><a href="${basePath}components/hydraulic-components.html" class="block px-8 sm:px-12 py-2 sm:py-3 text-gray-600 hover:bg-orange-50 hover:text-orange-600 transition-colors text-xs sm:text-sm">Hydraulic Components</a></li>
@@ -535,7 +682,10 @@ class HeaderComponent extends HTMLElement {
             </li>
 
             <li><a href="${basePath}contact.html" class="flex items-center px-4 sm:px-6 py-3 sm:py-4 text-gray-800 hover:bg-orange-50 hover:text-orange-600 transition-colors border-l-4 border-transparent hover:border-orange-500 text-sm sm:text-base">
+<<<<<<< HEAD
 >>>>>>> b9f1cd2 (all files modified and fixed for captcha changes)
+=======
+>>>>>>> d14e303 (all captcha fixes)
               Contact</a></li>
           </ul>
 
@@ -553,6 +703,7 @@ class HeaderComponent extends HTMLElement {
       <div id="overlay" class="hidden fixed inset-0 bg-black/50 z-40 backdrop-blur-sm"></div>
     `;
 
+<<<<<<< HEAD
 <<<<<<< HEAD
         this.initializeHeaderInteractions();
     }
@@ -651,6 +802,8 @@ class HeaderComponent extends HTMLElement {
         });
     }
 =======
+=======
+>>>>>>> d14e303 (all captcha fixes)
     this.initializeHeaderInteractions();
   }
 
@@ -747,14 +900,20 @@ class HeaderComponent extends HTMLElement {
       }
     });
   }
+<<<<<<< HEAD
 >>>>>>> b9f1cd2 (all files modified and fixed for captcha changes)
+=======
+>>>>>>> d14e303 (all captcha fixes)
 }
 
 customElements.define("header-component", HeaderComponent);
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> d14e303 (all captcha fixes)
 // Location toggle
 
 document.querySelectorAll('.industry').forEach((card) => {
@@ -777,11 +936,15 @@ document.querySelectorAll('.industry').forEach((card) => {
   });
 });
 
+<<<<<<< HEAD
 >>>>>>> b9f1cd2 (all files modified and fixed for captcha changes)
+=======
+>>>>>>> d14e303 (all captcha fixes)
 // FOOTER 
 
 // footer-component.js
 class FooterComponent extends HTMLElement {
+<<<<<<< HEAD
 <<<<<<< HEAD
     connectedCallback() {
         // Calculate the base path dynamically based on current page location
@@ -789,12 +952,17 @@ class FooterComponent extends HTMLElement {
 
         this.innerHTML = `
 =======
+=======
+>>>>>>> d14e303 (all captcha fixes)
   connectedCallback() {
     // Calculate the base path dynamically based on current page location
     const basePath = this.getBasePath();
 
     this.innerHTML = `
+<<<<<<< HEAD
 >>>>>>> b9f1cd2 (all files modified and fixed for captcha changes)
+=======
+>>>>>>> d14e303 (all captcha fixes)
       <footer class="bg-gray-800 text-gray-300 py-8 px-4 sm:px-6 lg:px-8">
         <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-5 gap-8">
             <!-- Column 1 -->
@@ -807,18 +975,24 @@ class FooterComponent extends HTMLElement {
                 <div class="space-y-2">
                     <p class="text-sm flex items-start">
 <<<<<<< HEAD
+<<<<<<< HEAD
                         <span class="font-semibold mr-2">Phone:</span> 1300 CNC TECH
                     </p>
                     <p class="text-sm flex items-start">
                         <span class="font-semibold mr-2">Email:</span>
                         info@fedeleautocore.com.au
 =======
+=======
+>>>>>>> d14e303 (all captcha fixes)
                         <span class="font-semibold mr-2">Phone:</span> (+91)-95-700-30000
                     </p>
                     <p class="text-sm flex items-start">
                         <span class="font-semibold mr-2">Email:</span>
                         sales@fedeleautocore.com
+<<<<<<< HEAD
 >>>>>>> b9f1cd2 (all files modified and fixed for captcha changes)
+=======
+>>>>>>> d14e303 (all captcha fixes)
                     </p>
                     <p class="text-sm flex items-start">
                         <span class="font-semibold mr-2">ABN:</span> 12 345 678 901
@@ -832,55 +1006,79 @@ class FooterComponent extends HTMLElement {
                 <ul class="space-y-3">
                     <li>
 <<<<<<< HEAD
+<<<<<<< HEAD
                         <a href="${basePath}pages/services/turning.html"
 =======
                         <a href="${basePath}services/cnc-turning.html"
 >>>>>>> b9f1cd2 (all files modified and fixed for captcha changes)
+=======
+                        <a href="${basePath}services/cnc-turning.html"
+>>>>>>> d14e303 (all captcha fixes)
                             class="text-sm hover:text-white transition-colors duration-300 flex items-center">CNC
                             Turning</a>
                     </li>
                     <li>
 <<<<<<< HEAD
+<<<<<<< HEAD
                         <a href="${basePath}pages/services/milling.html"
 =======
                         <a href="${basePath}services/cnc-milling.html"
 >>>>>>> b9f1cd2 (all files modified and fixed for captcha changes)
+=======
+                        <a href="${basePath}services/cnc-milling.html"
+>>>>>>> d14e303 (all captcha fixes)
                             class="text-sm hover:text-white transition-colors duration-300 flex items-center">CNC
                             Milling</a>
                     </li>
                     <li>
 <<<<<<< HEAD
+<<<<<<< HEAD
                         <a href="${basePath}pages/services/5-axis-machining.html"
 =======
                         <a href="${basePath}services/5-axis-machining.html"
 >>>>>>> b9f1cd2 (all files modified and fixed for captcha changes)
+=======
+                        <a href="${basePath}services/5-axis-machining.html"
+>>>>>>> d14e303 (all captcha fixes)
                             class="text-sm hover:text-white transition-colors duration-300 flex items-center">5-Axis
                             Machining</a>
                     </li>
                     <li>
 <<<<<<< HEAD
+<<<<<<< HEAD
                         <a href="${basePath}pages/services/precision-machining.html"
 =======
                         <a href="${basePath}services/precision-machining.html"
 >>>>>>> b9f1cd2 (all files modified and fixed for captcha changes)
+=======
+                        <a href="${basePath}services/precision-machining.html"
+>>>>>>> d14e303 (all captcha fixes)
                             class="text-sm hover:text-white transition-colors duration-300 flex items-center">Precision
                             Machining</a>
                     </li>
                     <li>
 <<<<<<< HEAD
+<<<<<<< HEAD
                         <a href="${basePath}pages/services/prototyping.html"
 =======
                         <a href="${basePath}services/cnc-prototyping.html"
 >>>>>>> b9f1cd2 (all files modified and fixed for captcha changes)
+=======
+                        <a href="${basePath}services/cnc-prototyping.html"
+>>>>>>> d14e303 (all captcha fixes)
                             class="text-sm hover:text-white transition-colors duration-300 flex items-center">CNC
                             Prototyping</a>
                     </li>
                     <li>
 <<<<<<< HEAD
+<<<<<<< HEAD
                         <a href="${basePath}pages/services/custom-machining.html"
 =======
                         <a href="${basePath}services/custom-cnc-machining.html"
 >>>>>>> b9f1cd2 (all files modified and fixed for captcha changes)
+=======
+                        <a href="${basePath}services/custom-cnc-machining.html"
+>>>>>>> d14e303 (all captcha fixes)
                             class="text-sm hover:text-white transition-colors duration-300 flex items-center">Custom
                             Machining</a>
                     </li>
@@ -893,55 +1091,79 @@ class FooterComponent extends HTMLElement {
                 <ul class="space-y-3">
                     <li>
 <<<<<<< HEAD
+<<<<<<< HEAD
                         <a href="${basePath}pages/locations/melbourne-cnc.html"
 =======
                         <a href="${basePath}locations/melbourne-cnc-machining.html"
 >>>>>>> b9f1cd2 (all files modified and fixed for captcha changes)
+=======
+                        <a href="${basePath}locations/melbourne-cnc-machining.html"
+>>>>>>> d14e303 (all captcha fixes)
                             class="text-sm hover:text-white transition-colors duration-300 flex items-center">Melbourne
                             CNC</a>
                     </li>
                     <li>
 <<<<<<< HEAD
+<<<<<<< HEAD
                         <a href="${basePath}pages/locations/sydney-cnc.html"
 =======
                         <a href="${basePath}locations/sydney-cnc-machining.html"
 >>>>>>> b9f1cd2 (all files modified and fixed for captcha changes)
+=======
+                        <a href="${basePath}locations/sydney-cnc-machining.html"
+>>>>>>> d14e303 (all captcha fixes)
                             class="text-sm hover:text-white transition-colors duration-300 flex items-center">Sydney
                             CNC</a>
                     </li>
                     <li>
 <<<<<<< HEAD
+<<<<<<< HEAD
                         <a href="${basePath}pages/locations/perth-cnc.html"
 =======
                         <a href="${basePath}locations/perth-cnc-machining.html"
 >>>>>>> b9f1cd2 (all files modified and fixed for captcha changes)
+=======
+                        <a href="${basePath}locations/perth-cnc-machining.html"
+>>>>>>> d14e303 (all captcha fixes)
                             class="text-sm hover:text-white transition-colors duration-300 flex items-center">Perth
                             CNC</a>
                     </li>
                     <li>
 <<<<<<< HEAD
+<<<<<<< HEAD
                         <a href="${basePath}pages/locations/adelaide-cnc.html"
 =======
                         <a href="${basePath}locations/adelaide-cnc-machining.html"
 >>>>>>> b9f1cd2 (all files modified and fixed for captcha changes)
+=======
+                        <a href="${basePath}locations/adelaide-cnc-machining.html"
+>>>>>>> d14e303 (all captcha fixes)
                             class="text-sm hover:text-white transition-colors duration-300 flex items-center">Adelaide
                             CNC</a>
                     </li>
                     <li>
 <<<<<<< HEAD
+<<<<<<< HEAD
                         <a href="${basePath}pages/locations/brisbane-cnc.html"
 =======
                         <a href="${basePath}locations/brisbane-cnc-machining.html"
 >>>>>>> b9f1cd2 (all files modified and fixed for captcha changes)
+=======
+                        <a href="${basePath}locations/brisbane-cnc-machining.html"
+>>>>>>> d14e303 (all captcha fixes)
                             class="text-sm hover:text-white transition-colors duration-300 flex items-center">Brisbane
                             CNC</a>
                     </li>
                     <li>
 <<<<<<< HEAD
+<<<<<<< HEAD
                         <a href="${basePath}pages/locations/darwin-cnc.html"
 =======
                         <a href="${basePath}locations/darwin-cnc-machining.html"
 >>>>>>> b9f1cd2 (all files modified and fixed for captcha changes)
+=======
+                        <a href="${basePath}locations/darwin-cnc-machining.html"
+>>>>>>> d14e303 (all captcha fixes)
                             class="text-sm hover:text-white transition-colors duration-300 flex items-center">Darwin
                             CNC</a>
                     </li>
@@ -954,23 +1176,30 @@ class FooterComponent extends HTMLElement {
                 <ul class="space-y-3">
                     <li>
 <<<<<<< HEAD
+<<<<<<< HEAD
                         <a href="${basePath}pages/industries/defence.html"
                             class="text-sm hover:text-white transition-colors duration-300 flex items-center">Defence</a>
                     </li>
                     <li>
                         <a href="${basePath}pages/industries/oil&gas.html"
 =======
+=======
+>>>>>>> d14e303 (all captcha fixes)
                         <a href="${basePath}industries/defence-cnc.html"
                             class="text-sm hover:text-white transition-colors duration-300 flex items-center">Defence</a>
                     </li>
                     <li>
                         <a href="${basePath}industries/oil-gas-cnc.html"
+<<<<<<< HEAD
 >>>>>>> b9f1cd2 (all files modified and fixed for captcha changes)
+=======
+>>>>>>> d14e303 (all captcha fixes)
                             class="text-sm hover:text-white transition-colors duration-300 flex items-center">Oil
                             &
                             Gas</a>
                     </li>
                     <li>
+<<<<<<< HEAD
 <<<<<<< HEAD
                         <a href="${basePath}pages/industries/aerospace.html"
                             class="text-sm hover:text-white transition-colors duration-300 flex items-center">Aerospace</a>
@@ -982,6 +1211,8 @@ class FooterComponent extends HTMLElement {
                     <li>
                         <a href="${basePath}pages/industries/construction.html"
 =======
+=======
+>>>>>>> d14e303 (all captcha fixes)
                         <a href="${basePath}industries/aerospace-cnc.html"
                             class="text-sm hover:text-white transition-colors duration-300 flex items-center">Aerospace</a>
                     </li>
@@ -991,7 +1222,10 @@ class FooterComponent extends HTMLElement {
                     </li>
                     <li>
                         <a href="${basePath}industries/construction-cnc.html"
+<<<<<<< HEAD
 >>>>>>> b9f1cd2 (all files modified and fixed for captcha changes)
+=======
+>>>>>>> d14e303 (all captcha fixes)
                             class="text-sm hover:text-white transition-colors duration-300 flex items-center">Manufacturing</a>
                     </li>
                     <li>
@@ -1007,10 +1241,14 @@ class FooterComponent extends HTMLElement {
                 <ul class="space-y-3">
                     <li>
 <<<<<<< HEAD
+<<<<<<< HEAD
                         <a href="${basePath}pages/company/about-us.html"
 =======
                         <a href="${basePath}company/about-us.html"
 >>>>>>> b9f1cd2 (all files modified and fixed for captcha changes)
+=======
+                        <a href="${basePath}company/about-us.html"
+>>>>>>> d14e303 (all captcha fixes)
                             class="text-sm hover:text-white transition-colors duration-300 flex items-center">About
                             Us</a>
                     </li>
@@ -1021,18 +1259,24 @@ class FooterComponent extends HTMLElement {
                     </li>
                     <li>
 <<<<<<< HEAD
+<<<<<<< HEAD
                         <a href="${basePath}pages/company/capabilities.html"
                             class="text-sm hover:text-white transition-colors duration-300 flex items-center">Capabilities</a>
                     </li>
                     <li>
                         <a href="${basePath}pages/company/certifications.html"
 =======
+=======
+>>>>>>> d14e303 (all captcha fixes)
                         <a href="${basePath}company/capabilities.html"
                             class="text-sm hover:text-white transition-colors duration-300 flex items-center">Capabilities</a>
                     </li>
                     <li>
                         <a href="${basePath}company/certifications.html"
+<<<<<<< HEAD
 >>>>>>> b9f1cd2 (all files modified and fixed for captcha changes)
+=======
+>>>>>>> d14e303 (all captcha fixes)
                             class="text-sm hover:text-white transition-colors duration-300 flex items-center">Quality
                             Standards</a>
                     </li>
@@ -1043,10 +1287,14 @@ class FooterComponent extends HTMLElement {
                     </li>
                     <li>
 <<<<<<< HEAD
+<<<<<<< HEAD
                         <a href="${basePath}pages/contact.html"
 =======
                         <a href="${basePath}contact.html"
 >>>>>>> b9f1cd2 (all files modified and fixed for captcha changes)
+=======
+                        <a href="${basePath}contact.html"
+>>>>>>> d14e303 (all captcha fixes)
                             class="text-sm hover:text-white transition-colors duration-300 flex items-center">Contact
                             Us</a>
                     </li>
@@ -1078,6 +1326,7 @@ class FooterComponent extends HTMLElement {
       </footer>
     `;
 <<<<<<< HEAD
+<<<<<<< HEAD
     }
 
     getBasePath() {
@@ -1101,6 +1350,8 @@ class FooterComponent extends HTMLElement {
         return '../'.repeat(depth);
     }
 =======
+=======
+>>>>>>> d14e303 (all captcha fixes)
   }
 
   getBasePath() {
@@ -1123,7 +1374,10 @@ class FooterComponent extends HTMLElement {
     // Create relative path to root
     return '../'.repeat(depth);
   }
+<<<<<<< HEAD
 >>>>>>> b9f1cd2 (all files modified and fixed for captcha changes)
+=======
+>>>>>>> d14e303 (all captcha fixes)
 }
 
 // Register the custom element
@@ -1132,6 +1386,7 @@ customElements.define('footer-component', FooterComponent);
 // HEADER INTERACTION INITIALIZER
 // ======================================================
 function initializeHeaderInteractions() {
+<<<<<<< HEAD
 <<<<<<< HEAD
     const toggleBtn = document.getElementById("menu-toggle");
     const overlay = document.getElementById("overlay");
@@ -1173,6 +1428,8 @@ function initializeHeaderInteractions() {
 
     console.log("✅ Header interactions initialized");
 =======
+=======
+>>>>>>> d14e303 (all captcha fixes)
   const toggleBtn = document.getElementById("menu-toggle");
   const overlay = document.getElementById("overlay");
   const mobileMenu = document.getElementById("mobile-menu");
@@ -1212,7 +1469,10 @@ function initializeHeaderInteractions() {
   };
 
   console.log("✅ Header interactions initialized");
+<<<<<<< HEAD
 >>>>>>> b9f1cd2 (all files modified and fixed for captcha changes)
+=======
+>>>>>>> d14e303 (all captcha fixes)
 }
 
 // ======================================================
@@ -1308,14 +1568,19 @@ document.head.appendChild(globalStyle);
 // ======================================================
 const WEB3FORMS_ACCESS_KEY = "8c3d69c7-33b9-4688-8fcf-15355c00f7a6";
 <<<<<<< HEAD
+<<<<<<< HEAD
 const RECAPTCHA_SITE_KEY = "6Ld16OorAAAAAIuqaxHdsusOxSuYPbckoqHB-iYC";
 =======
 >>>>>>> b9f1cd2 (all files modified and fixed for captcha changes)
+=======
+const RECAPTCHA_SITE_KEY = "6LfF5wAsAAAAAB4MVm_-K9zZJ5yHohXBsnZJG3F-";
+>>>>>>> d14e303 (all captcha fixes)
 
 // ======================================================
 // MOBILE MENU FUNCTIONS
 // ======================================================
 function toggleMobileMenu() {
+<<<<<<< HEAD
 <<<<<<< HEAD
     const menu = document.getElementById("mobile-menu");
     const overlay = document.getElementById("overlay");
@@ -1334,6 +1599,8 @@ function closeMobileMenu() {
     overlay.classList.add("hidden");
     document.body.style.overflow = "";
 =======
+=======
+>>>>>>> d14e303 (all captcha fixes)
   const menu = document.getElementById("mobile-menu");
   const overlay = document.getElementById("overlay");
   if (!menu || !overlay) return;
@@ -1350,13 +1617,17 @@ function closeMobileMenu() {
   menu.classList.add("translate-x-full");
   overlay.classList.add("hidden");
   document.body.style.overflow = "";
+<<<<<<< HEAD
 >>>>>>> b9f1cd2 (all files modified and fixed for captcha changes)
+=======
+>>>>>>> d14e303 (all captcha fixes)
 }
 
 // ======================================================
 // MODAL HANDLING
 // ======================================================
 function openQuoteModal() {
+<<<<<<< HEAD
 <<<<<<< HEAD
     const modal = document.getElementById("quoteModal");
     if (!modal) return;
@@ -1421,6 +1692,20 @@ function closeQuoteModal() {
 
 
 
+=======
+  const modal = document.getElementById("quoteModal");
+  if (!modal) return;
+  modal.classList.remove('hidden');
+  // Prevent body scroll without layout shift
+  document.body.style.overflow = 'hidden';
+  document.body.style.position = 'fixed';
+  document.body.style.width = '100%';
+  modal.style.display = "flex";
+  setTimeout(() => modal.classList.add("show"), 10);
+  document.body.classList.add("modal-open");
+}
+
+>>>>>>> d14e303 (all captcha fixes)
 function closeQuoteModal() {
   const modal = document.getElementById("quoteModal");
   if (!modal) return;
@@ -1446,6 +1731,7 @@ function closeQuoteModal() {
     }
   }
   resetFileUpload();
+<<<<<<< HEAD
 >>>>>>> b9f1cd2 (all files modified and fixed for captcha changes)
 }
 // ======================================================
@@ -1461,17 +1747,29 @@ function handleFileUpload(input) {
     if (files.length > 0) {
         let fileList = `
 =======
+=======
+}
+
+// ======================================================
+// FILE UPLOAD
+// ======================================================
+function handleFileUpload(input) {
+>>>>>>> d14e303 (all captcha fixes)
   const files = input.files;
   const uploadArea = document.getElementById("uploadArea");
   if (!uploadArea) return;
 
   if (files.length > 0) {
     let fileList = `
+<<<<<<< HEAD
 >>>>>>> b9f1cd2 (all files modified and fixed for captcha changes)
+=======
+>>>>>>> d14e303 (all captcha fixes)
       <div class="mb-2"><i class="fas fa-check-circle text-green-600 text-2xl"></i></div>
       <p class="text-green-600 font-semibold mb-2">${files.length} file(s) selected</p>
       <div class="text-xs text-gray-600 space-y-1">
     `;
+<<<<<<< HEAD
 <<<<<<< HEAD
         for (let i = 0; i < Math.min(files.length, 3); i++) {
             fileList += `<div>• ${files[i].name}</div>`;
@@ -1487,6 +1785,8 @@ function resetFileUpload() {
     if (uploadArea) {
         uploadArea.innerHTML = `
 =======
+=======
+>>>>>>> d14e303 (all captcha fixes)
     for (let i = 0; i < Math.min(files.length, 3); i++) {
       fileList += `<div>• ${files[i].name}</div>`;
     }
@@ -1500,16 +1800,23 @@ function resetFileUpload() {
   const uploadArea = document.getElementById("uploadArea");
   if (uploadArea) {
     uploadArea.innerHTML = `
+<<<<<<< HEAD
 >>>>>>> b9f1cd2 (all files modified and fixed for captcha changes)
+=======
+>>>>>>> d14e303 (all captcha fixes)
       <i class="fas fa-cloud-upload-alt text-3xl text-gray-400 mb-2"></i>
       <p class="text-gray-600 font-medium">Click to upload CAD files, drawings, or specifications</p>
       <p class="text-xs text-gray-500 mt-2">Supported: PDF, DWG, STEP, STP, IGS, IGES, JPG, PNG (Max 10MB each)</p>
     `;
 <<<<<<< HEAD
+<<<<<<< HEAD
     }
 =======
   }
 >>>>>>> b9f1cd2 (all files modified and fixed for captcha changes)
+=======
+  }
+>>>>>>> d14e303 (all captcha fixes)
 }
 
 // ======================================================
@@ -1517,6 +1824,7 @@ function resetFileUpload() {
 // ======================================================
 document.addEventListener("DOMContentLoaded", () => {
 
+<<<<<<< HEAD
 <<<<<<< HEAD
     // ESC key closes modal & mobile menu
     document.addEventListener("keydown", (e) => {
@@ -1608,6 +1916,8 @@ document.addEventListener("DOMContentLoaded", () => {
                 from_name: `${formData.get("firstName")} ${formData.get("lastName")}`,
                 message: `
 =======
+=======
+>>>>>>> d14e303 (all captcha fixes)
   // ESC key closes modal & mobile menu
   document.addEventListener("keydown", (e) => {
     if (e.key === "Escape") {
@@ -1656,6 +1966,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
+<<<<<<< HEAD
   // ==============================
   // ✅ GLOBAL RECAPTCHA HANDLER
   // ==================================================
@@ -1679,10 +1990,39 @@ document.addEventListener("DOMContentLoaded", () => {
       if (typeof window.grecaptcha === "undefined" || !window.grecaptcha.render) {
         console.warn("⚠️ grecaptcha not ready yet — retrying in 300ms");
         setTimeout(window.renderAllRecaptchas, 300);
+=======
+  (function () {
+    // ==========================================
+    // ✅ 1. Define your single site key (once)
+    // ==========================================
+    window.RECAPTCHA_SITE_KEY = "6LfTEAEsAAAAAA8J9URrwg8_SxakpsFaTVA4l0eD";
+
+    // ==========================================
+    // ✅ 2. Track all rendered widgets globally
+    // ==========================================
+    if (!window.recaptchaWidgets) window.recaptchaWidgets = new Map();
+
+    // ==========================================
+    // ✅ 3. Global init callback (MUST match ?onload= param)
+    // ==========================================
+    window.initRecaptcha = function initRecaptcha() {
+      console.log("✅ reCAPTCHA API loaded (initRecaptcha)");
+      window.renderAllRecaptchas();
+    };
+
+    // ==========================================
+    // ✅ 4. Render all `.g-recaptcha` elements
+    // ==========================================
+    window.renderAllRecaptchas = function renderAllRecaptchas() {
+      if (typeof window.grecaptcha === "undefined" || !window.grecaptcha.render) {
+        console.warn("⚠️ grecaptcha not ready yet — retrying...");
+        setTimeout(window.renderAllRecaptchas, 400);
+>>>>>>> d14e303 (all captcha fixes)
         return;
       }
 
       const nodes = document.querySelectorAll(".g-recaptcha");
+<<<<<<< HEAD
       let anyRendered = false;
 
       nodes.forEach((el) => {
@@ -1723,6 +2063,53 @@ document.addEventListener("DOMContentLoaded", () => {
     // convenience: re-render after modal open if your modal code triggers a custom event
     window.addEventListener("recaptcha:render", () => {
       setTimeout(window.renderAllRecaptchas, 250);
+=======
+      let renderedCount = 0;
+
+      nodes.forEach((el) => {
+        // skip if already rendered
+        if (window.recaptchaWidgets.has(el)) return;
+
+        try {
+          const widgetId = grecaptcha.render(el, {
+            sitekey: window.RECAPTCHA_SITE_KEY,
+            theme: el.dataset.theme || "light", // optional
+            size: el.dataset.size || "normal",
+          });
+
+          window.recaptchaWidgets.set(el, widgetId);
+          console.log(`✅ Rendered reCAPTCHA widget ID ${widgetId}`);
+          renderedCount++;
+        } catch (err) {
+          console.error("❌ reCAPTCHA render failed:", err);
+        }
+      });
+
+      // if hidden (like inside modal), retry again in 1s
+      if (nodes.length && renderedCount === 0) {
+        console.log("⏳ reCAPTCHA found but not visible, retrying soon...");
+        setTimeout(window.renderAllRecaptchas, 1000);
+      }
+    };
+
+    // ==========================================
+    // ✅ 5. Mutation observer (detect dynamic DOM)
+    // ==========================================
+    if (!window._recaptchaMutationObserver) {
+      const observer = new MutationObserver(() => {
+        clearTimeout(window._recaptchaRenderTimeout);
+        window._recaptchaRenderTimeout = setTimeout(window.renderAllRecaptchas, 300);
+      });
+      observer.observe(document.body, { childList: true, subtree: true });
+      window._recaptchaMutationObserver = observer;
+    }
+
+    // ==========================================
+    // ✅ 6. Optional custom event support
+    // ==========================================
+    window.addEventListener("recaptcha:render", () => {
+      setTimeout(window.renderAllRecaptchas, 300);
+>>>>>>> d14e303 (all captcha fixes)
     });
   })();
 
@@ -1774,13 +2161,17 @@ document.addEventListener("DOMContentLoaded", () => {
         subject: "🧾 New CNC Machining Quote Request",
         from_name: `${formData.get("firstName")} ${formData.get("lastName")}`,
         message: `
+<<<<<<< HEAD
 >>>>>>> b9f1cd2 (all files modified and fixed for captcha changes)
+=======
+>>>>>>> d14e303 (all captcha fixes)
 Name: ${formData.get("firstName")} ${formData.get("lastName")}
 Email: ${formData.get("email")}
 Phone: ${formData.get("phone")}
 Location: ${formData.get("location")}
 Description: ${formData.get("description")}
         `.trim(),
+<<<<<<< HEAD
 <<<<<<< HEAD
             };
 
@@ -1848,6 +2239,8 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 =======
+=======
+>>>>>>> d14e303 (all captcha fixes)
       };
 
       try {
@@ -1890,4 +2283,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 console.log("✅ All components initialized successfully");
+<<<<<<< HEAD
 >>>>>>> b9f1cd2 (all files modified and fixed for captcha changes)
+=======
+>>>>>>> d14e303 (all captcha fixes)

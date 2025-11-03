@@ -934,6 +934,7 @@ function closeQuoteModal() {
 // ======================================================
 // FILE UPLOAD
 // ======================================================
+
 function handleFileUpload(input) {
   const files = input.files;
   const uploadArea = document.getElementById("uploadArea");

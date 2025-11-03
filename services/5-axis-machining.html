@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>5 Axis Machining in Australia</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://www.google.com/recaptcha/api.js?render=explicit" async defer></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-50">
+
+    <!-- Header -->
+    <header-component class="fixed top-0 left-0 w-full bg-white shadow-md z-50">
+    </header-component>
+
+
+
+
+    <!--Hero Section-->
+    <section class="relative min-h-screen flex items-center bg-cover bg-center bg-no-repeat w-full">
+        <!-- Background Image -->
+        <div class="absolute inset-0 -z-10">
+            <img src="/Assets/5-axis-machining-banner.webp" alt="automotive-precision component"
+                class="w-full h-full object-cover [object-position:20%_50%] brightness-125 absolute inset-0" />
+
+            <!-- Overlay -->
+            <div class="absolute inset-0 bg-gradient-to-r from-black via-black/70 to-transparent"></div>
+        </div>
+
+        <!-- Content -->
+
+        <div class="relative z-10 w-full px-12 md:px-12 flex flex-col md:flex-row items-center md:items-start">
+
+            <!-- Left Content -->
+            <div class="text-left w-full md:w-1/2 mt-24 md:mt-32">
+                <h1 class="text-4xl md:text-6xl font-bold mb-6 text-white max-w-2xl">
+                    Precision <span class="text-orange-500">5 Axis</span> Machining in Australia
+                </h1>
+                <p class="text-lg md:text-xl text-gray-200 max-w-xl leading-relaxed">
+                    Fedele Autocore delivers world-class precision components for aerospace, defence, and agriculture
+                    industries across Australia
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 py-4">
+                    <button onclick="openQuoteModal()"
+                        class="px-6 py-3 bg-orange-500 text-white font-semibold rounded-lg shadow-md hover:bg-orange-600 transition transform hover:scale-105">
+                        Get a Quote
+                    </button>
+                </div>
+            </div>
+
+            <!-- Right side (empty space to reveal background image) -->
+            <div class="hidden md:block md:w-1/2"></div>
+        </div>
+
+    </section>
+
+    <!-- About Fedele Autocore Section -->
+    <section class="bg-gray-100 px-12 py-16">
+        <div class="max-w-7xl mx-auto">
+            <!-- Header -->
+            <div class="text-center mb-12">
+                <h2 class="text-4xl md:text-5xl font-bold text-blue-900 mb-4">
+                    About Fedele Autocore
+                </h2>
+                <div class="w-24 h-1 bg-orange-500 mx-auto rounded-full"></div>
+            </div>
+
+            <!-- Content Grid -->
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <!-- Text Content -->
+                <div class="space-y-6 flex flex-col justify-center">
+                    <p class="text-gray-700 text-md leading-relaxed">
+                        Fedele Autocore stands at the forefront of advanced manufacturing,
+                        specialising in 5-axis machining technology to deliver precision
+                        components that meet the exacting standards of Australian industry.
+                        Our state-of-the-art manufacturing capabilities ensure every
+                        component we produce exceeds expectations for quality, precision, and
+                        reliability.
+                    </p>
+
+                    <p class="text-gray-700 text-lg leading-relaxed">
+                        While our manufacturing expertise originates from international
+                        facilities, we maintain a strong commitment to serving the Australian
+                        market with components that meet local industry requirements and
+                        international quality standards. Our 5-axis machining technology
+                        enables us to create complex geometries and intricate designs that
+                        traditional machining methods simply cannot achieve.
+                    </p>
+
+                    <p class="text-gray-700 text-lg leading-relaxed">
+                        We understand the unique challenges faced by Australian industries,
+                        from the harsh operating conditions in mining and agriculture to the
+                        stringent requirements of aerospace and defence applications. Every
+                        component we manufacture is designed to withstand these demanding
+                        environments while maintaining peak performance.
+                    </p>
+
+                    <!-- Call to Action -->
+                    <div class="pt-6">
+                        <a href="capabilities.html">
+                            <button
+                                class="bg-orange-500 text-white px-8 py-3 rounded-lg font-semibold hover:bg-orange-600 transition-colors duration-300 shadow-lg hover:shadow-xl">
+                                Learn More About Our Capabilities
+                            </button>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Stats Card -->
+                <div
+                    class="bg-gradient-to-br from-gray-100 to-gray-200 rounded-2xl px-8 py-12 text-blue-900 shadow-2xl flex flex-col justify-center">
+                    <div class="space-y-8">
+                        <!-- Machining Tolerance -->
+                        <div class="text-center border-b border-orange-500 pb-6">
+                            <div class="text-5xl md:text-6xl font-bold mb-2">±0.005mm</div>
+                            <div class="text-blue-900 text-lg font-medium">Machining Tolerance</div>
+                        </div>
+
+                        <!-- Production Capability -->
+                        <div class="text-center border-b border-orange-500 pb-6">
+                            <div class="text-5xl md:text-6xl font-bold mb-2">24/7</div>
+                            <div class="text-blue-900 text-lg font-medium">Production Capability</div>
+                        </div>
+
+                        <!-- Quality Inspection -->
+                        <div class="text-center">
+                            <div class="text-5xl md:text-6xl font-bold mb-2">100%</div>
+                            <div class="text-blue-900 text-lg font-medium">Quality Inspection</div>
+                        </div>
+                    </div>
+
+                    <!-- Bottom Accent -->
+                    <div class="mt-8 pt-6 border-t border-orange-500">
+                        <div class="flex items-center justify-center space-x-2">
+                            <div class="w-3 h-3 bg-orange-500 rounded-full"></div>
+                            <span class="text-blue-900 font-medium">Precision Manufacturing Excellence</span>
+                            <div class="w-3 h-3 bg-orange-500 rounded-full"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5 Axis Machining Services -->
+    <section class="py-16 px-12 bg-white">
+        <div class="w-full mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-blue-900 mb-4">5 Axis Machining Services</h2>
+                <div class="w-24 h-1 bg-orange-500 mx-auto rounded-full"></div>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <!--Complex Geometry Machining -->
+                <div class="bg-white rounded-lg border border-gray-200 hover:shadow-lg transition-shadow">
+                    <img src="/Assets/complex-geometry-cnc-machining.webp" alt="Complex Gemometry CNC Components"
+                        class="w-full h-60 object-cover rounded-md mb-4">
+                    <h3 class="text-xl font-bold text-blue-900 mb-4 text-center">Complex Geometry Machining</h3>
+                    <p class="text-gray-600 text-center px-4 py-2">
+                        Our 5 axis capabilities allow us to machine complex parts in a single setup, reducing lead times
+                        and improving accuracy. Perfect for intricate aerospace components and defence applications
+                        requiring tight tolerances.
+                    </p>
+                </div>
+
+                <!-- Multi-Material Expertise -->
+                <div class="bg-white rounded-lg border border-gray-200 hover:shadow-lg transition-shadow">
+                    <img src="/Assets/multi-material-cnc-machining.webp" alt="Multi-Material Expertise"
+                        class="w-full h-60 object-cover rounded-md mb-4">
+                    <h3 class="text-xl font-bold text-blue-900 mb-4 text-center">Multi-Material Expertise</h3>
+                    <p class="text-gray-600 text-center px-4 py-2">
+                        We work with a wide range of materials including titanium alloys, aluminium, stainless steel,
+                        and exotic metals commonly used in Australian aerospace and defence industries.
+                    </p>
+                </div>
+
+                <!-- Rapid Prototyping -->
+                <div class="bg-white rounded-lg border border-gray-200 hover:shadow-lg transition-shadow">
+                    <img src="/Assets/rapid-prototyping.jpeg" alt="Vehicle Components"
+                        class="w-full h-60 object-cover rounded-md mb-4">
+                    <h3 class="text-xl font-bold text-blue-900 mb-4 text-center">Rapid Prototyping</h3>
+                    <p class="text-gray-600 text-center px-4 py-2">
+                        Fast turnaround on prototype components allows Australian companies to accelerate their product
+                        development cycles and get to market faster with thoroughly tested designs.
+                    </p>
+                </div>
+
+                <!-- Production Scalability -->
+                <div class="bg-white rounded-lg border border-gray-200 hover:shadow-lg transition-shadow">
+                    <img src="/Assets/rapid-production.webp" alt="Production Scalability"
+                        class="w-full h-60 object-cover rounded-md mb-4">
+                    <h3 class="text-xl font-bold text-blue-900 mb-4 text-center">Production Scalability</h3>
+                    <p class="text-gray-600 text-center px-4 py-2">
+                        From single prototypes to high-volume production runs, our manufacturing systems scale to meet
+                        your needs while maintaining consistent quality across every component produced.
+                    </p>
+                </div>
+
+                <!-- Quality Assurance -->
+                <div class="bg-white rounded-lg border border-gray-200 hover:shadow-lg transition-shadow">
+                    <img src="/Assets/quality-assurance.png" alt="Quality Assurance"
+                        class="w-full h-60 object-cover rounded-md mb-4">
+                    <h3 class="text-xl font-bold text-blue-900 mb-4 text-center">Quality Assurance</h3>
+                    <p class="text-gray-600 text-center px-4 py-2">
+                        Comprehensive quality control processes including CMM inspection, surface finish analysis, and
+                        material certification ensure every component meets Australian industry standards.
+                    </p>
+                </div>
+
+                <!-- Custom Tooling Solutions-->
+                <div class="bg-white rounded-lg border border-gray-200 hover:shadow-lg transition-shadow">
+                    <img src="/Assets/custom-tooling-solution.webp" alt="Custom Tooling Components"
+                        class="w-full h-60 object-cover rounded-md mb-4">
+                    <h3 class="text-xl font-bold text-blue-900 mb-4 text-center">Custom Tooling Solutions</h3>
+                    <p class="text-gray-600 text-center px-4 py-2">
+                        Our engineering team develops custom tooling solutions optimised for your specific components,
+                        reducing machining time and improving surface finish quality.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class=" px-12 py-16 bg-gray-100">
+        <div class="max-w-7xl mx-auto">
+            <!-- Header -->
+            <div class="text-center mb-12">
+                <h2 class="text-4xl md:text-5xl font-bold text-blue-900 mb-4">Industries We Serve</h2>
+                <div class="w-24 h-1 bg-orange-500 mx-auto rounded-full"></div>
+            </div>
+
+            <!-- Industries Grid -->
+            <div class="grid lg:grid-cols-3 gap-8">
+                <!-- Aerospace Industry -->
+                <div
+                    class="bg-white rounded-2xl shadow-2xl overflow-hidden hover:shadow-3xl transition-shadow duration-300">
+                    <!-- Header Card -->
+                    <div class="bg-gradient-to-r from-blue-900 to-blue-800 p-6 text-white">
+                        <div class="flex items-center space-x-4">
+                            <div class="w-12 h-12 bg-orange-500 rounded-lg flex items-center justify-center">
+                                <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                    <path
+                                        d="M21 16v-2l-8-5V3.5c0-.83-.67-1.5-1.5-1.5S10 2.67 10 3.5V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5L21 16z" />
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-bold">Aerospace Industry</h3>
+                                <p class="text-blue-200">Precision components for Australia's growing aerospace sector
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Content -->
+                    <div class="p-6">
+                        <p class="text-gray-700 mb-6 leading-relaxed">
+                            Australia's aerospace industry demands components that meet the highest standards for
+                            safety, reliability, and performance. Our 5-axis machining capabilities create
+                            mission-critical components that keep aircraft flying safely.
+                        </p>
+
+                        <div class="space-y-3">
+                            <div class="flex items-start space-x-3">
+                                <div class="w-2 h-2 bg-orange-500 rounded-full mt-2 flex-shrink-0"></div>
+                                <span class="text-gray-700 text-sm">Aircraft engine components and turbine blades</span>
+                            </div>
+                            <div class="flex items-start space-x-3">
+                                <div class="w-2 h-2 bg-orange-500 rounded-full mt-2 flex-shrink-0"></div>
+                                <span class="text-gray-700 text-sm">Landing gear assemblies and actuator housings</span>
+                            </div>
+                            <div class="flex items-start space-x-3">
+                                <div class="w-2 h-2 bg-orange-500 rounded-full mt-2 flex-shrink-0"></div>
+                                <span class="text-gray-700 text-sm">Structural brackets and mounting systems</span>
+                            </div>
+                            <div class="flex items-start space-x-3">
+                                <div class="w-2 h-2 bg-orange-500 rounded-full mt-2 flex-shrink-0"></div>
+                                <span class="text-gray-700 text-sm">Fuel system components and manifolds</span>
+                            </div>
+                            <div class="flex items-start space-x-3">
+                                <div class="w-2 h-2 bg-orange-500 rounded-full mt-2 flex-shrink-0"></div>
+                                <span class="text-gray-700 text-sm">Avionics housings and heat sinks</span>
+                            </div>
+                            <div class="flex items-start space-x-3">
+                                <div class="w-2 h-2 bg-orange-500 rounded-full mt-2 flex-shrink-0"></div>
+                                <span class="text-gray-700 text-sm">Propeller hubs and pitch control mechanisms</span>
+                            </div>
+                            <div class="flex items-start space-x-3">
+                                <div class="w-2 h-2 bg-orange-500 rounded-full mt-2 flex-shrink-0"></div>
+                                <span class="text-gray-700 text-sm">Wing spar fittings and control surface hinges</span>
+                            </div>
+                            <div class="flex items-start space-x-3">
+                                <div class="w-2 h-2 bg-orange-500 rounded-full mt-2 flex-shrink-0"></div>
+                                <span class="text-gray-700 text-sm">Cockpit instrument panels and switch
+                                    assemblies</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Defence Sector -->
+                <div
+                    class="bg-white rounded-2xl shadow-2xl overflow-hidden hover:shadow-3xl transition-shadow duration-300">
+                    <!-- Header Card -->
+                    <div class="bg-gradient-to-r from-orange-500 to-orange-600 p-6 text-white">
+                        <div class="flex items-center space-x-4">
+                            <div class="w-12 h-12 bg-blue-900 rounded-lg flex items-center justify-center">
+                                <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                    <path
+                                        d="M12,2A3,3 0 0,1 15,5V11A3,3 0 0,1 12,14A3,3 0 0,1 9,11V5A3,3 0 0,1 12,2M19,11C19,14.53 16.39,17.44 13,17.93V21H11V17.93C7.61,17.44 5,14.53 5,11H7A5,5 0 0,0 12,16A5,5 0 0,0 17,11H19Z" />
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-bold">Defence Sector</h3>
+                                <p class="text-orange-200">Mission-critical components for Australia's defence
+                                    capabilities</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Content -->
+                    <div class="p-6">
+                        <p class="text-gray-700 mb-6 leading-relaxed">
+                            Supporting Australia's defence industry with components that meet stringent military
+                            specifications. Our manufacturing processes are designed to produce components that perform
+                            reliably in the most challenging operational environments.
+                        </p>
+
+                        <div class="space-y-3">
+                            <div class="flex items-start space-x-3">
+                                <div class="w-2 h-2 bg-blue-900 rounded-full mt-2 flex-shrink-0"></div>
+                                <span class="text-gray-700 text-sm">Weapon system components and firing
+                                    mechanisms</span>
+                            </div>
+                            <div class="flex items-start space-x-3">
+                                <div class="w-2 h-2 bg-blue-900 rounded-full mt-2 flex-shrink-0"></div>
+                                <span class="text-gray-700 text-sm">Armoured vehicle parts and drive components</span>
+                            </div>
+                            <div class="flex items-start space-x-3">
+                                <div class="w-2 h-2 bg-blue-900 rounded-full mt-2 flex-shrink-0"></div>
+                                <span class="text-gray-700 text-sm">Radar and communication equipment housings</span>
+                            </div>
+                            <div class="flex items-start space-x-3">
+                                <div class="w-2 h-2 bg-blue-900 rounded-full mt-2 flex-shrink-0"></div>
+                                <span class="text-gray-700 text-sm">Naval vessel propulsion components</span>
+                            </div>
+                            <div class="flex items-start space-x-3">
+                                <div class="w-2 h-2 bg-blue-900 rounded-full mt-2 flex-shrink-0"></div>
+                                <span class="text-gray-700 text-sm">Military aircraft structural elements</span>
+                            </div>
+                            <div class="flex items-start space-x-3">
+                                <div class="w-2 h-2 bg-blue-900 rounded-full mt-2 flex-shrink-0"></div>
+                                <span class="text-gray-700 text-sm">Surveillance equipment mounts and brackets</span>
+                            </div>
+                            <div class="flex items-start space-x-3">
+                                <div class="w-2 h-2 bg-blue-900 rounded-full mt-2 flex-shrink-0"></div>
+                                <span class="text-gray-700 text-sm">Ballistic protection system components</span>
+                            </div>
+                            <div class="flex items-start space-x-3">
+                                <div class="w-2 h-2 bg-blue-900 rounded-full mt-2 flex-shrink-0"></div>
+                                <span class="text-gray-700 text-sm">Electronic warfare system housings</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Agriculture Industry -->
+                <div
+                    class="bg-white rounded-2xl shadow-2xl overflow-hidden hover:shadow-3xl transition-shadow duration-300">
+                    <!-- Header Card -->
+                    <div class="bg-gradient-to-r from-blue-900 to-blue-800 p-6 text-white">
+                        <div class="flex items-center space-x-4">
+                            <div class="w-12 h-12 bg-orange-500 rounded-lg flex items-center justify-center">
+                                <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                    <path
+                                        d="M17,17H7V12L10.5,6L13.5,12V17M12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2M12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20A8,8 0 0,0 20,12A8,8 0 0,0 12,4Z" />
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-bold">Agriculture Industry</h3>
+                                <p class="text-blue-200">Durable components for Australia's agricultural machinery</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Content -->
+                    <div class="p-6">
+                        <p class="text-gray-700 mb-6 leading-relaxed">
+                            Australia's vast agricultural sector requires machinery components that can withstand harsh
+                            environmental conditions, from the red dirt of the outback to coastal humidity. Our
+                            components are built to last in these demanding environments.
+                        </p>
+
+                        <div class="space-y-3">
+                            <div class="flex items-start space-x-3">
+                                <div class="w-2 h-2 bg-orange-500 rounded-full mt-2 flex-shrink-0"></div>
+                                <span class="text-gray-700 text-sm">Harvester cutting assemblies and header
+                                    components</span>
+                            </div>
+                            <div class="flex items-start space-x-3">
+                                <div class="w-2 h-2 bg-orange-500 rounded-full mt-2 flex-shrink-0"></div>
+                                <span class="text-gray-700 text-sm">Tractor transmission housings and gear
+                                    systems</span>
+                            </div>
+                            <div class="flex items-start space-x-3">
+                                <div class="w-2 h-2 bg-orange-500 rounded-full mt-2 flex-shrink-0"></div>
+                                <span class="text-gray-700 text-sm">Plough shares and cultivator points</span>
+                            </div>
+                            <div class="flex items-start space-x-3">
+                                <div class="w-2 h-2 bg-orange-500 rounded-full mt-2 flex-shrink-0"></div>
+                                <span class="text-gray-700 text-sm">Seeding equipment components and metering
+                                    systems</span>
+                            </div>
+                            <div class="flex items-start space-x-3">
+                                <div class="w-2 h-2 bg-orange-500 rounded-full mt-2 flex-shrink-0"></div>
+                                <span class="text-gray-700 text-sm">Irrigation system fittings and control valves</span>
+                            </div>
+                            <div class="flex items-start space-x-3">
+                                <div class="w-2 h-2 bg-orange-500 rounded-full mt-2 flex-shrink-0"></div>
+                                <span class="text-gray-700 text-sm">Grain handling equipment and conveyor
+                                    components</span>
+                            </div>
+                            <div class="flex items-start space-x-3">
+                                <div class="w-2 h-2 bg-orange-500 rounded-full mt-2 flex-shrink-0"></div>
+                                <span class="text-gray-700 text-sm">Livestock handling system parts</span>
+                            </div>
+                            <div class="flex items-start space-x-3">
+                                <div class="w-2 h-2 bg-orange-500 rounded-full mt-2 flex-shrink-0"></div>
+                                <span class="text-gray-700 text-sm">Solar panel mounting brackets for farm
+                                    installations</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quote Modal -->
+    <section class="px-4 sm:px-8 lg:px-12 py-16">
+        <div class="max-w-2xl mx-auto">
+            <!-- Form Container -->
+            <div class="bg-white rounded-2xl shadow-2xl overflow-hidden">
+                <!-- Header -->
+                <div class="bg-white px-6 sm:px-8 pt-8 pb-6 text-center">
+                    <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-blue-900 mb-2">
+                        Precision 5 Axis Machining
+                    </h2>
+                    <div class="w-16 h-1 bg-orange-500 mx-auto rounded-full"></div>
+                    <p class="text-gray-600 mt-3 text-sm sm:text-base">Request a quote for your precision machining
+                        needs</p>
+                </div>
+
+                <!-- Form -->
+                <form id="quoteForm" class="px-6 sm:px-8 pb-8 space-y-5" onsubmit="handleSubmit(event)">
+                    <!-- Names Row -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div>
+                            <label for="firstName" class="block text-sm font-semibold text-blue-900 mb-2">
+                                First Name <span class="text-red-500">*</span>
+                            </label>
+                            <input type="text" id="firstName" name="firstName" required
+                                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-orange-500 transition-colors duration-300"
+                                placeholder="Enter first name">
+                        </div>
+                        <div>
+                            <label for="lastName" class="block text-sm font-semibold text-blue-900 mb-2">
+                                Last Name <span class="text-red-500">*</span>
+                            </label>
+                            <input type="text" id="lastName" name="lastName" required
+                                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-orange-500 transition-colors duration-300"
+                                placeholder="Enter last name">
+                        </div>
+                    </div>
+
+                    <!-- Email Address -->
+                    <div>
+                        <label for="email" class="block text-sm font-semibold text-blue-900 mb-2">
+                            Email Address <span class="text-red-500">*</span>
+                        </label>
+                        <input type="email" id="email" name="email" required
+                            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-orange-500 transition-colors duration-300"
+                            placeholder="Enter your email address">
+                    </div>
+
+                    <!-- Phone Number -->
+                    <div>
+                        <label for="phone" class="block text-sm font-semibold text-blue-900 mb-2">
+                            Phone Number
+                        </label>
+                        <input type="tel" id="phone" name="phone"
+                            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-orange-500 transition-colors duration-300"
+                            placeholder="Enter your phone number">
+                    </div>
+
+                    <!-- Location -->
+                    <div>
+                        <label for="location" class="block text-sm font-semibold text-blue-900 mb-2">
+                            Location <span class="text-red-500">*</span>
+                        </label>
+                        <div class="relative">
+                            <select id="location" name="location" required
+                                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-orange-500 transition-colors duration-300 appearance-none bg-white">
+                                <option value="" disabled selected>Select your city</option>
+                                <option value="melbourne">Melbourne</option>
+                                <option value="sydney">Sydney</option>
+                                <option value="perth">Perth</option>
+                                <option value="adelaide">Adelaide</option>
+                                <option value="brisbane">Brisbane</option>
+                                <option value="darwin">Darwin</option>
+                                <option value="other">Other</option>
+                            </select>
+                            <div class="absolute inset-y-0 right-0 flex items-center px-2 pointer-events-none">
+                                <svg class="w-5 h-5 text-gray-400" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd"
+                                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project Description -->
+                    <div>
+                        <label for="description" class="block text-sm font-semibold text-blue-900 mb-2">
+                            Project Description
+                        </label>
+                        <textarea id="description" name="description" rows="4"
+                            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-orange-500 transition-colors duration-300 resize-none"
+                            placeholder="Briefly describe your CNC turning requirements, materials, quantities, and timeline..."></textarea>
+                    </div>
+
+                    <!-- Google reCAPTCHA -->
+
+                    <div class="g-recaptcha"></div>
+
+
+                    <!-- Submit Button -->
+                    <div class="pt-4">
+                        <button type="submit"
+                            class="w-full bg-gradient-to-r from-orange-500 to-orange-600 text-white font-bold py-4 px-6 rounded-lg hover:from-orange-600 hover:to-orange-700 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2 transform hover:scale-[1.02] transition-all duration-300 shadow-lg hover:shadow-xl">
+                            <i class="fas fa-paper-plane mr-2"></i>Submit Quote Request
+                        </button>
+                    </div>
+
+                    <!-- Privacy Notice -->
+                    <div class="pt-4 text-center">
+                        <p class="text-gray-600 text-sm leading-relaxed">
+                            By submitting this form, you agree to our
+                            <a href="#"
+                                class="text-blue-900 font-semibold hover:text-orange-500 transition-colors duration-300">Privacy
+                                Policy</a>
+                            and consent to being contacted about your precision machining requirements.
+                        </p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer-component></footer-component>
+    <!-- Quote Modal -->
+    <section>
+        <div id="quoteModal" class="modal fixed inset-0 flex items-center justify-center bg-black/50 z-50">
+            <div class="modal-content max-w-xl w-full bg-white shadow-lg rounded-lg max-h-screen overflow-y-auto">
+                <div class="p-3 sm:p-4">
+                    <!-- Header -->
+                    <div class="flex justify-between items-center mb-2">
+                        <h2 class="text-lg sm:text-xl font-bold text-gray-800">
+                            Precision 5 Axis Machining
+                        </h2>
+                        <button onclick="closeQuoteModal()" class="text-gray-500 hover:text-gray-700 text-lg">
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </div>
+
+                    <!-- Form -->
+                    <form id="quoteForm" class="space-y-2.5">
+                        <!-- Names -->
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-2.5">
+                            <div>
+                                <label class="block text-xs font-medium text-gray-700 mb-0.5">First Name *</label>
+                                <input type="text" name="firstName" required
+                                    class="w-full px-2 py-1.5 border border-gray-300 rounded focus:ring-2 focus:ring-orange-500 text-sm">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-medium text-gray-700 mb-0.5">Last Name *</label>
+                                <input type="text" name="lastName" required
+                                    class="w-full px-2 py-1.5 border border-gray-300 rounded focus:ring-2 focus:ring-orange-500 text-sm">
+                            </div>
+                        </div>
+
+                        <!-- Email -->
+                        <div>
+                            <label class="block text-xs font-medium text-gray-700 mb-0.5">Email *</label>
+                            <input type="email" name="email" required
+                                class="w-full px-2 py-1.5 border border-gray-300 rounded focus:ring-2 focus:ring-orange-500 text-sm">
+                        </div>
+
+                        <!-- Phone -->
+                        <div>
+                            <label class="block text-xs font-medium text-gray-700 mb-0.5">Phone</label>
+                            <input type="tel" name="phone"
+                                class="w-full px-2 py-1.5 border border-gray-300 rounded focus:ring-2 focus:ring-orange-500 text-sm">
+                        </div>
+
+                        <!-- Location -->
+                        <div>
+                            <label class="block text-xs font-medium text-gray-700 mb-0.5">Location *</label>
+                            <select name="location" required
+                                class="w-full px-2 py-1.5 border border-gray-300 rounded focus:ring-2 focus:ring-orange-500 text-sm">
+                                <option value="">Select your city</option>
+                                <option value="melbourne">Melbourne</option>
+                                <option value="sydney">Sydney</option>
+                                <option value="perth">Perth</option>
+                                <option value="adelaide">Adelaide</option>
+                                <option value="brisbane">Brisbane</option>
+                                <option value="darwin">Darwin</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <!-- Description -->
+                        <div>
+                            <label class="block text-xs font-medium text-gray-700 mb-0.5">Project Description</label>
+                            <textarea name="description" rows="1"
+                                class="w-full px-2 py-1.5 border border-gray-300 rounded focus:ring-2 focus:ring-orange-500 text-sm"
+                                placeholder="Briefly describe requirements"></textarea>
+                        </div>
+
+                        <!-- Google reCAPTCHA -->
+                        <div class="g-recaptcha" data-sitekey=""></div>
+
+                        <!-- Submit -->
+                        <div class="pt-2">
+                            <button type="submit" id="submitBtn"
+                                class="w-full bg-orange-600 text-white py-2 rounded font-semibold text-sm hover:bg-orange-700 transition disabled:bg-gray-400">
+                                <span id="btnText">Submit Quote</span>
+                                <span id="btnLoader" class="hidden">
+                                    <i class="fas fa-spinner fa-spin"></i> Sending...
+                                </span>
+                            </button>
+                        </div>
+                </div>
+                </form>
+            </div>
+        </div>
+        </div>
+    </section>
+    <script src="/script.js">
+        function handleSubmit(event) {
+            event.preventDefault();
+
+            // Get reCAPTCHA response
+            const recaptchaResponse = grecaptcha.getResponse();
+
+            if (!recaptchaResponse) {
+                alert('Please complete the reCAPTCHA verification');
+                return;
+            }
+
+            // Get form data
+            const formData = new FormData(event.target);
+            const data = Object.fromEntries(formData.entries());
+
+            console.log('Form submitted:', data);
+
+            // Show success message
+            alert('Thank you! Your quote request has been submitted successfully. We will contact you soon.');
+
+            // Reset form
+            event.target.reset();
+            grecaptcha.reset();
+        }
+    </script>
+</body>
+
+</html>

@@ -2,11 +2,19 @@
 // HEADER COMPONENT (Complete Navigation)
 // ======================================================
 class HeaderComponent extends HTMLElement {
+<<<<<<< HEAD
     connectedCallback() {
         // Calculate the base path dynamically based on current page location
         const basePath = this.getBasePath();
 
         this.innerHTML = `
+=======
+  connectedCallback() {
+    // Calculate the base path dynamically based on current page location
+    const basePath = this.getBasePath();
+
+    this.innerHTML = `
+>>>>>>> b9f1cd2 (all files modified and fixed for captcha changes)
       <div class="max-w-7xl mx-auto flex items-center justify-between h-16 md:h-20 px-4 sm:px-6 lg:px-8 xl:px-12">
 
         <!-- Logo -->
@@ -23,18 +31,31 @@ class HeaderComponent extends HTMLElement {
 
           <!-- CNC Services -->
           <div class="relative group">
+<<<<<<< HEAD
             <a href="${basePath}pages/services/advanced-cnc-machining-services.html" class="text-sm lg:text-base font-medium text-gray-700 hover:text-orange-600 transition-colors whitespace-nowrap flex items-center">
+=======
+            <a href="${basePath}services/advanced-cnc-machining-services.html" class="text-sm lg:text-base font-medium text-gray-700 hover:text-orange-600 transition-colors whitespace-nowrap flex items-center">
+>>>>>>> b9f1cd2 (all files modified and fixed for captcha changes)
               CNC Services
             </a>
             <div class="absolute left-0 top-full mt-1 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
               <div class="bg-white shadow-xl rounded-lg min-w-48 border">
                 <ul class="py-2">
+<<<<<<< HEAD
                   <li><a href="${basePath}pages/services/milling.html" class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">CNC Milling</a></li>
                   <li><a href="${basePath}pages/services/turning.html" class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">CNC Turning</a></li>
                   <li><a href="${basePath}pages/services/5-axis-machining.html" class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">5-Axis Machining</a></li>
                   <li><a href="${basePath}pages/services/precision-machining.html" class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">Precision Machining</a></li>
                   <li><a href="${basePath}pages/services/prototyping.html" class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">CNC Prototyping</a></li>
                   <li><a href="${basePath}pages/services/custom-machining.html" class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">Custom Machining</a></li>
+=======
+                  <li><a href="${basePath}services/cnc-milling.html" class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">CNC Milling</a></li>
+                  <li><a href="${basePath}services/cnc-turning.html" class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">CNC Turning</a></li>
+                  <li><a href="${basePath}services/5-axis-machining.html" class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">5-Axis Machining</a></li>
+                  <li><a href="${basePath}services/precision-machining.html" class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">Precision Machining</a></li>
+                  <li><a href="${basePath}services/cnc-prototyping.html" class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">CNC Prototyping</a></li>
+                  <li><a href="${basePath}services/custom-cnc-machining.html" class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">Custom Machining</a></li>
+>>>>>>> b9f1cd2 (all files modified and fixed for captcha changes)
                 </ul>
               </div>
             </div>
@@ -48,6 +69,7 @@ class HeaderComponent extends HTMLElement {
             <div class="absolute left-0 top-full mt-1 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
               <div class="bg-white shadow-xl rounded-lg min-w-56 border">
                 <ul class="py-2">
+<<<<<<< HEAD
                   <li><a href="${basePath}pages/industries/defence.html" class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">Defence Industry</a></li>
                   <li><a href="${basePath}pages/industries/oil&gas.html" class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">Oil & Gas Industry</a></li>
                   <li><a href="${basePath}pages/industries/automotive.html" class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">Automotive Industry</a></li>
@@ -56,6 +78,16 @@ class HeaderComponent extends HTMLElement {
                   <li><a href="${basePath}pages/industries/hydraulic.html" class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">Hydraulic Power</a></li>
                   <li><a href="${basePath}pages/industries/agriculture.html" class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">Agricultural / Tractor</a></li>
                   <li><a href="${basePath}pages/industries/aerospace.html" class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">Aerospace Industry</a></li>
+=======
+                  <li><a href="${basePath}industries/defence-cnc.html" class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">Defence Industry</a></li>
+                  <li><a href="${basePath}industries/oil-gas-cnc.html" class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">Oil & Gas Industry</a></li>
+                  <li><a href="${basePath}industries/automotive-cnc.html" class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">Automotive Industry</a></li>
+                  <li><a href="${basePath}industries/construction-cnc.html" class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">Construction Industry</a></li>
+                  <li><a href="${basePath}industries/energy-cnc.html" class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">Energy Solutions</a></li>
+                  <li><a href="${basePath}industries/hydraulic-cnc.html" class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">Hydraulic Power</a></li>
+                  <li><a href="${basePath}industries/agriculture-cnc.html" class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">Agricultural / Tractor</a></li>
+                  <li><a href="${basePath}industries/aerospace-cnc.html" class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">Aerospace Industry</a></li>
+>>>>>>> b9f1cd2 (all files modified and fixed for captcha changes)
                 </ul>
               </div>
             </div>
@@ -63,7 +95,11 @@ class HeaderComponent extends HTMLElement {
 
           <!-- Locations -->
           <div class="relative group">
+<<<<<<< HEAD
             <a href="${basePath}pages/locations/location.html" class="text-sm lg:text-base font-medium text-gray-700 hover:text-orange-600 transition-colors whitespace-nowrap">
+=======
+            <a href="${basePath}locations/location.html" class="text-sm lg:text-base font-medium text-gray-700 hover:text-orange-600 transition-colors whitespace-nowrap">
+>>>>>>> b9f1cd2 (all files modified and fixed for captcha changes)
               Locations
             </a>
             <div class="absolute left-0 top-full mt-1 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
@@ -71,71 +107,123 @@ class HeaderComponent extends HTMLElement {
                 <ul class="py-2">
                   <!-- Melbourne -->
                   <li class="relative group/sub">
+<<<<<<< HEAD
                     <a href="${basePath}pages/locations/melbourne-cnc.html" class="flex justify-between items-center px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">
+=======
+                    <a href="${basePath}locations/melbourne-cnc-machining.html" class="flex justify-between items-center px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">
+>>>>>>> b9f1cd2 (all files modified and fixed for captcha changes)
                       Melbourne
                       <span class="ml-2">></span>
                     </a>
                     <ul class="absolute left-full top-0 ml-1 bg-white shadow-lg rounded-lg border min-w-40 py-2 opacity-0 invisible group-hover/sub:opacity-100 group-hover/sub:visible transition-all duration-200">
+<<<<<<< HEAD
                       <li><a href="${basePath}pages/locations/melbourne-cnc.html" class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600">CNC Machining</a></li>
                       <li><a href="${basePath}pages/locations/melbourne-precision.html" class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600">Precision Machining</a></li>
                       <li><a href="${basePath}pages/locations/melbourne-5-axis-machining.html" class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600">5-Axis Machining</a></li>
+=======
+                      <li><a href="${basePath}locations/melbourne-cnc-machining.html" class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600">CNC Machining</a></li>
+                      <li><a href="${basePath}locations/melbourne-precision-machining.html" class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600">Precision Machining</a></li>
+                      <li><a href="${basePath}locations/melbourne-5-axis-machining.html" class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600">5-Axis Machining</a></li>
+>>>>>>> b9f1cd2 (all files modified and fixed for captcha changes)
                     </ul>
                   </li>
 
                   <!-- Sydney -->
                   <li class="relative group/sub">
+<<<<<<< HEAD
                     <a href="${basePath}pages/locations/sydney-cnc.html" class="flex justify-between items-center px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600">
+=======
+                    <a href="${basePath}locations/sydney-cnc-machining.html" class="flex justify-between items-center px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600">
+>>>>>>> b9f1cd2 (all files modified and fixed for captcha changes)
                       Sydney
                       <span class="ml-2">></span>
                     </a>
                     <ul class="absolute left-full top-0 ml-1 bg-white shadow-lg rounded-lg border min-w-40 py-2 opacity-0 invisible group-hover/sub:opacity-100 group-hover/sub:visible transition-all duration-200">
+<<<<<<< HEAD
                       <li><a href="${basePath}pages/locations/sydney-cnc.html" class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600">CNC Machining</a></li>
                       <li><a href="${basePath}pages/locations/sydney-precision.html" class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600">Precision Machining</a></li>
+=======
+                      <li><a href="${basePath}locations/sydney-cnc-machining.html" class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600">CNC Machining</a></li>
+                      <li><a href="${basePath}locations/sydney-precision-machining.html" class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600">Precision Machining</a></li>
+>>>>>>> b9f1cd2 (all files modified and fixed for captcha changes)
                     </ul>
                   </li>
 
                   <!-- Perth -->
                   <li class="relative group/sub">
+<<<<<<< HEAD
                     <a href="${basePath}pages/locations/perth-cnc.html" class="flex justify-between items-center px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600">
+=======
+                    <a href="${basePath}locations/perth-cnc-machining.html" class="flex justify-between items-center px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600">
+>>>>>>> b9f1cd2 (all files modified and fixed for captcha changes)
                       Perth
                       <span class="ml-2">></span>
                     </a>
                     <ul class="absolute left-full top-0 ml-1 bg-white shadow-lg rounded-lg border min-w-40 py-2 opacity-0 invisible group-hover/sub:opacity-100 group-hover/sub:visible transition-all duration-200">
+<<<<<<< HEAD
                       <li><a href="${basePath}pages/locations/perth-cnc.html" class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600">CNC Machining</a></li>
                       <li><a href="${basePath}pages/locations/perth-precision.html" class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600">Precision Machining</a></li>
+=======
+                      <li><a href="${basePath}locations/perth-cnc-machining.html" class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600">CNC Machining</a></li>
+                      <li><a href="${basePath}locations/perth-precision-machining.html" class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600">Precision Machining</a></li>
+>>>>>>> b9f1cd2 (all files modified and fixed for captcha changes)
                     </ul>
                   </li>
 
                   <!-- Adelaide -->
                   <li class="relative group/sub">
+<<<<<<< HEAD
                     <a href="${basePath}pages/locations/adelaide-cnc.html" class="flex justify-between items-center px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600">
+=======
+                    <a href="${basePath}locations/adelaide-cnc-machining.html" class="flex justify-between items-center px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600">
+>>>>>>> b9f1cd2 (all files modified and fixed for captcha changes)
                       Adelaide
                       <span class="ml-2">></span>
                     </a>
                     <ul class="absolute left-full top-0 ml-1 bg-white shadow-lg rounded-lg border min-w-40 py-2 opacity-0 invisible group-hover/sub:opacity-100 group-hover/sub:visible transition-all duration-200">
+<<<<<<< HEAD
                       <li><a href="${basePath}pages/locations/adelaide-cnc.html" class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600">CNC Machining</a></li>
+=======
+                      <li><a href="${basePath}locations/adelaide-cnc-machining.html" class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600">CNC Machining</a></li>
+>>>>>>> b9f1cd2 (all files modified and fixed for captcha changes)
                     </ul>
                   </li>
 
                   <!-- Brisbane -->
                   <li class="relative group/sub">
+<<<<<<< HEAD
                     <a href="${basePath}pages/locations/brisbane-cnc.html" class="flex justify-between items-center px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600">
+=======
+                    <a href="${basePath}locations/brisbane-cnc-machining.html" class="flex justify-between items-center px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600">
+>>>>>>> b9f1cd2 (all files modified and fixed for captcha changes)
                       Brisbane
                       <span class="ml-2">></span>
                     </a>
                     <ul class="absolute left-full top-0 ml-1 bg-white shadow-lg rounded-lg border min-w-40 py-2 opacity-0 invisible group-hover/sub:opacity-100 group-hover/sub:visible transition-all duration-200">
+<<<<<<< HEAD
                       <li><a href="${basePath}pages/locations/brisbane-cnc.html" class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600">CNC Machining</a></li>
+=======
+                      <li><a href="${basePath}locations/brisbane-cnc-machining.html" class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600">CNC Machining</a></li>
+>>>>>>> b9f1cd2 (all files modified and fixed for captcha changes)
                     </ul>
                   </li>
 
                   <!-- Darwin -->
                   <li class="relative group/sub">
+<<<<<<< HEAD
                     <a href="${basePath}pages/locations/darwin-cnc.html" class="flex justify-between items-center px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600">
+=======
+                    <a href="${basePath}locations/darwin-cnc-machining.html" class="flex justify-between items-center px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600">
+>>>>>>> b9f1cd2 (all files modified and fixed for captcha changes)
                       Darwin
                       <span class="ml-2">></span>
                     </a>
                     <ul class="absolute left-full top-0 ml-1 bg-white shadow-lg rounded-lg border min-w-40 py-2 opacity-0 invisible group-hover/sub:opacity-100 group-hover/sub:visible transition-all duration-200">
+<<<<<<< HEAD
                       <li><a href="${basePath}pages/locations/darwin-cnc.html" class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600">CNC Machining</a></li>
+=======
+                      <li><a href="${basePath}locations/darwin-cnc-machining.html" class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600">CNC Machining</a></li>
+>>>>>>> b9f1cd2 (all files modified and fixed for captcha changes)
                     </ul>
                   </li>
                 </ul>
@@ -151,6 +239,7 @@ class HeaderComponent extends HTMLElement {
             <div class="absolute left-0 top-full mt-1 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
               <div class="bg-white shadow-xl rounded-lg min-w-44 border">
                 <ul class="py-2">
+<<<<<<< HEAD
                   <li><a href="${basePath}pages/company/about-us.html" class="block px-3 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">About Us</a></li>
                   <li><a href="#" class="block px-3 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">Blog</a></li>
                   <li><a href="${basePath}pages/company/capabilities.html" class="block px-3 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">Capabilities</a></li>
@@ -158,6 +247,15 @@ class HeaderComponent extends HTMLElement {
                   <li><a href="${basePath}pages/company/infrastructure.html" class="block px-3 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">Infrastructure</a></li>
                   <li><a href="${basePath}pages/company/small-batch-production.html" class="block px-3 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">Small Batch Production</a></li>
                   <li><a href="${basePath}pages/company/large-scale-production.html" class="block px-3 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">Large Scale Production</a></li>
+=======
+                  <li><a href="${basePath}company/about-us.html" class="block px-3 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">About Us</a></li>
+                  <li><a href="#" class="block px-3 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">Blog</a></li>
+                  <li><a href="${basePath}company/capabilities.html" class="block px-3 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">Capabilities</a></li>
+                  <li><a href="${basePath}company/certifications.html" class="block px-3 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">Certifications</a></li>
+                  <li><a href="${basePath}company/infrastructure.html" class="block px-3 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">Infrastructure</a></li>
+                  <li><a href="${basePath}company/small-batch-production.html" class="block px-3 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">Small Batch Production</a></li>
+                  <li><a href="${basePath}company/large-scale-production.html" class="block px-3 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">Large Scale Production</a></li>
+>>>>>>> b9f1cd2 (all files modified and fixed for captcha changes)
                 </ul>
               </div>
             </div>
@@ -171,25 +269,42 @@ class HeaderComponent extends HTMLElement {
             <div class="absolute left-0 top-full mt-1 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
               <div class="bg-white shadow-xl rounded-lg min-w-52 border">
                 <ul class="py-2">
+<<<<<<< HEAD
                   <li><a href="${basePath}pages/components/drilling-components.html" class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">Drilling Components</a></li>
                   <li><a href="${basePath}pages/components/engine-components.html" class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">Engine Components</a></li>
                   <li><a href="${basePath}pages/components/hydraulic-components.html" class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">Hydraulic Components</a></li>
                   <li><a href="${basePath}pages/components/turbine-components.html" class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">Turbine Components</a></li>
                   <li><a href="${basePath}pages/components/tractor-components.html" class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">Tractor Components</a></li>
                   <li><a href="${basePath}pages/components/military-components.html" class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">Military Components</a></li>
+=======
+                  <li><a href="${basePath}components/drilling-components.html" class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">Drilling Components</a></li>
+                  <li><a href="${basePath}components/engine-components.html" class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">Engine Components</a></li>
+                  <li><a href="${basePath}components/hydraulic-components.html" class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">Hydraulic Components</a></li>
+                  <li><a href="${basePath}components/turbine-components.html" class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">Turbine Components</a></li>
+                  <li><a href="${basePath}components/tractor-components.html" class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">Tractor Components</a></li>
+                  <li><a href="${basePath}components/military-components.html" class="block px-4 py-2 text-sm hover:bg-orange-50 hover:text-orange-600 transition-colors">Military Components</a></li>
+>>>>>>> b9f1cd2 (all files modified and fixed for captcha changes)
                 </ul>
               </div>
             </div>
           </div>
 
+<<<<<<< HEAD
           <a href="${basePath}/contact.html" class="text-sm lg:text-base font-medium text-gray-700 hover:text-orange-600 transition-colors whitespace-nowrap">Contact</a>
+=======
+          <a href="${basePath}contact.html" class="text-sm lg:text-base font-medium text-gray-700 hover:text-orange-600 transition-colors whitespace-nowrap">Contact</a>
+>>>>>>> b9f1cd2 (all files modified and fixed for captcha changes)
         </nav>
 
         <!-- Action Buttons -->
         <div class="flex items-center space-x-3 sm:space-x-4">
           <button onclick="openQuoteModal()"
                   class="bg-orange-600 text-white px-3 py-2 sm:px-4 sm:py-2 md:px-5 md:py-2.5 lg:px-6 lg:py-3 rounded-lg shadow hover:bg-orange-700 transition-all duration-200 whitespace-nowrap text-xs sm:text-sm md:text-base font-semibold flex items-center justify-center min-w-[100px] sm:min-w-[120px]">
+<<<<<<< HEAD
             <span class="hidden sm:inline">Get</span> Quote
+=======
+            <span class="sm:inline">Get Quote</span>
+>>>>>>> b9f1cd2 (all files modified and fixed for captcha changes)
           </button>
 
           <button id="menu-toggle"
@@ -221,12 +336,21 @@ class HeaderComponent extends HTMLElement {
                 <span id="mobile-services-icon" class="text-gray-400 transform transition-transform">+</span>
               </button>
               <ul id="mobile-servicesDropdown" class="hidden bg-gray-50">
+<<<<<<< HEAD
                 <li><a href="${basePath}pages/services/milling.html" class="block px-8 sm:px-12 py-2 sm:py-3 text-gray-600 hover:bg-orange-50 hover:text-orange-600 transition-colors text-xs sm:text-sm">CNC Milling</a></li>
                 <li><a href="${basePath}pages/services/turning.html" class="block px-8 sm:px-12 py-2 sm:py-3 text-gray-600 hover:bg-orange-50 hover:text-orange-600 transition-colors text-xs sm:text-sm">CNC Turning</a></li>
                 <li><a href="${basePath}pages/services/5-axis-machining.html" class="block px-8 sm:px-12 py-2 sm:py-3 text-gray-600 hover:bg-orange-50 hover:text-orange-600 transition-colors text-xs sm:text-sm">5-Axis Machining</a></li>
                 <li><a href="${basePath}pages/services/precision-machining.html" class="block px-8 sm:px-12 py-2 sm:py-3 text-gray-600 hover:bg-orange-50 hover:text-orange-600 transition-colors text-xs sm:text-sm">Precision Machining</a></li>
                 <li><a href="${basePath}pages/services/prototyping.html" class="block px-8 sm:px-12 py-2 sm:py-3 text-gray-600 hover:bg-orange-50 hover:text-orange-600 transition-colors text-xs sm:text-sm">CNC Prototyping</a></li>
                 <li><a href="${basePath}pages/services/custom-machining.html" class="block px-8 sm:px-12 py-2 sm:py-3 text-gray-600 hover:bg-orange-50 hover:text-orange-600 transition-colors text-xs sm:text-sm">Custom Machining</a></li>
+=======
+                <li><a href="${basePath}services/milling.html" class="block px-8 sm:px-12 py-2 sm:py-3 text-gray-600 hover:bg-orange-50 hover:text-orange-600 transition-colors text-xs sm:text-sm">CNC Milling</a></li>
+                <li><a href="${basePath}services/turning.html" class="block px-8 sm:px-12 py-2 sm:py-3 text-gray-600 hover:bg-orange-50 hover:text-orange-600 transition-colors text-xs sm:text-sm">CNC Turning</a></li>
+                <li><a href="${basePath}services/5-axis-machining.html" class="block px-8 sm:px-12 py-2 sm:py-3 text-gray-600 hover:bg-orange-50 hover:text-orange-600 transition-colors text-xs sm:text-sm">5-Axis Machining</a></li>
+                <li><a href="${basePath}services/precision-machining.html" class="block px-8 sm:px-12 py-2 sm:py-3 text-gray-600 hover:bg-orange-50 hover:text-orange-600 transition-colors text-xs sm:text-sm">Precision Machining</a></li>
+                <li><a href="${basePath}services/prototyping.html" class="block px-8 sm:px-12 py-2 sm:py-3 text-gray-600 hover:bg-orange-50 hover:text-orange-600 transition-colors text-xs sm:text-sm">CNC Prototyping</a></li>
+                <li><a href="${basePath}services/custom-machining.html" class="block px-8 sm:px-12 py-2 sm:py-3 text-gray-600 hover:bg-orange-50 hover:text-orange-600 transition-colors text-xs sm:text-sm">Custom Machining</a></li>
+>>>>>>> b9f1cd2 (all files modified and fixed for captcha changes)
               </ul>
             </li>
 
@@ -238,6 +362,7 @@ class HeaderComponent extends HTMLElement {
                 <span id="mobile-industries-icon" class="text-gray-400 transform transition-transform">+</span>
               </button>
               <ul id="mobile-industriesDropdown" class="hidden bg-gray-50">
+<<<<<<< HEAD
                 <li><a href="${basePath}pages/industries/defence.html" class="block px-8 sm:px-12 py-2 sm:py-3 text-gray-600 hover:bg-orange-50 hover:text-orange-600 transition-colors text-xs sm:text-sm">Defence Industry</a></li>
                 <li><a href="${basePath}pages/industries/oil&gas.html" class="block px-8 sm:px-12 py-2 sm:py-3 text-gray-600 hover:bg-orange-50 hover:text-orange-600 transition-colors text-xs sm:text-sm">Oil & Gas Industry</a></li>
                 <li><a href="${basePath}pages/industries/automotive.html" class="block px-8 sm:px-12 py-2 sm:py-3 text-gray-600 hover:bg-orange-50 hover:text-orange-600 transition-colors text-xs sm:text-sm">Automotive Industry</a></li>
@@ -246,6 +371,16 @@ class HeaderComponent extends HTMLElement {
                 <li><a href="${basePath}pages/industries/hydraulic.html" class="block px-8 sm:px-12 py-2 sm:py-3 text-gray-600 hover:bg-orange-50 hover:text-orange-600 transition-colors text-xs sm:text-sm">Hydraulic Power</a></li>
                 <li><a href="${basePath}pages/industries/agriculture.html" class="block px-8 sm:px-12 py-2 sm:py-3 text-gray-600 hover:bg-orange-50 hover:text-orange-600 transition-colors text-xs sm:text-sm">Agricultural / Tractor</a></li>
                 <li><a href="${basePath}pages/industries/aerospace.html" class="block px-8 sm:px-12 py-2 sm:py-3 text-gray-600 hover:bg-orange-50 hover:text-orange-600 transition-colors text-xs sm:text-sm">Aerospace Industry</a></li>
+=======
+                <li><a href="${basePath}industries/defence-cnc.html" class="block px-8 sm:px-12 py-2 sm:py-3 text-gray-600 hover:bg-orange-50 hover:text-orange-600 transition-colors text-xs sm:text-sm">Defence Industry</a></li>
+                <li><a href="${basePath}industries/oil-gas-cnc.html" class="block px-8 sm:px-12 py-2 sm:py-3 text-gray-600 hover:bg-orange-50 hover:text-orange-600 transition-colors text-xs sm:text-sm">Oil & Gas Industry</a></li>
+                <li><a href="${basePath}industries/automotive-cnc.html" class="block px-8 sm:px-12 py-2 sm:py-3 text-gray-600 hover:bg-orange-50 hover:text-orange-600 transition-colors text-xs sm:text-sm">Automotive Industry</a></li>
+                <li><a href="${basePath}industries/construction-cnc.html" class="block px-8 sm:px-12 py-2 sm:py-3 text-gray-600 hover:bg-orange-50 hover:text-orange-600 transition-colors text-xs sm:text-sm">Construction Industry</a></li>
+                <li><a href="${basePath}industries/energy-cnc.html" class="block px-8 sm:px-12 py-2 sm:py-3 text-gray-600 hover:bg-orange-50 hover:text-orange-600 transition-colors text-xs sm:text-sm">Energy Solutions</a></li>
+                <li><a href="${basePath}industries/hydraulic-cnc.html" class="block px-8 sm:px-12 py-2 sm:py-3 text-gray-600 hover:bg-orange-50 hover:text-orange-600 transition-colors text-xs sm:text-sm">Hydraulic Power</a></li>
+                <li><a href="${basePath}industries/agriculture-cnc.html" class="block px-8 sm:px-12 py-2 sm:py-3 text-gray-600 hover:bg-orange-50 hover:text-orange-600 transition-colors text-xs sm:text-sm">Agricultural / Tractor</a></li>
+                <li><a href="${basePath}industries/aerospace-cnc.html" class="block px-8 sm:px-12 py-2 sm:py-3 text-gray-600 hover:bg-orange-50 hover:text-orange-600 transition-colors text-xs sm:text-sm">Aerospace Industry</a></li>
+>>>>>>> b9f1cd2 (all files modified and fixed for captcha changes)
               </ul>
             </li>
 
@@ -265,9 +400,15 @@ class HeaderComponent extends HTMLElement {
                     <span class="text-gray-400">+</span>
                   </button>
                   <ul id="mobile-melbourneDropdown" class="hidden bg-gray-100">
+<<<<<<< HEAD
                     <li><a href="${basePath}pages/locations/melbourne-cnc.html" class="block px-12 sm:px-16 py-2 text-gray-600 hover:bg-orange-50 hover:text-orange-600 transition-colors text-xs">CNC Machining</a></li>
                     <li><a href="${basePath}pages/locations/melbourne-precision.html" class="block px-12 sm:px-16 py-2 text-gray-600 hover:bg-orange-50 hover:text-orange-600 transition-colors text-xs">Precision Machining</a></li>
                     <li><a href="${basePath}pages/locations/melbourne-5-axis-machining.html" class="block px-12 sm:px-16 py-2 text-gray-600 hover:bg-orange-50 hover:text-orange-600 transition-colors text-xs">5-Axis Machining</a></li>
+=======
+                    <li><a href="${basePath}locations/melbourne-cnc-machining.html" class="block px-12 sm:px-16 py-2 text-gray-600 hover:bg-orange-50 hover:text-orange-600 transition-colors text-xs">CNC Machining</a></li>
+                    <li><a href="${basePath}locations/melbourne-precision-machining.html" class="block px-12 sm:px-16 py-2 text-gray-600 hover:bg-orange-50 hover:text-orange-600 transition-colors text-xs">Precision Machining</a></li>
+                    <li><a href="${basePath}locations/melbourne-5-axis-machining.html" class="block px-12 sm:px-16 py-2 text-gray-600 hover:bg-orange-50 hover:text-orange-600 transition-colors text-xs">5-Axis Machining</a></li>
+>>>>>>> b9f1cd2 (all files modified and fixed for captcha changes)
                   </ul>
                 </li>
 
@@ -279,8 +420,13 @@ class HeaderComponent extends HTMLElement {
                     <span class="text-gray-400">+</span>
                   </button>
                   <ul id="mobile-sydneyDropdown" class="hidden bg-gray-100">
+<<<<<<< HEAD
                     <li><a href="${basePath}pages/locations/sydney-cnc.html" class="block px-12 sm:px-16 py-2 text-gray-600 hover:bg-orange-50 hover:text-orange-600 transition-colors text-xs">CNC Machining</a></li>
                     <li><a href="${basePath}pages/locations/sydney-precision.html" class="block px-12 sm:px-16 py-2 text-gray-600 hover:bg-orange-50 hover:text-orange-600 transition-colors text-xs">Precision Machining</a></li>
+=======
+                    <li><a href="${basePath}locations/sydney-cnc-machining.html" class="block px-12 sm:px-16 py-2 text-gray-600 hover:bg-orange-50 hover:text-orange-600 transition-colors text-xs">CNC Machining</a></li>
+                    <li><a href="${basePath}locations/sydney-precision-machining.html" class="block px-12 sm:px-16 py-2 text-gray-600 hover:bg-orange-50 hover:text-orange-600 transition-colors text-xs">Precision Machining</a></li>
+>>>>>>> b9f1cd2 (all files modified and fixed for captcha changes)
                   </ul>
                 </li>
 
@@ -292,24 +438,41 @@ class HeaderComponent extends HTMLElement {
                     <span class="text-gray-400">+</span>
                   </button>
                   <ul id="mobile-perthDropdown" class="hidden bg-gray-100">
+<<<<<<< HEAD
                     <li><a href="${basePath}pages/locations/perth-cnc.html" class="block px-12 sm:px-16 py-2 text-gray-600 hover:bg-orange-50 hover:text-orange-600 transition-colors text-xs">CNC Machining</a></li>
                     <li><a href="${basePath}pages/locations/perth-precision.html" class="block px-12 sm:px-16 py-2 text-gray-600 hover:bg-orange-50 hover:text-orange-600 transition-colors text-xs">Precision Machining</a></li>
+=======
+                    <li><a href="${basePath}locations/perth-cnc-machining.html" class="block px-12 sm:px-16 py-2 text-gray-600 hover:bg-orange-50 hover:text-orange-600 transition-colors text-xs">CNC Machining</a></li>
+                    <li><a href="${basePath}locations/perth-precision-machining.html" class="block px-12 sm:px-16 py-2 text-gray-600 hover:bg-orange-50 hover:text-orange-600 transition-colors text-xs">Precision Machining</a></li>
+>>>>>>> b9f1cd2 (all files modified and fixed for captcha changes)
                   </ul>
                 </li>
 
                 <!-- Adelaide -->
                 <li class="border-b border-gray-50">
+<<<<<<< HEAD
                   <a href="${basePath}pages/locations/adelaide-cnc.html" class="block px-8 sm:px-12 py-2 sm:py-3 text-gray-600 hover:bg-orange-50 hover:text-orange-600 transition-colors text-xs sm:text-sm">Adelaide</a>
+=======
+                  <a href="${basePath}locations/adelaide-cnc-machining.html" class="block px-8 sm:px-12 py-2 sm:py-3 text-gray-600 hover:bg-orange-50 hover:text-orange-600 transition-colors text-xs sm:text-sm">Adelaide</a>
+>>>>>>> b9f1cd2 (all files modified and fixed for captcha changes)
                 </li>
 
                 <!-- Brisbane -->
                 <li class="border-b border-gray-50">
+<<<<<<< HEAD
                   <a href="${basePath}pages/locations/brisbane-cnc.html" class="block px-8 sm:px-12 py-2 sm:py-3 text-gray-600 hover:bg-orange-50 hover:text-orange-600 transition-colors text-xs sm:text-sm">Brisbane</a>
+=======
+                  <a href="${basePath}locations/brisbane-cnc-machining.html" class="block px-8 sm:px-12 py-2 sm:py-3 text-gray-600 hover:bg-orange-50 hover:text-orange-600 transition-colors text-xs sm:text-sm">Brisbane</a>
+>>>>>>> b9f1cd2 (all files modified and fixed for captcha changes)
                 </li>
 
                 <!-- Darwin -->
                 <li>
+<<<<<<< HEAD
                   <a href="${basePath}pages/locations/darwin-cnc.html" class="block px-8 sm:px-12 py-2 sm:py-3 text-gray-600 hover:bg-orange-50 hover:text-orange-600 transition-colors text-xs sm:text-sm">Darwin</a>
+=======
+                  <a href="${basePath}locations/darwin-cnc-machining.html" class="block px-8 sm:px-12 py-2 sm:py-3 text-gray-600 hover:bg-orange-50 hover:text-orange-600 transition-colors text-xs sm:text-sm">Darwin</a>
+>>>>>>> b9f1cd2 (all files modified and fixed for captcha changes)
                 </li>
               </ul>
             </li>
@@ -322,6 +485,7 @@ class HeaderComponent extends HTMLElement {
                 <span id="mobile-company-icon" class="text-gray-400 transform transition-transform">+</span>
               </button>
               <ul id="mobile-companyDropdown" class="hidden bg-gray-50">
+<<<<<<< HEAD
                 <li><a href="${basePath}pages/company/about-us.html" class="block px-8 sm:px-12 py-2 sm:py-3 text-gray-600 hover:bg-orange-50 hover:text-orange-600 transition-colors text-xs sm:text-sm">About Us</a></li>
                 <li><a href="#" class="block px-8 sm:px-12 py-2 sm:py-3 text-gray-600 hover:bg-orange-50 hover:text-orange-600 transition-colors text-xs sm:text-sm">Blog</a></li>
                 <li><a href="${basePath}pages/company/capabilities.html" class="block px-8 sm:px-12 py-2 sm:py-3 text-gray-600 hover:bg-orange-50 hover:text-orange-600 transition-colors text-xs sm:text-sm">Capabilities</a></li>
@@ -329,6 +493,15 @@ class HeaderComponent extends HTMLElement {
                 <li><a href="${basePath}pages/company/infrastructure.html" class="block px-8 sm:px-12 py-2 sm:py-3 text-gray-600 hover:bg-orange-50 hover:text-orange-600 transition-colors text-xs sm:text-sm">Infrastructure</a></li>
                 <li><a href="${basePath}pages/company/small-batch-production.html" class="block px-8 sm:px-12 py-2 sm:py-3 text-gray-600 hover:bg-orange-50 hover:text-orange-600 transition-colors text-xs sm:text-sm">Small Batch Production</a></li>
                 <li><a href="${basePath}pages/company/large-scale-production.html" class="block px-8 sm:px-12 py-2 sm:py-3 text-gray-600 hover:bg-orange-50 hover:text-orange-600 transition-colors text-xs sm:text-sm">Large Scale Production</a></li>
+=======
+                <li><a href="${basePath}company/about-us.html" class="block px-8 sm:px-12 py-2 sm:py-3 text-gray-600 hover:bg-orange-50 hover:text-orange-600 transition-colors text-xs sm:text-sm">About Us</a></li>
+                <li><a href="#" class="block px-8 sm:px-12 py-2 sm:py-3 text-gray-600 hover:bg-orange-50 hover:text-orange-600 transition-colors text-xs sm:text-sm">Blog</a></li>
+                <li><a href="${basePath}company/capabilities.html" class="block px-8 sm:px-12 py-2 sm:py-3 text-gray-600 hover:bg-orange-50 hover:text-orange-600 transition-colors text-xs sm:text-sm">Capabilities</a></li>
+                <li><a href="${basePath}company/certifications.html" class="block px-8 sm:px-12 py-2 sm:py-3 text-gray-600 hover:bg-orange-50 hover:text-orange-600 transition-colors text-xs sm:text-sm">Certifications</a></li>
+                <li><a href="${basePath}company/infrastructure.html" class="block px-8 sm:px-12 py-2 sm:py-3 text-gray-600 hover:bg-orange-50 hover:text-orange-600 transition-colors text-xs sm:text-sm">Infrastructure</a></li>
+                <li><a href="${basePath}company/small-batch-production.html" class="block px-8 sm:px-12 py-2 sm:py-3 text-gray-600 hover:bg-orange-50 hover:text-orange-600 transition-colors text-xs sm:text-sm">Small Batch Production</a></li>
+                <li><a href="${basePath}company/large-scale-production.html" class="block px-8 sm:px-12 py-2 sm:py-3 text-gray-600 hover:bg-orange-50 hover:text-orange-600 transition-colors text-xs sm:text-sm">Large Scale Production</a></li>
+>>>>>>> b9f1cd2 (all files modified and fixed for captcha changes)
               </ul>
             </li>
 
@@ -340,6 +513,7 @@ class HeaderComponent extends HTMLElement {
                 <span id="mobile-components-icon" class="text-gray-400 transform transition-transform">+</span>
               </button>
               <ul id="mobile-componentsDropdown" class="hidden bg-gray-50">
+<<<<<<< HEAD
                 <li><a href="${basePath}pages/components/drilling-components.html" class="block px-8 sm:px-12 py-2 sm:py-3 text-gray-600 hover:bg-orange-50 hover:text-orange-600 transition-colors text-xs sm:text-sm">Drilling Components</a></li>
                 <li><a href="${basePath}pages/components/engine-components.html" class="block px-8 sm:px-12 py-2 sm:py-3 text-gray-600 hover:bg-orange-50 hover:text-orange-600 transition-colors text-xs sm:text-sm">Engine Components</a></li>
                 <li><a href="${basePath}pages/components/hydraulic-components.html" class="block px-8 sm:px-12 py-2 sm:py-3 text-gray-600 hover:bg-orange-50 hover:text-orange-600 transition-colors text-xs sm:text-sm">Hydraulic Components</a></li>
@@ -350,6 +524,18 @@ class HeaderComponent extends HTMLElement {
             </li>
 
             <li><a href="${basePath}pages/contact.html" class="flex items-center px-4 sm:px-6 py-3 sm:py-4 text-gray-800 hover:bg-orange-50 hover:text-orange-600 transition-colors border-l-4 border-transparent hover:border-orange-500 text-sm sm:text-base">
+=======
+                <li><a href="${basePath}components/drilling-components.html" class="block px-8 sm:px-12 py-2 sm:py-3 text-gray-600 hover:bg-orange-50 hover:text-orange-600 transition-colors text-xs sm:text-sm">Drilling Components</a></li>
+                <li><a href="${basePath}components/engine-components.html" class="block px-8 sm:px-12 py-2 sm:py-3 text-gray-600 hover:bg-orange-50 hover:text-orange-600 transition-colors text-xs sm:text-sm">Engine Components</a></li>
+                <li><a href="${basePath}components/hydraulic-components.html" class="block px-8 sm:px-12 py-2 sm:py-3 text-gray-600 hover:bg-orange-50 hover:text-orange-600 transition-colors text-xs sm:text-sm">Hydraulic Components</a></li>
+                <li><a href="${basePath}components/turbine-components.html" class="block px-8 sm:px-12 py-2 sm:py-3 text-gray-600 hover:bg-orange-50 hover:text-orange-600 transition-colors text-xs sm:text-sm">Turbine Components</a></li>
+                <li><a href="${basePath}components/tractor-components.html" class="block px-8 sm:px-12 py-2 sm:py-3 text-gray-600 hover:bg-orange-50 hover:text-orange-600 transition-colors text-xs sm:text-sm">Tractor Components</a></li>
+                <li><a href="${basePath}components/military-components.html" class="block px-8 sm:px-12 py-2 sm:py-3 text-gray-600 hover:bg-orange-50 hover:text-orange-600 transition-colors text-xs sm:text-sm">Military Components</a></li>
+              </ul>
+            </li>
+
+            <li><a href="${basePath}contact.html" class="flex items-center px-4 sm:px-6 py-3 sm:py-4 text-gray-800 hover:bg-orange-50 hover:text-orange-600 transition-colors border-l-4 border-transparent hover:border-orange-500 text-sm sm:text-base">
+>>>>>>> b9f1cd2 (all files modified and fixed for captcha changes)
               Contact</a></li>
           </ul>
 
@@ -367,6 +553,7 @@ class HeaderComponent extends HTMLElement {
       <div id="overlay" class="hidden fixed inset-0 bg-black/50 z-40 backdrop-blur-sm"></div>
     `;
 
+<<<<<<< HEAD
         this.initializeHeaderInteractions();
     }
 
@@ -463,20 +650,151 @@ class HeaderComponent extends HTMLElement {
             }
         });
     }
+=======
+    this.initializeHeaderInteractions();
+  }
+
+  // Calculate base path based on current page location
+  getBasePath() {
+    const path = window.location.pathname;
+    const depth = (path.match(/\//g) || []).length - 1;
+
+    // If we're in root directory
+    if (depth === 0 || path.endsWith('/')) {
+      return './';
+    }
+
+    // If we're one level deep (e.g., /contact.html)
+    if (depth === 1) {
+      return '../';
+    }
+
+    // If we're two levels deep (e.g., /services/milling.html)
+    if (depth === 2) {
+      return '../../';
+    }
+
+    // For deeper nesting, calculate dynamically
+    return '../'.repeat(depth);
+  }
+
+  initializeHeaderInteractions() {
+    const toggleBtn = document.getElementById("menu-toggle");
+    const closeBtn = document.getElementById("mobile-close");
+    const overlay = document.getElementById("overlay");
+    const mobileMenu = document.getElementById("mobile-menu");
+
+    const toggleMobileMenu = () => {
+      if (!mobileMenu || !overlay) return;
+
+      const isOpening = mobileMenu.classList.contains("translate-x-full");
+
+      if (isOpening) {
+        mobileMenu.classList.remove("hidden", "translate-x-full");
+        overlay.classList.remove("hidden");
+        document.body.style.overflow = "hidden";
+        document.documentElement.style.overflow = "hidden";
+      } else {
+        this.closeMobileMenu();
+      }
+    };
+
+    this.closeMobileMenu = () => {
+      if (mobileMenu && !mobileMenu.classList.contains("translate-x-full")) {
+        mobileMenu.classList.add("translate-x-full");
+        overlay.classList.add("hidden");
+        document.body.style.overflow = "";
+        document.documentElement.style.overflow = "";
+        setTimeout(() => mobileMenu.classList.add("hidden"), 300);
+      }
+    };
+
+    if (toggleBtn) toggleBtn.addEventListener("click", toggleMobileMenu);
+    if (closeBtn) closeBtn.addEventListener("click", this.closeMobileMenu);
+    if (overlay) overlay.addEventListener("click", this.closeMobileMenu);
+
+    // Mobile dropdown toggle function
+    this.toggleDropdown = (id) => {
+      const dropdown = document.getElementById(id);
+      if (!dropdown) return;
+
+      const isHidden = dropdown.classList.contains("hidden");
+      const iconId = id.replace('Dropdown', '-icon');
+      const icon = document.getElementById(iconId);
+
+      if (isHidden) {
+        dropdown.classList.remove("hidden");
+        if (icon) {
+          icon.textContent = "−";
+          icon.classList.add('rotate-180');
+        }
+      } else {
+        dropdown.classList.add("hidden");
+        if (icon) {
+          icon.textContent = "+";
+          icon.classList.remove('rotate-180');
+        }
+      }
+    };
+
+    // Make toggle function globally accessible
+    window.headerComponent = this;
+
+    // Close mobile menu on escape key
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        this.closeMobileMenu();
+      }
+    });
+  }
+>>>>>>> b9f1cd2 (all files modified and fixed for captcha changes)
 }
 
 customElements.define("header-component", HeaderComponent);
 
 
+<<<<<<< HEAD
+=======
+// Location toggle
+
+document.querySelectorAll('.industry').forEach((card) => {
+  const locations = card.querySelectorAll('.location');
+
+  locations.forEach((loc) => {
+    loc.addEventListener('click', () => {
+      const isActive = loc.classList.contains('active');
+
+      // Remove active class from all spans in this card
+      locations.forEach(l => l.classList.remove('active', 'bg-blue-600', 'text-white'));
+      locations.forEach(l => l.classList.add('bg-gray-200', 'text-gray-700'));
+
+      // If it wasn't active, activate it
+      if (!isActive) {
+        loc.classList.add('active', 'bg-blue-600', 'text-white');
+        loc.classList.remove('bg-gray-200', 'text-gray-700');
+      }
+    });
+  });
+});
+
+>>>>>>> b9f1cd2 (all files modified and fixed for captcha changes)
 // FOOTER 
 
 // footer-component.js
 class FooterComponent extends HTMLElement {
+<<<<<<< HEAD
     connectedCallback() {
         // Calculate the base path dynamically based on current page location
         const basePath = this.getBasePath();
 
         this.innerHTML = `
+=======
+  connectedCallback() {
+    // Calculate the base path dynamically based on current page location
+    const basePath = this.getBasePath();
+
+    this.innerHTML = `
+>>>>>>> b9f1cd2 (all files modified and fixed for captcha changes)
       <footer class="bg-gray-800 text-gray-300 py-8 px-4 sm:px-6 lg:px-8">
         <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-5 gap-8">
             <!-- Column 1 -->
@@ -488,11 +806,19 @@ class FooterComponent extends HTMLElement {
                 </p>
                 <div class="space-y-2">
                     <p class="text-sm flex items-start">
+<<<<<<< HEAD
                         <span class="font-semibold mr-2">Phone:</span> 1300 CNC TECH
                     </p>
                     <p class="text-sm flex items-start">
                         <span class="font-semibold mr-2">Email:</span>
                         info@fedeleautocore.com.au
+=======
+                        <span class="font-semibold mr-2">Phone:</span> (+91)-95-700-30000
+                    </p>
+                    <p class="text-sm flex items-start">
+                        <span class="font-semibold mr-2">Email:</span>
+                        sales@fedeleautocore.com
+>>>>>>> b9f1cd2 (all files modified and fixed for captcha changes)
                     </p>
                     <p class="text-sm flex items-start">
                         <span class="font-semibold mr-2">ABN:</span> 12 345 678 901
@@ -505,32 +831,56 @@ class FooterComponent extends HTMLElement {
                 <h3 class="text-orange-600 font-bold text-lg mb-4">CNC Services</h3>
                 <ul class="space-y-3">
                     <li>
+<<<<<<< HEAD
                         <a href="${basePath}pages/services/turning.html"
+=======
+                        <a href="${basePath}services/cnc-turning.html"
+>>>>>>> b9f1cd2 (all files modified and fixed for captcha changes)
                             class="text-sm hover:text-white transition-colors duration-300 flex items-center">CNC
                             Turning</a>
                     </li>
                     <li>
+<<<<<<< HEAD
                         <a href="${basePath}pages/services/milling.html"
+=======
+                        <a href="${basePath}services/cnc-milling.html"
+>>>>>>> b9f1cd2 (all files modified and fixed for captcha changes)
                             class="text-sm hover:text-white transition-colors duration-300 flex items-center">CNC
                             Milling</a>
                     </li>
                     <li>
+<<<<<<< HEAD
                         <a href="${basePath}pages/services/5-axis-machining.html"
+=======
+                        <a href="${basePath}services/5-axis-machining.html"
+>>>>>>> b9f1cd2 (all files modified and fixed for captcha changes)
                             class="text-sm hover:text-white transition-colors duration-300 flex items-center">5-Axis
                             Machining</a>
                     </li>
                     <li>
+<<<<<<< HEAD
                         <a href="${basePath}pages/services/precision-machining.html"
+=======
+                        <a href="${basePath}services/precision-machining.html"
+>>>>>>> b9f1cd2 (all files modified and fixed for captcha changes)
                             class="text-sm hover:text-white transition-colors duration-300 flex items-center">Precision
                             Machining</a>
                     </li>
                     <li>
+<<<<<<< HEAD
                         <a href="${basePath}pages/services/prototyping.html"
+=======
+                        <a href="${basePath}services/cnc-prototyping.html"
+>>>>>>> b9f1cd2 (all files modified and fixed for captcha changes)
                             class="text-sm hover:text-white transition-colors duration-300 flex items-center">CNC
                             Prototyping</a>
                     </li>
                     <li>
+<<<<<<< HEAD
                         <a href="${basePath}pages/services/custom-machining.html"
+=======
+                        <a href="${basePath}services/custom-cnc-machining.html"
+>>>>>>> b9f1cd2 (all files modified and fixed for captcha changes)
                             class="text-sm hover:text-white transition-colors duration-300 flex items-center">Custom
                             Machining</a>
                     </li>
@@ -542,32 +892,56 @@ class FooterComponent extends HTMLElement {
                 <h3 class="text-orange-600 font-bold text-lg mb-4">Australian Locations</h3>
                 <ul class="space-y-3">
                     <li>
+<<<<<<< HEAD
                         <a href="${basePath}pages/locations/melbourne-cnc.html"
+=======
+                        <a href="${basePath}locations/melbourne-cnc-machining.html"
+>>>>>>> b9f1cd2 (all files modified and fixed for captcha changes)
                             class="text-sm hover:text-white transition-colors duration-300 flex items-center">Melbourne
                             CNC</a>
                     </li>
                     <li>
+<<<<<<< HEAD
                         <a href="${basePath}pages/locations/sydney-cnc.html"
+=======
+                        <a href="${basePath}locations/sydney-cnc-machining.html"
+>>>>>>> b9f1cd2 (all files modified and fixed for captcha changes)
                             class="text-sm hover:text-white transition-colors duration-300 flex items-center">Sydney
                             CNC</a>
                     </li>
                     <li>
+<<<<<<< HEAD
                         <a href="${basePath}pages/locations/perth-cnc.html"
+=======
+                        <a href="${basePath}locations/perth-cnc-machining.html"
+>>>>>>> b9f1cd2 (all files modified and fixed for captcha changes)
                             class="text-sm hover:text-white transition-colors duration-300 flex items-center">Perth
                             CNC</a>
                     </li>
                     <li>
+<<<<<<< HEAD
                         <a href="${basePath}pages/locations/adelaide-cnc.html"
+=======
+                        <a href="${basePath}locations/adelaide-cnc-machining.html"
+>>>>>>> b9f1cd2 (all files modified and fixed for captcha changes)
                             class="text-sm hover:text-white transition-colors duration-300 flex items-center">Adelaide
                             CNC</a>
                     </li>
                     <li>
+<<<<<<< HEAD
                         <a href="${basePath}pages/locations/brisbane-cnc.html"
+=======
+                        <a href="${basePath}locations/brisbane-cnc-machining.html"
+>>>>>>> b9f1cd2 (all files modified and fixed for captcha changes)
                             class="text-sm hover:text-white transition-colors duration-300 flex items-center">Brisbane
                             CNC</a>
                     </li>
                     <li>
+<<<<<<< HEAD
                         <a href="${basePath}pages/locations/darwin-cnc.html"
+=======
+                        <a href="${basePath}locations/darwin-cnc-machining.html"
+>>>>>>> b9f1cd2 (all files modified and fixed for captcha changes)
                             class="text-sm hover:text-white transition-colors duration-300 flex items-center">Darwin
                             CNC</a>
                     </li>
@@ -579,16 +953,25 @@ class FooterComponent extends HTMLElement {
                 <h3 class="text-orange-600 font-bold text-lg mb-4">Industries Served</h3>
                 <ul class="space-y-3">
                     <li>
+<<<<<<< HEAD
                         <a href="${basePath}pages/industries/defence.html"
                             class="text-sm hover:text-white transition-colors duration-300 flex items-center">Defence</a>
                     </li>
                     <li>
                         <a href="${basePath}pages/industries/oil&gas.html"
+=======
+                        <a href="${basePath}industries/defence-cnc.html"
+                            class="text-sm hover:text-white transition-colors duration-300 flex items-center">Defence</a>
+                    </li>
+                    <li>
+                        <a href="${basePath}industries/oil-gas-cnc.html"
+>>>>>>> b9f1cd2 (all files modified and fixed for captcha changes)
                             class="text-sm hover:text-white transition-colors duration-300 flex items-center">Oil
                             &
                             Gas</a>
                     </li>
                     <li>
+<<<<<<< HEAD
                         <a href="${basePath}pages/industries/aerospace.html"
                             class="text-sm hover:text-white transition-colors duration-300 flex items-center">Aerospace</a>
                     </li>
@@ -598,6 +981,17 @@ class FooterComponent extends HTMLElement {
                     </li>
                     <li>
                         <a href="${basePath}pages/industries/construction.html"
+=======
+                        <a href="${basePath}industries/aerospace-cnc.html"
+                            class="text-sm hover:text-white transition-colors duration-300 flex items-center">Aerospace</a>
+                    </li>
+                    <li>
+                        <a href="${basePath}industries/automotive-cnc.html"
+                            class="text-sm hover:text-white transition-colors duration-300 flex items-center">Automotive</a>
+                    </li>
+                    <li>
+                        <a href="${basePath}industries/construction-cnc.html"
+>>>>>>> b9f1cd2 (all files modified and fixed for captcha changes)
                             class="text-sm hover:text-white transition-colors duration-300 flex items-center">Manufacturing</a>
                     </li>
                     <li>
@@ -612,7 +1006,11 @@ class FooterComponent extends HTMLElement {
                 <h3 class="text-orange-600 font-bold text-lg mb-4">Company</h3>
                 <ul class="space-y-3">
                     <li>
+<<<<<<< HEAD
                         <a href="${basePath}pages/company/about-us.html"
+=======
+                        <a href="${basePath}company/about-us.html"
+>>>>>>> b9f1cd2 (all files modified and fixed for captcha changes)
                             class="text-sm hover:text-white transition-colors duration-300 flex items-center">About
                             Us</a>
                     </li>
@@ -622,11 +1020,19 @@ class FooterComponent extends HTMLElement {
                             Blog</a>
                     </li>
                     <li>
+<<<<<<< HEAD
                         <a href="${basePath}pages/company/capabilities.html"
                             class="text-sm hover:text-white transition-colors duration-300 flex items-center">Capabilities</a>
                     </li>
                     <li>
                         <a href="${basePath}pages/company/certifications.html"
+=======
+                        <a href="${basePath}company/capabilities.html"
+                            class="text-sm hover:text-white transition-colors duration-300 flex items-center">Capabilities</a>
+                    </li>
+                    <li>
+                        <a href="${basePath}company/certifications.html"
+>>>>>>> b9f1cd2 (all files modified and fixed for captcha changes)
                             class="text-sm hover:text-white transition-colors duration-300 flex items-center">Quality
                             Standards</a>
                     </li>
@@ -636,7 +1042,11 @@ class FooterComponent extends HTMLElement {
                             Services</a>
                     </li>
                     <li>
+<<<<<<< HEAD
                         <a href="${basePath}pages/contact.html"
+=======
+                        <a href="${basePath}contact.html"
+>>>>>>> b9f1cd2 (all files modified and fixed for captcha changes)
                             class="text-sm hover:text-white transition-colors duration-300 flex items-center">Contact
                             Us</a>
                     </li>
@@ -667,6 +1077,7 @@ class FooterComponent extends HTMLElement {
         </div>
       </footer>
     `;
+<<<<<<< HEAD
     }
 
     getBasePath() {
@@ -689,6 +1100,30 @@ class FooterComponent extends HTMLElement {
         // Create relative path to root
         return '../'.repeat(depth);
     }
+=======
+  }
+
+  getBasePath() {
+    // Get current script path
+    const currentScript = document.currentScript;
+    const scriptPath = currentScript ? currentScript.src : '';
+
+    // Calculate base path based on current page location
+    const pathSegments = window.location.pathname.split('/');
+
+    // Remove the file name (last segment)
+    pathSegments.pop();
+
+    // For root level, return empty string
+    if (pathSegments.length <= 1) return '';
+
+    // Calculate how many levels deep we are
+    const depth = pathSegments.length - 1;
+
+    // Create relative path to root
+    return '../'.repeat(depth);
+  }
+>>>>>>> b9f1cd2 (all files modified and fixed for captcha changes)
 }
 
 // Register the custom element
@@ -697,6 +1132,7 @@ customElements.define('footer-component', FooterComponent);
 // HEADER INTERACTION INITIALIZER
 // ======================================================
 function initializeHeaderInteractions() {
+<<<<<<< HEAD
     const toggleBtn = document.getElementById("menu-toggle");
     const overlay = document.getElementById("overlay");
     const mobileMenu = document.getElementById("mobile-menu");
@@ -736,6 +1172,47 @@ function initializeHeaderInteractions() {
     };
 
     console.log("✅ Header interactions initialized");
+=======
+  const toggleBtn = document.getElementById("menu-toggle");
+  const overlay = document.getElementById("overlay");
+  const mobileMenu = document.getElementById("mobile-menu");
+  let isMobileMenuOpen = false;
+
+  // Mobile menu toggle
+  function toggleMobileMenu() {
+    if (!mobileMenu || !overlay) return;
+
+    isMobileMenuOpen = !isMobileMenuOpen;
+    if (isMobileMenuOpen) {
+      mobileMenu.classList.remove("hidden", "translate-x-full");
+      overlay.classList.remove("hidden");
+      document.body.style.overflow = "hidden";
+    } else {
+      mobileMenu.classList.add("translate-x-full");
+      overlay.classList.add("hidden");
+      document.body.style.overflow = "";
+      setTimeout(() => mobileMenu.classList.add("hidden"), 300);
+    }
+  }
+
+  // Close mobile menu
+  function closeMobileMenu() {
+    if (!isMobileMenuOpen) return;
+    toggleMobileMenu();
+  }
+
+  if (toggleBtn) toggleBtn.addEventListener("click", toggleMobileMenu);
+  if (overlay) overlay.addEventListener("click", closeMobileMenu);
+
+  // Mobile dropdowns
+  window.toggleDropdown = function (id) {
+    const dropdown = document.getElementById(id);
+    if (!dropdown) return;
+    dropdown.classList.toggle("hidden");
+  };
+
+  console.log("✅ Header interactions initialized");
+>>>>>>> b9f1cd2 (all files modified and fixed for captcha changes)
 }
 
 // ======================================================
@@ -830,12 +1307,16 @@ document.head.appendChild(globalStyle);
 // GLOBAL CONSTANTS
 // ======================================================
 const WEB3FORMS_ACCESS_KEY = "8c3d69c7-33b9-4688-8fcf-15355c00f7a6";
+<<<<<<< HEAD
 const RECAPTCHA_SITE_KEY = "6Ld16OorAAAAAIuqaxHdsusOxSuYPbckoqHB-iYC";
+=======
+>>>>>>> b9f1cd2 (all files modified and fixed for captcha changes)
 
 // ======================================================
 // MOBILE MENU FUNCTIONS
 // ======================================================
 function toggleMobileMenu() {
+<<<<<<< HEAD
     const menu = document.getElementById("mobile-menu");
     const overlay = document.getElementById("overlay");
     if (!menu || !overlay) return;
@@ -852,12 +1333,31 @@ function closeMobileMenu() {
     menu.classList.add("translate-x-full");
     overlay.classList.add("hidden");
     document.body.style.overflow = "";
+=======
+  const menu = document.getElementById("mobile-menu");
+  const overlay = document.getElementById("overlay");
+  if (!menu || !overlay) return;
+
+  menu.classList.toggle("translate-x-full");
+  overlay.classList.toggle("hidden");
+  document.body.style.overflow = overlay.classList.contains("hidden") ? "" : "hidden";
+}
+
+function closeMobileMenu() {
+  const menu = document.getElementById("mobile-menu");
+  const overlay = document.getElementById("overlay");
+  if (!menu || !overlay) return;
+  menu.classList.add("translate-x-full");
+  overlay.classList.add("hidden");
+  document.body.style.overflow = "";
+>>>>>>> b9f1cd2 (all files modified and fixed for captcha changes)
 }
 
 // ======================================================
 // MODAL HANDLING
 // ======================================================
 function openQuoteModal() {
+<<<<<<< HEAD
     const modal = document.getElementById("quoteModal");
     if (!modal) return;
     modal.classList.remove('hidden');
@@ -895,22 +1395,84 @@ function closeQuoteModal() {
         }
     }
     resetFileUpload();
+=======
+  const modal = document.getElementById("quoteModal");
+  if (!modal) return;
+
+  // Unhide modal
+  modal.classList.remove("hidden");
+  modal.style.display = "flex";
+
+  // Lock scroll (optional)
+  document.body.style.position = "fixed";
+  document.body.style.width = "100%";
+  document.body.classList.add("modal-open");
+
+  // Add fade-in or show animation
+  setTimeout(() => modal.classList.add("show"), 10);
+
+  // 🧠 Delay rendering reCAPTCHA until after layout settles
+  // 500ms gives the browser time to render the modal and attach its elements
+  setTimeout(() => {
+    console.log("♻️ Rendering reCAPTCHA inside modal...");
+    renderAllRecaptchas();
+  }, 500);
+}
+
+
+
+function closeQuoteModal() {
+  const modal = document.getElementById("quoteModal");
+  if (!modal) return;
+  modal.classList.remove("show");
+
+  // Release body scroll lock immediately
+  document.body.style.overflow = '';
+  document.body.style.position = '';
+  document.body.style.width = '';
+  document.body.classList.remove("modal-open");
+
+  setTimeout(() => {
+    modal.style.display = "none";
+    modal.classList.add("hidden");
+  }, 300);
+
+  const form = document.getElementById("quoteForm");
+  if (form) {
+    form.reset();
+    // Reset reCAPTCHA if it exists
+    if (typeof grecaptcha !== 'undefined') {
+      grecaptcha.reset();
+    }
+  }
+  resetFileUpload();
+>>>>>>> b9f1cd2 (all files modified and fixed for captcha changes)
 }
 
 // ======================================================
 // FILE UPLOAD
 // ======================================================
 function handleFileUpload(input) {
+<<<<<<< HEAD
     const files = input.files;
     const uploadArea = document.getElementById("uploadArea");
     if (!uploadArea) return;
 
     if (files.length > 0) {
         let fileList = `
+=======
+  const files = input.files;
+  const uploadArea = document.getElementById("uploadArea");
+  if (!uploadArea) return;
+
+  if (files.length > 0) {
+    let fileList = `
+>>>>>>> b9f1cd2 (all files modified and fixed for captcha changes)
       <div class="mb-2"><i class="fas fa-check-circle text-green-600 text-2xl"></i></div>
       <p class="text-green-600 font-semibold mb-2">${files.length} file(s) selected</p>
       <div class="text-xs text-gray-600 space-y-1">
     `;
+<<<<<<< HEAD
         for (let i = 0; i < Math.min(files.length, 3); i++) {
             fileList += `<div>• ${files[i].name}</div>`;
         }
@@ -924,11 +1486,30 @@ function resetFileUpload() {
     const uploadArea = document.getElementById("uploadArea");
     if (uploadArea) {
         uploadArea.innerHTML = `
+=======
+    for (let i = 0; i < Math.min(files.length, 3); i++) {
+      fileList += `<div>• ${files[i].name}</div>`;
+    }
+    if (files.length > 3) fileList += `<div>• ... and ${files.length - 3} more</div>`;
+    fileList += "</div>";
+    uploadArea.innerHTML = fileList;
+  }
+}
+
+function resetFileUpload() {
+  const uploadArea = document.getElementById("uploadArea");
+  if (uploadArea) {
+    uploadArea.innerHTML = `
+>>>>>>> b9f1cd2 (all files modified and fixed for captcha changes)
       <i class="fas fa-cloud-upload-alt text-3xl text-gray-400 mb-2"></i>
       <p class="text-gray-600 font-medium">Click to upload CAD files, drawings, or specifications</p>
       <p class="text-xs text-gray-500 mt-2">Supported: PDF, DWG, STEP, STP, IGS, IGES, JPG, PNG (Max 10MB each)</p>
     `;
+<<<<<<< HEAD
     }
+=======
+  }
+>>>>>>> b9f1cd2 (all files modified and fixed for captcha changes)
 }
 
 // ======================================================
@@ -936,6 +1517,7 @@ function resetFileUpload() {
 // ======================================================
 document.addEventListener("DOMContentLoaded", () => {
 
+<<<<<<< HEAD
     // ESC key closes modal & mobile menu
     document.addEventListener("keydown", (e) => {
         if (e.key === "Escape") {
@@ -1025,12 +1607,181 @@ document.addEventListener("DOMContentLoaded", () => {
                 subject: "🧾 New CNC Machining Quote Request",
                 from_name: `${formData.get("firstName")} ${formData.get("lastName")}`,
                 message: `
+=======
+  // ESC key closes modal & mobile menu
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") {
+      closeQuoteModal();
+      closeMobileMenu();
+    }
+  });
+
+  // Modal click outside to close
+  const modal = document.getElementById("quoteModal");
+  if (modal) {
+    modal.addEventListener("click", (e) => {
+      if (e.target === modal) closeQuoteModal();
+    });
+  }
+
+  // ======================================================
+  // FAQ ACCORDION (for + / - text icons)
+  // ======================================================
+  document.querySelectorAll(".faq-item").forEach((item) => {
+    const question = item.querySelector(".faq-question");
+    const answer = item.querySelector(".faq-answer");
+    const icon = item.querySelector(".faq-icon");
+
+    if (question && answer && icon) {
+      question.addEventListener("click", () => {
+        const isOpen = answer.style.maxHeight && answer.style.maxHeight !== "0px";
+
+        // Close all other FAQs
+        document.querySelectorAll(".faq-item").forEach((other) => {
+          const otherAnswer = other.querySelector(".faq-answer");
+          const otherIcon = other.querySelector(".faq-icon");
+          if (otherAnswer) otherAnswer.style.maxHeight = "0px";
+          if (otherIcon) otherIcon.textContent = "+";
+        });
+
+        // Toggle current one
+        if (!isOpen) {
+          answer.style.maxHeight = answer.scrollHeight + "px";
+          icon.textContent = "−";
+        } else {
+          answer.style.maxHeight = "0px";
+          icon.textContent = "+";
+        }
+      });
+    }
+  });
+
+  // ==============================
+  // ✅ GLOBAL RECAPTCHA HANDLER
+  // ==================================================
+
+  (function () {
+    // single site key (centralized)
+    window.RECAPTCHA_SITE_KEY = "6Lf2mQAsAAAAAMayWkbocvzYmW92EO9OIBAOPiW9";
+
+    // map DOM element => widgetId
+    if (!window.recaptchaWidgets) window.recaptchaWidgets = new Map();
+
+    // ensure functions are global (Google API will call window.onRecaptchaLoad)
+    window.onRecaptchaLoad = function onRecaptchaLoad() {
+      console.log("✅ reCAPTCHA API loaded (onRecaptchaLoad)");
+      // kick off rendering (will retry internally if grecaptcha not ready)
+      window.renderAllRecaptchas();
+    };
+
+    window.renderAllRecaptchas = function renderAllRecaptchas() {
+      // guard: if API not ready, retry shortly
+      if (typeof window.grecaptcha === "undefined" || !window.grecaptcha.render) {
+        console.warn("⚠️ grecaptcha not ready yet — retrying in 300ms");
+        setTimeout(window.renderAllRecaptchas, 300);
+        return;
+      }
+
+      const nodes = document.querySelectorAll(".g-recaptcha");
+      let anyRendered = false;
+
+      nodes.forEach((el) => {
+        if (window.recaptchaWidgets.has(el)) return; // skip already rendered
+
+        try {
+          // render by passing element (element or id both work)
+          const widgetId = grecaptcha.render(el, {
+            sitekey: window.RECAPTCHA_SITE_KEY,
+            theme: "light",
+          });
+          window.recaptchaWidgets.set(el, widgetId);
+          console.log("✅ reCAPTCHA rendered:", widgetId, el);
+          anyRendered = true;
+        } catch (err) {
+          console.error("❌ grecaptcha.render failed for element", el, err);
+        }
+      });
+
+      // if nothing rendered, try again after a delay (handles hidden modals / timing)
+      if (!anyRendered && nodes.length > 0) {
+        setTimeout(window.renderAllRecaptchas, 500);
+      }
+    };
+
+    // watch for DOM changes (modals/forms added later)
+    if (!window._recaptchaMutationObserver) {
+      window._recaptchaMutationObserver = new MutationObserver(() => {
+        // small debounce
+        if (window._recaptchaRenderTimeout) clearTimeout(window._recaptchaRenderTimeout);
+        window._recaptchaRenderTimeout = setTimeout(() => {
+          window.renderAllRecaptchas();
+        }, 200);
+      });
+      window._recaptchaMutationObserver.observe(document.body, { childList: true, subtree: true });
+    }
+
+    // convenience: re-render after modal open if your modal code triggers a custom event
+    window.addEventListener("recaptcha:render", () => {
+      setTimeout(window.renderAllRecaptchas, 250);
+    });
+  })();
+
+
+
+  // File upload drag/drop
+  const uploadArea = document.getElementById("uploadArea");
+  if (uploadArea) {
+    uploadArea.addEventListener("dragover", (e) => {
+      e.preventDefault();
+      uploadArea.classList.add("dragover");
+    });
+    uploadArea.addEventListener("dragleave", (e) => {
+      e.preventDefault();
+      uploadArea.classList.remove("dragover");
+    });
+    uploadArea.addEventListener("drop", (e) => {
+      e.preventDefault();
+      uploadArea.classList.remove("dragover");
+      const files = e.dataTransfer.files;
+      const input = document.getElementById("fileInput");
+      if (input) {
+        input.files = files;
+        handleFileUpload(input);
+      }
+    });
+  }
+
+  // Form Submission (Web3Forms)
+  const form = document.getElementById("quoteForm");
+  const successMsg = document.getElementById("successMessage");
+  const errorMsg = document.getElementById("errorMessage");
+  const submitBtn = document.getElementById("submitBtn");
+  const btnText = document.getElementById("btnText");
+  const btnLoader = document.getElementById("btnLoader");
+
+  if (form) {
+    form.addEventListener("submit", async (e) => {
+      e.preventDefault();
+      if (successMsg) successMsg.classList.add("hidden");
+      if (errorMsg) errorMsg.classList.add("hidden");
+      if (submitBtn) submitBtn.disabled = true;
+      if (btnText) btnText.classList.add("hidden");
+      if (btnLoader) btnLoader.classList.remove("hidden");
+
+      const formData = new FormData(form);
+      const payload = {
+        access_key: WEB3FORMS_ACCESS_KEY,
+        subject: "🧾 New CNC Machining Quote Request",
+        from_name: `${formData.get("firstName")} ${formData.get("lastName")}`,
+        message: `
+>>>>>>> b9f1cd2 (all files modified and fixed for captcha changes)
 Name: ${formData.get("firstName")} ${formData.get("lastName")}
 Email: ${formData.get("email")}
 Phone: ${formData.get("phone")}
 Location: ${formData.get("location")}
 Description: ${formData.get("description")}
         `.trim(),
+<<<<<<< HEAD
             };
 
             try {
@@ -1096,3 +1847,47 @@ document.addEventListener("DOMContentLoaded", () => {
     document.body.appendChild(recaptchaScript);
   }
 });
+=======
+      };
+
+      try {
+        const res = await fetch("https://api.web3forms.com/submit", {
+          method: "POST",
+          headers: { "Content-Type": "application/json", Accept: "application/json" },
+          body: JSON.stringify(payload),
+        });
+        const result = await res.json();
+        if (res.ok && result.success) {
+          if (successMsg) successMsg.classList.remove("hidden");
+          form.reset();
+          resetFileUpload();
+          setTimeout(closeQuoteModal, 3000);
+        } else {
+          throw new Error(result.message);
+        }
+      } catch (err) {
+        console.error("Form Error:", err);
+        if (errorMsg) errorMsg.classList.remove("hidden");
+      } finally {
+        if (submitBtn) submitBtn.disabled = false;
+        if (btnText) btnText.classList.remove("hidden");
+        if (btnLoader) btnLoader.classList.add("hidden");
+      }
+    });
+  }
+
+  // Scroll Header Effect
+  let lastScroll = 0;
+  const header = document.querySelector("header");
+  if (header) {
+    window.addEventListener("scroll", () => {
+      const st = window.pageYOffset || document.documentElement.scrollTop;
+      if (st > lastScroll && st > 100) header.style.transform = "translateY(-100%)";
+      else header.style.transform = "translateY(0)";
+      lastScroll = st;
+    });
+  }
+});
+
+console.log("✅ All components initialized successfully");
+>>>>>>> b9f1cd2 (all files modified and fixed for captcha changes)
